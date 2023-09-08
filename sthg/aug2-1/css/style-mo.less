@@ -1,0 +1,52 @@
+@import "../../../css/asset";
+@use-vw:true;
+@vw: 480;
+
+html { font-size: 18px; font-family: Lato, "Noto Sans CJK KR", sans-serif; }
+.sthg {
+  .wrap { .fs(0); .wf; .max-w(767); .mh-c;
+    img { .wf; .vat; }
+
+    .main-vis { .rel;
+      .title { .wh(100%,109); .abs; .lb(0,100); .wf; .crop;
+        .inner { .wh(100%,109); .contain('../img/mo/vis-tit1.png'); transform: translateY(110%); transition: transform 0.8s; .ease-out; }
+      }
+      &.on .title .inner { transform: translateY(0); }
+    }
+    .vid { .wf; .mb(45);
+      &.bottom-vid { .m(45,0,0); }
+      video { .f; }
+    }
+
+    .content {
+      .banner {
+        .banner-txt { .fs(21,24); .tc; .ls(-0.06em); .light; .p(60,0); .-box; }
+        .banner-swiper { .p(0,40); .-box; .bgc(#f7f7f7);
+          .swiper-slide {
+            .banner-goods { .mt(30); .w(110%); .ml(-5%); .o(0);
+              ul { .flex; .space-between;
+                li { .mr(10);
+                  &:last-child { .mr(0); }
+                  .description { .p(10); .-box; .tl;
+                    p { .fs(16,20); .regular; .mb(5); .ls(-0.045em);
+                      &.name { .keep-all; .mr(10); }
+                      &.code { .mb(10); }
+                      &.price { .o(0.6); text-decoration: line-through; }
+                      &.discount-price { .bold; .c(#c00000);
+                        span { .ib; .mr(10);
+                          &:last-child { .mr(0); }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &.swiper-slide-active .banner-goods { .o(1);}
+          }
+        }
+      }
+      .bottom-banner { .p(20); .-box; }
+    }
+  }
+}
