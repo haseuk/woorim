@@ -8,30 +8,30 @@ html { font-size: 18px; font-family: Lato, "Noto Sans CJK KR", sans-serif; }
     img { .wf; .vat; }
 
     .main-vis { .rel;
-      .title { .wh(100%,109); .abs; .lb(0,100); .wf; .crop;
+      .title { .wh(100%,109); .abs; .lb(0,50); .wf; .crop;
         .inner { .wh(100%,109); .contain('../img/mo/vis-tit1.png'); transform: translateY(110%); transition: transform 0.8s; .ease-out; }
       }
       &.on .title .inner { transform: translateY(0); }
     }
-    .vid { .wf; .mb(45);
+    .vid { .wf;
       &.bottom-vid { .m(45,0,0); }
       video { .f; }
     }
 
     .content {
       .banner {
-        .banner-txt { .fs(21,24); .tc; .ls(-0.06em); .light; .p(60,0); .-box; }
-        .banner-swiper { .p(0,40); .-box; .bgc(#f7f7f7);
+        .banner-txt { .fs(18,23); .tc; .ls(-0.06em); .light; .p(40,0); .-box; }
+        .banner-swiper { .p(60,40,30); .-box; .bgc(#f7f7f7);
           .swiper-slide {
-            .banner-goods { .mt(30); .w(110%); .ml(-5%); .o(0);
+            .banner-goods { .mt(30); .o(0); transition: opacity 0.5s; .ease-out;
               ul { .flex; .space-between;
                 li { .mr(10);
                   &:last-child { .mr(0); }
                   .description { .p(10); .-box; .tl;
-                    p { .fs(16,20); .regular; .mb(5); .ls(-0.045em);
+                    p { .fs(15,19); .regular; .ls(-0.045em);
                       &.name { .keep-all; .mr(10); }
-                      &.code { .mb(10); }
-                      &.price { .o(0.6); text-decoration: line-through; }
+                      &.code { .mb(6); }
+                      &.price { .o(0.6); text-decoration: line-through; .mb(0); }
                       &.discount-price { .bold; .c(#c00000);
                         span { .ib; .mr(10);
                           &:last-child { .mr(0); }

@@ -1,6 +1,9 @@
 html {
   font-family: Lato, "Noto Sans CJK KR", sans-serif;
 }
+.sthg {
+  overflow: hidden;
+}
 .sthg .wrap {
   font-size: 0px;
   min-width: 1304px;
@@ -13,9 +16,9 @@ html {
   vertical-align: top;
 }
 .sthg .wrap .main-vis {
-  margin-bottom: 120px;
-  height: 1386px;
-  background: url("../img/pc/pc_top_01.jpg") center center no-repeat;
+  height: 100vh;
+  background: url("../img/pc/pc_top_01.jpg") top center no-repeat;
+  background-size: cover;
   position: relative;
 }
 .sthg .wrap .main-vis .title {
@@ -23,7 +26,7 @@ html {
   height: 202px;
   position: absolute;
   left: 50%;
-  bottom: 150px;
+  bottom: 95px;
   right: auto;
   top: auto;
   overflow: hidden;
@@ -48,6 +51,29 @@ html {
   padding-bottom: 0px;
   padding-left: 74px;
   box-sizing: border-box;
+}
+.sthg .wrap .content .banner-tit {
+  padding-top: 120px;
+  padding-right: 0px;
+  padding-bottom: 35px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+.sthg .wrap .content .banner-tit p {
+  padding-left: 20px;
+  box-sizing: border-box;
+  letter-spacing: -0.045em;
+}
+.sthg .wrap .content .banner-tit p.tit {
+  font-size: 46px;
+  line-height: 50px;
+  font-weight: 500;
+}
+.sthg .wrap .content .banner-tit p.txt {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 300;
+  word-break: keep-all;
 }
 .sthg .wrap .content .banner {
   position: relative;
@@ -140,8 +166,11 @@ html {
   bottom: auto;
   transform: translateY(-50%);
 }
+.sthg .wrap .content .banner .goods-list ul li .description .info > div:first-child {
+  margin-bottom: 10px;
+}
 .sthg .wrap .content .banner .goods-list ul li .description .info p {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 25px;
   font-weight: 300;
   color: #fff;
@@ -151,42 +180,50 @@ html {
   opacity: 0.8;
 }
 .sthg .wrap .content .banner .goods-list ul li .description .info p.discount-price {
+  font-size: 24px;
   font-weight: 700;
   margin-right: 20px;
 }
 .sthg .wrap .content .banner .goods-list ul li .description .info p.price {
-  font-size: 16px;
-  font-weight: 300;
   margin-right: 20px;
   text-decoration: line-through;
 }
 .sthg .wrap .content .banner .goods-list ul li .description .info p.percent {
+  font-size: 24px;
+  line-height: 25px;
   color: #c90000;
-  font-weight: 700;
+  font-weight: 400;
+}
+.sthg .wrap .content .banner .goods-list ul li .description .info p.percent span {
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  vertical-align: middle;
 }
 .sthg .wrap .content .banner .goods-list ul li:hover .description {
   opacity: 1;
   transform: translateY(0);
-}
-.sthg .wrap .content .banner-txt {
-  text-align: left;
-  padding-top: 83px;
-  padding-right: 0px;
-  padding-bottom: 83px;
-  padding-left: 0px;
-  box-sizing: border-box;
-}
-.sthg .wrap .content .banner-txt p {
-  font-size: 50px;
-  line-height: 67px;
-  letter-spacing: -0.06em;
-  font-weight: 300;
 }
 .sthg .wrap .content .bottom-banner {
   margin-top: 120px;
   margin-right: 0px;
   margin-bottom: 120px;
   margin-left: 0px;
+  position: relative;
+}
+.sthg .wrap .content .bottom-banner:after {
+  content: '';
+  display: block;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  transform: translateX(-50%);
+  z-index: -1;
+  background-color: #eae8e9;
 }
 .sthg .wrap .content .vid {
   width: 100%;
