@@ -6,7 +6,6 @@ html {
 }
 .sthg .wrap {
   font-size: 0px;
-  min-width: 1304px;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
@@ -22,8 +21,9 @@ html {
   position: relative;
 }
 .sthg .wrap .main-vis .title {
-  width: 1180px;
-  height: 202px;
+  width: calc(1180/1920*100%);
+  padding-top: calc(202/1920*100%);
+  box-sizing: border-box;
   position: absolute;
   left: 50%;
   bottom: 95px;
@@ -33,6 +33,11 @@ html {
   transform: translateX(-50%);
 }
 .sthg .wrap .main-vis .title .inner {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
   width: 100%;
   height: 100%;
   background-image: url('../img/pc/vis-tit1.png');
@@ -46,17 +51,13 @@ html {
   transform: translateY(0);
 }
 .sthg .wrap .content {
-  padding-top: 0px;
-  padding-right: 74px;
-  padding-bottom: 0px;
-  padding-left: 74px;
+  padding-left: calc(200/1920*100%);
+  padding-right: calc(200/1920*100%);
   box-sizing: border-box;
 }
 .sthg .wrap .content .banner-tit {
-  padding-top: 120px;
-  padding-right: 0px;
-  padding-bottom: 35px;
-  padding-left: 0px;
+  padding-top: calc(120/1520*100%);
+  padding-bottom: calc(35/1520*100%);
   box-sizing: border-box;
 }
 .sthg .wrap .content .banner-tit p {
@@ -78,11 +79,11 @@ html {
 .sthg .wrap .content .banner {
   position: relative;
   width: 100%;
-  padding-top: calc(1506/1772*100%);
+  padding-top: calc(1390/1520*100%);
 }
 .sthg .wrap .content .banner .banner-vis {
-  width: calc(1325/1772*100%);
-  height: calc(998/1506*100%);
+  width: calc(1135/1520*100%);
+  height: calc(920/1390*100%);
   position: absolute;
   overflow: hidden;
 }
@@ -112,27 +113,27 @@ html {
 }
 .sthg .wrap .content .banner.banner2 .goods-list ul li:nth-child(1),
 .sthg .wrap .content .banner.banner2 .goods-list ul li:nth-child(2) {
-  margin-left: calc(1342/1772*100%);
+  margin-left: calc(1155/1520*100%);
 }
 .sthg .wrap .content .banner .goods-list {
   position: absolute;
   width: 100%;
 }
 .sthg .wrap .content .banner .goods-list ul li {
-  width: calc(430/1772*100%);
-  height: calc(490/1772*100%);
+  width: calc(365/1520*100%);
+  height: calc(450/1520*100%);
   display: inline-block;
-  margin-right: calc(17/1772*100%);
+  margin-right: calc(20/1520*100%);
   position: relative;
   overflow: hidden;
 }
 .sthg .wrap .content .banner .goods-list ul li:nth-child(1),
 .sthg .wrap .content .banner .goods-list ul li:nth-child(2) {
   display: block;
-  margin-bottom: calc(18/1772*100%);
+  margin-bottom: calc(20/1520*100%);
 }
 .sthg .wrap .content .banner .goods-list ul li:nth-child(3) {
-  margin-right: calc(18/1772*100%);
+  margin-right: calc(20/1520*100%);
 }
 .sthg .wrap .content .banner .goods-list ul li:last-child {
   margin-right: 0px;
@@ -170,7 +171,7 @@ html {
   margin-bottom: 10px;
 }
 .sthg .wrap .content .banner .goods-list ul li .description .info p {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 25px;
   font-weight: 300;
   color: #fff;
@@ -179,15 +180,21 @@ html {
   font-size: -0.045em;
   opacity: 0.8;
 }
+.sthg .wrap .content .banner .goods-list ul li .description .info p.name {
+  margin-right: 5px;
+}
 .sthg .wrap .content .banner .goods-list ul li .description .info p.discount-price {
+  font-size: 24px;
   font-weight: 700;
   margin-right: 12px;
 }
 .sthg .wrap .content .banner .goods-list ul li .description .info p.price {
+  font-size: 20px;
   margin-right: 12px;
   text-decoration: line-through;
 }
 .sthg .wrap .content .banner .goods-list ul li .description .info p.percent {
+  font-size: 24px;
   color: #c90000;
   font-weight: 400;
 }
@@ -202,16 +209,14 @@ html {
   transform: translateY(0);
 }
 .sthg .wrap .content .bottom-banner {
-  margin-top: 120px;
-  margin-right: 0px;
-  margin-bottom: 120px;
-  margin-left: 0px;
+  margin-top: calc(180/1520*100%);
+  margin-bottom: calc(180/1520*100%);
   position: relative;
 }
 .sthg .wrap .content .bottom-banner:after {
   content: '';
   display: block;
-  width: 100vw;
+  width: 200%;
   height: 100%;
   position: absolute;
   left: 50%;
@@ -224,8 +229,8 @@ html {
 }
 .sthg .wrap .content .vid {
   width: 100%;
-  height: calc(1000/1772*100%);
-  margin-bottom: calc(130/1772*100%);
+  height: calc(883/1520*100%);
+  margin-bottom: calc(180/1520*100%);
 }
 .sthg .wrap .content .vid video {
   width: 100%;
@@ -238,5 +243,32 @@ html {
 }
 .sthg .wrap .move.move-on {
   opacity: 1;
+}
+@media screen and (max-width: 1580px) {
+  .sthg .wrap .content .banner-tit p.tit {
+    font-size: 37px;
+    line-height: 40px;
+  }
+  .sthg .wrap .content .banner-tit p.txt {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .sthg .wrap .content .banner .goods-list ul li .description .info p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .sthg .wrap .content .banner .goods-list ul li .description .info p.discount-price {
+    font-size: 19px;
+  }
+  .sthg .wrap .content .banner .goods-list ul li .description .info p.price {
+    font-size: 16px;
+  }
+  .sthg .wrap .content .banner .goods-list ul li .description .info p.percent {
+    font-size: 19px;
+  }
+  .sthg .wrap .content .banner .goods-list ul li .description .info p.percent span {
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 /*# sourceMappingURL=style-pc.css.map */
