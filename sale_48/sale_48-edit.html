@@ -1,0 +1,672 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<style>
+  #sale_48 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 900px;
+    overflow: hidden;
+  }
+  #sale_48 img {
+    width: 100%;
+    vertical-align: top;
+    margin: 0vw;
+  }
+  #sale_48 .top {
+    position: relative;
+  }
+  #sale_48 .top .ani {
+    position: absolute;
+  }
+  #sale_48 .top .star {
+    width: 3.33333333vw;
+    height: 4.22222222vw;
+    right: 3.33333333vw;
+    bottom: 30vw;
+    left: auto;
+    top: auto;
+    animation: blink 1.3s infinite ease;
+  }
+  #sale_48 .top .star1 {
+    width: 10vw;
+    height: 13.22222222vw;
+    right: 8.88888889vw;
+    top: 2.77777778vw;
+    left: auto;
+    bottom: auto;
+    animation: blink 1.8s infinite ease;
+  }
+  #sale_48 .top .star2 {
+    width: 4.77777778vw;
+    height: 6.11111111vw;
+    left: 18.33333333vw;
+    top: 31.55555556vw;
+    right: auto;
+    bottom: auto;
+    animation: blink 1.5s infinite ease;
+  }
+  #sale_48 .top .star3 {
+    width: 4.55555556vw;
+    height: 6vw;
+    right: 32.88888889vw;
+    top: 33.33333333vw;
+    left: auto;
+    bottom: auto;
+    animation: blink 1.3s infinite ease;
+  }
+  #sale_48 .top .star4 {
+    width: 4.22222222vw;
+    height: 5.55555556vw;
+    right: 8.88888889vw;
+    top: 45.55555556vw;
+    left: auto;
+    bottom: auto;
+    animation: blink 1.6s infinite ease;
+  }
+  #sale_48 .top .star5 {
+    width: 4.22222222vw;
+    height: 5.55555556vw;
+    left: 12.22222222vw;
+    top: 48vw;
+    right: auto;
+    bottom: auto;
+    animation: blink 1.3s infinite ease;
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  #sale_48 .top .watch {
+    width: 26.11111111vw;
+    height: 26.33333333vw;
+    left: -6.11111111vw;
+    top: 76.88888889vw;
+    right: auto;
+    bottom: auto;
+    animation: lr 2.1s infinite ease-out;
+  }
+  @keyframes lr {
+    50% {
+      margin-left: 2%;
+    }
+  }
+  #sale_48 .top .necklace {
+    width: 51.77777778vw;
+    height: 48.11111111vw;
+    left: -30.66666667vw;
+    bottom: 5.88888889vw;
+    right: auto;
+    top: auto;
+    animation: rl 1.8s infinite ease-out;
+  }
+  @keyframes rl {
+    50% {
+      margin-left: -2%;
+    }
+  }
+  #sale_48 .prd-wrap {
+    position: relative;
+  }
+  #sale_48 .prd-wrap .prds {
+    width: 81.11111111vw;
+    height: 228.22222222vw;
+    position: absolute;
+    left: 9.55555556vw;
+    top: 77.77777778vw;
+    right: auto;
+    bottom: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #sale_48 .prd-wrap .prds a {
+    display: inline-block;
+    width: 38.88888889vw;
+    height: 58.88888889vw;
+    vertical-align: top;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 25.88888889vw;
+  }
+  #sale_48 .prd-wrap .prds a:nth-child(5),
+  #sale_48 .prd-wrap .prds a:nth-child(6) {
+    margin-bottom: 0vw;
+  }
+  #sale_48 .prd-wrap .prds2 {
+    width: 88.88888889vw;
+    height: 82.88888889vw;
+    left: 5.55555556vw;
+    top: 64.44444444vw;
+    right: auto;
+    bottom: auto;
+    justify-content: space-around;
+  }
+  #sale_48 .prd-wrap .prds2 a {
+    margin-bottom: 10vw;
+  }
+  #sale_48 .prd-wrap .prds2 a:nth-child(3) {
+    width: 88.88888889vw;
+    height: 12.22222222vw;
+  }
+  #sale_48 .special {
+    position: relative;
+    display: none;
+  }
+  #sale_48 .special .time_wrap {
+    font-size: 13.33333333vw;
+    line-height: 14.44444444vw;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Pretendard', sans-serif;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 33.33333333vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -30%;
+    z-index: 1;
+  }
+  #sale_48 .special .time_wrap .timer {
+    display: flex;
+    justify-content: space-between;
+  }
+  #sale_48 .special .time_wrap .timer span {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  #sale_48 .special .time_wrap .timer em {
+    display: inline-block;
+    width: 5%;
+    vertical-align: top;
+    font-style: normal;
+    margin-top: -1.11111111vw;
+  }
+  #sale_48[data-day="1"] .special.day1,
+  #sale_48[data-day="2"] .special.day2,
+  #sale_48[data-day="3"] .special.day3,
+  #sale_48[data-day="4"] .special.day4,
+  #sale_48[data-day="5"] .special.day5 {
+    display: inline-block;
+  }
+  #sale_48 .swiper .swiper-btn {
+    width: 14.44444444vw;
+    height: 13.33333333vw;
+    top: 8.55555556vw;
+    margin: 0vw;
+  }
+  #sale_48 .swiper .swiper-btn:after {
+    display: none;
+  }
+  @media screen and (min-width: 900px) {
+    #sale_48 .top .star {
+      width: 30px;
+      height: 38px;
+      right: 30px;
+      bottom: 270px;
+      left: auto;
+      top: auto;
+      animation: blink 1.3s infinite ease;
+    }
+    #sale_48 .top .star1 {
+      width: 90px;
+      height: 119px;
+      right: 80px;
+      top: 25px;
+      left: auto;
+      bottom: auto;
+      animation: blink 1.8s infinite ease;
+    }
+    #sale_48 .top .star2 {
+      width: 43px;
+      height: 55px;
+      left: 165px;
+      top: 284px;
+      right: auto;
+      bottom: auto;
+      animation: blink 1.5s infinite ease;
+    }
+    #sale_48 .top .star3 {
+      width: 41px;
+      height: 54px;
+      right: 296px;
+      top: 300px;
+      left: auto;
+      bottom: auto;
+      animation: blink 1.3s infinite ease;
+    }
+    #sale_48 .top .star4 {
+      width: 38px;
+      height: 50px;
+      right: 80px;
+      top: 410px;
+      left: auto;
+      bottom: auto;
+      animation: blink 1.6s infinite ease;
+    }
+    #sale_48 .top .star5 {
+      width: 38px;
+      height: 50px;
+      left: 110px;
+      top: 432px;
+      right: auto;
+      bottom: auto;
+      animation: blink 1.3s infinite ease;
+    }
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+    #sale_48 .top .watch {
+      width: 235px;
+      height: 237px;
+      left: -55px;
+      top: 692px;
+      right: auto;
+      bottom: auto;
+      animation: lr 2.1s infinite ease-out;
+    }
+    @keyframes lr {
+      50% {
+        margin-left: 2%;
+      }
+    }
+    #sale_48 .top .necklace {
+      width: 466px;
+      height: 433px;
+      left: -276px;
+      bottom: 53px;
+      right: auto;
+      top: auto;
+      animation: rl 1.8s infinite ease-out;
+    }
+    @keyframes rl {
+      50% {
+        margin-left: -2%;
+      }
+    }
+    #sale_48 .prd-wrap {
+      position: relative;
+    }
+    #sale_48 .prd-wrap .prds {
+      width: 730px;
+      height: 2054px;
+      position: absolute;
+      left: 86px;
+      top: 700px;
+      right: auto;
+      bottom: auto;
+      justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #sale_48 .prd-wrap .prds a {
+      display: inline-block;
+      width: 350px;
+      height: 530px;
+      vertical-align: top;
+      z-index: 1;
+      cursor: pointer;
+      margin-bottom: 233px;
+    }
+    #sale_48 .prd-wrap .prds a:nth-child(5),
+    #sale_48 .prd-wrap .prds a:nth-child(6) {
+      margin-bottom: 0px;
+    }
+    #sale_48 .prd-wrap .prds2 {
+      width: 800px;
+      height: 746px;
+      left: 50px;
+      top: 580px;
+      right: auto;
+      bottom: auto;
+      justify-content: space-around;
+    }
+    #sale_48 .prd-wrap .prds2 a {
+      margin-bottom: 90px;
+    }
+    #sale_48 .prd-wrap .prds2 a:nth-child(3) {
+      width: 800px;
+      height: 110px;
+    }
+    #sale_48 .special {
+      position: relative;
+      display: none;
+    }
+    #sale_48 .special .time_wrap {
+      font-size: 120px;
+      line-height: 130px;
+      color: #000;
+      text-align: center;
+      font-weight: 500;
+      font-family: 'Pretendard', sans-serif;
+      width: 60%;
+      position: absolute;
+      left: 50%;
+      top: 300px;
+      right: auto;
+      bottom: auto;
+      margin-left: -30%;
+      z-index: 1;
+    }
+    #sale_48 .special .time_wrap .timer {
+      display: flex;
+      justify-content: space-between;
+    }
+    #sale_48 .special .time_wrap .timer span {
+      width: 30%;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+    }
+    #sale_48 .special .time_wrap .timer em {
+      display: inline-block;
+      width: 5%;
+      vertical-align: top;
+      font-style: normal;
+      margin-top: -10px;
+    }
+    #sale_48 .swiper .swiper-btn {
+      width: 130px;
+      height: 120px;
+      top: 77px;
+      margin: 0px;
+    }
+    #sale_48 .swiper .swiper-btn:after {
+      display: none;
+    }
+  }
+</style>
+
+  <div id="sale_48" data-day="1">
+    <div class="top">
+      <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/top.png" width="900"  alt="우림에프엠지 페밀리 세일 48시간 특가 90%off/ 10월26 ~11월5일">
+      <div class="ani star"><img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/star.png" alt=""></div>
+      <div class="ani star1"><img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/star1.png" alt=""></div>
+      <div class="ani star2"><img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/star2.png" alt=""></div>
+      <div class="ani star3"><img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/star3.png" alt=""></div>
+      <div class="ani star4"><img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/star4.png" alt=""></div>
+      <div class="ani star5"><img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/star5.png" alt=""></div>
+      <div class="ani watch"><img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/prd1.png" alt=""></div>
+      <div class="ani necklace"><img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/prd3.png" alt=""></div>
+    </div>
+
+    <!--10.26-->
+    <div class="special day1" id="special">
+      <div class="time_wrap">
+        <div id="d_time1" class="timer"><span class="hours time">00</span><em>:</em><span class="mins time">00</span><em>:</em><span class="secs time">00</span></div>
+      </div>
+
+      <div class="prd-wrap prd1">
+        <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/sc1.png" width="900"  alt="">
+        <div class="prds">
+          <a href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EC%BD%94%EC%9D%B8-%EB%AA%A9%EA%B1%B8%EC%9D%B4-b8059/7814/category/30/display/1/" ></a>
+          <a href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EA%B7%80%EA%B1%B8%EC%9D%B4-sc1040/7217/category/29/display/1/" ></a>
+          <a href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-ra0072/8114/category/32/display/1/" ></a>
+          <a href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-rs1070/8345/category/33/display/1/" ></a>
+          <a href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD-%ED%8E%9C%EB%94%94-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-f102100101/6709/category/70/display/1/" ></a>
+          <a href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EB%A1%9C%EC%A6%88%EB%AA%BD-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-ns-011rvr-mt/6945/category/67/display/1/" ></a>
+        </div>
+      </div>
+    </div>
+
+    <!--10.28-->
+    <div class="special day2" >
+      <div class="time_wrap">
+        <div id="d_time2" class="timer"><span class="hours time">00</span><em>:</em><span class="mins time">00</span><em>:</em><span class="secs time">00</span></div>
+      </div>
+
+      <div class="prd-wrap prd2">
+        <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/sc2.png" width="900" alt="" >
+        <div class="prds">
+          <a href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EA%B7%80%EA%B1%B8%EC%9D%B4-sc1252/7137/category/29/display/1/"></a>
+          <a href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EC%A7%84%EC%A3%BC-%EA%B7%80%EA%B1%B8%EC%9D%B4-so0313/7567/category/29/display/1/"></a>
+          <a href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%EA%B7%80%EA%B1%B8%EC%9D%B4-rk0223/7961/category/32/display/1/"></a>
+          <a href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%EB%AA%A9%EA%B1%B8%EC%9D%B4-rk0220/8003/category/33/display/1/"></a>
+          <a href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD-%ED%8E%9C%EB%94%94-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-f107010101/6704/category/70/display/1/"></a>
+          <a href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EB%A1%9C%EC%A6%88%EB%AA%BD-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-ns-005rwr-mt/6944/category/67/display/1/"></a>
+        </div>
+      </div>
+    </div>
+
+    <!--10.30-->
+    <div class="special day3" >
+      <div class="time_wrap">
+        <div id="d_time3" class="timer"><span class="hours time">00</span><em>:</em><span class="mins time">00</span><em>:</em><span class="secs time">00</span></div>
+      </div>
+
+      <div class="prd-wrap prd3">
+        <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/sc3.png" width="900" alt="" usemap="#sc3">
+        <map name="sc3">
+          <area shape="rect" coords="86,700,435,1228" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EB%A9%94%ED%83%88-%EC%8B%9C%EA%B3%84-s0269/7904/category/58/display/1/" alt="">
+          <area shape="rect" coords="464,700,812,1228" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EB%AA%A9%EA%B1%B8%EC%9D%B4-sc1283/7325/category/30/display/1/" alt="">
+          <area shape="rect" coords="86,1460,435,1990" href="https://www.woorimfamily.com/product/%EC%85%80%EB%9F%BDpick-%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-%EC%95%84%EC%B9%98%EC%95%A4%EC%95%84%EC%B9%98-rl0189/7955/category/32/display/1/" alt="">
+          <area shape="rect" coords="464,1460,812,1990" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%EC%8A%A4%ED%86%A4-%EC%B2%B4%EC%9D%B8-%ED%8C%94%EC%B0%8C-rc0365/8061/category/51/display/1/" alt="">
+          <area shape="rect" coords="86,2220,435,2752" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD-%ED%8E%9C%EB%94%94-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-f714032000/6700/category/70/display/1/" alt="">
+          <area shape="rect" coords="464,2220,812,2752" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EB%A1%9C%EC%A6%88%EB%AA%BD-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-rs68-03bk/6904/category/67/display/1/" alt="">
+        </map>
+      </div>
+    </div>
+
+    <!--11.1-->
+    <div class="special day4" >
+      <div class="time_wrap">
+        <div id="d_time4" class="timer"><span class="hours time">00</span><em>:</em><span class="mins time">00</span><em>:</em><span class="secs time">00</span></div>
+      </div>
+
+      <div class="prd-wrap prd4">
+        <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/sc4.png" width="900"  alt="" usemap="#sc4">
+        <map name="sc4">
+          <area shape="rect" coords="86,700,435,1228" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EB%AA%A9%EA%B1%B8%EC%9D%B4-sc1433/7295/category/30/display/1/" alt="">
+          <area shape="rect" coords="464,700,812,1228" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-u-lock-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-u0085/7530/category/29/display/1/" alt="">
+          <area shape="rect" coords="86,1460,435,1990" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rn0002/7947/category/32/display/1/" alt="">
+          <area shape="rect" coords="464,1460,812,1990" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-%EC%95%84%EC%B9%98%EC%95%A4%EC%95%84%EC%B9%98-rn0010/7994/category/33/display/1/" alt="">
+          <area shape="rect" coords="86,2220,435,2752" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%ED%8E%98%EB%9D%BC%EA%B0%80%EB%AA%A8-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-sfmn001-22/6753/category/50/display/1/" alt="">
+          <area shape="rect" coords="464,2220,812,2752" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EB%A1%9C%EC%A6%88%EB%AA%BD-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-ns-012rvr-br/6930/category/67/display/1/" alt="">
+        </map>
+      </div>
+    </div>
+
+    <!--11.3-->
+    <div class="special day5" >
+      <div class="time_wrap">
+        <div id="d_time5" class="timer"><span class="hours time">00</span><em>:</em><span class="mins time">00</span><em>:</em><span class="secs time">00</span></div>
+      </div>
+
+      <div class="prd-wrap prd5">
+        <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/sc5.png" width="900"  alt="" usemap="#sc5">
+        <map name="sc5">
+          <area shape="rect" coords="86,700,435,1228" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EA%B7%80%EA%B1%B8%EC%9D%B4-k1239/7190/category/29/display/1/" alt="">
+          <area shape="rect" coords="464,700,812,1228" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EC%A7%84%EC%A3%BC-%EC%9B%90%ED%84%B0%EC%B9%98-%EA%B7%80%EA%B1%B8%EC%9D%B4-sc1621/7493/category/29/display/1/" alt="">
+          <area shape="rect" coords="86,1460,435,1990" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C-%EB%AA%A9%EA%B1%B8%EC%9D%B4%ED%99%94%EC%9D%B4%ED%8A%B8%EA%B3%A8%EB%93%9C-ru0042/7946/category/33/display/1/" alt="">
+          <area shape="rect" coords="464,1460,812,1990" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rs1203/8330/category/32/display/1/" alt="">
+          <area shape="rect" coords="86,2220,435,2752" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%ED%8E%98%EB%9D%BC%EA%B0%80%EB%AA%A8-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-sfmb006-21/6764/category/50/display/1/" alt="">
+          <area shape="rect" coords="464,2220,812,2752" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EB%A1%9C%EC%A6%88%EB%AA%BD-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-ns-011rvr-mt6/6918/category/67/display/1/" alt="">
+        </map>
+      </div>
+    </div>
+
+    <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/scr.png" alt="">
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!--10.28-->
+        <div class="swiper-slide">
+          <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/sc1-1.png" width="900"  alt="" usemap="#sc1-1">
+<!--          <map name="sc1-1">-->
+<!--            <area shape="rect" coords="80,440,430,972" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EA%B7%80%EA%B1%B8%EC%9D%B4-sc1252/7137/category/29/display/1/" alt="">-->
+<!--            <area shape="rect" coords="460,440,810,972" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EC%A7%84%EC%A3%BC-%EA%B7%80%EA%B1%B8%EC%9D%B4-so0313/7567/category/29/display/1/" alt="">-->
+<!--            <area shape="rect" coords="80,1204,430,1734" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%EA%B7%80%EA%B1%B8%EC%9D%B4-rk0223/7961/category/32/display/1/" alt="">-->
+<!--            <area shape="rect" coords="460,1204,810,1734" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%EB%AA%A9%EA%B1%B8%EC%9D%B4-rk0220/8003/category/33/display/1/" alt="">-->
+<!--            <area shape="rect" coords="80,1994,430,2524" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD-%ED%8E%9C%EB%94%94-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-f107010101/6704/category/70/display/1/" alt="">-->
+<!--            <area shape="rect" coords="460,1994,810,2524" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EB%A1%9C%EC%A6%88%EB%AA%BD-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-ns-005rwr-mt/6944/category/67/display/1/" alt="">-->
+<!--          </map>-->
+        </div>
+        <!--10.30-->
+        <div class="swiper-slide">
+          <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/sc2-1.png" width="900" alt="" usemap="#sc2-1">
+<!--          <map name="sc2-1">-->
+<!--            <area shape="rect" coords="80,440,430,972" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EB%A9%94%ED%83%88-%EC%8B%9C%EA%B3%84-s0269/7904/category/58/display/1/" alt="">-->
+<!--            <area shape="rect" coords="460,440,810,972" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EB%AA%A9%EA%B1%B8%EC%9D%B4-sc1283/7325/category/30/display/1/" alt="">-->
+<!--            <area shape="rect" coords="80,1204,430,1734" href="https://www.woorimfamily.com/product/%EC%85%80%EB%9F%BDpick-%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-%EC%95%84%EC%B9%98%EC%95%A4%EC%95%84%EC%B9%98-rl0189/7955/category/32/display/1/" alt="">-->
+<!--            <area shape="rect" coords="460,1204,810,1734" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%EC%8A%A4%ED%86%A4-%EC%B2%B4%EC%9D%B8-%ED%8C%94%EC%B0%8C-rc0365/8061/category/51/display/1/" alt="">-->
+<!--            <area shape="rect" coords="80,1994,430,2524" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD-%ED%8E%9C%EB%94%94-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-f714032000/6700/category/70/display/1/" alt="">-->
+<!--            <area shape="rect" coords="460,1994,810,2524" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EB%A1%9C%EC%A6%88%EB%AA%BD-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-rs68-03bk/6904/category/67/display/1/" alt="">-->
+<!--          </map>-->
+        </div>
+        <!--11.1-->
+        <div class="swiper-slide">
+          <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/sc3-1.png" width="900"  alt="" usemap="#sc3-1">
+<!--          <map name="sc3-1">-->
+<!--            <area shape="rect" coords="80,440,430,972" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EB%AA%A9%EA%B1%B8%EC%9D%B4-sc1433/7295/category/30/display/1/" alt="">-->
+<!--            <area shape="rect" coords="460,440,810,972" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-u-lock-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-u0085/7530/category/29/display/1/" alt="">-->
+<!--            <area shape="rect" coords="80,1204,430,1734" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rn0002/7947/category/32/display/1/" alt="">-->
+<!--            <area shape="rect" coords="460,1204,810,1734" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-%EC%95%84%EC%B9%98%EC%95%A4%EC%95%84%EC%B9%98-rn0010/7994/category/33/display/1/" alt="">-->
+<!--            <area shape="rect" coords="80,1994,430,2524" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%ED%8E%98%EB%9D%BC%EA%B0%80%EB%AA%A8-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-sfmn001-22/6753/category/50/display/1/" alt="">-->
+<!--            <area shape="rect" coords="460,1994,810,2524" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EB%A1%9C%EC%A6%88%EB%AA%BD-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-ns-012rvr-br/6930/category/67/display/1/" alt="">-->
+<!--          </map>-->
+        </div>
+        <!--11.3-->
+        <div class="swiper-slide">
+          <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/sale_48/sc4-1.png" width="900"  alt="" usemap="#sc4-1">
+<!--          <map name="sc4-1">-->
+<!--            <area shape="rect" coords="80,440,430,972" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EA%B7%80%EA%B1%B8%EC%9D%B4-k1239/7190/category/29/display/1/" alt="">-->
+<!--            <area shape="rect" coords="460,440,810,972" href="https://woorimfamily.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EC%A7%84%EC%A3%BC-%EC%9B%90%ED%84%B0%EC%B9%98-%EA%B7%80%EA%B1%B8%EC%9D%B4-sc1621/7493/category/29/display/1/" alt="">-->
+<!--            <area shape="rect" coords="80,1204,430,1734" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C-%EB%AA%A9%EA%B1%B8%EC%9D%B4%ED%99%94%EC%9D%B4%ED%8A%B8%EA%B3%A8%EB%93%9C-ru0042/7946/category/33/display/1/" alt="">-->
+<!--            <area shape="rect" coords="460,1204,810,1734" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rs1203/8330/category/32/display/1/" alt="">-->
+<!--            <area shape="rect" coords="80,1994,430,2524" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%ED%8E%98%EB%9D%BC%EA%B0%80%EB%AA%A8-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-sfmb006-21/6764/category/50/display/1/" alt="">-->
+<!--            <area shape="rect" coords="460,1994,810,2524" href="https://woorimfamily.com/product/%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%96%B4%ED%81%B4%EB%9D%BD%EB%A1%9C%EC%A6%88%EB%AA%BD-%EC%97%AC%EC%84%B1%EC%8B%9C%EA%B3%84-ns-011rvr-mt6/6918/category/67/display/1/" alt="">-->
+<!--          </map>-->
+        </div>
+      </div>
+
+      <div class="swiper-btn swiper-button-next"></div>
+      <div class="swiper-btn swiper-button-prev"></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    $('#d_time1').countdown('2023/10/28 09:59:59', function (e) { //종료일자
+      var $this = $(this);
+      var timsHours, timsMins, timsSecs = "";
+      timsHours = e.offset.totalHours;
+      timsMins = e.strftime('%M');
+      timsSecs = e.strftime('%S');
+      if(e.offset.totalHours < 10) {
+        $this.find('.hours').html('0' + timsHours);
+      } else if(e.offset.totalHours === 48){
+        $this.find('.hours').html('00');
+      } else {
+        $this.find('.hours').html(timsHours);
+      }
+      $this.find('.mins').html(timsMins);
+      $this.find('.secs').html(timsSecs);
+    });
+    $('#d_time2').countdown('2023/10/30 09:59:59', function (e) { //종료일자
+      var $this = $(this);
+      var timsHours, timsMins, timsSecs = "";
+      timsHours = e.offset.totalHours;
+      timsMins = e.strftime('%M');
+      timsSecs = e.strftime('%S');
+      if(e.offset.totalHours < 10) {
+        $this.find('.hours').html('0' + timsHours);
+      } else if(e.offset.totalHours === 48){
+        $this.find('.hours').html('00');
+      } else {
+        $this.find('.hours').html(timsHours);
+      }
+      $this.find('.mins').html(timsMins);
+      $this.find('.secs').html(timsSecs);
+    });
+    $('#d_time3').countdown('2023/11/01 09:59:59', function (e) { //종료일자
+      var $this = $(this);
+      var timsHours, timsMins, timsSecs = "";
+      timsHours = e.offset.totalHours;
+      timsMins = e.strftime('%M');
+      timsSecs = e.strftime('%S');
+      if(e.offset.totalHours < 10) {
+        $this.find('.hours').html('0' + timsHours);
+      } else if(e.offset.totalHours === 48){
+        $this.find('.hours').html('00');
+      } else {
+        $this.find('.hours').html(timsHours);
+      }
+      $this.find('.mins').html(timsMins);
+      $this.find('.secs').html(timsSecs);
+    });
+    $('#d_time4').countdown('2023/11/03 09:59:59', function (e) { //종료일자
+      var $this = $(this);
+      var timsHours, timsMins, timsSecs = "";
+      timsHours = e.offset.totalHours;
+      timsMins = e.strftime('%M');
+      timsSecs = e.strftime('%S');
+      if(e.offset.totalHours < 10) {
+        $this.find('.hours').html('0' + timsHours);
+      } else if(e.offset.totalHours === 48){
+        $this.find('.hours').html('00');
+      } else {
+        $this.find('.hours').html(timsHours);
+      }
+      $this.find('.mins').html(timsMins);
+      $this.find('.secs').html(timsSecs);
+    });
+    $('#d_time5').countdown('2023/11/05 09:59:59', function (e) { //종료일자
+      var $this = $(this);
+      var timsHours, timsMins, timsSecs = "";
+      timsHours = e.offset.totalHours;
+      timsMins = e.strftime('%M');
+      timsSecs = e.strftime('%S');
+      if(e.offset.totalHours < 10) {
+        $this.find('.hours').html('0' + timsHours);
+      } else if(e.offset.totalHours === 48){
+        $this.find('.hours').html('00');
+      } else {
+        $this.find('.hours').html(timsHours);
+      }
+      $this.find('.mins').html(timsMins);
+      $this.find('.secs').html(timsSecs);
+    });
+
+    var swiper = new Swiper(".swiper", {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    let dataDay = document.querySelector('#sale_48');
+    setInterval(function() {
+      let today = new Date();
+      let year = String(today.getFullYear()).padStart(4, "0");
+      let month = String(today.getMonth()+1).padStart(2, "0");
+      let date = String(today.getDate()).padStart(2, "0");
+      let todayTotal = year+''+month+''+date;
+
+      if(todayTotal >= '20231028') {
+        dataDay.setAttribute('data-day','2');
+        swiper.slideTo(1);
+      }
+      if(todayTotal >= '20231030') {
+        dataDay.setAttribute('data-day','3');
+        swiper.slideTo(2);
+      }
+      if(todayTotal >= '20231101') {
+        dataDay.setAttribute('data-day','4');
+        swiper.slideTo(3);
+      }
+      if(todayTotal >= '20231103') {
+        dataDay.setAttribute('data-day','5');
+      }
+    },1000);
+
+    document.querySelector('.boardView .content').style.padding = '0';
+  </script>

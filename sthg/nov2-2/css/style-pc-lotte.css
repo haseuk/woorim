@@ -1,0 +1,81 @@
+.sthg {
+  background-color: #efe3d7;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sthg .wrap {
+  font-size: 0px;
+  width: 100%;
+}
+.sthg .wrap img {
+  width: 100%;
+  vertical-align: top;
+}
+.sthg .wrap section .prd-slide {
+  width: 1200px;
+  height: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.sthg .wrap section .prd-slide img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+}
+.sthg .wrap section .prd-slide .swiper {
+  width: 988px;
+  height: 530px;
+  position: absolute;
+  left: 107px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.sthg .wrap section .prd-slide .swiper .swiper-slide {
+  display: flex;
+  justify-content: space-between;
+}
+.sthg .wrap section .prd-slide .swiper .swiper-slide a {
+  width: 320px;
+  height: 530px;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+.sthg .wrap section .prd-slide .swiper-btn {
+  width: 72px;
+  height: 72px;
+  margin-top: 0px;
+  top: 124px;
+}
+.sthg .wrap section .prd-slide .swiper-btn:after {
+  display: none;
+}
+.sthg .wrap section .prd-slide .swiper-btn.swiper-button-next {
+  right: 21px;
+}
+.sthg .wrap section .prd-slide .swiper-btn.swiper-button-prev {
+  left: 21px;
+}
+.sthg .wrap section .vid {
+  position: relative;
+}
+.sthg .wrap section .vid video {
+  width: 804px;
+  height: 802px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  margin-left: -402px;
+}
+/*# sourceMappingURL=style-pc-lotte.css.map */

@@ -1,0 +1,23 @@
+@import "../../../css/asset";
+@use-vw:true;
+@vw: 750;
+
+.sthg { .bgc(#efe3d7); margin: 0; padding: 0;
+  .wrap { .fs(0); .wf; .max-w(767); .mh-c;
+    img { .wf; .vat; }
+    section {
+      .prd-slide { .h(420);
+        .swiper { .p(0,14); .-box;
+          .swiper-slide { .rel;
+            &:after { .cnt; .wh(1,340); .bgc(#c4c4c4); .abs; .rt(0,50%); .mt(-50%); }
+            &:last-child:after { .hide; }
+          }
+        }
+      }
+      .vid { .p(0,14); .-box;
+        video { .wf; }
+      }
+      .banner { .mt(120); }
+    }
+  }
+}

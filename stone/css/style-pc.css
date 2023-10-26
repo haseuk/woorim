@@ -1,0 +1,89 @@
+@media screen and (min-width: 900px) {
+  #stone .top {
+    position: relative;
+  }
+  #stone .prds {
+    width: 730px;
+    height: 1740px;
+    position: absolute;
+    left: 86px;
+    top: 838px;
+    right: auto;
+    bottom: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #stone .prds a {
+    display: inline-block;
+    width: 350px;
+    height: 530px;
+    vertical-align: top;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 76px;
+  }
+  #stone .prds a:nth-child(5),
+  #stone .prds a:nth-child(6) {
+    margin-bottom: 0px;
+  }
+  #stone .prds2 {
+    width: 800px;
+    height: 746px;
+    left: 50px;
+    top: 580px;
+    right: auto;
+    bottom: auto;
+    justify-content: space-around;
+  }
+  #stone .prds2 a {
+    margin-bottom: 90px;
+  }
+  #stone .prds2 a:nth-child(3) {
+    width: 800px;
+    height: 110px;
+  }
+  #stone .special .time_wrap {
+    font-size: 120px;
+    line-height: 130px;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Pretendard', sans-serif;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 330px;
+    right: auto;
+    bottom: auto;
+    margin-left: -30%;
+    z-index: 1;
+  }
+  #stone .special .time_wrap .timer {
+    display: flex;
+    justify-content: space-between;
+  }
+  #stone .special .time_wrap .timer span {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  #stone .special .time_wrap .timer em {
+    display: inline-block;
+    width: 5%;
+    vertical-align: top;
+    font-style: normal;
+    margin-top: -10px;
+  }
+  #stone .swiper .swiper-btn {
+    width: 130px;
+    height: 120px;
+    top: 77px;
+    margin: 0px;
+  }
+  #stone .swiper .swiper-btn:after {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style-pc.css.map */

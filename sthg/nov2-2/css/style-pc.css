@@ -1,0 +1,80 @@
+.sthg {
+  background-color: #efe3d7;
+  margin: 0;
+  padding: 0;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sthg .wrap {
+  font-size: 0px;
+  width: 100%;
+}
+.sthg .wrap img {
+  width: 100%;
+  vertical-align: top;
+}
+.sthg .wrap section .prd-slide {
+  width: 1240px;
+  height: 547px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.sthg .wrap section .prd-slide img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+}
+.sthg .wrap section .prd-slide .swiper {
+  width: 1020px;
+  position: absolute;
+  left: 110px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.sthg .wrap section .prd-slide .swiper .swiper-slide a {
+  display: inline-block;
+  width: 330px;
+  height: 547px;
+  margin-right: 15px;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+.sthg .wrap section .prd-slide .swiper .swiper-slide a:last-child {
+  margin-right: 0px;
+}
+.sthg .wrap section .prd-slide .swiper-btn {
+  width: 75px;
+  height: 75px;
+  margin-top: 0px;
+  top: 128px;
+}
+.sthg .wrap section .prd-slide .swiper-btn:after {
+  display: none;
+}
+.sthg .wrap section .prd-slide .swiper-btn.swiper-button-next {
+  right: 22px;
+}
+.sthg .wrap section .prd-slide .swiper-btn.swiper-button-prev {
+  left: 22px;
+}
+.sthg .wrap section .vid {
+  position: relative;
+}
+.sthg .wrap section .vid video {
+  width: 830px;
+  height: 829px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  margin-left: -415px;
+}
+/*# sourceMappingURL=style-pc.css.map */

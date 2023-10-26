@@ -1,0 +1,110 @@
+#stone {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 900px;
+  overflow: hidden;
+}
+#stone img {
+  width: 100%;
+  vertical-align: top;
+  margin: 0vw;
+}
+#stone .top {
+  position: relative;
+}
+#stone .prds {
+  width: 81.11111111vw;
+  height: 193.33333333vw;
+  position: absolute;
+  left: 9.55555556vw;
+  top: 93.11111111vw;
+  right: auto;
+  bottom: auto;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+#stone .prds a {
+  display: inline-block;
+  width: 38.88888889vw;
+  height: 58.88888889vw;
+  vertical-align: top;
+  z-index: 1;
+  cursor: pointer;
+  margin-bottom: 8.44444444vw;
+}
+#stone .prds a:nth-child(5),
+#stone .prds a:nth-child(6) {
+  margin-bottom: 0vw;
+}
+#stone .prds2 {
+  width: 88.88888889vw;
+  height: 82.88888889vw;
+  left: 5.55555556vw;
+  top: 64.44444444vw;
+  right: auto;
+  bottom: auto;
+  justify-content: space-around;
+}
+#stone .prds2 a {
+  margin-bottom: 10vw;
+}
+#stone .prds2 a:nth-child(3) {
+  width: 88.88888889vw;
+  height: 12.22222222vw;
+}
+#stone .special {
+  position: relative;
+  display: none;
+}
+#stone .special .time_wrap {
+  font-size: 13.33333333vw;
+  line-height: 14.44444444vw;
+  color: 0;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Pretendard', sans-serif;
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  top: 36.66666667vw;
+  right: auto;
+  bottom: auto;
+  margin-left: -30%;
+  z-index: 1;
+}
+#stone .special .time_wrap .timer {
+  display: flex;
+  justify-content: space-between;
+}
+#stone .special .time_wrap .timer span {
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+#stone .special .time_wrap .timer em {
+  display: inline-block;
+  width: 5%;
+  vertical-align: top;
+  font-style: normal;
+  margin-top: -1.11111111vw;
+}
+#stone[data-day="1"] .special.day1,
+#stone[data-day="2"] .special.day2,
+#stone[data-day="3"] .special.day3,
+#stone[data-day="4"] .special.day4,
+#stone[data-day="5"] .special.day5 {
+  display: inline-block;
+}
+#stone .swiper .swiper-btn {
+  width: 14.44444444vw;
+  height: 13.33333333vw;
+  top: 8.55555556vw;
+  margin: 0vw;
+}
+#stone .swiper .swiper-btn:after {
+  display: none;
+}
+/*# sourceMappingURL=style-mo.css.map */

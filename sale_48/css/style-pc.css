@@ -1,0 +1,180 @@
+@media screen and (min-width: 900px) {
+  #sale_48 .top .star {
+    width: 30px;
+    height: 38px;
+    right: 30px;
+    bottom: 270px;
+    left: auto;
+    top: auto;
+    animation: blink 1.3s infinite ease;
+  }
+  #sale_48 .top .star1 {
+    width: 90px;
+    height: 119px;
+    right: 80px;
+    top: 25px;
+    left: auto;
+    bottom: auto;
+    animation: blink 1.8s infinite ease;
+  }
+  #sale_48 .top .star2 {
+    width: 43px;
+    height: 55px;
+    left: 165px;
+    top: 284px;
+    right: auto;
+    bottom: auto;
+    animation: blink 1.5s infinite ease;
+  }
+  #sale_48 .top .star3 {
+    width: 41px;
+    height: 54px;
+    right: 296px;
+    top: 300px;
+    left: auto;
+    bottom: auto;
+    animation: blink 1.3s infinite ease;
+  }
+  #sale_48 .top .star4 {
+    width: 38px;
+    height: 50px;
+    right: 80px;
+    top: 410px;
+    left: auto;
+    bottom: auto;
+    animation: blink 1.6s infinite ease;
+  }
+  #sale_48 .top .star5 {
+    width: 38px;
+    height: 50px;
+    left: 110px;
+    top: 432px;
+    right: auto;
+    bottom: auto;
+    animation: blink 1.3s infinite ease;
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  #sale_48 .top .watch {
+    width: 235px;
+    height: 237px;
+    left: -55px;
+    top: 692px;
+    right: auto;
+    bottom: auto;
+    animation: lr 2.1s infinite ease-out;
+  }
+  @keyframes lr {
+    50% {
+      margin-left: 2%;
+    }
+  }
+  #sale_48 .top .necklace {
+    width: 466px;
+    height: 433px;
+    left: -276px;
+    bottom: 53px;
+    right: auto;
+    top: auto;
+    animation: rl 1.8s infinite ease-out;
+  }
+  @keyframes rl {
+    50% {
+      margin-left: -2%;
+    }
+  }
+  #sale_48 .prd-wrap {
+    position: relative;
+  }
+  #sale_48 .prd-wrap .prds {
+    width: 730px;
+    height: 2054px;
+    position: absolute;
+    left: 86px;
+    top: 700px;
+    right: auto;
+    bottom: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #sale_48 .prd-wrap .prds a {
+    display: inline-block;
+    width: 350px;
+    height: 530px;
+    vertical-align: top;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 233px;
+  }
+  #sale_48 .prd-wrap .prds a:nth-child(5),
+  #sale_48 .prd-wrap .prds a:nth-child(6) {
+    margin-bottom: 0px;
+  }
+  #sale_48 .prd-wrap .prds2 {
+    width: 800px;
+    height: 746px;
+    left: 50px;
+    top: 580px;
+    right: auto;
+    bottom: auto;
+    justify-content: space-around;
+  }
+  #sale_48 .prd-wrap .prds2 a {
+    margin-bottom: 90px;
+  }
+  #sale_48 .prd-wrap .prds2 a:nth-child(3) {
+    width: 800px;
+    height: 110px;
+  }
+  #sale_48 .special {
+    position: relative;
+    display: none;
+  }
+  #sale_48 .special .time_wrap {
+    font-size: 120px;
+    line-height: 130px;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Pretendard', sans-serif;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    right: auto;
+    bottom: auto;
+    margin-left: -30%;
+    z-index: 1;
+  }
+  #sale_48 .special .time_wrap .timer {
+    display: flex;
+    justify-content: space-between;
+  }
+  #sale_48 .special .time_wrap .timer span {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  #sale_48 .special .time_wrap .timer em {
+    display: inline-block;
+    width: 5%;
+    vertical-align: top;
+    font-style: normal;
+    margin-top: -10px;
+  }
+  #sale_48 .swiper .swiper-btn {
+    width: 130px;
+    height: 120px;
+    top: 77px;
+    margin: 0px;
+  }
+  #sale_48 .swiper .swiper-btn:after {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style-pc.css.map */

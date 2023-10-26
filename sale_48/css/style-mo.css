@@ -1,0 +1,203 @@
+#sale_48 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 900px;
+  overflow: hidden;
+}
+#sale_48 img {
+  width: 100%;
+  vertical-align: top;
+  margin: 0vw;
+}
+#sale_48 .top {
+  position: relative;
+}
+#sale_48 .top .ani {
+  position: absolute;
+}
+#sale_48 .top .star {
+  width: 3.33333333vw;
+  height: 4.22222222vw;
+  right: 3.33333333vw;
+  bottom: 30vw;
+  left: auto;
+  top: auto;
+  animation: blink 1.3s infinite ease;
+}
+#sale_48 .top .star1 {
+  width: 10vw;
+  height: 13.22222222vw;
+  right: 8.88888889vw;
+  top: 2.77777778vw;
+  left: auto;
+  bottom: auto;
+  animation: blink 1.8s infinite ease;
+}
+#sale_48 .top .star2 {
+  width: 4.77777778vw;
+  height: 6.11111111vw;
+  left: 18.33333333vw;
+  top: 31.55555556vw;
+  right: auto;
+  bottom: auto;
+  animation: blink 1.5s infinite ease;
+}
+#sale_48 .top .star3 {
+  width: 4.55555556vw;
+  height: 6vw;
+  right: 32.88888889vw;
+  top: 33.33333333vw;
+  left: auto;
+  bottom: auto;
+  animation: blink 1.3s infinite ease;
+}
+#sale_48 .top .star4 {
+  width: 4.22222222vw;
+  height: 5.55555556vw;
+  right: 8.88888889vw;
+  top: 45.55555556vw;
+  left: auto;
+  bottom: auto;
+  animation: blink 1.6s infinite ease;
+}
+#sale_48 .top .star5 {
+  width: 4.22222222vw;
+  height: 5.55555556vw;
+  left: 12.22222222vw;
+  top: 48vw;
+  right: auto;
+  bottom: auto;
+  animation: blink 1.3s infinite ease;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+#sale_48 .top .watch {
+  width: 26.11111111vw;
+  height: 26.33333333vw;
+  left: -6.11111111vw;
+  top: 76.88888889vw;
+  right: auto;
+  bottom: auto;
+  animation: lr 2.1s infinite ease-out;
+}
+@keyframes lr {
+  50% {
+    margin-left: 2%;
+  }
+}
+#sale_48 .top .necklace {
+  width: 51.77777778vw;
+  height: 48.11111111vw;
+  left: -30.66666667vw;
+  bottom: 5.88888889vw;
+  right: auto;
+  top: auto;
+  animation: rl 1.8s infinite ease-out;
+}
+@keyframes rl {
+  50% {
+    margin-left: -2%;
+  }
+}
+#sale_48 .prd-wrap {
+  position: relative;
+}
+#sale_48 .prd-wrap .prds {
+  width: 81.11111111vw;
+  height: 228.22222222vw;
+  position: absolute;
+  left: 9.55555556vw;
+  top: 77.77777778vw;
+  right: auto;
+  bottom: auto;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+#sale_48 .prd-wrap .prds a {
+  display: inline-block;
+  width: 38.88888889vw;
+  height: 58.88888889vw;
+  vertical-align: top;
+  z-index: 1;
+  cursor: pointer;
+  margin-bottom: 25.88888889vw;
+}
+#sale_48 .prd-wrap .prds a:nth-child(5),
+#sale_48 .prd-wrap .prds a:nth-child(6) {
+  margin-bottom: 0vw;
+}
+#sale_48 .prd-wrap .prds2 {
+  width: 88.88888889vw;
+  height: 82.88888889vw;
+  left: 5.55555556vw;
+  top: 64.44444444vw;
+  right: auto;
+  bottom: auto;
+  justify-content: space-around;
+}
+#sale_48 .prd-wrap .prds2 a {
+  margin-bottom: 10vw;
+}
+#sale_48 .prd-wrap .prds2 a:nth-child(3) {
+  width: 88.88888889vw;
+  height: 12.22222222vw;
+}
+#sale_48 .special {
+  position: relative;
+  display: none;
+}
+#sale_48 .special .time_wrap {
+  font-size: 13.33333333vw;
+  line-height: 14.44444444vw;
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Pretendard', sans-serif;
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  top: 33.33333333vw;
+  right: auto;
+  bottom: auto;
+  margin-left: -30%;
+  z-index: 1;
+}
+#sale_48 .special .time_wrap .timer {
+  display: flex;
+  justify-content: space-between;
+}
+#sale_48 .special .time_wrap .timer span {
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+#sale_48 .special .time_wrap .timer em {
+  display: inline-block;
+  width: 5%;
+  vertical-align: top;
+  font-style: normal;
+  margin-top: -1.11111111vw;
+}
+#sale_48[data-day="1"] .special.day1,
+#sale_48[data-day="2"] .special.day2,
+#sale_48[data-day="3"] .special.day3,
+#sale_48[data-day="4"] .special.day4,
+#sale_48[data-day="5"] .special.day5 {
+  display: inline-block;
+}
+#sale_48 .swiper .swiper-btn {
+  width: 14.44444444vw;
+  height: 13.33333333vw;
+  top: 8.55555556vw;
+  margin: 0vw;
+}
+#sale_48 .swiper .swiper-btn:after {
+  display: none;
+}
+/*# sourceMappingURL=style-mo.css.map */

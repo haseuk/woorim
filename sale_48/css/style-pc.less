@@ -1,0 +1,45 @@
+@import "../../css/asset";
+
+@media screen and(min-width: 900px) {
+  #sale_48 {
+    .top {
+      .star { .wh(30,38); .rb(30,270); animation: blink 1.3s infinite ease; }
+      .star1 { .wh(90,119); .rt(80,25); animation: blink 1.8s infinite ease; }
+      .star2 { .wh(43,55); .lt(165,284); animation: blink 1.5s infinite ease; }
+      .star3 { .wh(41,54); .rt(296,300); animation: blink 1.3s infinite ease; }
+      .star4 { .wh(38,50); .rt(80,410); animation: blink 1.6s infinite ease; }
+      .star5 { .wh(38,50); .lt(110,432); animation: blink 1.3s infinite ease; }
+      @keyframes blink { 50% { opacity: 0; }}
+      .watch { .wh(235,237); .lt(-55,692); animation: lr 2.1s infinite ease-out; }
+      @keyframes lr { 50% { margin-left: 2%; }}
+      .necklace { .wh(466,433); .lb(-276,53); animation: rl 1.8s infinite ease-out; }
+      @keyframes rl { 50% { margin-left: -2%; }}
+    }
+    .prd-wrap { .rel;
+      .prds { .wh(730,2054); .abs; .lt(86,700); .flex; .space-between; .flex-wrap;
+        a { .ib; .wh(350,530); .vat; .z(1); .pointer; .mb(233);
+          &:nth-child(5), &:nth-child(6) { .mb(0); }
+        }
+      }
+      .prds2 { .wh(800,746); .lt(50,580); .space-around;
+        a { .mb(90);
+          &:nth-child(3) { .wh(800,110); }
+        }
+      }
+    }
+    .special { .rel; .hide;
+      .time_wrap { .fs(120,130); .c(#000); .tc; .medium; font-family:'Pretendard',sans-serif; .w(60%); .abs; .lt(50%,300); .ml(-30%); .z(1);
+        .timer { .flex; .space-between;
+          span { .w(30%); .ib; .vam; .tc; }
+          em { .ib; .w(5%); .vat; font-style: normal; .mt(-10); }
+        }
+      }
+    }
+
+    .swiper {
+      .swiper-btn { .wh(130,120); .t(77); .m(0);
+        &:after { .hide; }
+      }
+    }
+  }
+}

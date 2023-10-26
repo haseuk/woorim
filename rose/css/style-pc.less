@@ -1,0 +1,31 @@
+@import "../../css/asset";
+
+@media screen and(min-width: 900px) {
+  #rose {
+    .top { .rel; }
+    .prds { .wh(730,1740); .abs; .lt(86,838); .flex; .space-between; .flex-wrap;
+      a { .ib; .wh(350,530); .vat; .z(1); .pointer; .mb(76);
+        &:nth-child(5), &:nth-child(6) { .mb(0); }
+      }
+    }
+    .prds2 { .wh(800,746); .lt(50,580); .space-around;
+      a { .mb(90);
+        &:nth-child(3) { .wh(800,110); }
+      }
+    }
+    .special {
+      .time_wrap { .fs(120,130); .c(#000); .tc; .medium; font-family:'Pretendard',sans-serif; .w(60%); .abs; .lt(50%,330); .ml(-30%); .z(1);
+        .timer { .flex; .space-between;
+          span { .w(30%); .ib; .vam; .tc; }
+          em { .ib; .w(5%); .vat; font-style: normal; .mt(-10); }
+        }
+      }
+    }
+
+    .swiper {
+      .swiper-btn { .wh(130,120); .t(77); .m(0);
+        &:after { .hide; }
+      }
+    }
+  }
+}
