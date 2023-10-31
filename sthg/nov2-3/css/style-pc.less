@@ -1,0 +1,32 @@
+@import "../../../css/asset";
+
+.nov2-3 {
+  img { .wf; .vat; }
+  .video_y { .cover('../img/pc/vid-bg.png'); .h(704); .bg-yc;
+    iframe { .wh(704,704); .mh-c; .block; }
+  }
+  section { .cover('../img/pc/bg.png'); .h(2376); .no-repeat;
+    .title { .w(1040); .mh-c; .crop;
+      img { transform: translateY(100%); animation: movIn 2s 0.25s ease-out forwards; }
+    }
+    @keyframes movIn { 0% { transform: translateY(100%)} 100% { transform: translateY(0)}}
+    .prd-wrap { .w(1040); .mh-c; .flex; .space-between; .mb(12);
+      .vis-wrap { .wh(520,628); .crop;
+        .vis { animation: rotate 30s linear infinite; }
+      }
+      @keyframes rotate { 0% { transform: rotate(0deg)} 100% { transform: rotate(360deg)}}
+      .prd-items { .wh(508,628); display: grid; gap: 12px;  grid-template-columns: repeat(2, 1fr);
+        .btn { .z(1); .pointer; .rel; .crop; .rel;
+          .over { .abs; .lt; transform: translateY(100%); transition: transform 0.5s; .ease-out; background: rgba(0,0,0,0.5); }
+          &:hover .over { transform: translateY(0); }
+        }
+      }
+      &.on .vis { .o(0.5); }
+    }
+    .dal { .rel;
+      .dal-img { .rel; .z(1); }
+      .circle { .wh(138,138); .abs; .rb(60,98); animation: spin 10s linear; }
+      @keyframes spin { 0% { transform: rotate(0deg)} 100% { transform: rotate(360deg)}}
+    }
+  }
+}

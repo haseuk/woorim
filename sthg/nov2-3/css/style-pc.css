@@ -1,0 +1,122 @@
+.nov2-3 img {
+  width: 100%;
+  vertical-align: top;
+}
+.nov2-3 .video_y {
+  background-image: url('../img/pc/vid-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 704px;
+  background-position-y: center;
+}
+.nov2-3 .video_y iframe {
+  width: 704px;
+  height: 704px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.nov2-3 section {
+  background-image: url('../img/pc/bg.png');
+  background-size: cover;
+  height: 2376px;
+  background-repeat: no-repeat;
+}
+.nov2-3 section .title {
+  width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.nov2-3 section .title img {
+  transform: translateY(100%);
+  animation: movIn 2s 0.25s ease-out forwards;
+}
+@keyframes movIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.nov2-3 section .prd-wrap {
+  width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.nov2-3 section .prd-wrap .vis-wrap {
+  width: 520px;
+  height: 628px;
+  overflow: hidden;
+}
+.nov2-3 section .prd-wrap .vis-wrap .vis {
+  animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.nov2-3 section .prd-wrap .prd-items {
+  width: 508px;
+  height: 628px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.nov2-3 section .prd-wrap .prd-items .btn {
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.nov2-3 section .prd-wrap .prd-items .btn .over {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+  transition-timing-function: ease-out;
+  background: rgba(0, 0, 0, 0.5);
+}
+.nov2-3 section .prd-wrap .prd-items .btn:hover .over {
+  transform: translateY(0);
+}
+.nov2-3 section .prd-wrap.on .vis {
+  opacity: 0.5;
+}
+.nov2-3 section .dal {
+  position: relative;
+}
+.nov2-3 section .dal .dal-img {
+  position: relative;
+  z-index: 1;
+}
+.nov2-3 section .dal .circle {
+  width: 138px;
+  height: 138px;
+  position: absolute;
+  right: 60px;
+  bottom: 98px;
+  left: auto;
+  top: auto;
+  animation: spin 10s linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style-pc.css.map */

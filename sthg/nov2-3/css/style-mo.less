@@ -2,3 +2,32 @@
 @use-vw:true;
 @vw: 750;
 
+.nov2-3 {
+  img { .wf; .vat; }
+  section { .contain('../img/mo/bg.png'); .wh(750,2843);
+    .title { .crop;
+      img { transform: translateY(100%); animation: movIn 1.2s 0.25s ease-out forwards; }
+    }
+    @keyframes movIn { 0% { transform: translateY(100%)} 100% { transform: translateY(0)}}
+    .prd-wrap { .flex; .space-between; .mb(150);
+      .vis { .w(364); transition: opacity 0.2s ease-out; }
+      .swiper { .w(375); .ml(15);
+        .swiper-slide {
+          .btn { .wh(356,212); .ib; .z(1); .pointer; .rel;
+            img { image-rendering: auto; }
+            &:first-child { .mb(20);
+              &:after { .cnt; .wh(100%,1); .bgc(#4d7293); .-box; .abs; .lb(0,-10); }
+            }
+          }
+        }
+      }
+      &.prd3 { .mb(94); }
+      &.on .vis { .o(0.5); }
+    }
+    .dal { .rel;
+      .dal-img { .rel; .z(1); }
+      .circle { .wh(138,138); .abs; .rb(60,98); animation: spin 10s linear infinite; }
+      @keyframes spin { 0% { transform: rotate(0deg)} 100% { transform: rotate(360deg)}}
+    }
+  }
+}
