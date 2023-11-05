@@ -6,11 +6,9 @@
   img { .wf; .vat; }
   section { .contain('../img/mo/bg.png'); .wh(750,2843);
     .title { .crop;
-      img { transform: translateY(100%); animation: movIn 1.2s 0.25s ease-out forwards; }
     }
-    @keyframes movIn { 0% { transform: translateY(100%)} 100% { transform: translateY(0)}}
-    .prd-wrap { .flex; .space-between; .mb(150);
-      .vis { .w(364); transition: opacity 0.2s ease-out; }
+    .prd-wrap { .flex; .space-between; .mb(50);
+      .vis { .w(364); transition: opacity 0.1s ease-out; }
       .swiper { .w(375); .ml(15);
         .swiper-slide {
           .btn { .wh(356,212); .ib; .z(1); .pointer; .rel;
@@ -21,13 +19,23 @@
           }
         }
       }
-      &.prd3 { .mb(94); }
       &.on .vis { .o(0.5); }
     }
     .dal { .rel;
-      .dal-img { .rel; .z(1); }
-      .circle { .wh(138,138); .abs; .rb(60,98); animation: spin 10s linear infinite; }
-      @keyframes spin { 0% { transform: rotate(0deg)} 100% { transform: rotate(360deg)}}
+      .bott-vis { .rel; .z(1); }
+      .bg { .wh(720,624); .abs; .lt(15,0); .crop;
+        .bott-bg { .f; animation: spin 150s linear infinite; }
+        @keyframes spin {
+          0% { transform: scale(1.7) rotate(0deg)}
+          100% { transform: scale(1.7) rotate(360deg)}
+        }
+      }
+      .ani { .wh(42,54); .abs; .z(1); }
+      .star1 { .rt(195,145); animation: blink 2s infinite ease-out; }
+      .star2 { .rt(204,311); animation: blink 2.3s infinite ease-out; }
+      .star3 { .lt(154,258); animation: blink 2.5s infinite ease-out; }
+      .star4 { .lt(260,484); animation: blink 2.1s infinite ease-out; }
+      @keyframes blink { 50% { opacity: 0; }}
     }
   }
 }

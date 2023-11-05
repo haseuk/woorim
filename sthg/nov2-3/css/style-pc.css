@@ -52,17 +52,19 @@
   width: 520px;
   height: 628px;
   overflow: hidden;
+  position: relative;
 }
 .nov2-3 section .prd-wrap .vis-wrap .vis {
-  animation: rotate 30s linear infinite;
+  position: relative;
+  z-index: 1;
 }
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.nov2-3 section .prd-wrap .vis-wrap .bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  image-rendering: auto;
 }
 .nov2-3 section .prd-wrap .prd-items {
   width: 508px;
@@ -93,6 +95,39 @@
 }
 .nov2-3 section .prd-wrap.on .vis {
   opacity: 0.5;
+}
+.nov2-3 section .prd-wrap.prd1 .bg {
+  animation: megascope1 20s alternate linear infinite;
+}
+@keyframes megascope1 {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.7) rotate(-7deg);
+  }
+}
+.nov2-3 section .prd-wrap.prd2 .bg {
+  animation: rotater 300s linear infinite;
+}
+@keyframes rotater {
+  0% {
+    transform: scale(1.6) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.6) rotate(360deg);
+  }
+}
+.nov2-3 section .prd-wrap.prd3 .bg {
+  animation: megascope2 40s alternate linear infinite;
+}
+@keyframes megascope2 {
+  100% {
+    transform: scale(1.7) rotate(7deg);
+  }
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
 }
 .nov2-3 section .dal {
   position: relative;

@@ -12,26 +12,14 @@
 .nov2-3 section .title {
   overflow: hidden;
 }
-.nov2-3 section .title img {
-  transform: translateY(100%);
-  animation: movIn 1.2s 0.25s ease-out forwards;
-}
-@keyframes movIn {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .nov2-3 section .prd-wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20vw;
+  margin-bottom: 6.66666667vw;
 }
 .nov2-3 section .prd-wrap .vis {
   width: 48.53333333vw;
-  transition: opacity 0.2s ease-out;
+  transition: opacity 0.1s ease-out;
 }
 .nov2-3 section .prd-wrap .swiper {
   width: 50vw;
@@ -64,35 +52,76 @@
   right: auto;
   top: auto;
 }
-.nov2-3 section .prd-wrap.prd3 {
-  margin-bottom: 12.53333333vw;
-}
 .nov2-3 section .prd-wrap.on .vis {
   opacity: 0.5;
 }
 .nov2-3 section .dal {
   position: relative;
 }
-.nov2-3 section .dal .dal-img {
+.nov2-3 section .dal .bott-vis {
   position: relative;
   z-index: 1;
 }
-.nov2-3 section .dal .circle {
-  width: 18.4vw;
-  height: 18.4vw;
+.nov2-3 section .dal .bg {
+  width: 96vw;
+  height: 83.2vw;
   position: absolute;
-  right: 8vw;
-  bottom: 13.06666667vw;
-  left: auto;
-  top: auto;
-  animation: spin 10s linear infinite;
+  left: 2vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  overflow: hidden;
+}
+.nov2-3 section .dal .bg .bott-bg {
+  width: 100%;
+  height: 100%;
+  animation: spin 150s linear infinite;
 }
 @keyframes spin {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1.7) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: scale(1.7) rotate(360deg);
+  }
+}
+.nov2-3 section .dal .ani {
+  width: 5.6vw;
+  height: 7.2vw;
+  position: absolute;
+  z-index: 1;
+}
+.nov2-3 section .dal .star1 {
+  right: 26vw;
+  top: 19.33333333vw;
+  left: auto;
+  bottom: auto;
+  animation: blink 2s infinite ease-out;
+}
+.nov2-3 section .dal .star2 {
+  right: 27.2vw;
+  top: 41.46666667vw;
+  left: auto;
+  bottom: auto;
+  animation: blink 2.3s infinite ease-out;
+}
+.nov2-3 section .dal .star3 {
+  left: 20.53333333vw;
+  top: 34.4vw;
+  right: auto;
+  bottom: auto;
+  animation: blink 2.5s infinite ease-out;
+}
+.nov2-3 section .dal .star4 {
+  left: 34.66666667vw;
+  top: 64.53333333vw;
+  right: auto;
+  bottom: auto;
+  animation: blink 2.1s infinite ease-out;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=style-mo.css.map */

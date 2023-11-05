@@ -1,24 +1,210 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>48시간 특가</title>
-  <link rel="stylesheet" href="css/style-mo.css">
-  <link rel="stylesheet" href="css/style-pc.css">
-</head>
-<body style="padding: 0;margin: 0;">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <style>
+  #rose {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 900px;
+    overflow: hidden;
+  }
+  #rose img {
+    width: 100%;
+    vertical-align: top;
+    margin: 0vw;
+  }
+  #rose .top {
+    position: relative;
+  }
+  #rose .prds {
+    width: 81.11111111vw;
+    height: 193.33333333vw;
+    position: absolute;
+    left: 9.55555556vw;
+    top: 93.11111111vw;
+    right: auto;
+    bottom: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #rose .prds a {
+    display: inline-block;
+    width: 38.88888889vw;
+    height: 58.88888889vw;
+    vertical-align: top;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 8.44444444vw;
+  }
+  #rose .prds a:nth-child(5),
+  #rose .prds a:nth-child(6) {
+    margin-bottom: 0vw;
+  }
+  #rose .prds2 {
+    width: 88.88888889vw;
+    height: 82.88888889vw;
+    left: 5.55555556vw;
+    top: 64.44444444vw;
+    right: auto;
+    bottom: auto;
+    justify-content: space-around;
+  }
+  #rose .prds2 a {
+    margin-bottom: 10vw;
+  }
+  #rose .prds2 a:nth-child(3) {
+    width: 88.88888889vw;
+    height: 12.22222222vw;
+  }
+  #rose .special {
+    position: relative;
+    display: none;
+  }
+  #rose .special .time_wrap {
+    font-size: 13.33333333vw;
+    line-height: 14.44444444vw;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Pretendard', sans-serif;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 36.66666667vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -30%;
+    z-index: 1;
+  }
+  #rose .special .time_wrap .timer {
+    display: flex;
+    justify-content: space-between;
+  }
+  #rose .special .time_wrap .timer span {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  #rose .special .time_wrap .timer em {
+    display: inline-block;
+    width: 5%;
+    vertical-align: top;
+    font-style: normal;
+    margin-top: -1.11111111vw;
+  }
+  #rose[data-day="1"] .special.day1,
+  #rose[data-day="2"] .special.day2,
+  #rose[data-day="3"] .special.day3,
+  #rose[data-day="4"] .special.day4,
+  #rose[data-day="5"] .special.day5 {
+    display: inline-block;
+  }
+  #rose .swiper .swiper-btn {
+    width: 14.44444444vw;
+    height: 13.33333333vw;
+    top: 8.55555556vw;
+    margin: 0vw;
+  }
+  #rose .swiper .swiper-btn:after {
+    display: none;
+  }
+  @media screen and (min-width: 900px) {
+    #rose .top {
+      position: relative;
+    }
+    #rose .prds {
+      width: 730px;
+      height: 1740px;
+      position: absolute;
+      left: 86px;
+      top: 838px;
+      right: auto;
+      bottom: auto;
+      justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #rose .prds a {
+      display: inline-block;
+      width: 350px;
+      height: 530px;
+      vertical-align: top;
+      z-index: 1;
+      cursor: pointer;
+      margin-bottom: 76px;
+    }
+    #rose .prds a:nth-child(5),
+    #rose .prds a:nth-child(6) {
+      margin-bottom: 0px;
+    }
+    #rose .prds2 {
+      width: 800px;
+      height: 746px;
+      left: 50px;
+      top: 580px;
+      right: auto;
+      bottom: auto;
+      justify-content: space-around;
+    }
+    #rose .prds2 a {
+      margin-bottom: 90px;
+    }
+    #rose .prds2 a:nth-child(3) {
+      width: 800px;
+      height: 110px;
+    }
+    #rose .special .time_wrap {
+      font-size: 120px;
+      line-height: 130px;
+      color: #000;
+      text-align: center;
+      font-weight: 500;
+      font-family: 'Pretendard', sans-serif;
+      width: 60%;
+      position: absolute;
+      left: 50%;
+      top: 330px;
+      right: auto;
+      bottom: auto;
+      margin-left: -30%;
+      z-index: 1;
+    }
+    #rose .special .time_wrap .timer {
+      display: flex;
+      justify-content: space-between;
+    }
+    #rose .special .time_wrap .timer span {
+      width: 30%;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+    }
+    #rose .special .time_wrap .timer em {
+      display: inline-block;
+      width: 5%;
+      vertical-align: top;
+      font-style: normal;
+      margin-top: -10px;
+    }
+    #rose .swiper .swiper-btn {
+      width: 130px;
+      height: 120px;
+      top: 77px;
+      margin: 0px;
+    }
+    #rose .swiper .swiper-btn:after {
+      display: none;
+    }
+  }
 </style>
 
   <div id="rose" data-day="1">
     <div class="top">
-      <img src="img/top.png" alt="" usemap="#top">
+      <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/jeum/top.png" alt="" usemap="#top">
       <map name="top">
         <area shape="rect" coords="86,838,435,1367" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4%ED%99%94%EC%9D%B4%ED%8A%B8%ED%86%A0%ED%8C%8C%EC%A6%88-rs1083/8339/category/33/display/1/" alt="">
         <area shape="rect" coords="464,838,814,1367" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4%ED%99%94%EC%9D%B4%ED%8A%B8%ED%86%A0%ED%8C%8C%EC%A6%88-rs1084/8340/category/32/display/1/" alt="">
@@ -55,7 +241,7 @@
       </script>
 
       <div class="prd-wrap prd1">
-        <img src="img/prd1.png" alt="" usemap="#sc1">
+        <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/jeum/prd1.png" alt="" usemap="#sc1">
         <map name="sc1">
           <area shape="rect" coords="86,580,436,1130" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-ra0072/8114/category/32/display/1/" alt="">
           <area shape="rect" coords="464,580,812,1130" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-rs1070/8345/category/33/display/1/" alt="">
@@ -90,7 +276,7 @@
       </script>
 
       <div class="prd-wrap prd2">
-        <img src="img/prd2.png" alt="" usemap="#sc2">
+        <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/jeum/prd2.png" alt="" usemap="#sc2">
         <map name="sc2">
           <area shape="rect" coords="86,580,436,1130" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%EA%B7%80%EA%B1%B8%EC%9D%B4-rk0223/7961/category/32/display/1/" alt="">
           <area shape="rect" coords="464,580,812,1130" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%EB%AA%A9%EA%B1%B8%EC%9D%B4-rk0220/8003/category/33/display/1/" alt="">
@@ -125,7 +311,7 @@
       </script>
 
       <div class="prd-wrap prd3">
-        <img src="img/prd3.png" alt="" usemap="#sc3">
+        <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/jeum/prd3.png" alt="" usemap="#sc3">
         <map name="sc3">
           <area shape="rect" coords="86,580,436,1130" href="https://www.woorimfamily.com/product/%EC%85%80%EB%9F%BDpick-%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-%EC%95%84%EC%B9%98%EC%95%A4%EC%95%84%EC%B9%98-rl0189/7955/category/32/display/1/" alt="">
           <area shape="rect" coords="464,580,812,1130" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%EC%8A%A4%ED%86%A4-%EC%B2%B4%EC%9D%B8-%ED%8C%94%EC%B0%8C-rc0365/8061/category/51/display/1/" alt="">
@@ -160,12 +346,12 @@
       </script>
 
       <div class="prd-wrap prd4">
-        <img src="img/prd4.png" alt="" usemap="#sc4">
-        <map name="sc4">
-          <area shape="rect" coords="86,580,436,1130" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rn0002/7947/category/32/display/1/" alt="">
-          <area shape="rect" coords="464,580,812,1130" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-%EC%95%84%EC%B9%98%EC%95%A4%EC%95%84%EC%B9%98-rn0010/7994/category/33/display/1/" alt="">
-          <area shape="rect" coords="54,1208,847,1312" href="" alt="">
-        </map>
+        <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/jeum/prd4.png" width="900" alt="">
+        <div class="prds prds2">
+          <a href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rn0002/7947/category/32/display/1/" ></a>
+          <a href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-%EC%95%84%EC%B9%98%EC%95%A4%EC%95%84%EC%B9%98-rn0010/7994/category/33/display/1/" ></a>
+          <a href="https://woorimfamily.com/article/%EC%9D%B4%EB%B2%A4%ED%8A%B8/8/8693/#special" ></a>
+        </div>
       </div>
     </div>
 
@@ -195,24 +381,20 @@
       </script>
 
       <div class="prd-wrap prd5">
-        <img src="img/prd5.png" alt="" usemap="#sc5">
-        <map name="sc5">
-          <area shape="rect" coords="86,580,436,1130" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C-%EB%AA%A9%EA%B1%B8%EC%9D%B4%ED%99%94%EC%9D%B4%ED%8A%B8%EA%B3%A8%EB%93%9C-ru0042/7946/category/33/display/1/" alt="">
-          <area shape="rect" coords="464,580,812,1130" href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rs1203/8330/category/32/display/1/" alt="">
-          <area shape="rect" coords="54,1208,847,1312" href="" alt="">
-        </map>
+        <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/jeum/prd5.png"  width="900"  alt="" usemap="#sc5">
+        <div class="prds prds2">
+          <a href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C-%EB%AA%A9%EA%B1%B8%EC%9D%B4%ED%99%94%EC%9D%B4%ED%8A%B8%EA%B3%A8%EB%93%9C-ru0042/7946/category/33/display/1/" ></a>
+          <a href="https://www.woorimfamily.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rs1203/8330/category/32/display/1/" ></a>
+          <a href="https://woorimfamily.com/article/%EC%9D%B4%EB%B2%A4%ED%8A%B8/8/8693/#special" ></a>
+        </div>
       </div>
     </div>
 
-    <img src="img/bottom.png" alt="">
+    <img src="https://woorimfmgimage.cafe24.com/imagesB/2023/publicity/familysale/jeum/bottom.png" width="900"   alt="">
 
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js" integrity="sha512-sXgF3JImNbesKnmCuR5AE5WPQo6Z8xJMYRvDknGyc0eTWL62pqgEG4Auk9d0VnstzyhRNzPak8AyemFJq7a6/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-    $(document).ready(function() {
-      $('map').imageMapResize();
-    });
-    let dataDay = document.querySelector('#gallery_oclock');
+    let dataDay = document.querySelector('#rose');
     setInterval(function() {
       let today = new Date();
       let year = String(today.getFullYear()).padStart(4, "0");
@@ -234,5 +416,3 @@
       }
     },1000);
   </script>
-</body>
-</html>

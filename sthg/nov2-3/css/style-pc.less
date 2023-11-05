@@ -11,10 +11,10 @@
     }
     @keyframes movIn { 0% { transform: translateY(100%)} 100% { transform: translateY(0)}}
     .prd-wrap { .w(1040); .mh-c; .flex; .space-between; .mb(12);
-      .vis-wrap { .wh(520,628); .crop;
-        .vis { animation: rotate 30s linear infinite; }
+      .vis-wrap { .wh(520,628); .crop; .rel;
+        .vis { .rel; .z(1); }
+        .bg { .abs; .lt; image-rendering: auto; }
       }
-      @keyframes rotate { 0% { transform: rotate(0deg)} 100% { transform: rotate(360deg)}}
       .prd-items { .wh(508,628); display: grid; gap: 12px;  grid-template-columns: repeat(2, 1fr);
         .btn { .z(1); .pointer; .rel; .crop; .rel;
           .over { .abs; .lt; transform: translateY(100%); transition: transform 0.5s; .ease-out; background: rgba(0,0,0,0.5); }
@@ -22,6 +22,27 @@
         }
       }
       &.on .vis { .o(0.5); }
+      &.prd1 {
+        .bg { animation: megascope1 20s alternate linear infinite; }
+        @keyframes megascope1 {
+          0% { transform: scale(1) rotate(0deg)}
+          100% { transform: scale(1.7) rotate(-7deg)}
+        }
+      }
+      &.prd2 {
+        .bg { animation: rotater 300s linear infinite; }
+        @keyframes rotater {
+          0% { transform: scale(1.6) rotate(0deg)}
+          100% { transform: scale(1.6) rotate(360deg)}
+        }
+      }
+      &.prd3 {
+        .bg { animation: megascope2 40s alternate linear infinite; }
+        @keyframes megascope2 {
+          100% { transform: scale(1.7) rotate(7deg)}
+          0% { transform: scale(1) rotate(0deg)}
+        }
+      }
     }
     .dal { .rel;
       .dal-img { .rel; .z(1); }
