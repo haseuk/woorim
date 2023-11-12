@@ -1,0 +1,52 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 854;
+
+#content {
+  .holi-wrap { .fs(0); .h(2600); .rel; .crop;
+    img { .wf; .vat; }
+    .bg { .wh(854,2600); .abs; .lt; .z(1); }
+    .title-bg { .wh(854,743); .abs; .lt;
+      div { .wh(854,743); .abs; .lt; background: url("../img/mo/title-bg.png") 0 0 no-repeat;
+        &.bg2 { .mt(30); animation-delay: 0.2s; animation: twinkle 0.2s infinite linear; }
+        &.bg3 { .ml(30); animation-delay: 0.4s; animation: twinkle 0.2s infinite linear; }
+        &.bg4 { .mt(60); animation-delay: 0.6s; animation: twinkle 0.2s infinite linear; }
+        &.bg5 { .ml(60); animation-delay: 0.8s; animation: twinkle 0.2s infinite linear; }
+        &.bg6 { .mt(90); animation-delay: 1.0s; animation: twinkle 0.2s infinite linear; }
+      }
+    }
+    @keyframes twinkle {
+      0% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    .card-flip { .mt(540); .p(0,38); .-box; .rel; .z(1);
+      .card-wrap { .flex; .space-between;
+        .card-inner  { .wh(253,372); .rel; .m(0,10,20,0);
+          &:nth-child(n+3) { .mr(0); }
+          .cards { box-shadow: 0 0 15px 1px rgba(161,142,90,0.5); .br(20); .abs; .lt; .f; transition: transform 3s; transform-style: preserve-3d; transform-origin: center center;
+            img { .f; .abs; .lt; backface-visibility: hidden; }
+            .bk { transform: rotateY(180deg); }
+            &.flip1, &.flip2, &.flip3, &.flip4, &.flip5 { animation: flip 10s infinite ease-out; }
+            &.flip1 { animation-delay: 1s; }
+            &.flip3 { animation-delay: 6s; }
+            &.flip4 { animation-delay: 7s }
+            &.flip5 { animation-delay: 2s; }
+            @keyframes flip {
+              0% { transform: rotateY(0deg); }
+              20% { transform: rotateY(180deg); }
+              40% { transform: rotateY(0deg); }
+            }
+          }
+          .btn { .f; .abs; .lt; .z(1); pointer-events: none;
+            &.flip-btn { pointer-events: auto; }
+          }
+        }
+        &.open .card-inner {
+          .cards { animation: none; transform: rotateY(180deg); transition: transform 0.5s; }
+          .btn { pointer-events: auto; }
+        }
+      }
+    }
+  }
+}

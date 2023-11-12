@@ -1,0 +1,178 @@
+#content .holi-wrap {
+  font-size: 0vw;
+  height: 304.44964871vw;
+  position: relative;
+  overflow: hidden;
+}
+#content .holi-wrap img {
+  width: 100%;
+  vertical-align: top;
+}
+#content .holi-wrap .bg {
+  width: 100vw;
+  height: 304.44964871vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+}
+#content .holi-wrap .title-bg {
+  width: 100vw;
+  height: 87.00234192vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+}
+#content .holi-wrap .title-bg div {
+  width: 100vw;
+  height: 87.00234192vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  background: url("../img/mo/title-bg.png") 0 0 no-repeat;
+}
+#content .holi-wrap .title-bg div.bg2 {
+  margin-top: 3.51288056vw;
+  animation-delay: 0.2s;
+  animation: twinkle 0.2s infinite linear;
+}
+#content .holi-wrap .title-bg div.bg3 {
+  margin-left: 3.51288056vw;
+  animation-delay: 0.4s;
+  animation: twinkle 0.2s infinite linear;
+}
+#content .holi-wrap .title-bg div.bg4 {
+  margin-top: 7.02576112vw;
+  animation-delay: 0.6s;
+  animation: twinkle 0.2s infinite linear;
+}
+#content .holi-wrap .title-bg div.bg5 {
+  margin-left: 7.02576112vw;
+  animation-delay: 0.8s;
+  animation: twinkle 0.2s infinite linear;
+}
+#content .holi-wrap .title-bg div.bg6 {
+  margin-top: 10.53864169vw;
+  animation-delay: 1s;
+  animation: twinkle 0.2s infinite linear;
+}
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#content .holi-wrap .card-flip {
+  margin-top: 63.23185012vw;
+  padding-top: 0vw;
+  padding-right: 4.44964871vw;
+  padding-bottom: 0vw;
+  padding-left: 4.44964871vw;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+#content .holi-wrap .card-flip .card-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner {
+  width: 29.62529274vw;
+  height: 43.55971897vw;
+  position: relative;
+  margin-top: 0vw;
+  margin-right: 1.17096019vw;
+  margin-bottom: 2.34192037vw;
+  margin-left: 0vw;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner:nth-child(n+3) {
+  margin-right: 0vw;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards {
+  box-shadow: 0 0 15px 1px rgba(161, 142, 90, 0.5);
+  border-radius: 2.34192037vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 100%;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  backface-visibility: hidden;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards .bk {
+  transform: rotateY(180deg);
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip1,
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip2,
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip3,
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip4,
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip5 {
+  animation: flip 10s infinite ease-out;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip1 {
+  animation-delay: 1s;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip3 {
+  animation-delay: 6s;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip4 {
+  animation-delay: 7s;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip5 {
+  animation-delay: 2s;
+}
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  20% {
+    transform: rotateY(180deg);
+  }
+  40% {
+    transform: rotateY(0deg);
+  }
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .btn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .btn.flip-btn {
+  pointer-events: auto;
+}
+#content .holi-wrap .card-flip .card-wrap.open .card-inner .cards {
+  animation: none;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+#content .holi-wrap .card-flip .card-wrap.open .card-inner .btn {
+  pointer-events: auto;
+}
+/*# sourceMappingURL=style-mo.css.map */

@@ -1,0 +1,196 @@
+#content .holi-wrap {
+  font-size: 0px;
+  width: 1264px;
+  height: 2450px;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content .holi-wrap img {
+  width: 100%;
+  vertical-align: top;
+}
+#content .holi-wrap .bg {
+  width: 1264px;
+  height: 2450px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+}
+#content .holi-wrap .title-bg {
+  width: 1264px;
+  height: 399px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+#content .holi-wrap .title-bg div {
+  width: 1264px;
+  height: 399px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  background: url("../img/pc/title-bg.png") 0 0 no-repeat;
+}
+#content .holi-wrap .title-bg div.bg2 {
+  margin-top: 30px;
+  animation-delay: 0.2s;
+  animation: twinkle 0.2s infinite linear;
+}
+#content .holi-wrap .title-bg div.bg3 {
+  margin-left: 30px;
+  animation-delay: 0.4s;
+  animation: twinkle 0.2s infinite linear;
+}
+#content .holi-wrap .title-bg div.bg4 {
+  margin-top: 60px;
+  animation-delay: 0.6s;
+  animation: twinkle 0.2s infinite linear;
+}
+#content .holi-wrap .title-bg div.bg5 {
+  margin-left: 60px;
+  animation-delay: 0.8s;
+  animation: twinkle 0.2s infinite linear;
+}
+#content .holi-wrap .title-bg div.bg6 {
+  margin-top: 90px;
+  animation-delay: 1s;
+  animation: twinkle 0.2s infinite linear;
+}
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#content .holi-wrap .card-flip {
+  margin-top: 399px;
+  padding-top: 0px;
+  padding-right: 110px;
+  padding-bottom: 0px;
+  padding-left: 110px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+#content .holi-wrap .card-flip .card-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner {
+  width: 253px;
+  height: 372px;
+  position: relative;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner:nth-child(n+4) {
+  margin-right: 0px;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards {
+  box-shadow: 0 0 15px 1px rgba(161, 142, 90, 0.5);
+  border-radius: 20px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 100%;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  backface-visibility: hidden;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards .bk {
+  transform: rotateY(180deg);
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip1,
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip2,
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip3,
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip4,
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip5 {
+  animation: flip 10s infinite ease-out;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip1 {
+  animation-delay: 1s;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip3 {
+  animation-delay: 6s;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip4 {
+  animation-delay: 7s;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip5 {
+  animation-delay: 2s;
+}
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  20% {
+    transform: rotateY(180deg);
+  }
+  40% {
+    transform: rotateY(0deg);
+  }
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .btn {
+  width: 82px;
+  height: 36px;
+  position: absolute;
+  right: 11px;
+  bottom: 11px;
+  left: auto;
+  top: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+#content .holi-wrap .card-flip .card-wrap .card-inner .btn.flip-btn {
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  pointer-events: auto;
+}
+#content .holi-wrap .card-flip .card-wrap.open .card-inner .cards {
+  animation: none;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+#content .holi-wrap .card-flip .card-wrap.open .card-inner .cards.cards1 {
+  transition-delay: 0s;
+}
+#content .holi-wrap .card-flip .card-wrap.open .card-inner .cards.cards2 {
+  transition-delay: 0.2s;
+}
+#content .holi-wrap .card-flip .card-wrap.open .card-inner .cards.cards3 {
+  transition-delay: 0.4s;
+}
+#content .holi-wrap .card-flip .card-wrap.open .card-inner .btn {
+  pointer-events: auto;
+}
+/*# sourceMappingURL=style-pc.css.map */
