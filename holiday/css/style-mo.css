@@ -35,36 +35,21 @@
   top: 0vw;
   right: auto;
   bottom: auto;
-  background: url("../img/mo/title-bg.png") 0 0 no-repeat;
+  background-image: url("../img/mo/title-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 #content .holi-wrap .title-bg div.bg2 {
-  margin-top: 3.51288056vw;
-  animation-delay: 0.2s;
-  animation: twinkle 0.2s infinite linear;
+  margin-top: 20px;
+  animation: twinkle 0.1s alternate-reverse infinite linear;
 }
 #content .holi-wrap .title-bg div.bg3 {
-  margin-left: 3.51288056vw;
-  animation-delay: 0.4s;
-  animation: twinkle 0.2s infinite linear;
-}
-#content .holi-wrap .title-bg div.bg4 {
-  margin-top: 7.02576112vw;
-  animation-delay: 0.6s;
-  animation: twinkle 0.2s infinite linear;
-}
-#content .holi-wrap .title-bg div.bg5 {
-  margin-left: 7.02576112vw;
-  animation-delay: 0.8s;
-  animation: twinkle 0.2s infinite linear;
-}
-#content .holi-wrap .title-bg div.bg6 {
-  margin-top: 10.53864169vw;
-  animation-delay: 1s;
-  animation: twinkle 0.2s infinite linear;
+  margin-top: 80px;
+  animation: twinkle 0.1s alternate-reverse infinite linear;
 }
 @keyframes twinkle {
   0% {
-    opacity: 0.5;
+    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -128,16 +113,16 @@
 #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip3,
 #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip4,
 #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip5 {
-  animation: flip 10s infinite ease-out;
+  animation: flip 1.2s;
 }
-#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip1 {
-  animation-delay: 1s;
+#content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip2 {
+  animation-delay: 0.5s;
 }
 #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip3 {
-  animation-delay: 6s;
+  animation-delay: 1s;
 }
 #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip4 {
-  animation-delay: 7s;
+  animation-delay: 1.5s;
 }
 #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip5 {
   animation-delay: 2s;
@@ -146,11 +131,8 @@
   0% {
     transform: rotateY(0deg);
   }
-  20% {
+  50% {
     transform: rotateY(180deg);
-  }
-  40% {
-    transform: rotateY(0deg);
   }
 }
 #content .holi-wrap .card-flip .card-wrap .card-inner .btn {
@@ -167,12 +149,25 @@
 #content .holi-wrap .card-flip .card-wrap .card-inner .btn.flip-btn {
   pointer-events: auto;
 }
-#content .holi-wrap .card-flip .card-wrap.open .card-inner .cards {
-  animation: none;
+#content .holi-wrap .card-flip.active .card-wrap .card-inner .cards {
   transform: rotateY(180deg);
   transition: transform 0.5s;
 }
-#content .holi-wrap .card-flip .card-wrap.open .card-inner .btn {
+#content .holi-wrap .card-flip.active .card-wrap .card-inner .cards.flip-card {
+  transform: rotateY(180deg);
+  transition: transform 0.5s !important;
+  animation-delay: 0s;
+}
+#content .holi-wrap .card-flip.active .card-wrap .card-inner .cards.cards1 {
+  transition-delay: 0s!important;
+}
+#content .holi-wrap .card-flip.active .card-wrap .card-inner .cards.cards2 {
+  transition-delay: 0.1s !important;
+}
+#content .holi-wrap .card-flip.active .card-wrap .card-inner .cards.cards3 {
+  transition-delay: 0.2s !important;
+}
+#content .holi-wrap .card-flip.active .card-wrap .card-inner .btn {
   pointer-events: auto;
 }
 /*# sourceMappingURL=style-mo.css.map */

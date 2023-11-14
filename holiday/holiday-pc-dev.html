@@ -1,0 +1,368 @@
+<style>
+  #content .holi-wrap {
+    font-size: 0px;
+    width: 1264px;
+    height: 2450px;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #content .holi-wrap img {
+    width: 100%;
+    vertical-align: top;
+  }
+  #content .holi-wrap .bg {
+    width: 1264px;
+    height: 2450px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+  }
+  #content .holi-wrap .title-bg {
+    width: 1264px;
+    height: 399px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+  }
+  #content .holi-wrap .title-bg div {
+    width: 1264px;
+    height: 399px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    background: url("//img/pc/title-bg.png") 0 0 no-repeat;
+  }
+  #content .holi-wrap .title-bg div.bg2 {
+    margin-top: 20px;
+    animation: twinkle 0.15s alternate-reverse infinite linear;
+  }
+  #content .holi-wrap .title-bg div.bg3 {
+    margin-top: 80px;
+    animation: twinkle 0.15s alternate-reverse infinite linear;
+  }
+  @keyframes twinkle {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #content .holi-wrap .card-flip {
+    margin-top: 399px;
+    padding-top: 0px;
+    padding-right: 110px;
+    padding-bottom: 0px;
+    padding-left: 110px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+  }
+  #content .holi-wrap .card-flip .card-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  #content .holi-wrap .card-flip .card-wrap .card-inner {
+    width: 253px;
+    height: 372px;
+    position: relative;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  #content .holi-wrap .card-flip .card-wrap .card-inner:nth-child(n+4) {
+    margin-right: 0px;
+  }
+  #content .holi-wrap .card-flip .card-wrap .card-inner .cards {
+    box-shadow: 0 0 15px 1px rgba(161, 142, 90, 0.5);
+    border-radius: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+  }
+  #content .holi-wrap .card-flip .card-wrap .card-inner .cards img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    backface-visibility: hidden;
+  }
+  #content .holi-wrap .card-flip .card-wrap .card-inner .cards .bk {
+    transform: rotateY(180deg);
+  }
+  #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip1,
+  #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip2,
+  #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip3,
+  #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip4,
+  #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip5 {
+    animation: flip 1.2s;
+  }
+  #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip2 {
+    animation-delay: 0.5s;
+  }
+  #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip3 {
+    animation-delay: 1s;
+  }
+  #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip4 {
+    animation-delay: 1.5s;
+  }
+  #content .holi-wrap .card-flip .card-wrap .card-inner .cards.flip5 {
+    animation-delay: 2s;
+  }
+  @keyframes flip {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+  }
+  #content .holi-wrap .card-flip .card-wrap .card-inner .btn {
+    width: 82px;
+    height: 36px;
+    position: absolute;
+    right: 11px;
+    bottom: 11px;
+    left: auto;
+    top: auto;
+    z-index: 1;
+    pointer-events: none;
+  }
+  #content .holi-wrap .card-flip .card-wrap .card-inner .btn.flip-btn {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    pointer-events: auto;
+  }
+  #content .holi-wrap .card-flip.active .card-wrap .card-inner .cards {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+  }
+  #content .holi-wrap .card-flip.active .card-wrap .card-inner .cards.flip-card {
+    transform: rotateY(180deg);
+    transition: transform 0.5s !important;
+    animation-delay: 0s;
+  }
+  #content .holi-wrap .card-flip.active .card-wrap .card-inner .cards.cards1 {
+    transition-delay: 0s!important;
+  }
+  #content .holi-wrap .card-flip.active .card-wrap .card-inner .cards.cards2 {
+    transition-delay: 0.1s !important;
+  }
+  #content .holi-wrap .card-flip.active .card-wrap .card-inner .cards.cards3 {
+    transition-delay: 0.2s !important;
+  }
+  #content .holi-wrap .card-flip.active .card-wrap .card-inner .cards.cards4 {
+    transition-delay: 0.3s !important;
+  }
+  #content .holi-wrap .card-flip.active .card-wrap .card-inner .btn {
+    pointer-events: auto;
+  }
+  /*# sourceMappingURL=style-pc.css.map */
+</style>
+<div id="content" class="holiday">
+  <div class="holi-wrap">
+    <img src="/img/pc/bg_pc.png" alt="" class="bg">
+    <div class="title-bg">
+      <div class="bg1"></div>
+      <div class="bg2"></div>
+      <div class="bg3"></div>
+    </div>
+
+    <div class="card-flip">
+      <div class="card-wrap">
+        <div class="card-inner">
+          <div class="cards cards1 flip1 flip-card">
+            <img src="/img/pc/mv-fr.png" alt="" class="fr">
+            <img src="/img/pc/char1.png" alt="" class="bk">
+          </div>
+          <a class="btn flip-btn" onclick="opener(this);">open</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards2">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd1.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-b0050/5081/category/27/display/1/" class="btn">B0050</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards3">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd2.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EB%8C%84%EC%8B%B1%EC%8A%A4%ED%86%A4-%EB%AA%A9%EA%B1%B8%EC%9D%B4-n0148/5060/category/27/display/1/" class="btn">N0148</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards4">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd3.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EC%9B%90%ED%84%B0%EC%B9%98-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0490/5087/category/27/display/1/" class="btn">F0490</a>
+        </div>
+      </div>
+
+      <div class="card-wrap">
+        <div class="card-inner">
+          <div class="cards cards1">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd4.png" alt="" class="bk">
+          </div>
+          <a href="" class="btn">F0493D</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards2 flip2 flip-card">
+            <img src="/img/pc/mv-fr.png" alt="" class="fr">
+            <img src="/img/pc/char2.png" alt="" class="bk">
+          </div>
+          <a class="btn flip-btn" onclick="opener(this);">open</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards3">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd5.png" alt="" class="bk">
+          </div>
+          <a href="" class="btn">F0495D</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards4">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd6.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/dal-14k-%EB%B0%98%EC%A7%80-f0421/4279/category/27/display/1/" class="btn">F0421</a>
+        </div>
+      </div>
+
+      <div class="card-wrap">
+        <div class="card-inner">
+          <div class="cards cards1">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd7.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/14k-%EB%9F%AD%ED%82%A4%EC%9C%A0-%EB%AA%A9%EA%B1%B8%EC%9D%B4-p1406/3960/category/27/display/1/" class="btn">P1406</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards2">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd8.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/14k-%EB%9F%AD%ED%82%A4%EC%9C%A0-%EA%B7%80%EA%B1%B8%EC%9D%B4-p1405/3959/category/27/display/1/" class="btn">P1405</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards3 flip3 flip-card">
+            <img src="/img/pc/mv-fr.png" alt="" class="fr">
+            <img src="/img/pc/char3.png" alt="" class="bk">
+          </div>
+          <a class="btn flip-btn" onclick="opener(this);">open</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards4">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd9.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/new-luckyu-14k-%ED%8C%94%EC%B0%8C-f0392/3702/category/27/display/1/" class="btn">F0392</a>
+        </div>
+      </div>
+
+      <div class="card-wrap">
+        <div class="card-inner">
+          <div class="cards cards1">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd10.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/u-lock-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-h0147/4336/category/27/display/1/" class="btn">H0147</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards2 flip4 flip-card">
+            <img src="/img/pc/mv-fr.png" alt="" class="fr">
+            <img src="/img/pc/char4.png" alt="" class="bk">
+          </div>
+          <a class="btn flip-btn" onclick="opener(this);">open</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards3">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd11.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/u-lock-14k-%EC%9B%90%ED%84%B0%EC%B9%98-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0375/3693/category/27/display/1/" class="btn">F0375</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards4">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd12.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/u-lock-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-t1969/4041/category/27/display/1/" class="btn">T1969</a>
+        </div>
+      </div>
+
+      <div class="card-wrap">
+        <div class="card-inner">
+          <div class="cards cards1 flip5 flip-card">
+            <img src="/img/pc/mv-fr.png" alt="" class="fr">
+            <img src="/img/pc/char5.png" alt="" class="bk">
+          </div>
+          <a class="btn flip-btn" onclick="opener(this);">open</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards2">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd13.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/dal-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-t2037/4262/category/27/display/1/" class="btn">T2037</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards3">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd14.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/dal-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-t2026/4260/category/27/display/1/" class="btn">T2026</a>
+        </div>
+        <div class="card-inner">
+          <div class="cards cards4">
+            <img src="/img/pc/card-bk.png" alt="" class="fr">
+            <img src="/img/pc/prd15.png" alt="" class="bk">
+          </div>
+          <a href="https://woorimstg.cafe24.com/product/14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-b0042/4256/category/27/display/1/" class="btn">B0042</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  // let flipStatus = false;
+  let cardFlip = document.querySelector('.card-flip');
+  // function opener(e) {
+  //   if(flipStatus === false) {
+  //     cardFlip.classList.add('active');
+  //     e.parentNode.parentNode.classList.add('open');
+  //     flipStatus = true;
+  //   } else {
+  //     e.parentNode.parentNode.classList.add('open');
+  //   }
+  // }
+  setTimeout(function() {
+    cardFlip.classList.add('active');
+  }, 3500)
+</script>
