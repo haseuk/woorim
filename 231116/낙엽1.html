@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+
+<style>
+  body {background: #222;}
+  #leaves {position:relative;top:-50px;width:100%;display: flex;justify-content: space-between }
+  #leaves i { display: inline-block; border-radius: 50%; z-index: 1; animation: falling 6s 0s infinite; }
+  #leaves i:nth-of-type(2n) { animation: falling2 6s 0s infinite; }
+  #leaves i:nth-of-type(3n) { animation: falling3 6s 0s infinite;}
+  #leaves i:nth-of-type(2n+1) { height:11px; width:11px; }
+  #leaves i:nth-of-type(3n+2) { height:23px; width:23px; }
+  #leaves i:nth-of-type(n) { animation-delay: 0s;background: #dd734f; }
+  #leaves i:nth-of-type(2n) { animation-delay: 1.9s;background: #f59257; }
+  #leaves i:nth-of-type(3n) { animation-delay: 0.3s;background: #fff; }
+  #leaves i:nth-of-type(4n) { animation-delay: 1.4s;background: #ffffee; }
+  #leaves i:nth-of-type(5n) { animation-delay: 2s;background: #f59257; }
+  #leaves i:nth-of-type(6n) { animation-delay: 1.5s;background: #f6b971; }
+  #leaves i:nth-of-type(7n) { animation-delay: 0.8s;background: #f8af89; }
+  #leaves i:nth-of-type(n) {transform: rotate(180deg);}
+  #leaves i:nth-of-type(n) { animation-timing-function:ease-in-out;}
+  @keyframes falling {
+    0% { transform:translate3d(300px,0,0) rotate(0deg); }
+    100% { transform:translate3d(10px,700px,10px) rotate(90deg); }
+  }
+  @keyframes falling3 {
+    0% { transform:translate3d(0,0,0) rotate(-20deg); }
+    100% { transform:translate3d(-30px,640px,0) rotate(-70deg); }
+  }
+  @keyframes falling2 {
+    0% { transform:translate3d(0,0,0) rotate(90deg); }
+    100% { transform:translate3d(30px,680px,15px) rotate(0deg); }
+  }
+</style>
+
+<div id="leaves">
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+</div>
+
+
+
+</body>
+</html>

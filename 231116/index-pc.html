@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style-pc.css">
+  <style>
+    .dot { width:25px; height:25px; border-radius: 50%; position:absolute; background-color: #dd734f; background-size: 100% 100%; }
+    .dot:nth-child(2n) { background: #f59257; }
+    .dot:nth-child(3n) { background: #fff; }
+    .dot:nth-child(4n) { background: #ffffee; }
+    .dot:nth-child(5n) { background: #f6b971; }
+    .dot:nth-child(6n) { background: #f8af89; }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="leaf">낙엽</div>
+    <div class="top">
+      <div class="vis"></div>
+      <div class="necklace-wrap">
+        <div class="necklace"></div>
+      </div>
+      <div class="letter-wrap on">
+        <div class="letter"></div>
+        <div class="letter-cov-fr"></div>
+        <div class="letter-cover"></div>
+      </div>
+    </div>
+    <img src="img/pc/gift.png" alt="">
+    <img src="img/pc/stone.png" alt="">
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    var falling = true;
+    TweenLite.set(".leaf",{perspective:600})
+    TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
+    var total = 15;
+    var leaf = document.querySelector(".leaf"),	w = window.parent.innerWidth , h = window.parent.innerHeight/2;
+    for (i=0; i<total; i++){
+      var Div = document.createElement('div');
+      TweenLite.set(Div,{attr:{class:'dot'},x:R(0,w),y:R(-10,-0),z:R(-200,200)});
+      leaf.appendChild(Div);
+      animm(Div);
+    }
+    function animm(elm){
+      TweenMax.to(elm,R(6,20),{y:h+50,ease:Linear.easeNone,repeat:-1,delay:-15});
+      TweenMax.to(elm,R(4,15),{x:'+=80',rotationZ:R(0,20),repeat:-1,yoyo:true,ease:Sine.easeInOut});
+      TweenMax.to(elm,R(2,18),{rotationX:R(0,360),rotationY:R(0,360),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-5});
+    }
+    function R(min,max) {return min+Math.random()*(max-min)}
+
+    let letWrap = document.querySelector('.letter-wrap');
+    for (let i = 0; i < 1; i++) {
+      setTimeout(() => {
+        letter();
+      },(i + 1) * 5000)
+    }
+    function letter() {
+      letWrap.classList.remove('on');
+      setTimeout(() => {
+        letWrap.classList.add('on');
+      },1000)
+    }
+    $(window).on("load resize", function(){
+      iframeRisize();
+    });
+
+
+  </script>
+
+
+</body>
+</html>
