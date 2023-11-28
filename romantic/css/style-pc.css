@@ -1,0 +1,245 @@
+.romantic {
+  font-size: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1264px;
+  height: 3290px;
+  background-image: url('../img/pc/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.romantic img {
+  width: 100%;
+  vertical-align: top;
+}
+.romantic .vis {
+  width: 334px;
+  height: 418px;
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  right: auto;
+  bottom: auto;
+  margin-left: 31px;
+}
+.romantic .vis:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  background-image: url('../img/pc/thumb.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.romantic .vis iframe {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.romantic section {
+  position: relative;
+}
+.romantic section article {
+  overflow: hidden;
+}
+.romantic section article .prd-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 863px;
+  width: 788px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.romantic section article .prd-wrap li {
+  margin-bottom: 180px;
+  width: 248px;
+  height: 331px;
+  position: relative;
+}
+.romantic section article .prd-wrap li .red-box {
+  content: '';
+  display: block;
+  width: 245px;
+  height: 205px;
+  background-image: url('../img/pc/box.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: auto;
+  top: auto;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.5s ease-out;
+}
+.romantic section article .prd-wrap li .red-box.op {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.romantic section article .prd-wrap li:nth-of-type(3n+1):after {
+  content: '';
+  display: block;
+  width: 850px;
+  height: 209px;
+  background-image: url('../img/pc/shadow.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -36px;
+  bottom: 0px;
+  right: auto;
+  top: auto;
+  pointer-events: none;
+}
+.romantic section article .prd-wrap li .opener,
+.romantic section article .prd-wrap li .btn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+  cursor: pointer;
+}
+.romantic section article .prd-wrap li .btn {
+  pointer-events: none;
+}
+.romantic section article .prd-wrap li .prd-grp-btn {
+  width: 248px;
+  height: 250px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.romantic section article .prd-wrap li .prd-grp-btn .btn {
+  display: inline-block;
+  position: relative;
+}
+.romantic section article .prd-wrap li .prd-grp-btn .prd-btn1 {
+  width: 248px;
+  height: 160px;
+}
+.romantic section article .prd-wrap li .prd-grp-btn .prd-btn2 {
+  width: 248px;
+  height: 90px;
+}
+.romantic section article .prd-wrap li .nm-grp-btn {
+  width: 248px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top: 250px;
+  right: auto;
+  bottom: auto;
+}
+.romantic section article .prd-wrap li .nm-grp-btn .btn {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  vertical-align: top;
+}
+.romantic section article .prd-wrap li.prd2 .red-box {
+  transition-delay: 0.1s;
+}
+.romantic section article .prd-wrap li.prd3 .red-box {
+  transition-delay: 0.2s;
+}
+.romantic section article .prd-wrap li.prd4 .red-box {
+  transition-delay: 0.3s;
+}
+.romantic section article .prd-wrap li.prd5 .red-box {
+  transition-delay: 0.4s;
+}
+.romantic section article .prd-wrap li.prd6 .red-box {
+  transition-delay: 0.5s;
+}
+.romantic section article .prd-wrap li.prd7 .red-box {
+  transition-delay: 0.6s;
+}
+.romantic section article .prd-wrap li.prd8 .red-box {
+  transition-delay: 0.7s;
+}
+.romantic section article .prd-wrap li.prd9 .red-box {
+  transition-delay: 0.8s;
+}
+.romantic section article .prd-wrap li.prd1 .red-box.op {
+  background-image: url('../img/pc/prd1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.romantic section article .prd-wrap li.prd2 .red-box.op {
+  background-image: url('../img/pc/prd2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.romantic section article .prd-wrap li.prd3 .red-box.op {
+  background-image: url('../img/pc/prd3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.romantic section article .prd-wrap li.prd4 .red-box.op {
+  background-image: url('../img/pc/prd4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.romantic section article .prd-wrap li.prd5 .red-box.op {
+  background-image: url('../img/pc/prd5.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.romantic section article .prd-wrap li.prd6 .red-box.op {
+  background-image: url('../img/pc/prd6.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.romantic section article .prd-wrap li.prd7 .red-box.op {
+  background-image: url('../img/pc/prd7.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.romantic section article .prd-wrap li.prd8 .red-box.op {
+  background-image: url('../img/pc/prd8.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.romantic section article .prd-wrap li.prd9 .red-box.op {
+  background-image: url('../img/pc/prd9.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.romantic section article .prd-wrap.on li .red-box.cl {
+  opacity: 0;
+}
+.romantic section article .prd-wrap.on li .red-box.op {
+  opacity: 1;
+}
+.romantic section article .prd-wrap.on li .btn {
+  pointer-events: auto;
+  z-index: 2;
+}
+.romantic section .bottom {
+  width: 788px;
+  height: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 223px;
+}
+.romantic section .bottom iframe {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style-pc.css.map */

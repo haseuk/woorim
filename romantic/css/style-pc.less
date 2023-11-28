@@ -1,0 +1,58 @@
+@import "../../css/asset";
+
+.romantic { .fs(0); .mh-c; .wh(1264,3290); .contain('../img/pc/bg.png'); .rel;
+  img { .wf; .vat; }
+  .vis { .wh(334,418); .abs; .lt(50%,40); .ml(31);
+    &:after { .cnt; .f; .abs; .lt; .contain('../img/pc/thumb.jpg'); }
+    iframe { .f; .rel; .z(1); }
+  }
+  section { .rel;
+    article { .crop;
+      .prd-wrap { .mh-c; .mt(863); .w(788); .flex; .space-between; .flex-wrap;
+        li { .mb(180); .wh(248,331); .rel;
+          .red-box { .cnt; .wh(245,205); .contain('../img/pc/box.png'); .abs; .lb; .z(1); pointer-events: none; transition: opacity 0.5s ease-out;
+            &.op { .f; .o(0); }
+          }
+          &:nth-of-type(3n+1):after { .cnt; .wh(850,209); .contain('../img/pc/shadow.png'); .abs; .lb(-36,0); pointer-events: none; }
+          .opener, .btn { .f; .abs; .lt; .z(1); .pointer; }
+          .btn { pointer-events: none; }
+          .prd-grp-btn { .wh(248,250); .abs; .lt;
+            .btn { .ib; .rel; }
+            .prd-btn1 { .wh(248,160); }
+            .prd-btn2 { .wh(248,90); }
+          }
+          .nm-grp-btn { .wh(248,100); .abs; .lt(0,250);
+            .btn { .ib; .rel; .w(50%); .vat; }
+          }
+
+          &.prd2 .red-box { transition-delay: 0.1s; }
+          &.prd3 .red-box { transition-delay: 0.2s; }
+          &.prd4 .red-box { transition-delay: 0.3s; }
+          &.prd5 .red-box { transition-delay: 0.4s; }
+          &.prd6 .red-box { transition-delay: 0.5s; }
+          &.prd7 .red-box { transition-delay: 0.6s; }
+          &.prd8 .red-box { transition-delay: 0.7s; }
+          &.prd9 .red-box { transition-delay: 0.8s; }
+
+          &.prd1 .red-box.op { .contain('../img/pc/prd1.png'); }
+          &.prd2 .red-box.op { .contain('../img/pc/prd2.png'); }
+          &.prd3 .red-box.op { .contain('../img/pc/prd3.png'); }
+          &.prd4 .red-box.op { .contain('../img/pc/prd4.png'); }
+          &.prd5 .red-box.op { .contain('../img/pc/prd5.png'); }
+          &.prd6 .red-box.op { .contain('../img/pc/prd6.png'); }
+          &.prd7 .red-box.op { .contain('../img/pc/prd7.png'); }
+          &.prd8 .red-box.op { .contain('../img/pc/prd8.png'); }
+          &.prd9 .red-box.op { .contain('../img/pc/prd9.png'); }
+        }
+        &.on li {
+          .red-box.cl { .o(0); }
+          .red-box.op { .o(1); }
+          .btn { pointer-events: auto; .z(2); }
+        }
+      }
+    }
+    .bottom { .wh(788,440); .mh-c; .mt(223);
+      iframe { .f; }
+    }
+  }
+}

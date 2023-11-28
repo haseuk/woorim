@@ -1,0 +1,242 @@
+<!--@layout(/layout/basic/layout.html)+prd__prj-->
+
+<style>
+  .prd__prj #contents {
+    padding-bottom: 0;
+  }
+
+  .prj_visual {
+    text-align: center;
+    position: relative;
+  }
+
+  .prj_visual .hidden {
+    position: absolute;
+    right: 0;
+    bottom: 45px;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .prj_visual .hidden img {
+    transform: translateY(100px);
+    animation: txtIn .8s .25s ease-out forwards;
+  }
+
+  @keyframes txtIn {
+    0% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .prd__prj .prd_cont .item {
+    padding: 60px 20px 30px;
+    background-color: #f7f7f7;
+    overflow: hidden;
+  }
+
+  .prd__prj .item_list {
+    margin-top: 30px;
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .prd__prj .item_list > li {
+    width: 50%;
+    padding-left: 15px;
+  }
+
+  .prd__prj .item_list > li .name {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+  }
+
+  .prd__prj .item_list > li .name .block {
+    display: block;
+  }
+
+  .prd__prj .item_list > li .price span:not(.strike) {
+    font-size: 16px;
+    font-weight: 700;
+    color: #c00000;
+  }
+
+  .prd__prj .item_list > li .price span + span:not(.strike) {
+    margin-left: 10px;
+  }
+
+  .prd__prj .item_list > li .price .strike {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #7b7b7b;
+    text-decoration: line-through;
+    display: block;
+  }
+
+  .prd__prj .slogan {
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .prd__prj .video_x {
+    margin: 40px 0;
+  }
+</style>
+
+
+<div class="prj_visual">
+  <img src="/img/project/231018/visual.jpg"/>
+  <div class="hidden"><img src="/img/project/231018/visual_txt.png"/></div>
+</div>
+<div class="video_y">
+  <iframe src='https://player.vimeo.com/video/873569435?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>
+</div>
+<div class="prd_cont">
+  <div class="item" rel="js-item1">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        <img src="/img/project/231018/banner_prd1-1.jpg"/>
+        <ul class="item_list">
+          <li>
+            <a href="/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-dal-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-t2037/4262/category/27/display/1/" target="_blank">
+              <img src="/img/project/231018/item1-1.jpg"/>
+              <p class="name">DAL 14K 목걸이<span class="block">T2037</span></p>
+              <div class="price">
+                <span>385,050</span> <span>15%</span> <span class="strike">453,000</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-dal-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-t2026/4260/category/27/display/1/" target="_blank">
+              <img src="/img/project/231018/item1-2.jpg"/>
+              <p class="name">DAL 14K 귀걸이<span class="block">T2026</span></p>
+              <div class="price">
+                <span>295,800</span> <span>15%</span> <span class="strike">348,000</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="swiper-slide">
+        <img src="/img/project/231018/banner_prd1-2.jpg"/>
+        <ul class="item_list">
+          <li>
+            <a href="/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-b0042/4256/category/27/display/1/" target="_blank">
+              <img src="/img/project/231018/item1-3.jpg"/>
+              <p class="name">14K 목걸이<span class="block">B0042</span></p>
+              <div class="price">
+                <span>423,300</span> <span>15%</span> <span class="strike">498,000</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-dal-14k-%EB%B0%98%EC%A7%80-f0430/4337/category/27/display/1/" target="_blank">
+              <img src="/img/project/231018/item1-4.jpg"/>
+              <p class="name">DAL 14K 반지<span class="block">F0430</span></p>
+              <div class="price">
+                <span>244,800</span> <span>15%</span> <span class="strike">288,000</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <p class="slogan">시간이 지나도 변하지 않는 클래식한 아름다움을 담은<br/><strong>전지현의 Beautiful Moments</strong></p>
+  <div class="item" rel="js-item2">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        <img src="/img/project/231018/banner_prd2-1.jpg"/>
+        <ul class="item_list">
+          <li>
+            <a href="/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-u-lock-14k-%EC%A7%84%EC%A3%BC-%EB%AA%A9%EA%B1%B8%EC%9D%B4-h0117/3755/category/27/display/1/" target="_blank">
+              <img src="/img/project/231018/item2-1.jpg"/>
+              <p class="name">U Lock 14K 진주 목걸이<span class="block">H0117</span></p>
+              <div class="price">
+                <span>470,050</span> <span>15%</span> <span class="strike">553,000</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-u-lock-14k-%EB%B0%98%EC%A7%80-t1974/4043/category/27/display/1/" target="_blank">
+              <img src="/img/project/231018/item2-2.jpg"/>
+              <p class="name">U Lock 14K 반지<span class="block">T1974</span></p>
+              <div class="price">
+                <span>371,700</span> <span>15%</span> <span class="strike">413,000</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="swiper-slide">
+        <img src="/img/project/231018/banner_prd2-2.jpg"/>
+        <ul class="item_list">
+          <li>
+            <a href="/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-u-lock-14k-%EC%9B%90%ED%84%B0%EC%B9%98-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0375/3693/category/27/display/1/" target="_blank">
+              <img src="/img/project/231018/item2-3.jpg"/>
+              <p class="name">U Lock 14K 원터치 귀걸이<span class="block">F0375</span></p>
+              <div class="price">
+                <span>338,300</span> <span>15%</span> <span class="strike">398,000</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-u-lock-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-t1969/4041/category/27/display/1/" target="_blank">
+              <img src="/img/project/231018/item2-4.jpg"/>
+              <p class="name">U Lock 14K 목걸이<span class="block">T1969</span></p>
+              <div class="price">
+                <span>397,800</span> <span>15%</span> <span class="strike">468,000</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <script>
+    var swiperCont1 = new Swiper(".prd_cont .item[rel='js-item1']", {
+      loop: false,
+      observer: true,
+      observeParents: true,
+      slidesPerView: 1.04,
+      spaceBetween: 15,
+      watchOverflow: true,
+      allowTouchMove: true,
+      speed: 700,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+    });
+    var swiperCont2 = new Swiper(".prd_cont .item[rel='js-item2']", {
+      loop: false,
+      observer: true,
+      observeParents: true,
+      slidesPerView: 1.04,
+      spaceBetween: 15,
+      watchOverflow: true,
+      allowTouchMove: true,
+      speed: 700,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</div>
+<div class="video_x">
+  <iframe src='https://player.vimeo.com/video/873569411?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>
+</div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
