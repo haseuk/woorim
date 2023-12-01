@@ -1,0 +1,60 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; .m(0); }
+  .vid { .wh(850,748);
+    iframe { .wh(850,748); }
+  }
+  .prds { .rel;
+    .link-wrap {
+      .btn { .wh(194,118); .pointer; .z(1); .abs;
+        &.btn1 { .lt(103,110); }
+        &.btn2 { .rt(105,1184); }
+        &.btn3 { .lt(82,1221); }
+        &.btn4 { .lt(308,228); }
+        &.btn5 { .rt(69,32); }
+        &.btn6 { .rt(105,454); }
+        &.btn7 { .rt(15,1034); }
+      }
+    }
+    .birth-txt { .w(637); .abs; .lt(106,670); transform: rotate(-5deg);
+      path {
+        stroke-dasharray: 2500;
+        stroke-dashoffset: 2500;
+        animation: drawPath 20s linear infinite;
+      }
+      @keyframes drawPath {
+        to {
+          stroke-dashoffset: -2500;
+        }
+      }
+
+      .txt2 { animation-delay: 0.3s; }
+      .txt3 { animation-delay: 1.1s; }
+      .txt4 { animation-delay: 0.8s; }
+      .txt5 { animation-delay: 1.3s; }
+      .txt6 { animation-delay: 2.2s; }
+      .txt7 { animation-delay: 1.8s; }
+      .txt8 { animation-delay: 2.5s; }
+      .txt9 { animation-delay: 3.2s; }
+      .txt10 { animation-delay: 4s; }
+      .txt11 { animation-delay: 3.7s; }
+      .txt12 { animation-delay: 4.7s; }
+      .txt13 { animation-delay: 5.2s; }
+      .txt14 { animation-delay: 5.6s; }
+      .txt15 { animation-delay: 6s; }
+      .txt16 { animation-delay: 6.5s; }
+      .txt17 { animation-delay: 6.7s; }
+      .txt18 { animation-delay: 7.1s; }
+      .txt19 { animation-delay: 6.8s; }
+      .txt20 { animation-delay: 7.3s; }
+      .txt21 { animation-delay: 8.8s; }
+      .txt22 { animation-delay: 8.3s; }
+    }
+  }
+  .bott { .contain('../img/mo/bott.png'); .wh(850,898); .p(70,120); .-box;
+    iframe { .wh(609,761); }
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../css/asset";
+
+.content { .fs(0); .mh-c; .max-w(1264); .tc; .rel;
+  img { .wf; .vat; .m(0); }
+  .vid { .bgc(#ffe9e9);
+    iframe { .wh(786,692); }
+  }
+  .prds { .rel;
+    .link-wrap {
+      .btn { .wh(44,44); .pointer; .z(1); .abs; .lt(50%,0); .ml(-22); .contain('../img/pc/pointer.png'); animation: scale 1s infinite;
+        &.btn1 { .ml(-340); .t(216); }
+        &.btn2 { .ml(-142); .t(1132); }
+        &.btn3 { .ml(96); .t(1048); }
+        &.btn4 { .ml(-56); .t(90); }
+        &.btn5 { .ml(310); .t(52); }
+        &.btn6 { .ml(110); .t(366); }
+        &.btn7 { .ml(-394); .t(1000); }
+      }
+      @keyframes scale {
+        50% { transform: scale(1.1); }
+      }
+    }
+    .birth-txt { .w(776); .abs; .lt(50%,610); .ml(-390);
+      svg { .wf; }
+    }
+  }
+  .bott { .contain('../img/pc/bott.png'); .wh(1264,861); .pt(51); .-box;
+    iframe { .wh(609,762); }
+  }
+}
