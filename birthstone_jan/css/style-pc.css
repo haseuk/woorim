@@ -11,11 +11,21 @@
   vertical-align: top;
   margin: 0px;
 }
-.content .vid {
-  background-color: #ffe9e9;
+.content .visual {
+  position: relative;
 }
-.content .vid iframe {
-  width: 786px;
+.content .visual .top {
+  position: absolute;
+  left: 50%;
+  top: 260px;
+  right: auto;
+  bottom: auto;
+  width: 788px;
+  height: 692px;
+  margin-left: -394px;
+}
+.content .visual .top iframe {
+  width: 788px;
   height: 692px;
 }
 .content .prds {
@@ -74,13 +84,87 @@
   width: 776px;
   position: absolute;
   left: 50%;
-  top: 610px;
+  top: 640px;
   right: auto;
   bottom: auto;
   margin-left: -390px;
+  transform: rotate(-5deg);
 }
-.content .prds .birth-txt svg {
-  width: 100%;
+.content .prds .birth-txt svg path {
+  stroke-dasharray: 5500;
+  stroke-dashoffset: 5500;
+  animation: drawPath 20s linear infinite;
+}
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: -5500;
+  }
+}
+.content .prds .birth-txt svg .txt1 {
+  animation-delay: 0.3s;
+}
+.content .prds .birth-txt svg .txt2 {
+  animation-delay: 0s;
+}
+.content .prds .birth-txt svg .txt3 {
+  animation-delay: 1.3s;
+}
+.content .prds .birth-txt svg .txt4 {
+  animation-delay: 1.2s;
+}
+.content .prds .birth-txt svg .txt5 {
+  animation-delay: 1.4s;
+}
+.content .prds .birth-txt svg .txt6 {
+  animation-delay: 1.6s;
+}
+.content .prds .birth-txt svg .txt7 {
+  animation-delay: 1.8s;
+}
+.content .prds .birth-txt svg .txt8 {
+  animation-delay: 2.1s;
+}
+.content .prds .birth-txt svg .txt9 {
+  animation-delay: 2.5s;
+}
+.content .prds .birth-txt svg .txt10 {
+  animation-delay: 3.1s;
+}
+.content .prds .birth-txt svg .txt11 {
+  animation-delay: 2.9s;
+}
+.content .prds .birth-txt svg .txt12 {
+  animation-delay: 3.4s;
+}
+.content .prds .birth-txt svg .txt13 {
+  animation-delay: 3.7s;
+}
+.content .prds .birth-txt svg .txt14 {
+  animation-delay: 4s;
+}
+.content .prds .birth-txt svg .txt15 {
+  animation-delay: 4.2s;
+}
+.content .prds .birth-txt svg .txt16 {
+  animation-delay: 4.6s;
+}
+.content .prds .birth-txt svg .txt17 {
+  animation-delay: 4.7s;
+}
+.content .prds .birth-txt svg .txt18 {
+  animation-delay: 5.2s;
+}
+.content .prds .birth-txt svg .txt19 {
+  animation-delay: 4.9s;
+}
+.content .prds .birth-txt svg .txt20 {
+  animation-delay: 5.1s;
+}
+.content .prds .birth-txt svg .txt21 {
+  animation-delay: 5.6s;
+}
+.content .prds .birth-txt svg .txt22 {
+  animation-delay: 5.9s;
 }
 .content .bott {
   background-image: url('../img/pc/bott.png');
@@ -90,9 +174,16 @@
   height: 861px;
   padding-top: 51px;
   box-sizing: border-box;
+  position: relative;
 }
 .content .bott iframe {
   width: 609px;
-  height: 762px;
+  height: 761px;
+  position: absolute;
+  left: 50%;
+  top: 51px;
+  right: auto;
+  bottom: auto;
+  margin-left: -303.5px;
 }
 /*# sourceMappingURL=style-pc.css.map */

@@ -1,0 +1,335 @@
+<style>
+  .romantic {
+    font-size: 0vw;
+    width: 100vw;
+    height: 462.35294118vw;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .romantic img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .romantic .vis {
+    width: 100vw;
+    height: 125.05882353vw;
+  }
+  .romantic .vis:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/thumb.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .romantic .vis iframe {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .romantic section {
+    position: relative;
+  }
+  .romantic section article {
+    width: 100vw;
+    height: 224.70588235vw;
+    overflow: hidden;
+  }
+  .romantic section article .prd-wrap {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50vw;
+    width: 91.17647059vw;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .romantic section article .prd-wrap li {
+    margin-bottom: 20vw;
+    width: 29.17647059vw;
+    height: 38.94117647vw;
+    position: relative;
+  }
+  .romantic section article .prd-wrap li .red-box {
+    display: inline-block;
+    width: 28.82352941vw;
+    height: 24.11764706vw;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/box.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0vw;
+    bottom: 0vw;
+    right: auto;
+    top: auto;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 0.5s ease-out;
+  }
+  .romantic section article .prd-wrap li .red-box.op {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .romantic section article .prd-wrap li:nth-of-type(3n+1):after {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 24.58823529vw;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/shadow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -4.23529412vw;
+    bottom: 0vw;
+    right: auto;
+    top: auto;
+    pointer-events: none;
+  }
+  .romantic section article .prd-wrap li .opener,
+  .romantic section article .prd-wrap li .btn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .romantic section article .prd-wrap li .btn {
+    pointer-events: none;
+  }
+  .romantic section article .prd-wrap li .prd-grp-btn {
+    width: 29.17647059vw;
+    height: 29.41176471vw;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .romantic section article .prd-wrap li .prd-grp-btn .btn {
+    display: inline-block;
+    position: relative;
+  }
+  .romantic section article .prd-wrap li .prd-grp-btn .prd-btn1 {
+    width: 29.17647059vw;
+    height: 18.82352941vw;
+  }
+  .romantic section article .prd-wrap li .prd-grp-btn .prd-btn2 {
+    width: 29.17647059vw;
+    height: 10.58823529vw;
+  }
+  .romantic section article .prd-wrap li .nm-grp-btn {
+    width: 29.17647059vw;
+    height: 11.76470588vw;
+    position: absolute;
+    left: 0vw;
+    top: 29.41176471vw;
+    right: auto;
+    bottom: auto;
+  }
+  .romantic section article .prd-wrap li .nm-grp-btn .btn {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    vertical-align: top;
+  }
+  .romantic section article .prd-wrap li.prd2 .red-box {
+    transition-delay: 0.05s;
+  }
+  .romantic section article .prd-wrap li.prd3 .red-box {
+    transition-delay: 0.1s;
+  }
+  .romantic section article .prd-wrap li.prd4 .red-box {
+    transition-delay: 0.15s;
+  }
+  .romantic section article .prd-wrap li.prd5 .red-box {
+    transition-delay: 0.2s;
+  }
+  .romantic section article .prd-wrap li.prd6 .red-box {
+    transition-delay: 0.25s;
+  }
+  .romantic section article .prd-wrap li.prd7 .red-box {
+    transition-delay: 0.3s;
+  }
+  .romantic section article .prd-wrap li.prd8 .red-box {
+    transition-delay: 0.35s;
+  }
+  .romantic section article .prd-wrap li.prd9 .red-box {
+    transition-delay: 0.4s;
+  }
+  .romantic section article .prd-wrap li.prd1 .red-box.op {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/prd1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .romantic section article .prd-wrap li.prd2 .red-box.op {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/prd2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .romantic section article .prd-wrap li.prd3 .red-box.op {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/prd3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .romantic section article .prd-wrap li.prd4 .red-box.op {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/prd4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .romantic section article .prd-wrap li.prd5 .red-box.op {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/prd5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .romantic section article .prd-wrap li.prd6 .red-box.op {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/prd6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .romantic section article .prd-wrap li.prd7 .red-box.op {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/prd7.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .romantic section article .prd-wrap li.prd8 .red-box.op {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/prd8.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .romantic section article .prd-wrap li.prd9 .red-box.op {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231204/mo/prd9.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .romantic section article .prd-wrap.on li .red-box.cl {
+    opacity: 0;
+  }
+  .romantic section article .prd-wrap.on li .red-box.op {
+    opacity: 1;
+  }
+  .romantic section article .prd-wrap.on li .btn {
+    pointer-events: auto;
+    z-index: 2;
+  }
+  .romantic section .bottom {
+    width: 92.70588235vw;
+    height: 52vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32.58823529vw;
+  }
+  .romantic section .bottom iframe {
+    width: 100%;
+    height: 100%;
+  }
+  /*# sourceMappingURL=style-mo.css.map */
+</style>
+<div class="romantic">
+  <div class="vis">
+    <iframe src='https://player.vimeo.com/video/887525341?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>
+  </div>
+  <section>
+    <article>
+      <ul class="prd-wrap">
+        <li class="prd1">
+          <div class="cl red-box"></div>
+          <div class="op red-box"></div>
+          <a class="btn" href="https://woorimrsm.cafe24.com/product/%EC%84%9C%ED%98%84%EC%A7%84%EC%B0%A9%EC%9A%A9-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-rs1145/2590/category/34/display/1/">RS1145</a>
+        </li>
+        <li class="prd2">
+          <div class="cl red-box"></div>
+          <div class="op red-box"></div>
+          <a class="btn" href="">RS1456</a>
+        </li>
+        <li class="prd3">
+          <div class="cl red-box"></div>
+          <div class="op red-box"></div>
+          <a class="btn" href="">RS1470</a>
+        </li>
+        <li class="prd4">
+          <div class="cl red-box"></div>
+          <div class="op red-box"></div>
+          <a class="btn" href="https://woorimrsm.cafe24.com/product/14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-ru0017/2664/category/44/display/1/">RU0017</a>
+        </li>
+        <li class="prd5">
+          <div class="cl red-box"></div>
+          <div class="op red-box"></div>
+          <a class="btn" href="https://woorimrsm.cafe24.com/product/14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-ru0020/2667/category/44/display/1/">RU0020</a>
+        </li>
+        <li class="prd6">
+          <div class="cl red-box"></div>
+          <div class="op red-box"></div>
+          <a class="btn" href="https://woorimrsm.cafe24.com/product/14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-%EB%9D%BC%ED%94%8C%EB%A0%88%EC%89%AC-rn0012/2742/category/44/display/1/">RN0012</a>
+        </li>
+        <li class="prd7">
+          <div class="cl red-box"></div>
+          <div class="op red-box"></div>
+          <div class="prd-grp-btn">
+            <a class="btn prd-btn1" href="https://woorimrsm.cafe24.com/product/14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4%ED%99%94%EC%9D%B4%ED%8A%B8%ED%86%A0%ED%8C%8C%EC%A6%88-rk0191/2348/category/34/display/1/">RK0118</a>
+            <a class="btn prd-btn2" href="https://woorimrsm.cafe24.com/product/14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rk0118/2343/category/44/display/1/">RK0191</a>
+          </div>
+          <div class="nm-grp-btn">
+            <a class="btn" href="https://woorimrsm.cafe24.com/product/14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4%ED%99%94%EC%9D%B4%ED%8A%B8%ED%86%A0%ED%8C%8C%EC%A6%88-rk0191/2348/category/34/display/1/">RK0118</a>
+            <a class="btn" href="https://woorimrsm.cafe24.com/product/14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rk0118/2343/category/44/display/1/">RK0191</a>
+          </div>
+        </li>
+        <li class="prd8">
+          <div class="cl red-box"></div>
+          <div class="op red-box"></div>
+          <div class="prd-grp-btn">
+            <a class="btn prd-btn1" href="https://woorimrsm.cafe24.com/product/silver-%EB%AA%A9%EA%B1%B8%EC%9D%B4-ra0087/2300/category/34/display/1/">RA0086</a>
+            <a class="btn prd-btn2" href="https://woorimrsm.cafe24.com/product/silver-%EA%B7%80%EA%B1%B8%EC%9D%B4-ra0086/2299/category/44/display/1/">RA0087</a>
+          </div>
+          <div class="nm-grp-btn">
+            <a class="btn" href="https://woorimrsm.cafe24.com/product/silver-%EB%AA%A9%EA%B1%B8%EC%9D%B4-ra0087/2300/category/34/display/1/">RA0086</a>
+            <a class="btn" href="https://woorimrsm.cafe24.com/product/silver-%EA%B7%80%EA%B1%B8%EC%9D%B4-ra0086/2299/category/44/display/1/">RA0087</a>
+          </div>
+        </li>
+        <li class="prd9">
+          <div class="cl red-box"></div>
+          <div class="op red-box"></div>
+          <div class="prd-grp-btn">
+            <a class="btn prd-btn1" href="https://woorimrsm.cafe24.com/product/silver-%EB%AA%A9%EA%B1%B8%EC%9D%B4-ra0112/2306/category/34/display/1/">RA0112</a>
+            <a class="btn prd-btn2" href="https://woorimrsm.cafe24.com/product/silver-%EA%B7%80%EA%B1%B8%EC%9D%B4-ra0111/2305/category/44/display/1/">RA0111</a>
+          </div>
+          <div class="nm-grp-btn">
+            <a class="btn" href="https://woorimrsm.cafe24.com/product/silver-%EB%AA%A9%EA%B1%B8%EC%9D%B4-ra0112/2306/category/34/display/1/">RA0112</a>
+            <a class="btn" href="https://woorimrsm.cafe24.com/product/silver-%EA%B7%80%EA%B1%B8%EC%9D%B4-ra0111/2305/category/44/display/1/">RA0111</a>
+          </div>
+        </li>
+      </ul>
+    </article>
+
+    <div class="bottom">
+      <iframe src='https://player.vimeo.com/video/887525326?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>
+    </div>
+  </section>
+</div>
+
+
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+  setTimeout(function() {
+    document.querySelector('.prd-wrap').classList.add('on');
+  }, 1000);
+  setTimeout(function() {
+    document.querySelector('.prd-wrap').classList.remove('on');
+  }, 6000);
+  setTimeout(function() {
+    document.querySelector('.prd-wrap').classList.add('on');
+  }, 8000);
+</script>

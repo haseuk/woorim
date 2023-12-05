@@ -11,13 +11,17 @@
   vertical-align: top;
   margin: 0vw;
 }
-.content .vid {
-  width: 100vw;
-  height: 88vw;
+.content .visual {
+  position: relative;
 }
-.content .vid iframe {
+.content .visual iframe {
   width: 100vw;
   height: 88vw;
+  position: absolute;
+  left: 0vw;
+  top: 33.17647059vw;
+  right: auto;
+  bottom: auto;
 }
 .content .prds {
   position: relative;
@@ -28,6 +32,21 @@
   cursor: pointer;
   z-index: 1;
   position: absolute;
+}
+.content .prds .link-wrap .btn:after {
+  content: '';
+  display: block;
+  width: 4.94117647vw;
+  height: 4.94117647vw;
+  background-image: url('../img/pc/pointer.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: scale 1s infinite;
+  position: absolute;
+  left: 3.52941176vw;
+  top: 2.35294118vw;
+  right: auto;
+  bottom: auto;
 }
 .content .prds .link-wrap .btn.btn1 {
   left: 12.11764706vw;
@@ -41,9 +60,21 @@
   left: auto;
   bottom: auto;
 }
+.content .prds .link-wrap .btn.btn2:after {
+  left: 2.94117647vw;
+  top: 1.76470588vw;
+  right: auto;
+  bottom: auto;
+}
 .content .prds .link-wrap .btn.btn3 {
   left: 9.64705882vw;
   top: 143.64705882vw;
+  right: auto;
+  bottom: auto;
+}
+.content .prds .link-wrap .btn.btn3:after {
+  left: 1.17647059vw;
+  top: -1.17647059vw;
   right: auto;
   bottom: auto;
 }
@@ -53,10 +84,22 @@
   right: auto;
   bottom: auto;
 }
+.content .prds .link-wrap .btn.btn4:after {
+  left: 3.52941176vw;
+  top: 1.17647059vw;
+  right: auto;
+  bottom: auto;
+}
 .content .prds .link-wrap .btn.btn5 {
   right: 8.11764706vw;
   top: 3.76470588vw;
   left: auto;
+  bottom: auto;
+}
+.content .prds .link-wrap .btn.btn5:after {
+  left: 2.94117647vw;
+  top: 1.17647059vw;
+  right: auto;
   bottom: auto;
 }
 .content .prds .link-wrap .btn.btn6 {
@@ -65,93 +108,129 @@
   left: auto;
   bottom: auto;
 }
+.content .prds .link-wrap .btn.btn6:after {
+  left: 1.76470588vw;
+  top: 1.17647059vw;
+  right: auto;
+  bottom: auto;
+}
 .content .prds .link-wrap .btn.btn7 {
   right: 1.76470588vw;
   top: 121.64705882vw;
   left: auto;
   bottom: auto;
 }
+.content .prds .link-wrap .btn.btn7:after {
+  left: 1.76470588vw;
+  top: 2.35294118vw;
+  right: auto;
+  bottom: auto;
+}
+@keyframes scale {
+  50% {
+    transform: scale(1.1);
+  }
+}
 .content .prds .birth-txt {
   width: 74.94117647vw;
   position: absolute;
   left: 12.47058824vw;
-  top: 78.82352941vw;
+  top: 80vw;
   right: auto;
   bottom: auto;
   transform: rotate(-5deg);
 }
-.content .prds .birth-txt path {
-  stroke-dasharray: 2500;
-  stroke-dashoffset: 2500;
+.content .prds .birth-txt svg path {
+  opacity: 0;
+}
+.content .prds .birth-txt.on svg {
+  animation: op 1s;
+  animation-delay: 7s;
+}
+.content .prds .birth-txt.on svg path {
+  opacity: 1;
+  stroke-dasharray: 5500;
+  stroke-dashoffset: 5500;
   animation: drawPath 20s linear infinite;
 }
 @keyframes drawPath {
   to {
-    stroke-dashoffset: -2500;
+    stroke-dashoffset: -5500;
   }
 }
-.content .prds .birth-txt .txt2 {
+@keyframes op {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.content .prds .birth-txt.on svg .txt1 {
   animation-delay: 0.3s;
 }
-.content .prds .birth-txt .txt3 {
-  animation-delay: 1.1s;
+.content .prds .birth-txt.on svg .txt2 {
+  animation-delay: 0s;
 }
-.content .prds .birth-txt .txt4 {
-  animation-delay: 0.8s;
-}
-.content .prds .birth-txt .txt5 {
+.content .prds .birth-txt.on svg .txt3 {
   animation-delay: 1.3s;
 }
-.content .prds .birth-txt .txt6 {
-  animation-delay: 2.2s;
+.content .prds .birth-txt.on svg .txt4 {
+  animation-delay: 1.2s;
 }
-.content .prds .birth-txt .txt7 {
+.content .prds .birth-txt.on svg .txt5 {
+  animation-delay: 1.4s;
+}
+.content .prds .birth-txt.on svg .txt6 {
+  animation-delay: 1.6s;
+}
+.content .prds .birth-txt.on svg .txt7 {
   animation-delay: 1.8s;
 }
-.content .prds .birth-txt .txt8 {
+.content .prds .birth-txt.on svg .txt8 {
+  animation-delay: 2.1s;
+}
+.content .prds .birth-txt.on svg .txt9 {
   animation-delay: 2.5s;
 }
-.content .prds .birth-txt .txt9 {
-  animation-delay: 3.2s;
+.content .prds .birth-txt.on svg .txt10 {
+  animation-delay: 3.1s;
 }
-.content .prds .birth-txt .txt10 {
-  animation-delay: 4s;
+.content .prds .birth-txt.on svg .txt11 {
+  animation-delay: 2.9s;
 }
-.content .prds .birth-txt .txt11 {
+.content .prds .birth-txt.on svg .txt12 {
+  animation-delay: 3.4s;
+}
+.content .prds .birth-txt.on svg .txt13 {
   animation-delay: 3.7s;
 }
-.content .prds .birth-txt .txt12 {
+.content .prds .birth-txt.on svg .txt14 {
+  animation-delay: 4s;
+}
+.content .prds .birth-txt.on svg .txt15 {
+  animation-delay: 4.2s;
+}
+.content .prds .birth-txt.on svg .txt16 {
+  animation-delay: 4.6s;
+}
+.content .prds .birth-txt.on svg .txt17 {
   animation-delay: 4.7s;
 }
-.content .prds .birth-txt .txt13 {
+.content .prds .birth-txt.on svg .txt18 {
   animation-delay: 5.2s;
 }
-.content .prds .birth-txt .txt14 {
+.content .prds .birth-txt.on svg .txt19 {
+  animation-delay: 4.9s;
+}
+.content .prds .birth-txt.on svg .txt20 {
+  animation-delay: 5.1s;
+}
+.content .prds .birth-txt.on svg .txt21 {
   animation-delay: 5.6s;
 }
-.content .prds .birth-txt .txt15 {
-  animation-delay: 6s;
-}
-.content .prds .birth-txt .txt16 {
-  animation-delay: 6.5s;
-}
-.content .prds .birth-txt .txt17 {
-  animation-delay: 6.7s;
-}
-.content .prds .birth-txt .txt18 {
-  animation-delay: 7.1s;
-}
-.content .prds .birth-txt .txt19 {
-  animation-delay: 6.8s;
-}
-.content .prds .birth-txt .txt20 {
-  animation-delay: 7.3s;
-}
-.content .prds .birth-txt .txt21 {
-  animation-delay: 8.8s;
-}
-.content .prds .birth-txt .txt22 {
-  animation-delay: 8.3s;
+.content .prds .birth-txt.on svg .txt22 {
+  animation-delay: 5.9s;
 }
 .content .bott {
   background-image: url('../img/mo/bott.png');

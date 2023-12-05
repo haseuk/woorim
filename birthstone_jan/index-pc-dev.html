@@ -1,29 +1,204 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style-pc.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
+<style>
+  .content {
+    font-size: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1264px;
+    text-align: center;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+    margin: 0px;
+  }
+  .content .visual {
+    position: relative;
+  }
+  .content .visual .top {
+    position: absolute;
+    left: 50%;
+    top: 260px;
+    right: auto;
+    bottom: auto;
+    width: 788px;
+    height: 692px;
+    margin-left: -394px;
+  }
+  .content .visual .top iframe {
+    width: 788px;
+    height: 692px;
+  }
+  .content .prds {
+    position: relative;
+  }
+  .content .prds .link-wrap .btn {
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    margin-left: -22px;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231405/pc/pointer.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: scale 1s infinite;
+  }
+  .content .prds .link-wrap .btn.btn1 {
+    margin-left: -340px;
+    top: 216px;
+  }
+  .content .prds .link-wrap .btn.btn2 {
+    margin-left: -142px;
+    top: 1132px;
+  }
+  .content .prds .link-wrap .btn.btn3 {
+    margin-left: 96px;
+    top: 1048px;
+  }
+  .content .prds .link-wrap .btn.btn4 {
+    margin-left: -56px;
+    top: 90px;
+  }
+  .content .prds .link-wrap .btn.btn5 {
+    margin-left: 310px;
+    top: 52px;
+  }
+  .content .prds .link-wrap .btn.btn6 {
+    margin-left: 110px;
+    top: 366px;
+  }
+  .content .prds .link-wrap .btn.btn7 {
+    margin-left: -394px;
+    top: 1000px;
+  }
+  @keyframes scale {
+    50% {
+      transform: scale(1.1);
     }
-  </style>
-</head>
-<body>
+  }
+  .content .prds .birth-txt {
+    width: 776px;
+    position: absolute;
+    left: 50%;
+    top: 640px;
+    right: auto;
+    bottom: auto;
+    margin-left: -390px;
+    transform: rotate(-5deg);
+  }
+  .content .prds .birth-txt svg path {
+    stroke-dasharray: 5500;
+    stroke-dashoffset: 5500;
+    animation: drawPath 20s linear infinite;
+  }
+  @keyframes drawPath {
+    to {
+      stroke-dashoffset: -5500;
+    }
+  }
+  .content .prds .birth-txt svg .txt1 {
+    animation-delay: 0.3s;
+  }
+  .content .prds .birth-txt svg .txt2 {
+    animation-delay: 0s;
+  }
+  .content .prds .birth-txt svg .txt3 {
+    animation-delay: 1.3s;
+  }
+  .content .prds .birth-txt svg .txt4 {
+    animation-delay: 1.2s;
+  }
+  .content .prds .birth-txt svg .txt5 {
+    animation-delay: 1.4s;
+  }
+  .content .prds .birth-txt svg .txt6 {
+    animation-delay: 1.6s;
+  }
+  .content .prds .birth-txt svg .txt7 {
+    animation-delay: 1.8s;
+  }
+  .content .prds .birth-txt svg .txt8 {
+    animation-delay: 2.1s;
+  }
+  .content .prds .birth-txt svg .txt9 {
+    animation-delay: 2.5s;
+  }
+  .content .prds .birth-txt svg .txt10 {
+    animation-delay: 3.1s;
+  }
+  .content .prds .birth-txt svg .txt11 {
+    animation-delay: 2.9s;
+  }
+  .content .prds .birth-txt svg .txt12 {
+    animation-delay: 3.4s;
+  }
+  .content .prds .birth-txt svg .txt13 {
+    animation-delay: 3.7s;
+  }
+  .content .prds .birth-txt svg .txt14 {
+    animation-delay: 4s;
+  }
+  .content .prds .birth-txt svg .txt15 {
+    animation-delay: 4.2s;
+  }
+  .content .prds .birth-txt svg .txt16 {
+    animation-delay: 4.6s;
+  }
+  .content .prds .birth-txt svg .txt17 {
+    animation-delay: 4.7s;
+  }
+  .content .prds .birth-txt svg .txt18 {
+    animation-delay: 5.2s;
+  }
+  .content .prds .birth-txt svg .txt19 {
+    animation-delay: 4.9s;
+  }
+  .content .prds .birth-txt svg .txt20 {
+    animation-delay: 5.1s;
+  }
+  .content .prds .birth-txt svg .txt21 {
+    animation-delay: 5.6s;
+  }
+  .content .prds .birth-txt svg .txt22 {
+    animation-delay: 5.9s;
+  }
+  .content .bott {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231405/pc/bott.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1264px;
+    height: 861px;
+    padding-top: 51px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .content .bott iframe {
+    width: 609px;
+    height: 761px;
+    position: absolute;
+    left: 50%;
+    top: 51px;
+    right: auto;
+    bottom: auto;
+    margin-left: -303.5px;
+  }
+  /*# sourceMappingURL=style-pc.css.map */
+</style>
 <div class="content">
   <div class="visual">
-    <img src="img/pc/top.png" alt="birthstone gift january">
+    <img src="https://woorimstg.cafe24.com/img/project/231405/pc/top.png" alt="birthstone gift january">
     <div class="top vid">
       <iframe src='https://player.vimeo.com/video/889369461?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>
     </div>
   </div>
-  <img src="img/pc/garnet.png" alt="매력과 자신감을 배가시켜주는 장미밎 보석 로돌라이트 가넷">
+  <img src="https://woorimstg.cafe24.com/img/project/231405/pc/garnet.png" alt="매력과 자신감을 배가시켜주는 장미밎 보석 로돌라이트 가넷">
   <div class="prds">
-    <img src="img/pc/products.png" alt="1월의 탄생석">
+    <img src="https://woorimstg.cafe24.com/img/project/231405/pc/products.png" alt="1월의 탄생석">
     <div class="link-wrap">
       <a href="https://woorimrsm.cafe24.com/product/14k-%EB%AA%A9%EA%B1%B8%EC%9D%B41%EC%9B%94%ED%83%84%EC%83%9D%EC%84%9D-rs1306/2633/category/34/display/1/" class="btn btn1">RS1306</a>
       <a href="https://woorimrsm.cafe24.com/product/14k-%ED%94%BC%EC%96%B4%EC%8B%B1%EC%8B%B1%EA%B8%80-rs1106/2587/category/44/display/1/" class="btn btn2">RS1106</a>
@@ -64,10 +239,4 @@
     </div>
 
   </div>
-
-<!--  <div class="bott vid">-->
-<!--    <iframe src='https://player.vimeo.com/video/889369513?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>-->
-<!--  </div>-->
 </div>
-</body>
-</html>

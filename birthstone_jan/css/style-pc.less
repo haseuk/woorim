@@ -2,8 +2,10 @@
 
 .content { .fs(0); .mh-c; .max-w(1264); .tc; .rel;
   img { .wf; .vat; .m(0); }
-  .vid { .bgc(#ffe9e9);
-    iframe { .wh(786,692); }
+  .visual { .rel;
+    .top { .abs; .lt(50%,260); .wh(788,692); .ml(-394);
+      iframe { .wh(788,692); }
+    }
   }
   .prds { .rel;
     .link-wrap {
@@ -20,11 +22,44 @@
         50% { transform: scale(1.1); }
       }
     }
-    .birth-txt { .w(776); .abs; .lt(50%,610); .ml(-390);
-      svg { .wf; }
+    .birth-txt { .w(776); .abs; .lt(50%,640); .ml(-390); transform: rotate(-5deg);
+      svg {
+        path {
+          stroke-dasharray: 5500;
+          stroke-dashoffset: 5500;
+          animation: drawPath 20s linear infinite;
+        }
+        @keyframes drawPath {
+          to {
+            stroke-dashoffset: -5500;
+          }
+        }
+        .txt1 { animation-delay: 0.3s; }
+        .txt2 { animation-delay: 0s; }
+        .txt3 { animation-delay: 1.3s; }
+        .txt4 { animation-delay: 1.2s; }
+        .txt5 { animation-delay: 1.4s; }
+        .txt6 { animation-delay: 1.6s; }
+        .txt7 { animation-delay: 1.8s; }
+        .txt8 { animation-delay: 2.1s; }
+        .txt9 { animation-delay: 2.5s; }
+        .txt10 { animation-delay: 3.1s; }
+        .txt11 { animation-delay: 2.9s; }
+        .txt12 { animation-delay: 3.4s; }
+        .txt13 { animation-delay: 3.7s; }
+        .txt14 { animation-delay: 4s; }
+        .txt15 { animation-delay: 4.2s; }
+        .txt16 { animation-delay: 4.6s; }
+        .txt17 { animation-delay: 4.7s; }
+        .txt18 { animation-delay: 5.2s; }
+        .txt19 { animation-delay: 4.9s; }
+        .txt20 { animation-delay: 5.1s; }
+        .txt21 { animation-delay: 5.6s; }
+        .txt22 { animation-delay: 5.9s; }
+      }
     }
   }
-  .bott { .contain('../img/pc/bott.png'); .wh(1264,861); .pt(51); .-box;
-    iframe { .wh(609,762); }
+  .bott { .contain('../img/pc/bott.png'); .wh(1264,861); .pt(51); .-box; .rel;
+    iframe { .wh(609,761); .abs; .lt(50%,51); .ml(-303.5); }
   }
 }

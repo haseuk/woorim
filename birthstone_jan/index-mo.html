@@ -15,9 +15,11 @@
 </head>
 <body>
 <div class="content">
-  <img src="img/mo/title.png" alt="birthstone gift january">
-  <div class="top vid">
-    <iframe src='https://player.vimeo.com/video/889369461?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>
+  <div class="visual">
+    <img src="img/mo/top.png" alt="birthstone gift january">
+    <div class="top vid">
+      <iframe src='https://player.vimeo.com/video/889369461?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>
+    </div>
   </div>
   <img src="img/mo/garnet.png" alt="매력과 자신감을 배가시켜주는 장미밎 보석 로돌라이트 가넷">
   <div class="prds">
@@ -31,7 +33,7 @@
       <a href="" class="btn btn6">RS0002</a>
       <a href="" class="btn btn7">RS0340</a>
     </div>
-    
+
     <div class="birth-txt">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 623 99.39">
         <g id="pen" data-name="pen" >
@@ -63,12 +65,24 @@
 
   </div>
 
-  <div class="bott vid">
-    <iframe src='https://player.vimeo.com/video/889369513?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>
-  </div>
+<!--  <div class="bott vid">-->
+<!--    <iframe src='https://player.vimeo.com/video/889369513?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>-->
+<!--  </div>-->
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.0/vivus.js" integrity="sha512-Tz113urJePvCMdko0ky9901mnHMcWLUKv7/QhbGGdWIkgv/wGPMz7gM7hr5jzS8mtv0dS/u6cYyqAO5hPlJ6ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+  let pen = document.querySelector('.birth-txt')
+  penAct();
+  setInterval(() => {
+    pen.classList.remove('on');
+    penAct();
+  }, 9000);
+
+  function penAct() {
+    setTimeout(() => {
+      pen.classList.add('on');
+    }, 1000)
+  }
+
 </script>
 </body>
 </html>
