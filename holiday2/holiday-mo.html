@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+</head>
+<body style="margin: 0;padding: 0;">
+  <div id="content" class="holiday">
+    <div class="holi2-wrap">
+      <div class="top">
+        <iframe src='https://player.vimeo.com/video/892132968?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>
+      </div>
+      <div class="card-wrap" data-card="1">
+        <ul>
+          <li class="on">
+            <div class="card card1"></div>
+            <a class="card-btn" data-select="1">카드선택</a>
+          </li>
+          <li>
+            <div class="card card2"></div>
+            <a class="card-btn" data-select="2">카드선택</a>
+          </li>
+          <li>
+            <div class="card card3"></div>
+            <a class="card-btn" data-select="3">카드선택</a>
+          </li>
+          <li>
+            <div class="card card4"></div>
+            <a class="card-btn" data-select="4">카드선택</a>
+          </li>
+          <li>
+            <div class="card card5"></div>
+            <a class="card-btn" data-select="5">카드선택</a>
+          </li>
+        </ul>
+
+        <div class="card-view">
+          <div class="vis"></div>
+          <div class="product">
+            <div class="prd prd1">
+              <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-b0050/5081/category/27/display/1/" class="btn">B0050</a>
+              <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EB%8C%84%EC%8B%B1%EC%8A%A4%ED%86%A4-%EB%AA%A9%EA%B1%B8%EC%9D%B4-n0148/5060/category/27/display/1/" class="btn">N0148</a>
+              <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EC%9B%90%ED%84%B0%EC%B9%98-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0490/5087/category/27/display/1/" class="btn">F0490</a>
+            </div>
+            <div class="prd prd2">
+              <a href="#" class="btn">F0493D</a>
+              <a href="#" class="btn">F0495D</a>
+              <a href="https://woorimstg.cafe24.com/product/dal-14k-%EB%B0%98%EC%A7%80-f0421/4279/category/27/display/1/" class="btn">F0421</a>
+            </div>
+            <div class="prd prd3">
+              <a href="https://woorimstg.cafe24.com/product/14k-%EB%9F%AD%ED%82%A4%EC%9C%A0-%EB%AA%A9%EA%B1%B8%EC%9D%B4-p1406/3960/category/27/display/1/" class="btn">P1406</a>
+              <a href="https://woorimstg.cafe24.com/product/14k-%EB%9F%AD%ED%82%A4%EC%9C%A0-%EA%B7%80%EA%B1%B8%EC%9D%B4-p1405/3959/category/27/display/1/" class="btn">P1405</a>
+              <a href="https://woorimstg.cafe24.com/product/new-luckyu-14k-%ED%8C%94%EC%B0%8C-f0392/3702/category/27/display/1/" class="btn">F0392</a>
+            </div>
+            <div class="prd prd4">
+              <a href="https://woorimstg.cafe24.com/product/u-lock-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-t1969/4041/category/27/display/1/" class="btn">T1969</a>
+              <a href="https://woorimstg.cafe24.com/product/u-lock-14k-%EC%9B%90%ED%84%B0%EC%B9%98-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0375/3693/category/27/display/1/" class="btn">F0375</a>
+              <a href="https://woorimstg.cafe24.com/product/u-lock-14k-%ED%8C%94%EC%B0%8C-h0158/4393/category/27/display/1/" class="btn">H0158</a>
+            </div>
+            <div class="prd prd5">
+              <a href="https://woorimstg.cafe24.com/product/dal-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-t2037/4262/category/27/display/1/" class="btn">T2037</a>
+              <a href="https://woorimstg.cafe24.com/product/dal-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-t2026/4260/category/27/display/1/" class="btn">T2026</a>
+              <a href="https://woorimstg.cafe24.com/product/dal-14k-%ED%8C%94%EC%B0%8C-t2029/4261/category/27/display/1/" class="btn">T2029</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script>
+    let btn = document.querySelectorAll('.card-btn');
+    let cardWarp = document.querySelector('.card-wrap');
+    Array.prototype.forEach.call(btn, function(e) {
+      e.addEventListener('click', function() {
+        let idx = e.getAttribute('data-select');
+        cardWarp.setAttribute('data-card', idx);
+      })
+    })
+  </script>
+</body>
+</html>
