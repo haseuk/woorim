@@ -264,11 +264,11 @@
     <div class="link-wrap">
       <a href="https://woorimrsm.cafe24.com/product/14k-%EB%AA%A9%EA%B1%B8%EC%9D%B41%EC%9B%94%ED%83%84%EC%83%9D%EC%84%9D-rs1306/2633/category/34/display/1/" class="btn btn1">RS1306</a>
       <a href="https://woorimrsm.cafe24.com/product/14k-%ED%94%BC%EC%96%B4%EC%8B%B1%EC%8B%B1%EA%B8%80-rs1106/2587/category/44/display/1/" class="btn btn2">RS1106</a>
-      <a href="" class="btn btn3">RC0341</a>
-      <a href="" class="btn btn4">RC0353</a>
-      <a href="" class="btn btn5">RS0001</a>
-      <a href="" class="btn btn6">RS0002</a>
-      <a href="" class="btn btn7">RS0340</a>
+      <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%ED%8C%94%EC%B0%8C-1%EC%9B%94-%ED%83%84%EC%83%9D%EC%84%9D-rc0341/4993/category/79/display/1/" class="btn btn3">RC0341</a>
+      <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%EA%B7%80%EA%B1%B8%EC%9D%B4-1%EC%9B%94-%ED%83%84%EC%83%9D%EC%84%9D-rc0353/4994/category/79/display/1/" class="btn btn4">RC0353</a>
+      <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-rs0001/4997/category/78/display/1/" class="btn btn5">RS0001</a>
+      <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rs0002/4996/category/78/display/1/" class="btn btn6">RS0002</a>
+      <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B41%EC%9B%94%ED%83%84%EC%83%9D%EC%84%9D-rs0340/4995/category/78/display/1/" class="btn btn7">RS0340</a>
     </div>
 
     <div class="birth-txt">
@@ -303,17 +303,16 @@
   </div>
 </div>
 <script>
-  let pen = document.querySelector('.birth-txt')
-  penAct();
-  setInterval(() => {
+  let pen = document.querySelector('.birth-txt');
+  function penAct() {
+    setTimeout(function() {
+      pen.classList.add('on');
+    }, 1000);
+  }
+  setInterval(function() {
     pen.classList.remove('on');
     penAct();
   }, 9000);
 
-  function penAct() {
-    setTimeout(() => {
-      pen.classList.add('on');
-    }, 1000)
-  }
-
+  penAct();
 </script>

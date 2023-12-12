@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>웰컴쿠폰</title>
+</head>
+<body>
+  <style>
+    body { margin: 0; padding:0; }
+    .container-evt { font-size: 0; position: relative; }
+    .container-evt img { width: 100%; vertical-align: top; }
+    .container-evt img.pc { display: none; }
+    .container-evt .btn { width:calc(610/850*100%); padding-top: calc(118/850*100%); position: absolute; left:50%; bottom:calc(564/4657*100%); transform: translateX(-50%); cursor: pointer; z-index: 1; }
+    @media screen and (min-width: 1024px) {
+      .container-evt { max-width: 1264px; margin: 0 auto; }
+      .container-evt img.mo { display: none; }
+      .container-evt img.pc { display: block; }
+      .container-evt .btn { width: 610px; height:116px; position: absolute; left:50%; bottom:486px; transform: translateX(-50%); cursor: pointer; z-index: 1; }
+    }
+  </style>
+  <div class="container-evt">
+    <img src="https://woorimstg.cafe24.com/img/project/231212/openevent_mo.png" class="mo" alt="웰컴쿠폰! 오직 임직원 60% 할인">
+    <img src="https://woorimstg.cafe24.com/img/project/231212/openevent_pc.png" class="pc" alt="웰컴쿠폰! 오직 임직원 60% 할인">
+    <a href="https://woorimstg.cafe24.com/member/join.html" target="_blank" class="btn">회원가입하고 쿠폰받기</a>
+  </div>
+</body>
+</html>
