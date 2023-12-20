@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="45dcda47-856d-47e9-b08a-827c8907f526" name="woorim" url="http://woorim.devcraft.kr">
+        <fileTransfer rootFolder="/var/www/woorim" accessType="SFTP" host="devcraft.kr" port="22" sshConfigId="89db4720-14da-4e79-b1a6-f9002a4836b0" sshConfig="root@devcraft.kr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
