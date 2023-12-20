@@ -1,0 +1,58 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 750px; .rel;
+  img { .wf; .vat; .m(0); }
+  .top { .rel;
+    .window-frame { .f; .abs; .lt; .contain('../img/mo/window-frame.png');
+      .necklace { .wh(712,712); .abs; .lt(69,450); .crop;
+        img { .f; .mt(-100); animation: swing 1s alternate infinite ease-in-out; transform-origin: center top; }
+      }
+      @keyframes swing {
+        0% { transform: rotate(2deg); }
+        100% { transform: rotate(-2deg); }
+      }
+    }
+    .window { .wh(614,850); .abs; .lt(119,338); .br(236); .crop;
+      span { .wh(614,866); .ib; .contain('../img/mo/window.png'); animation: window 1.5s forwards; animation-delay: 1s; }
+      @keyframes window {
+        100% { transform: translateY(-90%); }
+      }
+    }
+    .cloud { .wh(388,375); .contain('../img/mo/cloud.png'); .abs; .lb(0,186); }
+  }
+  .new-collection { .wh(850,1162); .rel;
+    img { .hide; }
+    iframe { .f; .rel; .z(1); }
+    video { .abs; .wh(850,1162); .lt; }
+  }
+  .product-wrap {
+    .prd-inner { .rel; .-box;
+      .tit { .abs; .lt(50%,0); transform: translateX(-50%); .z(2); }
+      .swiper-model { .wh(640,640); .br(50%); .-a(#e7fbff,3); .crop; .-box; .rel;
+        &:after { .cnt; .abs; .contain; .z(1); }
+        &.model1:after { .wh(84,43); .bg('../img/mo/no1.png'); .lb(169,34); }
+        &.model2:after { .wh(88,45); .bg('../img/mo/no2.png'); .lb(166,32); }
+        &.model3:after { .wh(141,76); .bg('../img/mo/no3.png'); .lb(138,23); }
+      }
+      &.prd-inner1 { .wh(850,1688); .contain('../img/mo/bg1.png'); .pt(358); }
+      &.prd-inner2 { .wh(850,1386); .contain('../img/mo/bg2.png'); .pt(57);
+        .tit { .wh(303,87); }
+      }
+      &.prd-inner3 { .wh(850,1415); .contain('../img/mo/bg3.png'); .pt(62);
+        .tit { .wh(246,83); }
+      }
+      .prd-swiper { .mt(20); .p(15,60,25); .-box;
+        .swiper-slide { .wh(356,535); .rel; box-shadow: 0 2px 7px 2px rgba(0,0,0,0.15); .br-t(170); }
+        &.prd1 {
+          .swiper-slide { box-shadow: none;
+            &.slide3 { .w(376); }
+            span { .wh(356,535); .abs; .lb; box-shadow: 0 2px 7px 2px rgba(0,0,0,0.15); .br-t(170); .z(-1); }
+            img { .hf; }
+          }
+        }
+      }
+    }
+  }
+}

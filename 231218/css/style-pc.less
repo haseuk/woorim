@@ -1,0 +1,56 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; .m(0); }
+  .top { .rel;
+    .window-frame { .wh(700,905); .abs; .lt(286,218); .contain('../img/pc/window-frame.png');
+      .necklace { .wh(712,523); .abs; .lt(50%,190); .ml(-356); .crop;
+        img { .wh(712,712); .mt(-170); animation: swing 1s alternate infinite ease-in-out; transform-origin: center top; }
+      }
+      @keyframes swing {
+        0% { transform: rotate(2deg); }
+        100% { transform: rotate(-2deg); }
+      }
+    }
+    .window { .wh(512,707); .abs; .lt(377,315); .br(196); .crop;
+      span { .wh(512,723); .ib; .contain('../img/pc/window.png'); animation: window 1.5s forwards; animation-delay: 1s; }
+      @keyframes window {
+        100% { transform: translateY(-90%); }
+      }
+    }
+    .cloud { .wh(592,407); .contain('../img/pc/cloud.png'); .abs; .lb(0,22); }
+  }
+  .product-wrap {
+    .prd-inner { .p(0,112,100); .rel; .-box; .flex; .space-between; .items-end;
+      .swiper-model { .wh(401,567); .crop; .rel; .mr(23);
+        &:after { .cnt; .abs; .lb(50%,20); transform: translateX(-50%); .contain; .z(1); }
+        &.model1:after { .wh(91,24); .bg('../img/pc/no1.png'); }
+        &.model2:after { .wh(98,24); .bg('../img/pc/no2.png'); }
+        &.model3:after { .wh(159,29); .bg('../img/pc/no3.png'); }
+      }
+      &.prd-inner1 { .h(928); .pt(261);
+        &:after { .cnt; .wh(1264,928); .contain('../img/pc/bg1.png'); .abs; .lt;  }
+      }
+      &.prd-inner2 { .h(667); flex-direction: row-reverse;
+        .swiper-model { .m(0,0,0,23); }
+        &:after { .cnt; .wh(1264,667); .contain('../img/pc/bg2.png'); .abs; .lt; }
+      }
+      &.prd-inner3 { .h(715); .pb(148);
+        &:after { .cnt; .wh(1264,715); .contain('../img/pc/bg3.png'); .abs; .lt; }
+      }
+      .prds { .w(616);
+        .btn { .wh(302,346); .ib; .vab; .rel; .crop;
+          &:nth-child(1) { .mr(12); }
+          img { .rel; .z(1); }
+          &:hover span { .f; .ib; .contain; .abs; .lt; .z(2); }
+          &:hover.btn1 span { .bg('../img/pc/prd1-1-ov.png'); }
+          &:hover.btn2 span { .bg('../img/pc/prd1-2-ov.png'); }
+          &:hover.btn3 span { .bg('../img/pc/prd2-1-ov.png'); }
+          &:hover.btn4 span { .bg('../img/pc/prd2-2-ov.png'); }
+          &:hover.btn5 span { .bg('../img/pc/prd3-1-ov.png'); }
+          &:hover.btn6 span { .bg('../img/pc/prd3-2-ov.png'); }
+        }
+      }
+    }
+  }
+}

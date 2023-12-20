@@ -1,0 +1,34 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 750px; .rel;
+  .c-inner {
+    img { .wf; .vat; .m(0); }
+    .top { .wh(850,806); .contain('../img/mo/top.png'); .rel;
+      .light { .wh(44,67); .abs; .contain('../img/mo/light.png'); transform: scale(0.7); animation: twinkle 1.8s linear infinite;
+        &.light1 { .lt(199,322); animation-delay: 1s; }
+        &.light2 { .rt(192,175); animation-delay: 0.5s; }
+        &.light3 { .lt(332,239); animation-delay: 1.8s; }
+        &.light4 { .rt(103,407); animation-delay: 2s; }
+      }
+      @keyframes twinkle {
+        50% { transform: scale(1.5); }
+      }
+      .tab { .wh(850,122); .abs; .lb;
+        .btn { .wh(50%,100%); .ib; .vat; }
+      }
+    }
+    .product {
+      .line { .wh(850,1845); .p(82,50); .-box; .hide;
+        &.gold { .contain('../img/mo/g-prds.png'); }
+        &.silver { .contain('../img/mo/s-prds.png'); }
+        .btns { .flex; .space-between; .flex-wrap;
+          .btn { .wh(240,489); .mb(82); .ib; }
+        }
+      }
+    }
+    &[data-line="1"] .product .gold,
+    &[data-line="2"] .product .silver { .block; }
+  }
+}

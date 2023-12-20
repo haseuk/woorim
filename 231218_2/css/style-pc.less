@@ -1,0 +1,65 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; .m(0); }
+  .c-inner {
+    img { .wf; .vat; .m(0); }
+    .top { .wh(1264,738); .contain('../img/pc/top.png'); .rel;
+      .light { .wh(44,67); .abs; .contain('../img/pc/light.png'); transform: scale(0.7); animation: twinkle 1.8s linear infinite;
+        &.light1 { .lt(436,279); animation-delay: 1s; }
+        &.light2 { .rt(437,150); animation-delay: 0.5s; }
+        &.light3 { .lt(556,221); animation-delay: 1.8s; }
+        &.light4 { .rt(358,358); animation-delay: 2s; }
+      }
+      @keyframes twinkle {
+        50% { transform: scale(1.5); }
+      }
+      .tab { .wh(1264,122); .abs; .lb;
+        .btn { .wh(50%,100%); .ib; .vat; .pointer; }
+      }
+    }
+    .product {
+      .line { .wh(1264,1392); .p(80,112); .-box; .hide;
+        .btns { .flex; .space-between; .flex-wrap;
+          .btn { .wh(253,354); .mb(60); .ib; .rel;
+            &:hover:after { .cnt; .f; .contain; .abs; .lt; .z(1); }
+          }
+        }
+        &.gold { .contain('../img/pc/g-prds.png');
+          .btns .btn {
+            &.btn1:hover:after { .bg('../img/pc/prd1.png') }
+            &.btn2:hover:after { .bg('../img/pc/prd2.png') }
+            &.btn3:hover:after { .bg('../img/pc/prd3.png') }
+            &.btn4:hover:after { .bg('../img/pc/prd4.png') }
+            &.btn5:hover:after { .bg('../img/pc/prd5.png') }
+            &.btn6:hover:after { .bg('../img/pc/prd6.png') }
+            &.btn7:hover:after { .bg('../img/pc/prd7.png') }
+            &.btn8:hover:after { .bg('../img/pc/prd8.png') }
+            &.btn9:hover:after { .bg('../img/pc/prd9.png') }
+            &.btn10:hover:after { .bg('../img/pc/prd10.png') }
+            &.btn11:hover:after { .bg('../img/pc/prd11.png') }
+            &.btn12:hover:after { .bg('../img/pc/prd12.png') }
+          }
+        }
+        &.silver { .contain('../img/pc/s-prds.png');
+          .btns .btn {
+            &.btn1:hover:after { .bg('../img/pc/prd-s1.png') }
+            &.btn2:hover:after { .bg('../img/pc/prd-s2.png') }
+            &.btn3:hover:after { .bg('../img/pc/prd-s3.png') }
+            &.btn4:hover:after { .bg('../img/pc/prd-s4.png') }
+            &.btn5:hover:after { .bg('../img/pc/prd-s5.png') }
+            &.btn6:hover:after { .bg('../img/pc/prd-s6.png') }
+            &.btn7:hover:after { .bg('../img/pc/prd-s7.png') }
+            &.btn8:hover:after { .bg('../img/pc/prd-s8.png') }
+            &.btn9:hover:after { .bg('../img/pc/prd-s9.png') }
+            &.btn10:hover:after { .bg('../img/pc/prd-s10.png') }
+            &.btn11:hover:after { .bg('../img/pc/prd-s11.png') }
+            &.btn12:hover:after { .bg('../img/pc/prd-s12.png') }
+          }
+        }
+      }
+    }
+    &[data-line="1"] .product .gold,
+    &[data-line="2"] .product .silver { .block; }
+  }
+}

@@ -1,0 +1,115 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 750px;
+  position: relative;
+}
+.content .c-inner img {
+  width: 100%;
+  vertical-align: top;
+  margin: 0vw;
+}
+.content .c-inner .top {
+  width: 100vw;
+  height: 94.82352941vw;
+  background-image: url('../img/mo/top.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .c-inner .top .light {
+  width: 5.17647059vw;
+  height: 7.88235294vw;
+  position: absolute;
+  background-image: url('../img/mo/light.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(0.7);
+  animation: twinkle 1.8s linear infinite;
+}
+.content .c-inner .top .light.light1 {
+  left: 23.41176471vw;
+  top: 37.88235294vw;
+  right: auto;
+  bottom: auto;
+  animation-delay: 1s;
+}
+.content .c-inner .top .light.light2 {
+  right: 22.58823529vw;
+  top: 20.58823529vw;
+  left: auto;
+  bottom: auto;
+  animation-delay: 0.5s;
+}
+.content .c-inner .top .light.light3 {
+  left: 39.05882353vw;
+  top: 28.11764706vw;
+  right: auto;
+  bottom: auto;
+  animation-delay: 1.8s;
+}
+.content .c-inner .top .light.light4 {
+  right: 12.11764706vw;
+  top: 47.88235294vw;
+  left: auto;
+  bottom: auto;
+  animation-delay: 2s;
+}
+@keyframes twinkle {
+  50% {
+    transform: scale(1.5);
+  }
+}
+.content .c-inner .top .tab {
+  width: 100vw;
+  height: 14.35294118vw;
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+}
+.content .c-inner .top .tab .btn {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+.content .c-inner .product .line {
+  width: 100vw;
+  height: 217.05882353vw;
+  padding-top: 9.64705882vw;
+  padding-right: 5.88235294vw;
+  padding-bottom: 9.64705882vw;
+  padding-left: 5.88235294vw;
+  box-sizing: border-box;
+  display: none;
+}
+.content .c-inner .product .line.gold {
+  background-image: url('../img/mo/g-prds.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .c-inner .product .line.silver {
+  background-image: url('../img/mo/s-prds.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .c-inner .product .line .btns {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .c-inner .product .line .btns .btn {
+  width: 28.23529412vw;
+  height: 57.52941176vw;
+  margin-bottom: 9.64705882vw;
+  display: inline-block;
+}
+.content .c-inner[data-line="1"] .product .gold,
+.content .c-inner[data-line="2"] .product .silver {
+  display: block;
+}
+/*# sourceMappingURL=style-mo.css.map */

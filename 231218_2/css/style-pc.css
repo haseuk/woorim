@@ -1,0 +1,207 @@
+.content {
+  font-size: 0px;
+  max-width: 1264px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+  margin: 0px;
+}
+.content .c-inner img {
+  width: 100%;
+  vertical-align: top;
+  margin: 0px;
+}
+.content .c-inner .top {
+  width: 1264px;
+  height: 738px;
+  background-image: url('../img/pc/top.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .c-inner .top .light {
+  width: 44px;
+  height: 67px;
+  position: absolute;
+  background-image: url('../img/pc/light.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(0.7);
+  animation: twinkle 1.8s linear infinite;
+}
+.content .c-inner .top .light.light1 {
+  left: 436px;
+  top: 279px;
+  right: auto;
+  bottom: auto;
+  animation-delay: 1s;
+}
+.content .c-inner .top .light.light2 {
+  right: 437px;
+  top: 150px;
+  left: auto;
+  bottom: auto;
+  animation-delay: 0.5s;
+}
+.content .c-inner .top .light.light3 {
+  left: 556px;
+  top: 221px;
+  right: auto;
+  bottom: auto;
+  animation-delay: 1.8s;
+}
+.content .c-inner .top .light.light4 {
+  right: 358px;
+  top: 358px;
+  left: auto;
+  bottom: auto;
+  animation-delay: 2s;
+}
+@keyframes twinkle {
+  50% {
+    transform: scale(1.5);
+  }
+}
+.content .c-inner .top .tab {
+  width: 1264px;
+  height: 122px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: auto;
+  top: auto;
+}
+.content .c-inner .top .tab .btn {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+.content .c-inner .product .line {
+  width: 1264px;
+  height: 1392px;
+  padding-top: 80px;
+  padding-right: 112px;
+  padding-bottom: 80px;
+  padding-left: 112px;
+  box-sizing: border-box;
+  display: none;
+}
+.content .c-inner .product .line .btns {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .c-inner .product .line .btns .btn {
+  width: 253px;
+  height: 354px;
+  margin-bottom: 60px;
+  display: inline-block;
+  position: relative;
+}
+.content .c-inner .product .line .btns .btn:hover:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+}
+.content .c-inner .product .line.gold {
+  background-image: url('../img/pc/g-prds.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .c-inner .product .line.gold .btns .btn.btn1:hover:after {
+  background-image: url('../img/pc/prd1.png');
+}
+.content .c-inner .product .line.gold .btns .btn.btn2:hover:after {
+  background-image: url('../img/pc/prd2.png');
+}
+.content .c-inner .product .line.gold .btns .btn.btn3:hover:after {
+  background-image: url('../img/pc/prd3.png');
+}
+.content .c-inner .product .line.gold .btns .btn.btn4:hover:after {
+  background-image: url('../img/pc/prd4.png');
+}
+.content .c-inner .product .line.gold .btns .btn.btn5:hover:after {
+  background-image: url('../img/pc/prd5.png');
+}
+.content .c-inner .product .line.gold .btns .btn.btn6:hover:after {
+  background-image: url('../img/pc/prd6.png');
+}
+.content .c-inner .product .line.gold .btns .btn.btn7:hover:after {
+  background-image: url('../img/pc/prd7.png');
+}
+.content .c-inner .product .line.gold .btns .btn.btn8:hover:after {
+  background-image: url('../img/pc/prd8.png');
+}
+.content .c-inner .product .line.gold .btns .btn.btn9:hover:after {
+  background-image: url('../img/pc/prd9.png');
+}
+.content .c-inner .product .line.gold .btns .btn.btn10:hover:after {
+  background-image: url('../img/pc/prd10.png');
+}
+.content .c-inner .product .line.gold .btns .btn.btn11:hover:after {
+  background-image: url('../img/pc/prd11.png');
+}
+.content .c-inner .product .line.gold .btns .btn.btn12:hover:after {
+  background-image: url('../img/pc/prd12.png');
+}
+.content .c-inner .product .line.silver {
+  background-image: url('../img/pc/s-prds.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .c-inner .product .line.silver .btns .btn.btn1:hover:after {
+  background-image: url('../img/pc/prd-s1.png');
+}
+.content .c-inner .product .line.silver .btns .btn.btn2:hover:after {
+  background-image: url('../img/pc/prd-s2.png');
+}
+.content .c-inner .product .line.silver .btns .btn.btn3:hover:after {
+  background-image: url('../img/pc/prd-s3.png');
+}
+.content .c-inner .product .line.silver .btns .btn.btn4:hover:after {
+  background-image: url('../img/pc/prd-s4.png');
+}
+.content .c-inner .product .line.silver .btns .btn.btn5:hover:after {
+  background-image: url('../img/pc/prd-s5.png');
+}
+.content .c-inner .product .line.silver .btns .btn.btn6:hover:after {
+  background-image: url('../img/pc/prd-s6.png');
+}
+.content .c-inner .product .line.silver .btns .btn.btn7:hover:after {
+  background-image: url('../img/pc/prd-s7.png');
+}
+.content .c-inner .product .line.silver .btns .btn.btn8:hover:after {
+  background-image: url('../img/pc/prd-s8.png');
+}
+.content .c-inner .product .line.silver .btns .btn.btn9:hover:after {
+  background-image: url('../img/pc/prd-s9.png');
+}
+.content .c-inner .product .line.silver .btns .btn.btn10:hover:after {
+  background-image: url('../img/pc/prd-s10.png');
+}
+.content .c-inner .product .line.silver .btns .btn.btn11:hover:after {
+  background-image: url('../img/pc/prd-s11.png');
+}
+.content .c-inner .product .line.silver .btns .btn.btn12:hover:after {
+  background-image: url('../img/pc/prd-s12.png');
+}
+.content .c-inner[data-line="1"] .product .gold,
+.content .c-inner[data-line="2"] .product .silver {
+  display: block;
+}
+/*# sourceMappingURL=style-pc.css.map */
