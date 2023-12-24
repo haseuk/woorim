@@ -1,0 +1,95 @@
+<svg id="실버_텍스트" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="650" height="278" viewBox="0 0 650 278">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.1-c001 79.1462899, 2023/06/25-20:01:55        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+         <xmp:CreatorTool>Adobe Photoshop 25.2 (Windows)</xmp:CreatorTool>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        font-size: 50px;
+        text-anchor: middle;
+        font-family: against;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        opacity: 0.8;
+        filter: url(#filter-2);
+      }
+
+      .cls-4, .cls-7 {
+        opacity: 0.5;
+      }
+
+      .cls-5 {
+        fill: #e3c796;
+      }
+
+      .cls-6 {
+        fill: #9e9e9e;
+      }
+
+      .cls-7 {
+        filter: url(#filter-3);
+        fill: #fff;
+      }
+    </style>
+    <filter id="filter" x="114" y="155" width="517" height="118" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#8e8e8e"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="114" y="155" width="517" height="118" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="4" in="SourceAlpha"/>
+      <feColorMatrix result="color" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feColorMatrix result="color-2" values="0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0"/>
+      <feColorMatrix result="color-3" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feComponentTransfer result="comp" color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="0.764 0.684 0.604 0.635 0.665 0.696 0.727 0.757 0.788 0.783 0.778 0.773 0.768 0.762 0.757 0.752 0.747 0.742 0.737 0.732 0.727 0.721 0.716 0.711 0.706 0.766 0.826 0.885 0.945 0.905 0.865 0.825 0.784 0.494 0.663 0.831 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9"/>
+        <feFuncG type="table" tableValues="0.764 0.684 0.604 0.635 0.665 0.696 0.727 0.757 0.788 0.783 0.778 0.773 0.768 0.762 0.757 0.752 0.747 0.742 0.737 0.732 0.727 0.721 0.716 0.711 0.706 0.766 0.826 0.885 0.945 0.905 0.865 0.825 0.784 0.494 0.663 0.831 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885"/>
+        <feFuncB type="table" tableValues="0.764 0.684 0.604 0.635 0.665 0.696 0.727 0.757 0.788 0.783 0.778 0.773 0.768 0.762 0.757 0.752 0.747 0.742 0.737 0.732 0.727 0.721 0.716 0.711 0.706 0.766 0.826 0.885 0.945 0.905 0.865 0.825 0.784 0.494 0.663 0.831 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81"/>
+      </feComponentTransfer>
+      <feComposite result="composite" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="softLight" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="17" y="169" width="96" height="103" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="2.667" in="SourceAlpha"/>
+      <feColorMatrix result="color" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feColorMatrix result="color-2" values="0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0"/>
+      <feColorMatrix result="color-3" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feComponentTransfer result="comp" color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="0.764 0.684 0.604 0.635 0.665 0.696 0.727 0.757 0.788 0.783 0.778 0.773 0.768 0.762 0.757 0.752 0.747 0.742 0.737 0.732 0.727 0.721 0.716 0.711 0.706 0.766 0.826 0.885 0.945 0.905 0.865 0.825 0.784 0.494 0.663 0.831 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9"/>
+        <feFuncG type="table" tableValues="0.764 0.684 0.604 0.635 0.665 0.696 0.727 0.757 0.788 0.783 0.778 0.773 0.768 0.762 0.757 0.752 0.747 0.742 0.737 0.732 0.727 0.721 0.716 0.711 0.706 0.766 0.826 0.885 0.945 0.905 0.865 0.825 0.784 0.494 0.663 0.831 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885 0.885"/>
+        <feFuncB type="table" tableValues="0.764 0.684 0.604 0.635 0.665 0.696 0.727 0.757 0.788 0.783 0.778 0.773 0.768 0.762 0.757 0.752 0.747 0.742 0.737 0.732 0.727 0.721 0.716 0.711 0.706 0.766 0.826 0.885 0.945 0.905 0.865 0.825 0.784 0.494 0.663 0.831 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81 0.81"/>
+      </feComponentTransfer>
+      <feComposite result="composite" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="exclusion" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text id="SILVER" class="cls-1" transform="translate(377.495 271.977) scale(2.729)"><tspan x="0">SILVER</tspan></text>
+  <text id="SILVER-2" data-name="SILVER" class="cls-2" transform="translate(377.495 271.977) scale(2.729)"><tspan x="0">SILVER</tspan></text>
+  <text id="SILVER-3" data-name="SILVER" class="cls-2" transform="translate(377.495 271.977) scale(2.729)"><tspan x="0">SILVER</tspan></text>
+  <text id="SILVER-4" data-name="SILVER" class="cls-3" transform="translate(377.495 271.977) scale(2.729)"><tspan x="0">SILVER</tspan></text>
+  <text id="SILVER-5" data-name="SILVER" class="cls-2" transform="translate(377.495 271.977) scale(2.729)"><tspan x="0">SILVER</tspan></text>
+  <text id="SILVER-6" data-name="SILVER" class="cls-4" transform="translate(377.495 271.977) scale(2.729)"><tspan x="0">SILVER</tspan></text>
+  <text id="SILVER-7" data-name="SILVER" class="cls-2" transform="translate(377.495 271.977) scale(2.729)"><tspan x="0">SILVER</tspan></text>
+  <text id="GOLD" class="cls-5" transform="translate(331.555 122.381) scale(2.729)"><tspan x="0">GOLD</tspan></text>
+  <text id="GOLD-2" data-name="GOLD" class="cls-5" transform="translate(331.555 122.381) scale(2.729)"><tspan x="0">GOLD</tspan></text>
+  <text id="GOLD-3" data-name="GOLD" class="cls-5" transform="translate(331.555 122.381) scale(2.729)"><tspan x="0">GOLD</tspan></text>
+  <text id="GOLD-4" data-name="GOLD" class="cls-5" transform="translate(331.555 122.381) scale(2.729)"><tspan x="0">GOLD</tspan></text>
+  <text id="GOLD-5" data-name="GOLD" class="cls-5" transform="translate(331.555 122.381) scale(2.729)"><tspan x="0">GOLD</tspan></text>
+  <text id="GOLD-6" data-name="GOLD" class="cls-5" transform="translate(331.555 122.381) scale(2.729)"><tspan x="0">GOLD</tspan></text>
+  <text id="_2" data-name="&amp;" class="cls-6" transform="translate(67.701 271.977) scale(2.729)"><tspan x="0">&amp;</tspan></text>
+  <text id="_3" data-name="&amp;" class="cls-6" transform="translate(67.701 271.977) scale(2.729)"><tspan x="0">&amp;</tspan></text>
+  <text id="_4" data-name="&amp;" class="cls-6" transform="translate(67.701 271.977) scale(2.729)"><tspan x="0">&amp;</tspan></text>
+  <text id="_copy_3" data-name="&amp; copy 3" class="cls-7" transform="translate(67.701 271.977) scale(2.729)"><tspan x="0">&amp;</tspan></text>
+</svg>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style-pc.css">
+</head>
+<body style="margin: 0;padding: 0">
+<div class="content">
+  <div class="top">
+    <div class="necklace-wrap">
+      <div class="necklace"></div>
+    </div>
+  </div>
+  <div class="product">
+    <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-%EC%84%9C%ED%98%84%EC%A7%84%EC%B0%A9%EC%9A%A9-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-rl0157/2381/category/34/display/1/" class="btn">RL0157</a>
+    <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B46%EC%9B%94%ED%83%84%EC%83%9D%EC%84%9D-rs1311/2638/category/34/display/1/" class="btn">RS1311</a>
+    <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%9D%BC%ED%94%BC%EB%84%A4-%EC%A7%84%EC%A3%BC-%EB%AA%A9%EA%B1%B8%EC%9D%B4-ra0100/2304/category/34/display/1/" class="btn">RA0100</a>
+    <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%EB%A0%88%EB%93%9C-%EC%BB%A4%EB%84%AC%EB%A6%AC%EC%96%B8-%EC%A7%84%EC%A3%BC-%EB%AA%A9%EA%B1%B8%EC%9D%B4-%EB%9D%BC%EB%B9%84%EC%95%99%EB%A1%9C%EC%A6%88-rl0209/2830/category/30/display/1/" class="btn">RL0209</a>
+    <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-rs0877/2572/category/34/display/1/" class="btn">RS0877</a>
+    <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-silver-%EB%AA%A9%EA%B1%B8%EC%9D%B4-ra0087/2300/category/34/display/1/" class="btn">RA0087</a>
+    <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rl0170/2386/category/53/display/1/" class="btn">RL0170</a>
+    <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-rs0878/2573/category/53/display/1/" class="btn">RS0878</a>
+    <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%8B%B4%EC%88%98%EC%A7%84%EC%A3%BC-%EA%B7%80%EA%B1%B8%EC%9D%B4-%EB%9D%BC%EB%B2%A8%EB%A5%B4-rl0203/2802/category/53/display/1/" class="btn">RL0203</a>
+    <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%8B%B4%EC%88%98%EC%A7%84%EC%A3%BC-%EA%B7%80%EA%B1%B8%EC%9D%B4-%ED%81%AC%EB%A0%88%EC%84%BC%EB%8F%84-rl0214/4949/category/44/display/1/" class="btn">RL0214</a>
+    <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%8B%B4%EC%88%98%EC%A7%84%EC%A3%BC-%EA%B7%80%EA%B1%B8%EC%9D%B4-%EB%9D%BC%ED%94%8C%EB%A0%88%EC%89%AC-rl0196/2747/category/78/display/1/" class="btn">RL0196</a>
+    <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%8B%B4%EC%88%98%EC%A7%84%EC%A3%BC-%ED%94%BC%EC%96%B4%EC%8B%B1-%ED%81%AC%EB%A0%88%EC%84%BC%EB%8F%84-rl0216/4951/category/44/display/1/" class="btn">RL0216</a>
+  </div>
+  <div class="model">
+    <img src="img/pc/bott.png" alt="" class="target">
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  window.onload = function () {
+    $(".model")
+        .on('mousemove', magnify)
+        .prepend("<div class='magnifier'></div>")
+        .children('.magnifier').css({"background": "url('" + $(".target").attr("src") + "') no-repeat"});
+
+    var target = $('.target');
+    var magnifier = $('.magnifier');
+
+    function magnify(e) {
+      // 마우스 위치에서 .magnify의 위치를 차감해 컨테이너에 대한 마우스 좌표를 얻는다.
+      var mouseX = e.pageX - $(this).offset().left;
+      var mouseY = e.pageY - $(this).offset().top;
+
+      // 컨테이너 밖으로 마우스가 벗어나면 돋보기를 없앤다.
+      if (mouseX < $(this).width() && mouseY < $(this).height() && mouseX > 0 && mouseY > 0) {
+        magnifier.fadeIn(100);
+      } else {
+        magnifier.fadeOut(100);
+      }
+
+      //돋보기가 존재할 때
+      if (magnifier.is(":visible")) {
+        /* 이미지에 대한 마우스 포인터 아래의 픽셀 비율(본래 이미지 크기에 대한)을 얻고
+        이를 사용하여 돋보기 내부에 큰 이미지를 배치한다. */
+        var rx = -(mouseX / target.width() * target[0].naturalWidth - magnifier.width() / 2);
+        var ry = -(mouseY / target.height() * target[0].naturalHeight - magnifier.height() / 2);
+
+        //돋보기를 마우스 위치에 따라 움직인다.
+        //돋보기의 width, height 절반을 마우스 좌표에서 차감해 마우스와 돋보기 위치를 일치시킨다.
+        var px = mouseX - magnifier.width() / 2;
+        var py = mouseY - magnifier.height() / 2;
+
+        //적용
+        magnifier.css({
+          left: px,
+          top: py,
+          backgroundPosition: rx + "px " + ry + "px"
+        });
+      }
+    }
+  };
+</script>
+</body>
+</html>

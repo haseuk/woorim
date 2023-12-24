@@ -1,0 +1,351 @@
+<style>
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 750px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+    margin: 0vw;
+  }
+  .content .top {
+    position: relative;
+  }
+  .content .top .window-frame {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218/mo/window-frame.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .top .window-frame .necklace {
+    width: 83.76470588vw;
+    height: 83.76470588vw;
+    position: absolute;
+    left: 8.11764706vw;
+    top: 52.94117647vw;
+    right: auto;
+    bottom: auto;
+    overflow: hidden;
+  }
+  .content .top .window-frame .necklace img {
+    width: 100%;
+    height: 100%;
+    margin-top: -11.76470588vw;
+    animation: swing 1s alternate infinite ease-in-out;
+    transform-origin: center top;
+  }
+  @keyframes swing {
+    0% {
+      transform: rotate(2deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+  }
+  .content .top .window {
+    width: 72.23529412vw;
+    height: 100vw;
+    position: absolute;
+    left: 14vw;
+    top: 39.76470588vw;
+    right: auto;
+    bottom: auto;
+    border-radius: 27.76470588vw;
+    overflow: hidden;
+  }
+  .content .top .window span {
+    width: 72.23529412vw;
+    height: 101.88235294vw;
+    display: inline-block;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218/mo/window.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: window 1.5s forwards;
+    animation-delay: 1s;
+  }
+  @keyframes window {
+    100% {
+      transform: translateY(-90%);
+    }
+  }
+  .content .top .cloud {
+    width: 45.64705882vw;
+    height: 44.11764706vw;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218/mo/cloud.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0vw;
+    bottom: 21.88235294vw;
+    right: auto;
+    top: auto;
+  }
+  .content .new-collection {
+    width: 100vw;
+    height: 136.70588235vw;
+    position: relative;
+  }
+  .content .new-collection img {
+    display: none;
+  }
+  .content .new-collection iframe {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .content .new-collection video {
+    position: absolute;
+    width: 100vw;
+    height: 136.70588235vw;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .product-wrap .prd-inner {
+    position: relative;
+    box-sizing: border-box;
+  }
+  .content .product-wrap .prd-inner .tit {
+    position: absolute;
+    left: 50%;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .content .product-wrap .prd-inner .swiper-model {
+    width: 75.29411765vw;
+    height: 75.29411765vw;
+    border-radius: 50%;
+    border: 0.35294118vw solid #e7fbff;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .content .product-wrap .prd-inner .swiper-model:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-size: contain;
+    z-index: 1;
+  }
+  .content .product-wrap .prd-inner .swiper-model.model1:after {
+    width: 9.88235294vw;
+    height: 5.05882353vw;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218/mo/no1.png');
+    left: 19.88235294vw;
+    bottom: 4vw;
+    right: auto;
+    top: auto;
+  }
+  .content .product-wrap .prd-inner .swiper-model.model2:after {
+    width: 10.35294118vw;
+    height: 5.29411765vw;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218/mo/no2.png');
+    left: 19.52941176vw;
+    bottom: 3.76470588vw;
+    right: auto;
+    top: auto;
+  }
+  .content .product-wrap .prd-inner .swiper-model.model3:after {
+    width: 16.58823529vw;
+    height: 8.94117647vw;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218/mo/no3.png');
+    left: 16.23529412vw;
+    bottom: 2.70588235vw;
+    right: auto;
+    top: auto;
+  }
+  .content .product-wrap .prd-inner.prd-inner1 {
+    width: 100vw;
+    height: 198.58823529vw;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218/mo/bg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 42.11764706vw;
+  }
+  .content .product-wrap .prd-inner.prd-inner2 {
+    width: 100vw;
+    height: 163.05882353vw;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218/mo/bg2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 6.70588235vw;
+  }
+  .content .product-wrap .prd-inner.prd-inner2 .tit {
+    width: 35.64705882vw;
+    height: 10.23529412vw;
+  }
+  .content .product-wrap .prd-inner.prd-inner3 {
+    width: 100vw;
+    height: 166.47058824vw;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218/mo/bg3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 7.29411765vw;
+  }
+  .content .product-wrap .prd-inner.prd-inner3 .tit {
+    width: 28.94117647vw;
+    height: 9.76470588vw;
+  }
+  .content .product-wrap .prd-inner .prd-swiper {
+    margin-top: 2.35294118vw;
+    padding-top: 1.76470588vw;
+    padding-right: 7.05882353vw;
+    padding-bottom: 2.94117647vw;
+    padding-left: 7.05882353vw;
+    box-sizing: border-box;
+  }
+  .content .product-wrap .prd-inner .prd-swiper .swiper-slide {
+    width: 41.88235294vw;
+    height: 62.94117647vw;
+    position: relative;
+    box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 20vw 20vw 0 0;
+  }
+  .content .product-wrap .prd-inner .prd-swiper.prd1 .swiper-slide {
+    box-shadow: none;
+  }
+  .content .product-wrap .prd-inner .prd-swiper.prd1 .swiper-slide.slide3 {
+    width: 44.23529412vw;
+  }
+  .content .product-wrap .prd-inner .prd-swiper.prd1 .swiper-slide span {
+    width: 41.88235294vw;
+    height: 62.94117647vw;
+    position: absolute;
+    left: 0vw;
+    bottom: 0vw;
+    right: auto;
+    top: auto;
+    box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 20vw 20vw 0 0;
+    z-index: -1;
+  }
+  .content .product-wrap .prd-inner .prd-swiper.prd1 .swiper-slide img {
+    height: 100%;
+  }
+  /*# sourceMappingURL=style-mo.css.map */
+</style>
+<div class="content">
+  <div class="top">
+    <img src="https://woorimstg.cafe24.com/img/project/231218/mo/top-bg.png" alt="">
+    <div class="window-frame">
+      <div class="necklace">
+        <img src="https://woorimstg.cafe24.com/img/project/231218/necklace2.gif" alt="">
+      </div>
+    </div>
+    <div class="window">
+      <span></span>
+    </div>
+    <div class="cloud"></div>
+  </div>
+  <div class="new-collection">
+    <img src="https://woorimstg.cafe24.com/img/project/231218/mo/poster.png" alt="">
+    <iframe src='https://player.vimeo.com/video/897108284?controls=0&autoplay=true&loop=true&muted=true&controls=true&autopause=0' frameborder='0' allowfullscreen></iframe>
+  </div>
+  <div class="product-wrap">
+    <div class="prd-inner prd-inner1">
+      <div class="swiper swiper-model model1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/img/project/231218/mo/model1-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/img/project/231218/mo/model1-2.png" alt=""></div>
+        </div>
+      </div>
+      <div class="swiper prd-swiper prd1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-u0162/5245/category/27/display/1/" class="btn"><span></span><img src="https://woorimstg.cafe24.com/img/project/231218/mo/prd1-1.png" alt="">U0162</a></div>
+          <div class="swiper-slide"><a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EB%8C%84%EC%8B%B1%EC%8A%A4%ED%86%A4-%EB%AA%A9%EA%B1%B8%EC%9D%B4-n0151/5564/category/27/display/1/" class="btn"><span></span><img src="https://woorimstg.cafe24.com/img/project/231218/mo/prd1-2.png" alt="">N0151</a></div>
+          <div class="swiper-slide slide3"><a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-b0050/5081/category/27/display/1/" class="btn"><span></span><img src="https://woorimstg.cafe24.com/img/project/231218/mo/prd1-3.png" alt="">B0050</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="prd-inner prd-inner2">
+      <div class="tit"><img src="https://woorimstg.cafe24.com/img/project/231218/mo/tit2.png" alt=""></div>
+      <div class="swiper swiper-model model2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/img/project/231218/mo/model2-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/img/project/231218/mo/model2-2.png" alt=""></div>
+        </div>
+      </div>
+      <div class="swiper prd-swiper prd2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EC%9B%90%ED%84%B0%EC%B9%98-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0490/5087/category/27/display/1/" class="btn"><span></span><img src="https://woorimstg.cafe24.com/img/project/231218/mo/prd2-1.png" alt="">F0490</a></div>
+          <div class="swiper-slide"><a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0491/5090/category/27/display/1/" class="btn"><span></span><img src="https://woorimstg.cafe24.com/img/project/231218/mo/prd2-2.png" alt="">F0491</a></div>
+          <div class="swiper-slide"><a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EB%8C%84%EC%8B%B1%EC%8A%A4%ED%86%A4-%EA%B7%80%EA%B1%B8%EC%9D%B4-n0152/5565/category/27/display/1/" class="btn"><span></span><img src="https://woorimstg.cafe24.com/img/project/231218/mo/prd2-3.png" alt="">N0152</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="prd-inner prd-inner3">
+      <div class="tit"><img src="https://woorimstg.cafe24.com/img/project/231218/mo/tit3.png" alt=""></div>
+      <div class="swiper swiper-model model3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/img/project/231218/mo/model3-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/img/project/231218/mo/model3-2.png" alt=""></div>
+        </div>
+      </div>
+      <div class="swiper prd-swiper prd3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%ED%8C%94%EC%B0%8C-u0150/5089/category/27/display/1/" class="btn"><span></span><img src="https://woorimstg.cafe24.com/img/project/231218/mo/prd3-1.png" alt="">U0150</a></div>
+          <div class="swiper-slide"><a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%ED%8C%94%EC%B0%8C-b0052/5082/category/27/display/1/" class="btn"><span></span><img src="https://woorimstg.cafe24.com/img/project/231218/mo/prd3-2.png" alt="">B0052</a></div>
+          <div class="swiper-slide"><a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EB%B1%85%EA%B8%80-%ED%8C%94%EC%B0%8C-p1842m/5065/category/27/display/1/" class="btn"><span></span><img src="https://woorimstg.cafe24.com/img/project/231218/mo/prd3-3.png" alt="">P1842(M)</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  new Swiper('.model1', {
+    speed: 2000,
+    loop: true,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+  });
+  new Swiper('.model2', {
+    speed: 1500,
+    loop: true,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+  });
+  new Swiper('.model3', {
+    speed: 1500,
+    loop: true,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+  });
+
+  new Swiper('.prd1', {
+    slidesPerView: "auto",
+    spaceBetween: 9,
+  });
+  new Swiper('.prd2', {
+    slidesPerView: "auto",
+    spaceBetween: 9,
+  });
+  new Swiper('.prd3', {
+    slidesPerView: "auto",
+    spaceBetween: 9,
+  });
+</script>

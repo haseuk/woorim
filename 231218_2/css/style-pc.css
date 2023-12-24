@@ -24,6 +24,18 @@
   background-size: contain;
   position: relative;
 }
+.content .c-inner .top .gold {
+  width: 541px;
+  height: 275px;
+  background-image: url('../img/pc/gold.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 367px;
+  top: 148px;
+  right: auto;
+  bottom: auto;
+}
 .content .c-inner .top .light {
   width: 44px;
   height: 67px;

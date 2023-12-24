@@ -1,0 +1,281 @@
+<style>
+  .content {
+    font-size: 0px;
+    max-width: 1264px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+    margin: 0px;
+  }
+  .content .c-inner img {
+    width: 100%;
+    vertical-align: top;
+    margin: 0px;
+  }
+  .content .c-inner .top {
+    width: 1264px;
+    height: 738px;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/top.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  .content .c-inner .top .gold {
+    width: 541px;
+    height: 275px;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/gold.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 367px;
+    top: 148px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .c-inner .top .light {
+    width: 44px;
+    height: 67px;
+    position: absolute;
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/light.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(0.7);
+    animation: twinkle 1.8s linear infinite;
+  }
+  .content .c-inner .top .light.light1 {
+    left: 436px;
+    top: 279px;
+    right: auto;
+    bottom: auto;
+    animation-delay: 1s;
+  }
+  .content .c-inner .top .light.light2 {
+    right: 437px;
+    top: 150px;
+    left: auto;
+    bottom: auto;
+    animation-delay: 0.5s;
+  }
+  .content .c-inner .top .light.light3 {
+    left: 556px;
+    top: 221px;
+    right: auto;
+    bottom: auto;
+    animation-delay: 1.8s;
+  }
+  .content .c-inner .top .light.light4 {
+    right: 358px;
+    top: 358px;
+    left: auto;
+    bottom: auto;
+    animation-delay: 2s;
+  }
+  @keyframes twinkle {
+    50% {
+      transform: scale(1.5);
+    }
+  }
+  .content .c-inner .top .tab {
+    width: 1264px;
+    height: 122px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: auto;
+    top: auto;
+  }
+  .content .c-inner .top .tab .btn {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+  }
+  .content .c-inner .product .line {
+    width: 1264px;
+    height: 1392px;
+    padding-top: 80px;
+    padding-right: 112px;
+    padding-bottom: 80px;
+    padding-left: 112px;
+    box-sizing: border-box;
+    display: none;
+  }
+  .content .c-inner .product .line .btns {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content .c-inner .product .line .btns .btn {
+    width: 253px;
+    height: 354px;
+    margin-bottom: 60px;
+    display: inline-block;
+    position: relative;
+  }
+  .content .c-inner .product .line .btns .btn:hover:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+  }
+  .content .c-inner .product .line.gold {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/g-prds.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .c-inner .product .line.gold .btns .btn.btn1:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd1.png');
+  }
+  .content .c-inner .product .line.gold .btns .btn.btn2:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd2.png');
+  }
+  .content .c-inner .product .line.gold .btns .btn.btn3:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd3.png');
+  }
+  .content .c-inner .product .line.gold .btns .btn.btn4:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd4.png');
+  }
+  .content .c-inner .product .line.gold .btns .btn.btn5:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd5.png');
+  }
+  .content .c-inner .product .line.gold .btns .btn.btn6:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd6.png');
+  }
+  .content .c-inner .product .line.gold .btns .btn.btn7:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd7.png');
+  }
+  .content .c-inner .product .line.gold .btns .btn.btn8:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd8.png');
+  }
+  .content .c-inner .product .line.gold .btns .btn.btn9:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd9.png');
+  }
+  .content .c-inner .product .line.gold .btns .btn.btn10:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd10.png');
+  }
+  .content .c-inner .product .line.gold .btns .btn.btn11:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd11.png');
+  }
+  .content .c-inner .product .line.gold .btns .btn.btn12:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd12.png');
+  }
+  .content .c-inner .product .line.silver {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/s-prds.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .c-inner .product .line.silver .btns .btn.btn1:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd-s1.png');
+  }
+  .content .c-inner .product .line.silver .btns .btn.btn2:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd-s2.png');
+  }
+  .content .c-inner .product .line.silver .btns .btn.btn3:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd-s3.png');
+  }
+  .content .c-inner .product .line.silver .btns .btn.btn4:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd-s4.png');
+  }
+  .content .c-inner .product .line.silver .btns .btn.btn5:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd-s5.png');
+  }
+  .content .c-inner .product .line.silver .btns .btn.btn6:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd-s6.png');
+  }
+  .content .c-inner .product .line.silver .btns .btn.btn7:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd-s7.png');
+  }
+  .content .c-inner .product .line.silver .btns .btn.btn8:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd-s8.png');
+  }
+  .content .c-inner .product .line.silver .btns .btn.btn9:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd-s9.png');
+  }
+  .content .c-inner .product .line.silver .btns .btn.btn10:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd-s10.png');
+  }
+  .content .c-inner .product .line.silver .btns .btn.btn11:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd-s11.png');
+  }
+  .content .c-inner .product .line.silver .btns .btn.btn12:hover:after {
+    background-image: url('https://woorimstg.cafe24.com/img/project/231218_2/pc/prd-s12.png');
+  }
+  .content .c-inner[data-line="1"] .product .gold,
+  .content .c-inner[data-line="2"] .product .silver {
+    display: block;
+  }
+  /*# sourceMappingURL=style-pc.css.map */
+</style>
+<div class="content">
+  <div class="c-inner" data-line="1">
+    <div class="top">
+      <div class="gold"></div>
+      <span class="light light1"></span>
+      <span class="light light2"></span>
+      <span class="light light3"></span>
+      <span class="light light4"></span>
+      <div class="tab">
+        <a class="btn g-line" data-tab="1">Gold Line</a>
+        <a class="btn s-line" data-tab="2">Silver Line</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="line gold">
+        <div class="btns">
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-dal-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-t2037/4262/category/27/display/1/" class="btn btn1">T2037</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EB%9F%AD%ED%82%A4%EC%9C%A0-%EB%AA%A9%EA%B1%B8%EC%9D%B4-p1406/3960/category/27/display/1/" class="btn btn2">P1406</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-xoxo-14k-%ED%94%BC%EC%96%B4%EC%8B%B1-m0754-%EB%B0%98%EC%A7%9D/3889/category/27/display/1/" class="btn btn3">M0754</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EC%A7%84%EC%A3%BC-%EA%B7%80%EA%B1%B8%EC%9D%B4-p1281/5655/category/27/display/1/" class="btn btn4">P1281</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EB%8C%84%EC%8B%B1%EC%8A%A4%ED%86%A4-%EC%8A%A4%ED%85%94%EB%9D%BC-%EB%AA%A9%EA%B1%B8%EC%9D%B4-n0105/3910/category/27/display/1/" class="btn btn5">N0105</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-b8056/5681/category/27/display/1/" class="btn btn6">B8056</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-u-lock-14k-%EC%9B%90%ED%84%B0%EC%B9%98-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0375/3693/category/27/display/1/" class="btn btn7">F0375</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-dal-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-t2026/4260/category/27/display/1/" class="btn btn8">T2026</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-h0025/5619/category/27/display/1/" class="btn btn9">H0025</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-she-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-p1085/3946/category/27/display/1/" class="btn btn10">P1085</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EC%9B%90%ED%84%B0%EC%B9%98-%EA%B7%80%EA%B1%B8%EC%9D%B4-u0044/5725/category/27/display/1/" class="btn btn11">U0044</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-u-lock-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-t1969/4041/category/27/display/1/" class="btn btn12">T1969</a>
+        </div>
+      </div>
+      <div class="line silver">
+        <div class="btns">
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-dal-%EC%8B%A4%EB%B2%84-%EB%AA%A9%EA%B1%B8%EC%9D%B4-k1743/4332/category/27/display/1/" class="btn btn1">K1743</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EB%9F%AD%ED%82%A4%EC%9C%A0-%EB%8C%84%EC%8B%B1%EC%8A%A4%ED%86%A4-%EC%8A%A4%ED%85%94%EB%9D%BC-%EC%8B%A4%EB%B2%84-%EB%AA%A9%EA%B1%B8%EC%9D%B4-n0141/3940/category/27/display/1/" class="btn btn2">N0141</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EB%9F%AD%ED%82%A4%EC%9C%A0-%EB%AA%A9%EA%B1%B8%EC%9D%B4-k1423/3792/category/27/display/1/" class="btn btn3">K1423</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-love-knot-%EC%8B%A4%EB%B2%84-%EB%AA%A9%EA%B1%B8%EC%9D%B4-f0284/5674/category/27/display/1/" class="btn btn4">F0284</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EB%9F%AD%ED%82%A4%EC%9C%A0-%EB%8C%84%EC%8B%B1%EC%8A%A4%ED%86%A4-%EC%8A%A4%ED%85%94%EB%9D%BC-%EC%8B%A4%EB%B2%84-%EB%AA%A9%EA%B1%B8%EC%9D%B4-n0135/3936/category/27/display/1/" class="btn btn5">N0135</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EB%8D%B0%EC%9D%B4%EC%A7%80-%ED%8C%94%EC%B0%8C-k1662/5575/category/27/display/1/" class="btn btn6">K1662</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-luv-it-%EC%8B%A4%EB%B2%84-%ED%95%98%ED%8A%B8-%EB%AA%A9%EA%B1%B8%EC%9D%B4-k1806/4406/category/27/display/1/" class="btn btn7">K1806</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-dal-%EC%8B%A4%EB%B2%84-%EA%B7%80%EA%B1%B8%EC%9D%B4-k1744/4333/category/27/display/1/" class="btn btn8">K1744</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EC%A7%84%EC%A3%BC-%EB%AA%A9%EA%B1%B8%EC%9D%B4-h0152/5705/category/27/display/1/" class="btn btn9">H0152</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EB%8D%B0%EC%9D%BC%EB%A6%AC-%ED%95%98%ED%8A%B8-%EC%8B%A4%EB%B2%84-%EB%AA%A9%EA%B1%B8%EC%9D%B4-h0150/5576/category/27/display/1/" class="btn btn10">H0150</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-love-knot-%EC%8B%A4%EB%B2%84-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0283/5665/category/27/display/1/" class="btn btn11">F0283</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%8B%A4%EB%B2%84-%EB%8C%84%EC%8B%B1%EC%8A%A4%ED%86%A4-%EC%8A%A4%ED%85%94%EB%9D%BC-%EB%AA%A9%EA%B1%B8%EC%9D%B4-n0117/3921/category/27/display/1/" class="btn btn12">N0117</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  let cInner = document.querySelector('.c-inner');
+  let tabBtn = document.querySelectorAll('.tab .btn');
+  Array.prototype.forEach.call(tabBtn, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab');
+      cInner.setAttribute('data-line', idx);
+    })
+  })
+</script>

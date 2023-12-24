@@ -14,10 +14,22 @@
 .content .c-inner .top {
   width: 100vw;
   height: 94.82352941vw;
-  background-image: url('../img/mo/top.png');
+  background-image: url('../img/mo/top1.png');
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
+}
+.content .c-inner .top .gold {
+  width: 74.70588235vw;
+  height: 37.88235294vw;
+  background-image: url('../img/mo/gold.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 13.64705882vw;
+  top: 21.17647059vw;
+  right: auto;
+  bottom: auto;
 }
 .content .c-inner .top .light {
   width: 5.17647059vw;

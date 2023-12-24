@@ -1,0 +1,24 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; .m(0); }
+  .top { .wh(1264,971); .contain('../img/pc/top.png'); .rel;
+    .necklace-wrap { .wh(702,521); .crop; .abs; .lt(284,203);
+      .necklace { .wh(1264,724); .contain('../img/pc/necklace.png'); .abs; .lt(-284,-203); animation: swing 1.2s alternate infinite ease-in-out; transform-origin: center top; }
+    }
+    @keyframes swing {
+      0% { transform: rotate(1deg); }
+      100% { transform: rotate(-1deg); }
+    }
+  }
+  .product { .wh(1264,2514); .contain('../img/pc/prd.png'); .p(186,114); .-box; .flex; .space-between; .flex-wrap;
+    .btn { .wh(325,516); .mb(33);
+      &:nth-child(n+4) { .mb(285); }
+      &:nth-child(n+7) { .wh(325,416); .mb(33); }
+    }
+  }
+  .model { .rel;
+    .magnifier { .wh(150,150); .abs; .br(50%); box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85), 0 0 3px 3px rgba(0, 0, 0, 0.25); .hide; }
+  }
+  .target { .block; .wf; }
+}

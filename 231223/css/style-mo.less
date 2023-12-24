@@ -1,0 +1,22 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 750px; .rel;
+  img { .wf; .vat; }
+  .top { .wh(850,1134); .contain('../img/mo/top.png'); .rel;
+    .necklace-wrap { .wh(521,702); .crop; .abs; .lt(167,168);
+      .necklace { .wh(850,702); .contain('../img/mo/necklace.png'); .abs; .lt(-167,0); animation: swing 1.2s alternate infinite ease-in-out; transform-origin: center top; }
+    }
+    @keyframes swing {
+      0% { transform: rotate(1deg); }
+      100% { transform: rotate(-1deg); }
+    }
+  }
+  .product { .wh(850,2743); .contain('../img/mo/prd.png'); .p(189,50); .-box; .flex; .space-between; .flex-wrap;
+    .btn { .wh(358,566); .mb(37);
+      &:nth-child(3), &:nth-child(4) { .mb(313); }
+      &:nth-child(n+5) { .wh(358,457); }
+    }
+  }
+}
