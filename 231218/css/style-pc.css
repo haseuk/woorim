@@ -10,6 +10,7 @@
   width: 100%;
   vertical-align: top;
   margin: 0px;
+  max-height: none!important;
 }
 .content .top {
   position: relative;

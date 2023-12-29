@@ -18,6 +18,46 @@
   background-size: contain;
   position: relative;
 }
+.content .top .title {
+  width: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 33.29411765vw;
+  right: auto;
+  bottom: auto;
+}
+.content .top .title div {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.content .top .title .tit {
+  width: 47.52941176vw;
+  height: 6vw;
+  background-image: url('../img/mo/tit.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 26.35294118vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  animation: show 1s ease-out forwards;
+  animation-delay: 1.6s;
+}
+.content .top .title .sub-tit {
+  width: 27.05882353vw;
+  height: 10.94117647vw;
+  transform: translateY(-80%);
+  background-image: url('../img/mo/sub-tit.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 36.47058824vw;
+  top: 12vw;
+  right: auto;
+  bottom: auto;
+  animation: show 1s ease-out forwards;
+  animation-delay: 0.8s;
+}
 .content .top .necklace-wrap {
   width: 61.29411765vw;
   height: 82.58823529vw;
@@ -28,7 +68,13 @@
   right: auto;
   bottom: auto;
 }
-.content .top .necklace-wrap .necklace {
+.content .top .necklace-wrap .necklace-inner {
+  transform: translateY(-10vw);
+  opacity: 0;
+  animation: show 1.2s ease-out forwards;
+  animation-delay: 0.2s;
+}
+.content .top .necklace-wrap .necklace-inner .necklace {
   width: 100vw;
   height: 82.58823529vw;
   background-image: url('../img/mo/necklace.png');
@@ -39,8 +85,10 @@
   top: 0vw;
   right: auto;
   bottom: auto;
+  transform: rotate(1deg);
   animation: swing 1.2s alternate infinite ease-in-out;
   transform-origin: center top;
+  animation-delay: 3s;
 }
 @keyframes swing {
   0% {
@@ -48,6 +96,12 @@
   }
   100% {
     transform: rotate(-1deg);
+  }
+}
+@keyframes show {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 .content .product {
@@ -77,5 +131,23 @@
 .content .product .btn:nth-child(n+5) {
   width: 42.11764706vw;
   height: 53.76470588vw;
+}
+.content .model {
+  position: relative;
+}
+.content .model:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/mo/frame.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
 }
 /*# sourceMappingURL=style-mo.css.map */
