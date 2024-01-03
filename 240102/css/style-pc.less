@@ -1,0 +1,42 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  .futura { font-family: 'FuturaPTHeavy', sans-serif; }
+  img { .wf; .vat; }
+  .c-wrap { .contain('../img/pc/frame.png'); .wh(1264,2100); .pt(261); .-box; .rel;
+    &:after { .cnt; .f; .abs; .lt; .contain('../img/pc/bg.png'); .z(-2); }
+    .swiper-bg { .wh(1264,2100); .abs; .lt; .z(-1); }
+    .top { .wh(1264,243); transition: background 0.8s; .ease-out; .rel;
+      &:after { .cnt; .wh(101,133); .contain('../img/pc/tape.png'); .abs; .lt(588,160); .z(2);  }
+    }
+    .swiper-md { .rel;
+      .swiper { .wh(831,954); .mb(50);
+        img { pointer-events: none; }
+      }
+      .swiper-btn { .wh(213,240); .abs; .t(50%); .mt(0); transform: translateY(-50%);
+        &:after { .hide; }
+        &.swiper-button-prev { .contain('../img/pc/prev.png'); .l(0); }
+        &.swiper-button-next { .contain('../img/pc/next.png'); .r(0); }
+      }
+    }
+    .product { .wh(831,460); .mh-c;
+      ul { .rel;
+        li { .abs; .lt; .o(0); transition: opacity 0.8s, transform 0.8s; .ease-out;
+          .btns { .abs; .lt; .wf; .flex; .space-between;
+            .btn { .wh(270,460); .z(1); }
+          }
+        }
+      }
+    }
+    &[data-view="1"] .top { .contain('../img/pc/tit1.png'); }
+    &[data-view="2"] .top { .contain('../img/pc/tit2.png'); }
+    &[data-view="3"] .top { .contain('../img/pc/tit3.png'); }
+    &[data-view="4"] .top { .contain('../img/pc/tit4.png'); }
+    &[data-view="5"] .top { .contain('../img/pc/tit5.png'); }
+    &[data-view="1"] .product .list1,
+    &[data-view="2"] .product .list2,
+    &[data-view="3"] .product .list3,
+    &[data-view="4"] .product .list4,
+    &[data-view="5"] .product .list5 { .o(1); }
+  }
+}

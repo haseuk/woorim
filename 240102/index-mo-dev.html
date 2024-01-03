@@ -1,0 +1,294 @@
+<style>
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 750px;
+    position: relative;
+  }
+  .content .futura {
+    font-family: 'FuturaPTHeavy', sans-serif;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .c-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240102/img/mo/frame.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 241.17647059vw;
+    padding-top: 29.41176471vw;
+    padding-right: 6vw;
+    padding-bottom: 29.41176471vw;
+    padding-left: 6vw;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .content .c-wrap:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240102/img/mo/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -2;
+  }
+  .content .c-wrap .swiper-bg {
+    width: 100vw;
+    height: 241.17647059vw;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    z-index: -1;
+  }
+  .content .c-wrap .top {
+    width: 88vw;
+    height: 25.76470588vw;
+    transition: background 0.8s;
+    transition-timing-function: ease-out;
+    position: relative;
+  }
+  .content .c-wrap .top:after {
+    content: '';
+    display: block;
+    width: 10.70588235vw;
+    height: 14.11764706vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240102/img/mo/tape.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 38.23529412vw;
+    top: 16.94117647vw;
+    right: auto;
+    bottom: auto;
+    z-index: 2;
+  }
+  .content .c-wrap .swiper img {
+    pointer-events: none;
+  }
+  .content .c-wrap .slide-btn {
+    padding-top: 3.52941176vw;
+    padding-right: 0.58823529vw;
+    padding-bottom: 7.05882353vw;
+    padding-left: 0.58823529vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .c-wrap .slide-btn .btn {
+    font-size: 3.29411765vw;
+    line-height: 6.82352941vw;
+    font-family: 'FuturaPTHeavy', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    width: 16.70588235vw;
+    height: 6.82352941vw;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: -0.02em;
+    border: 0.23529412vw solid #fff;
+    box-sizing: border-box;
+    border-radius: 3.41176471vw;
+    transition: background-color 0.8s;
+    transition-timing-function: ease-out;
+  }
+  .content .c-wrap .product ul {
+    position: relative;
+  }
+  .content .c-wrap .product ul li {
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    opacity: 0;
+    transition: opacity 0.8s, transform 0.8s;
+    transition-timing-function: ease-out;
+  }
+  .content .c-wrap .product ul li .btns {
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .c-wrap .product ul li .btns .btn {
+    width: 28.58823529vw;
+    height: 51.76470588vw;
+    z-index: 1;
+  }
+  .content .c-wrap[data-view="1"] .top {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240102/img/mo/tit1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .c-wrap[data-view="2"] .top {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240102/img/mo/tit2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .c-wrap[data-view="3"] .top {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240102/img/mo/tit3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .c-wrap[data-view="4"] .top {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240102/img/mo/tit4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .c-wrap[data-view="5"] .top {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240102/img/mo/tit5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .c-wrap[data-view="1"] .btn1,
+  .content .c-wrap[data-view="2"] .btn2,
+  .content .c-wrap[data-view="3"] .btn3,
+  .content .c-wrap[data-view="4"] .btn4,
+  .content .c-wrap[data-view="5"] .btn5 {
+    background-color: #000;
+  }
+  .content .c-wrap[data-view="1"] .product .list1,
+  .content .c-wrap[data-view="2"] .product .list2,
+  .content .c-wrap[data-view="3"] .product .list3,
+  .content .c-wrap[data-view="4"] .product .list4,
+  .content .c-wrap[data-view="5"] .product .list5 {
+    opacity: 1;
+  }
+  /*# sourceMappingURL=style-mo.css.map */
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<div class="content">
+  <div class="c-wrap" data-view="1">
+    <div class="swiper swiper-bg">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/bg1.png" alt=""></div>
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/bg2.png" alt=""></div>
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/bg3.png" alt=""></div>
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/bg4.png" alt=""></div>
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/bg5.png" alt=""></div>
+      </div>
+    </div>
+    <div class="top"></div>
+    <div class="swiper swiper-md">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/md1.png" alt=""></div>
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/md2.png" alt=""></div>
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/md3.png" alt=""></div>
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/md4.png" alt=""></div>
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/md5.png" alt=""></div>
+      </div>
+    </div>
+    <div class="slide-btn">
+      <a class="btn btn1 dir-btn" data-dir="1">hyein</a>
+      <a class="btn btn2 dir-btn" data-dir="2">minji</a>
+      <a class="btn btn3 dir-btn" data-dir="3">hanni</a>
+      <a class="btn btn4 dir-btn" data-dir="4">danielle</a>
+      <a class="btn btn5 dir-btn" data-dir="5">haerin</a>
+    </div>
+    <div class="product">
+      <ul>
+        <li class="list1">
+          <img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/prd1.png" alt="">
+          <div class="btns">
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EB%9F%AD%ED%82%A4%EC%9C%A0-%EB%AA%A9%EA%B1%B8%EC%9D%B4-p1406/3960/category/27/display/1/" class="btn">P1406</a>
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EB%9F%AD%ED%82%A4%EC%9C%A0-%EA%B7%80%EA%B1%B8%EC%9D%B4-p1405/3959/category/27/display/1/" class="btn">P1405</a>
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-new-luckyu-14k-%ED%8C%94%EC%B0%8C-f0392/3702/category/27/display/1/" class="btn">F0392</a>
+          </div>
+        </li>
+        <li class="list2">
+          <img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/prd2.png" alt="">
+          <div class="btns">
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%97%A3%EC%A7%80-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-sa24a01f/5744/category/27/display/1/" class="btn">SA24A01F</a>
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%97%A3%EC%A7%80-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-sa24a02f/5741/category/27/display/1/" class="btn">SA24A02F</a>
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%97%A3%EC%A7%80-14k-%EB%B0%98%EC%A7%80-sa24a03f/5739/category/27/display/1/" class="btn">SA24A03F</a>
+          </div>
+        </li>
+        <li class="list3">
+          <img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/prd3.png" alt="">
+          <div class="btns">
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-dal-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-t2037/4262/category/27/display/1/" class="btn">T2037</a>
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-dal-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-t2026/4260/category/27/display/1/" class="btn">T2026</a>
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-dal-14k-%ED%8C%94%EC%B0%8C-t2029/4261/category/27/display/1/" class="btn">T2029</a>
+          </div>
+        </li>
+        <li class="list4">
+          <img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/prd4.png" alt="">
+          <div class="btns">
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-b0050/5081/category/27/display/1/" class="btn">B0050</a>
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EB%8C%84%EC%8B%B1%EC%8A%A4%ED%86%A4-%EB%AA%A9%EA%B1%B8%EC%9D%B4-n0148/5060/category/27/display/1/" class="btn">N0148</a>
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EC%9B%90%ED%84%B0%EC%B9%98-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0490/5087/category/27/display/1/" class="btn">F0490</a>
+          </div>
+        </li>
+        <li class="list5">
+          <img src="https://woorimstg.cafe24.com/product/project/240102/img/mo/prd5.png" alt="">
+          <div class="btns">
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-u-lock-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-t1969/4041/category/27/display/1/" class="btn">T1969</a>
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-u-lock-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-h0147/4336/category/27/display/1/" class="btn">H0147</a>
+            <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-u-lock-14k-%ED%8C%94%EC%B0%8C-h0158/4393/category/27/display/1/" class="btn">H0158</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  let num = 1;
+  var swiperMd = new Swiper(".swiper-md", {
+    speed: 2000,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 3000,
+      autoplayDisableOnInteraction:true,
+    },
+    loop: true,
+    on: {
+      slideChangeTransitionStart() {
+        num = swiperMd.realIndex+1;
+        dataNum();
+      }
+    }
+  });
+  var swiperBg = new Swiper(".swiper-bg", {
+    speed: 2000,
+    autoplay: {
+      delay: 3000,
+    },
+    loop: true,
+  });
+
+  let dataView = document.querySelector('.c-wrap');
+  function dataNum() {
+    dataView.setAttribute('data-view',num);
+  }
+
+  let dirBts = document.querySelectorAll('.dir-btn');
+  Array.prototype.forEach.call(dirBts, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-dir');
+      dirSlide(idx);
+    })
+  });
+
+  function dirSlide(v) {
+    num = v;
+    swiperMd.slideTo(v-1);
+    swiperBg.slideTo(v-1);
+  }
+</script>

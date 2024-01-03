@@ -1,0 +1,198 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 750px;
+  position: relative;
+}
+.content .pretendard {
+  font-family: 'Pretendard', sans-serif;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .top {
+  width: 100vw;
+  height: 161.41176471vw;
+  background-image: url('../img/mo/top.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .vis {
+  position: relative;
+}
+.content .light {
+  width: 12.94117647vw;
+  height: 12.94117647vw;
+  background-image: url('../img/mo/light.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  opacity: 0;
+}
+.content .light.light1 {
+  left: 14.82352941vw;
+  top: 11.64705882vw;
+  right: auto;
+  bottom: auto;
+  transform: scale(0.8);
+  animation: light 2.3s ease-out infinite;
+}
+.content .light.light2 {
+  left: 48vw;
+  top: 36vw;
+  right: auto;
+  bottom: auto;
+  transform: scale(0.6);
+  animation: light 3.2s ease-out infinite;
+}
+.content .light.light3 {
+  left: 75.76470588vw;
+  top: 22.94117647vw;
+  right: auto;
+  bottom: auto;
+  transform: scale(1);
+  animation: light 2.8s ease-out infinite;
+}
+.content .light.light4 {
+  left: 27.05882353vw;
+  top: 33.17647059vw;
+  right: auto;
+  bottom: auto;
+  transform: scale(0.8);
+  animation: light 2.6s ease-out infinite;
+}
+.content .light.light5 {
+  left: 69.88235294vw;
+  top: 19.76470588vw;
+  right: auto;
+  bottom: auto;
+  transform: scale(0.6);
+  animation: light 2.2s ease-out infinite;
+}
+.content .light.light6 {
+  left: 53.76470588vw;
+  top: 70.23529412vw;
+  right: auto;
+  bottom: auto;
+  transform: scale(1);
+  animation: light 2.8s ease-out infinite;
+}
+@keyframes light {
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+.content .model-cut > .swiper {
+  width: 89.17647059vw;
+  height: 65.17647059vw;
+  position: relative;
+  border-radius: 4.11764706vw;
+}
+.content .model-cut > .swiper:before {
+  content: '';
+  display: block;
+  width: 89.17647059vw;
+  height: 65.17647059vw;
+  background-image: url('../img/mo/line_2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  z-index: 2;
+}
+.content .model-cut.model-cut1 {
+  width: 100vw;
+  height: 120.47058824vw;
+  background-image: url('../img/mo/bg1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .model-cut.model-cut2 {
+  width: 100vw;
+  height: 135.17647059vw;
+  background-image: url('../img/mo/bg3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .product {
+  width: 89.17647059vw;
+  height: 55.29411765vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6.47058824vw;
+  box-sizing: border-box;
+  position: relative;
+}
+.content .product .btns {
+  display: flex;
+  justify-content: space-between;
+  width: 89.17647059vw;
+  height: 55.29411765vw;
+  position: absolute;
+  left: 0vw;
+  top: 6.47058824vw;
+  right: auto;
+  bottom: auto;
+}
+.content .product .btns .btn {
+  width: 28vw;
+  height: 55.29411765vw;
+  z-index: 2;
+  position: relative;
+}
+.content .product .btns .btn span {
+  font-size: 2.94117647vw;
+  line-height: 4.11764706vw;
+  display: inline-block;
+  width: 100%;
+  font-family: 'Pretendard', sans-serif;
+  color: #fff;
+  letter-spacing: -0.02em;
+  transition: color 0.8s;
+  transition-timing-function: ease-out;
+  text-transform: uppercase;
+}
+.content .product .btns .btn span:nth-child(1) {
+  margin-top: 31.76470588vw;
+}
+.content .product .btns .btn span:nth-child(3) {
+  font-size: 3.52941176vw;
+  font-weight: 600;
+  margin-top: 2.35294118vw;
+}
+.content .product.product1 {
+  background-image: url('../img/mo/prd1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .product.product2 {
+  background-image: url('../img/mo/prd2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .product .swiper-prd {
+  width: 100%;
+  height: 31.05882353vw;
+  margin-top: -2.70588235vw;
+}
+.content .product .swiper-prd .swiper-slide {
+  width: 29.76470588vw;
+  height: 31.05882353vw;
+}
+.content [data-md1="1"] .btns .btn1 span,
+.content [data-md1="2"] .btns .btn2 span,
+.content [data-md1="3"] .btns .btn3 span,
+.content [data-md1="4"] .btns .btn1 span,
+.content [data-md1="5"] .btns .btn2 span,
+.content [data-md1="6"] .btns .btn3 span {
+  color: #f5e3b1;
+}
+/*# sourceMappingURL=style-mo.css.map */

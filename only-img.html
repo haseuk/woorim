@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<style>
+  body { margin: 0; padding:0; }
+  .container-evt { font-size: 0; position: relative; }
+  .container-evt img { width: 100%; vertical-align: top; }
+  .container-evt img.pc { display: none; }
+  @media screen and (min-width: 1024px) {
+    .container-evt { max-width: 1264px; margin: 0 auto; }
+    .container-evt img.mo { display: none; }
+    .container-evt img.pc { display: block; }
+  }
+</style>
+  <div class="container-evt">
+    <!--이미지 경로만 변경하세요~-->
+    <!--처음 img가 모바일 이미지-->
+    <!--두번째가 img가 피씨 이미지-->
+    <img src="https://woorimstg.cafe24.com/img/project/240103/openevent_mo.png" class="mo" alt="">
+    <img src="https://woorimstg.cafe24.com/img/project/240103/openevent_pc.png" class="pc" alt="">
+  </div>
+</body>
+</html>

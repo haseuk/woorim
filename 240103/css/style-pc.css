@@ -1,0 +1,165 @@
+.content {
+  font-size: 0px;
+  max-width: 1264px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content .pretendard {
+  font-family: 'Pretendard', sans-serif;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .c-wrap {
+  width: 1264px;
+  height: 2595px;
+  background-image: url('../img/pc/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .c-wrap .top {
+  width: 100%;
+  position: relative;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+.content .c-wrap .light-wrap .light {
+  position: absolute;
+  background-image: url('../img/pc/light.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transform: scale(0.8);
+}
+.content .c-wrap .light-wrap .light.light1 {
+  width: 128px;
+  height: 128px;
+  left: 318px;
+  top: 70px;
+  right: auto;
+  bottom: auto;
+  animation: light 1.9s ease-out infinite;
+}
+.content .c-wrap .light-wrap .light.light2 {
+  width: 110px;
+  height: 110px;
+  left: 847px;
+  top: 175px;
+  right: auto;
+  bottom: auto;
+  animation: light 2.4s ease-out infinite;
+}
+.content .c-wrap .light-wrap .light.light3 {
+  width: 95px;
+  height: 95px;
+  left: 622px;
+  top: 286px;
+  right: auto;
+  bottom: auto;
+  animation: light 2.2s ease-out infinite;
+}
+@keyframes light {
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+.content .c-wrap .swiper {
+  width: 1264px;
+  height: 1608px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.content .c-wrap .swiper .swiper-slide {
+  opacity: 0.4;
+  transition: opacity 1s;
+  position: relative;
+}
+.content .c-wrap .swiper .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+.content .c-wrap .swiper .swiper-slide.slide1 .light1 {
+  width: 131px;
+  height: 131px;
+  left: 560px;
+  top: 1113px;
+  right: auto;
+  bottom: auto;
+}
+.content .c-wrap .swiper .swiper-slide.slide1 .light2 {
+  width: 113px;
+  height: 113px;
+  left: 802px;
+  top: 1150px;
+  right: auto;
+  bottom: auto;
+}
+.content .c-wrap .swiper .swiper-slide.slide1 .light3 {
+  width: 174px;
+  height: 174px;
+  left: 926px;
+  top: 1183px;
+  right: auto;
+  bottom: auto;
+}
+.content .c-wrap .swiper .swiper-slide.slide2 .light1 {
+  width: 218px;
+  height: 218px;
+  left: 685px;
+  top: 765px;
+  right: auto;
+  bottom: auto;
+}
+.content .c-wrap .swiper .swiper-slide.slide2 .light2 {
+  width: 131px;
+  height: 131px;
+  left: 543px;
+  top: 1204px;
+  right: auto;
+  bottom: auto;
+}
+.content .c-wrap .product {
+  margin-top: 1538px;
+  position: relative;
+}
+.content .c-wrap .product .btns {
+  width: 1205px;
+  height: 952px;
+  position: absolute;
+  left: 30px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .c-wrap .product .btns .btn {
+  width: 234px;
+  height: 420px;
+  padding-top: 282px;
+  box-sizing: border-box;
+  margin-bottom: 56px;
+}
+.content .c-wrap .product .btns .btn span {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  font-family: 'Pretendard', sans-serif;
+  display: block;
+}
+.content .c-wrap .product .btns .btn span:last-child {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.content .c-wrap .product .btns .btn:hover span {
+  color: #f5e3b1;
+}
+/*# sourceMappingURL=style-pc.css.map */

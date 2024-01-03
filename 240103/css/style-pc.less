@@ -1,0 +1,43 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  .pretendard { font-family: 'Pretendard', sans-serif; }
+  img { .wf; .vat; }
+  .c-wrap { .wh(1264,2595); .contain('../img/pc/bg.png');
+    .top { .wf; .rel; .pt(70); .-box; }
+    .light-wrap {
+      .light { .abs; .contain('../img/pc/light.png'); .o(0); transform: scale(0.8);
+        &.light1 { .wh(128,128); .lt(318,70); animation: light 1.9s ease-out infinite;}
+        &.light2 { .wh(110,110); .lt(847,175); animation: light 2.4s ease-out infinite;}
+        &.light3 { .wh(95,95); .lt(622,286); animation: light 2.2s ease-out infinite;}
+      }
+    }
+    @keyframes light {
+      50% { transform: scale(1.2); opacity: 1; }
+    }
+    .swiper { .wh(1264,1608); .abs; .lt;
+      .swiper-slide { .o(0.4); transition: opacity 1s; .rel;
+        &.swiper-slide-active { .o(1); }
+        &.slide1 {
+          .light1 { .wh(131,131); .lt(560,1113); }
+          .light2 { .wh(113,113); .lt(802,1150); }
+          .light3 { .wh(174,174); .lt(926,1183); }
+        }
+        &.slide2 {
+          .light1 { .wh(218,218); .lt(685,765); }
+          .light2 { .wh(131,131); .lt(543,1204); }
+        }
+      }
+    }
+    .product { .mt(1538); .rel;
+      .btns { .wh(1205,952); .abs; .lt(30,0); .flex; .space-between; .flex-wrap;
+        .btn { .wh(234,420); .pt(282); .-box; .mb(56);
+          span { .fs(20,30); .c(#fff); .pretendard; .block;
+            &:last-child { .fs(25); .semi-bold; .mt(15); }
+          }
+          &:hover span { .c(#f5e3b1); }
+        }
+      }
+    }
+  }
+}
