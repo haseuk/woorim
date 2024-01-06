@@ -1,0 +1,27 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 750px; .rel;
+  img { .wf; .vat; }
+  .c-wrap { .rel;
+    .watch-wrap { .abs; .lt; .f;
+      .w-inner { animation: swing 0.8s alternate infinite ease-in-out; transform-origin: center center; .abs; }
+    }
+    .prd { .wh(754,521); .abs; .flex; .space-between;
+      .btn { .wh(245,521); .pointer; .z(1); .rel; }
+    }
+    @keyframes swing {
+      0% { transform: rotate(2deg); }
+      100% { transform: rotate(-2deg); }
+    }
+    &.c-wrap1 {
+      .watch-wrap .w-inner { .wh(262,497); .contain('../img/mo/watch1.png'); .lt(59,1168); }
+      .prd { .lb(48,0); }
+    }
+    &.c-wrap2 {
+      .watch-wrap .w-inner { .wh(210,521); .contain('../img/mo/watch2.png'); .lt(87,1075); }
+      .prd { .lb(48,115); }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 750px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .c-wrap {
+  position: relative;
+}
+.content .c-wrap .watch-wrap {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 100%;
+}
+.content .c-wrap .watch-wrap .w-inner {
+  animation: swing 0.8s alternate infinite ease-in-out;
+  transform-origin: center center;
+  position: absolute;
+}
+.content .c-wrap .prd {
+  width: 88.70588235vw;
+  height: 61.29411765vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+.content .c-wrap .prd .btn {
+  width: 28.82352941vw;
+  height: 61.29411765vw;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+.content .c-wrap.c-wrap1 .watch-wrap .w-inner {
+  width: 30.82352941vw;
+  height: 58.47058824vw;
+  background-image: url('../img/mo/watch1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 6.94117647vw;
+  top: 137.41176471vw;
+  right: auto;
+  bottom: auto;
+}
+.content .c-wrap.c-wrap1 .prd {
+  left: 5.64705882vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+}
+.content .c-wrap.c-wrap2 .watch-wrap .w-inner {
+  width: 24.70588235vw;
+  height: 61.29411765vw;
+  background-image: url('../img/mo/watch2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 10.23529412vw;
+  top: 126.47058824vw;
+  right: auto;
+  bottom: auto;
+}
+.content .c-wrap.c-wrap2 .prd {
+  left: 5.64705882vw;
+  bottom: 13.52941176vw;
+  right: auto;
+  top: auto;
+}
+/*# sourceMappingURL=style-mo.css.map */

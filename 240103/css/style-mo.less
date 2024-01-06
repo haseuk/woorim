@@ -11,27 +11,28 @@
     &.light1 { .lt(126,99); transform: scale(0.8); animation: light 2.3s ease-out infinite; }
     &.light2 { .lt(408,306); transform: scale(0.6); animation: light 3.2s ease-out infinite; }
     &.light3 { .lt(644,195); transform: scale(1); animation: light 2.8s ease-out infinite; }
-    &.light4 { .lt(230,282); transform: scale(0.8); animation: light 2.6s ease-out infinite; }
-    &.light5 { .lt(594,168); transform: scale(0.6); animation: light 2.2s ease-out infinite; }
-    &.light6 { .lt(457,597); transform: scale(1); animation: light 2.8s ease-out infinite; }
+    &.light4 { .lt(345,1014); transform: scale(0.9); animation: light 2.0s ease-out infinite; }
+    &.light5 { .lt(602,1073); transform: scale(1); animation: light 2.6s ease-out infinite; }
+    &.light6 { .lt(230,282); transform: scale(0.8); animation: light 2.6s ease-out infinite; }
+    &.light7 { .lt(594,168); transform: scale(0.6); animation: light 2.2s ease-out infinite; }
+    &.light8 { .lt(457,597); transform: scale(1); animation: light 2.8s ease-out infinite; }
   }
   @keyframes light {
     50% { transform: scale(1.5); opacity: 1; }
   }
   .model-cut {
     > .swiper { .wh(758,554); .rel; .br(35);
-      &:before { .cnt; .wh(758,554); .contain('../img/mo/line_2.png'); .abs; .lt; .z(2); }
+      &:before { .cnt; .wh(758,554); .contain('../img/mo/line_2.png'); .abs; .lt; .z(2); pointer-events: none; }
     }
     &.model-cut1 { .wh(850,1024); .contain('../img/mo/bg1.png'); }
     &.model-cut2 { .wh(850,1149); .contain('../img/mo/bg3.png'); }
   }
-  .product { .wh(758,470); .mh-c; .pt(55); .-box; .rel;
-    .btns { .flex; .space-between; .wh(758,470); .abs; .lt(0,55);
-      .btn { .wh(238,470); .z(2); .rel;
-        span { .fs(25,35); .ib; .wf; .pretendard; .c(#fff); .ls(-0.02em); transition: color 0.8s; .ease-out; text-transform: uppercase;
-          &:nth-child(1) { .mt(270); }
-          &:nth-child(3) { .fs(30); .semi-bold; .mt(20); }
-        }
+  .product { .wh(758,470); .mh-c; .pt(55); .-box; .rel; .flex; .space-between;
+    .btn { .wh(238,470); .z(2); .rel;
+      &:after { .cnt; .wh(253,264); .contain('../img/mo/line.png'); .abs; .lt(-5,-23); .o(0); transition: opacity 0.8s; .ease-out; }
+      span { .fs(25,35); .ib; .wf; .pretendard; .c(#fff); .ls(-0.02em); transition: color 0.8s; .ease-out; text-transform: uppercase;
+        &:nth-child(1) { .mt(270); }
+        &:nth-child(3) { .fs(30); .semi-bold; .mt(20); }
       }
     }
     &.product1 { .contain('../img/mo/prd1.png'); }
@@ -40,10 +41,16 @@
       .swiper-slide { .wh(253,264); }
     }
   }
-  [data-md1="1"] .btns .btn1 span,
-  [data-md1="2"] .btns .btn2 span,
-  [data-md1="3"] .btns .btn3 span,
-  [data-md1="4"] .btns .btn1 span,
-  [data-md1="5"] .btns .btn2 span,
-  [data-md1="6"] .btns .btn3 span { .c(#f5e3b1); }
+  [data-md1="1"] .btn1 span,
+  [data-md1="2"] .btn2 span,
+  [data-md1="3"] .btn3 span { .c(#f5e3b1); }
+  [data-md1="1"] .btn1:after,
+  [data-md1="2"] .btn2:after,
+  [data-md1="3"] .btn3:after { .o(1); }
+  [data-md2="1"] .btn1 span,
+  [data-md2="2"] .btn2 span,
+  [data-md2="3"] .btn3 span { .c(#f5e3b1); }
+  [data-md2="1"] .btn1:after,
+  [data-md2="2"] .btn2:after,
+  [data-md2="3"] .btn3:after { .o(1); }
 }

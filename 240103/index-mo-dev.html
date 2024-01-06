@@ -1,0 +1,317 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+<style>
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 750px;
+    position: relative;
+  }
+  .content .pretendard {
+    font-family: 'Pretendard', sans-serif;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .top {
+    width: 100vw;
+    height: 161.41176471vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240103/mo/top.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  .content .vis {
+    position: relative;
+  }
+  .content .light {
+    width: 12.94117647vw;
+    height: 12.94117647vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240103/mo/light.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    opacity: 0;
+  }
+  .content .light.light1 {
+    left: 14.82352941vw;
+    top: 11.64705882vw;
+    right: auto;
+    bottom: auto;
+    transform: scale(0.8);
+    animation: light 2.3s ease-out infinite;
+  }
+  .content .light.light2 {
+    left: 48vw;
+    top: 36vw;
+    right: auto;
+    bottom: auto;
+    transform: scale(0.6);
+    animation: light 3.2s ease-out infinite;
+  }
+  .content .light.light3 {
+    left: 75.76470588vw;
+    top: 22.94117647vw;
+    right: auto;
+    bottom: auto;
+    transform: scale(1);
+    animation: light 2.8s ease-out infinite;
+  }
+  .content .light.light4 {
+    left: 40.58823529vw;
+    top: 119.29411765vw;
+    right: auto;
+    bottom: auto;
+    transform: scale(0.9);
+    animation: light 2s ease-out infinite;
+  }
+  .content .light.light5 {
+    left: 70.82352941vw;
+    top: 126.23529412vw;
+    right: auto;
+    bottom: auto;
+    transform: scale(1);
+    animation: light 2.6s ease-out infinite;
+  }
+  .content .light.light6 {
+    left: 27.05882353vw;
+    top: 33.17647059vw;
+    right: auto;
+    bottom: auto;
+    transform: scale(0.8);
+    animation: light 2.6s ease-out infinite;
+  }
+  .content .light.light7 {
+    left: 69.88235294vw;
+    top: 19.76470588vw;
+    right: auto;
+    bottom: auto;
+    transform: scale(0.6);
+    animation: light 2.2s ease-out infinite;
+  }
+  .content .light.light8 {
+    left: 53.76470588vw;
+    top: 70.23529412vw;
+    right: auto;
+    bottom: auto;
+    transform: scale(1);
+    animation: light 2.8s ease-out infinite;
+  }
+  @keyframes light {
+    50% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+  }
+  .content .model-cut > .swiper {
+    width: 89.17647059vw;
+    height: 65.17647059vw;
+    position: relative;
+    border-radius: 4.11764706vw;
+  }
+  .content .model-cut > .swiper:before {
+    content: '';
+    display: block;
+    width: 89.17647059vw;
+    height: 65.17647059vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240103/mo/line_2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .content .model-cut.model-cut1 {
+    width: 100vw;
+    height: 120.47058824vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240103/mo/bg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .model-cut.model-cut2 {
+    width: 100vw;
+    height: 135.17647059vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240103/mo/bg3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .product {
+    width: 89.17647059vw;
+    height: 55.29411765vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6.47058824vw;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .product .btn {
+    width: 28vw;
+    height: 55.29411765vw;
+    z-index: 2;
+    position: relative;
+  }
+  .content .product .btn:after {
+    content: '';
+    display: block;
+    width: 29.76470588vw;
+    height: 31.05882353vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240103/mo/line.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -0.58823529vw;
+    top: -2.70588235vw;
+    right: auto;
+    bottom: auto;
+    opacity: 0;
+    transition: opacity 0.8s;
+    transition-timing-function: ease-out;
+  }
+  .content .product .btn span {
+    font-size: 2.94117647vw;
+    line-height: 4.11764706vw;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Pretendard', sans-serif;
+    color: #fff;
+    letter-spacing: -0.02em;
+    transition: color 0.8s;
+    transition-timing-function: ease-out;
+    text-transform: uppercase;
+  }
+  .content .product .btn span:nth-child(1) {
+    margin-top: 31.76470588vw;
+  }
+  .content .product .btn span:nth-child(3) {
+    font-size: 3.52941176vw;
+    font-weight: 600;
+    margin-top: 2.35294118vw;
+  }
+  .content .product.product1 {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240103/mo/prd1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .product.product2 {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240103/mo/prd2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .product .swiper-prd {
+    width: 100%;
+    height: 31.05882353vw;
+    margin-top: -2.70588235vw;
+  }
+  .content .product .swiper-prd .swiper-slide {
+    width: 29.76470588vw;
+    height: 31.05882353vw;
+  }
+  .content [data-md1="1"] .btn1 span,
+  .content [data-md1="2"] .btn2 span,
+  .content [data-md1="3"] .btn3 span {
+    color: #f5e3b1;
+  }
+  .content [data-md1="1"] .btn1:after,
+  .content [data-md1="2"] .btn2:after,
+  .content [data-md1="3"] .btn3:after {
+    opacity: 1;
+  }
+  .content [data-md2="1"] .btn1 span,
+  .content [data-md2="2"] .btn2 span,
+  .content [data-md2="3"] .btn3 span {
+    color: #f5e3b1;
+  }
+  .content [data-md2="1"] .btn1:after,
+  .content [data-md2="2"] .btn2:after,
+  .content [data-md2="3"] .btn3:after {
+    opacity: 1;
+  }
+  /*# sourceMappingURL=style-mo.css.map */
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<div class="content">
+  <div class="top">
+    <span class="light light1"></span>
+    <span class="light light2"></span>
+    <span class="light light3"></span>
+    <span class="light light4"></span>
+    <span class="light light5"></span>
+  </div>
+  <div class="model-cut model-cut1" data-md1="1">
+    <div class="swiper swiper-md1 mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240103/mo/md1-1.png" alt=""></div>
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240103/mo/md1-2.png" alt=""></div>
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240103/mo/md1-3.png" alt=""></div>
+      </div>
+    </div>
+    <div class="product product1">
+      <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%97%A3%EC%A7%80-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-sa24a01f/5744/category/27/display/1/" class="btn btn1"><span>엣지 14K 목걸이</span><span>SA24A01f</span><span>438,000원</span></a>
+      <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%97%A3%EC%A7%80-14k-%EB%B0%98%EC%A7%80-sa24a03f/5739/category/27/display/1/" class="btn btn2"><span>엣지 14K 반지</span><span>SA24A03F</span><span>418,000원</span></a>
+      <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%97%A3%EC%A7%80-14k-%EB%B0%98%EC%A7%80-sa24a04t/5736/category/27/display/1/" class="btn btn3"><span>엣지 14K 반지</span><span>SA24A04T</span><span>375,000원</span></a>
+    </div>
+  </div>
+
+  <div class="vis">
+    <img src="https://woorimstg.cafe24.com/product/project/240103/mo/bg2.png" alt="">
+    <span class="light light6"></span>
+    <span class="light light7"></span>
+    <span class="light light8"></span>
+  </div>
+
+  <div class="model-cut model-cut2" data-md2="1">
+    <div class="swiper swiper-md2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240103/mo/md2-1.png" alt=""></div>
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240103/mo/md2-2.png" alt=""></div>
+        <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240103/mo/md2-3.png" alt=""></div>
+      </div>
+    </div>
+    <div class="product product2">
+      <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%97%A3%EC%A7%80-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-sa24a06f/5738/category/27/display/1/" class="btn btn1"><span>엣지 14K 목걸이</span><span>SA24A01f</span><span>438,000원</span></a>
+      <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%97%A3%EC%A7%80-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-sa24a09p/5743/category/27/display/1/" class="btn btn2"><span>엣지 14K 반지</span><span>SA24A03F</span><span>418,000원</span></a>
+      <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%97%A3%EC%A7%80-14k-%ED%8C%94%EC%B0%8C-sa24a05t/5735/category/27/display/1/" class="btn btn3"><span>엣지 14K 반지</span><span>SA24A04T</span><span>375,000원</span></a>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  let modelCut1 = document.querySelector('.model-cut1');
+  var swiperMd1 = new Swiper(".swiper-md1", {
+    speed: 2000,
+    autoplay: {
+      delay: 3000,
+      autoplayDisableOnInteraction:true,
+    },
+    loop: true,
+    on: {
+      slideChangeTransitionStart() {
+        modelCut1.setAttribute('data-md1', swiperMd1.realIndex+1)
+      }
+    },
+  });
+
+  let modelCut2 = document.querySelector('.model-cut2');
+  var swiperMd2 = new Swiper(".swiper-md2", {
+    speed: 2000,
+    autoplay: {
+      delay: 3000,
+      autoplayDisableOnInteraction:true,
+    },
+    loop: true,
+    on: {
+      slideChangeTransitionStart() {
+        modelCut2.setAttribute('data-md2',swiperMd2.realIndex+1)
+      }
+    }
+  });
+
+</script>
