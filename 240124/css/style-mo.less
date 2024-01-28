@@ -1,0 +1,13 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 750px; .rel;
+  img { .wf; .vat; }
+  .wrap {
+    .top { .wh(850,1397); .contain('../images/mo/t-bg.png'); .rel;
+      &:after { .cnt; .wh(137,101); .contain('../images/mo/ribbon.png'); .abs; .lt(358,457); .z(1); }
+    }
+    .top-swiper { .abs; .lt(101,477); .wh(648,784); .crop; .br-t(324); }
+  }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+</head>
+<body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <div class="content">
+    <div class="wrap">
+      <div class="top">
+        <div class="tit">
+          <img src="images/mo/tit.png" alt="">
+        </div>
+        <div class="swiper top-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/mo/t-sli1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/mo/t-sli2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/mo/t-sli3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/mo/t-sli4.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/mo/t-sli5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".top-swiper", {
+      speed: 2000,
+      autoplay: {
+        delay: 3000,
+        autoplayDisableOnInteraction:true,
+      },
+      loop: true,
+    });
+  </script>
+</body>
+</html>
