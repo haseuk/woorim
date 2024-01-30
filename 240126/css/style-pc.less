@@ -1,0 +1,25 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    .top { .wh(1264,1414); .rel;
+      .tit { .wh(1264,424); .abs; .lt; .contain('../images/pc/tit.png'); .z(2); }
+      .swiper .swiper-slide { .bgc(#fff); }
+    }
+
+    .product { .wh(1264,3116); .-box; .contain('../images/pc/bg.png'); .pt(80); .-box;
+      .box { .tc; .p(0,92); .-box; .mb(170);
+        .link { .w(620); .ib;
+          .btn { .wh(540,244); .mb(40);
+            &:last-child { .mb(0); }
+          }
+        }
+        &.prd1 .link .btn { .w(620); }
+        &.prd2 { .tr; }
+        &.prd3 { .tl; }
+      }
+    }
+  }
+}

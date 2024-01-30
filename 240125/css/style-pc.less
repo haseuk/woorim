@@ -1,0 +1,47 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .wrap {
+    .top { .wh(1264,1282); .contain('../images/pc/top.png'); .rel;
+      .up { .crop; .abs;
+        img { transform: translateY(100%); animation: up 1s ease-out forwards; }
+      }
+      .tit { .wh(1264,533); .lt;
+        img { animation: up 2.5s ease-out forwards; }
+      }
+      .txt { .wh(217,164); .lt(111,970);
+        img { animation-delay: 2.5s; }
+      }
+      .light { .wh(111,111); .abs; .lt(720,640); transform: scale(0.8); .o(0.4); animation: twinkle 4s ease-out infinite; }
+      @keyframes up {
+        100% { transform: translateY(0); }
+      }
+      @keyframes twinkle {
+        50% { transform: scale(1.1) rotate(45deg); opacity: 1; }
+      }
+    }
+    .product { .wh(1264,3888); .contain('../images/pc/prd-bg.png'); .rel;
+      .heart { .abs; animation: ud 3s ease-in-out infinite;
+        &.heart1 { .wh(687,791); .contain('../images/pc/heart1.png'); .lt(0,411); }
+        &.heart2 { .wh(758,773); .contain('../images/pc/heart2.png'); .rt(0,1225); animation-delay: 0.5s; }
+        &.heart3 { .wh(701,784); .contain('../images/pc/heart3.png'); .lt(0,2060); animation-delay: 1s; }
+        &.heart4 { .wh(719,871); .contain('../images/pc/heart4.png'); .rt(0,2912); animation-delay: 0.7s; }
+      }
+      @keyframes ud {
+        50% { transform: translateY(50px); }
+      }
+      .prds { .abs; .lt(0,679); .wf; .p(0,113,0,111); .-box;
+        .pr-box {
+          .inner { .wh(624,460); .flex; .space-between;
+            .btn { .wh(297,460); .rel; .z(1); .pointer; }
+          }
+          &.in1, &.in3 { .flex; .justify-end; }
+          &.in1 { .mb(346); }
+          &.in2 { .mb(369); }
+          &.in3 { .mb(454); }
+        }
+      }
+    }
+  }
+}

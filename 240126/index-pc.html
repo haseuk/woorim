@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-pc.css">
+</head>
+<body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <div class="content">
+    <div class="wrap">
+      <div class="top">
+        <div class="tit"></div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/pc/top1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pc/top2.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="box prd1">
+          <div class="link ">
+            <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-%ED%81%AC%EB%A0%88%EC%84%BC%EB%8F%84%EC%81%98%EB%9D%A0%EC%97%90%EB%9A%9C%EC%95%8C-rn0016/4958/category/30/display/1/" class="btn">RN0016</a>
+            <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%B0%98%EC%A7%80-%ED%81%AC%EB%A0%88%EC%84%BC%EB%8F%84-rs1464/4944/category/30/display/1/" class="btn">RS1464</a>
+            <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%8B%B4%EC%88%98%EC%A7%84%EC%A3%BC-%EB%B0%98%EC%A7%80-%ED%81%AC%EB%A0%88%EC%84%BC%EB%8F%84-rl0220/4955/category/30/display/1/" class="btn">RL0220</a>
+            <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-%ED%81%AC%EB%A0%88%EC%84%BC%EB%8F%84-rf0072/4959/category/30/display/1/" class="btn">RF0072</a>
+          </div>
+        </div>
+        <div class="box prd2">
+          <div class="link ">
+            <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-%ED%81%AC%EB%A0%88%EC%84%BC%EB%8F%84-rs1465/4945/category/30/display/1/" class="btn">RS1465</a>
+            <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-%ED%81%AC%EB%A0%88%EC%84%BC%EB%8F%84-rs1462/4943/category/30/display/1/" class="btn">RS1462</a>
+            <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%ED%8C%94%EC%B0%8C-%ED%81%AC%EB%A0%88%EC%84%BC%EB%8F%84-rl0219/4954/category/30/display/1/" class="btn">RL0219</a>
+          </div>
+        </div>
+        <div class="box prd3">
+          <div class="link ">
+            <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%8B%B4%EC%88%98%EC%A7%84%EC%A3%BC-%EB%AA%A9%EA%B1%B8%EC%9D%B4-%ED%81%AC%EB%A0%88%EC%84%BC%EB%8F%84-rl0213/4948/category/30/display/1/" class="btn">RL0213</a>
+            <a href="https://woorimrsm.cafe24.com/product/%EB%A1%9C%EC%A6%88%EB%AA%BD-14k-%EB%8B%B4%EC%88%98%EC%A7%84%EC%A3%BC-%EA%B7%80%EA%B1%B8%EC%9D%B4-%ED%81%AC%EB%A0%88%EC%84%BC%EB%8F%84-rl0214/4949/category/30/display/1/" class="btn">RL0214</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper(".top .swiper", {
+      speed: 2000,
+      effect: 'fade',
+      autoplay: {
+        delay: 3000,
+        autoplayDisableOnInteraction:true,
+      },
+      loop: true,
+    });
+
+    new Swiper(".prd .swiper", {
+      slidesPerView: 2.2,
+      spaceBetween: 5,
+      pagination: {
+        el: ".prd1-pagination",
+        type: "progressbar",
+      },
+    });
+  </script>
+</body>
+</html>

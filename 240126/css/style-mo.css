@@ -1,0 +1,97 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 750px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap .top {
+  width: 100vw;
+  height: 162.94117647vw;
+  background-image: url('../images/mo/top.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .wrap .top .tit {
+  width: 100vw;
+  height: 55.88235294vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  background-image: url('../images/mo/tit.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+.content .wrap .top .swiper .swiper-slide {
+  background-color: #fff;
+}
+.content .wrap .product {
+  width: 100vw;
+  height: 572.35294118vw;
+  box-sizing: border-box;
+  background-image: url('../images/mo/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap .product .prd1 {
+  position: relative;
+  padding-top: 23.52941176vw;
+  padding-right: 0vw;
+  padding-bottom: 12.94117647vw;
+  padding-left: 0vw;
+  box-sizing: border-box;
+}
+.content .wrap .product .prd1 .swiper-pagination {
+  left: 5.88235294vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+  width: 88.70588235vw;
+  height: 0.94117647vw;
+  background-color: #fff;
+  border-radius: 0.23529412vw;
+}
+.content .wrap .product .prd1 .swiper-pagination .swiper-pagination-progressbar-fill {
+  background-color: #b4b4b4;
+  border-radius: 0.23529412vw;
+}
+.content .wrap .product .prd1 .swiper {
+  padding-top: 0vw;
+  padding-right: 5.88235294vw;
+  padding-bottom: 0vw;
+  padding-left: 5.88235294vw;
+  box-sizing: border-box;
+}
+.content .wrap .product .link {
+  position: relative;
+}
+.content .wrap .product .link .btn {
+  width: 79.52941176vw;
+  height: 34.47058824vw;
+  margin-bottom: 4.94117647vw;
+}
+.content .wrap .product .link .btn:last-child {
+  margin-bottom: 0vw;
+}
+.content .wrap .product .prd2 {
+  margin-top: 143.52941176vw;
+}
+.content .wrap .product .prd3 {
+  margin-top: 121.05882353vw;
+}
+/*# sourceMappingURL=style-mo.css.map */
