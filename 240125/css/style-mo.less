@@ -5,17 +5,20 @@
 .content { .fs(0); .mh-c; .tc; max-width: 750px; .rel;
   img { .wf; .vat; }
   .wrap {
-    .top { .wh(850,1116); .contain('../images/mo/top.png'); .rel;
+    .top { .wh(850,1196); .contain('../images/mo/top.png'); .rel;
       .up { .crop; .abs;
         img { transform: translateY(100%); animation: up 1s ease-out forwards; }
       }
-      .tit { .wh(850,475); .lt;
+      .tit { .wh(850,512); .lt;
         img { animation: up 2.5s ease-out forwards; }
       }
-      .txt { .wh(282,86); .lb(87,157);
+      .txt { .wh(334,109); .lb(87,150);
         img { animation-delay: 2.5s; }
       }
-      .light { .wh(111,111); .abs; .lt(456,563); transform: scale(0.8); .o(0.4); animation: twinkle 2s ease-out infinite; }
+      .light { .wh(89,89); .abs; transform: scale(0.8); .o(0.4); animation: twinkle 2s ease-out infinite;
+        &.light1 { .lt(695,314); }
+        &.light2 { .lt(364,760); }
+      }
       @keyframes up {
         100% { transform: translateY(0); }
       }
@@ -23,11 +26,11 @@
         50% { transform: scale(1.3); opacity: 1; }
       }
     }
-    .product { .wh(850,1954); .contain('../images/mo/bott.png');
+    .product { .wh(850,2004); .contain('../images/mo/bott.png');
       .swiper {
         .swiper-slide { .rel;
           .link { .abs; .lt(86,1182); .flex; .space-between;
-            .btn { .rel; .z(1); .pointer; .wh(340,500); }
+            .btn { .rel; .z(1); .pointer; .wh(340,540); }
           }
         }
         .swiper-pagination { .b(185);

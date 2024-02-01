@@ -18,7 +18,7 @@
 }
 .content .wrap .top {
   width: 100vw;
-  height: 162.94117647vw;
+  height: 180.58823529vw;
   background-image: url('../images/mo/top.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -26,7 +26,7 @@
 }
 .content .wrap .top .tit {
   width: 100vw;
-  height: 55.88235294vw;
+  height: 73.76470588vw;
   position: absolute;
   left: 0vw;
   top: 0vw;
@@ -52,7 +52,7 @@
   position: relative;
   padding-top: 23.52941176vw;
   padding-right: 0vw;
-  padding-bottom: 12.94117647vw;
+  padding-bottom: 11.52941176vw;
   padding-left: 0vw;
   box-sizing: border-box;
 }
@@ -89,7 +89,7 @@
   margin-bottom: 0vw;
 }
 .content .wrap .product .prd2 {
-  margin-top: 143.52941176vw;
+  margin-top: 137.64705882vw;
 }
 .content .wrap .product .prd3 {
   margin-top: 121.05882353vw;
