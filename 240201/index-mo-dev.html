@@ -1,0 +1,398 @@
+<style>
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 750px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap .top {
+    position: relative;
+  }
+  .content .wrap .top .luv-wrap.fade-out {
+    animation: fadeOut 1s linear forwards;
+  }
+  .content .wrap .top .luv-wrap #love {
+    width: 87.64705882vw;
+    height: 13.17647059vw;
+    position: absolute;
+    left: 6.11764706vw;
+    top: 28.70588235vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .top .luv-wrap .heart {
+    width: 6.11764706vw;
+    height: 5.17647059vw;
+    position: absolute;
+    right: 6.47058824vw;
+    top: 32.47058824vw;
+    left: auto;
+    bottom: auto;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240201/mo/heart.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    opacity: 0;
+  }
+  .content .wrap .top .luv-wrap .heart.on {
+    animation: twinkle 2s alternate forwards;
+  }
+  @keyframes twinkle {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    100% {
+      opacity: 0;
+    }
+  }
+  .content .wrap .mid {
+    position: relative;
+  }
+  .content .wrap .mid .obj-wrap {
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .content .wrap .mid .obj-wrap .obj {
+    width: 30.70588235vw;
+    height: 27.64705882vw;
+    position: absolute;
+    z-index: -1;
+  }
+  .content .wrap .mid .obj-wrap .obj.obj1 {
+    left: 34.11764706vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .mid .obj-wrap .obj.obj2 {
+    left: 2.94117647vw;
+    top: 34.11764706vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .mid .obj-wrap .obj.obj3 {
+    left: 34.11764706vw;
+    top: 34.11764706vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .mid .obj-wrap .obj.obj4 {
+    left: 66.35294118vw;
+    top: 68.23529412vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .mid .obj-wrap[data-num="1"] .obj1,
+  .content .wrap .mid .obj-wrap[data-num="1"] .obj4,
+  .content .wrap .mid .obj-wrap[data-num="2"] .obj2,
+  .content .wrap .mid .obj-wrap[data-num="2"] .obj3,
+  .content .wrap .mid .obj-wrap[data-num="3"] .obj3,
+  .content .wrap .mid .obj-wrap[data-num="3"] .obj1,
+  .content .wrap .mid .obj-wrap[data-num="4"] .obj4,
+  .content .wrap .mid .obj-wrap[data-num="4"] .obj1,
+  .content .wrap .mid .obj-wrap[data-num="5"] .obj3,
+  .content .wrap .mid .obj-wrap[data-num="6"] .obj2,
+  .content .wrap .mid .obj-wrap[data-num="6"] .obj4,
+  .content .wrap .mid .obj-wrap[data-num="7"] .obj2,
+  .content .wrap .mid .obj-wrap[data-num="8"] .obj3,
+  .content .wrap .mid .obj-wrap[data-num="8"] .obj2,
+  .content .wrap .mid .obj-wrap[data-num="9"] .obj4,
+  .content .wrap .mid .obj-wrap[data-num="10"] .obj2,
+  .content .wrap .mid .obj-wrap[data-num="10"] .obj1 {
+    z-index: 1;
+  }
+  .content .wrap .bott {
+    position: relative;
+  }
+  .content .wrap .bott .product {
+    position: absolute;
+    left: 0.35294118vw;
+    top: 8vw;
+    right: auto;
+    bottom: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content .wrap .bott .product .btn {
+    width: 33.05882353vw;
+    height: 52.82352941vw;
+  }
+  .content .wrap .bott .product .btn:nth-child(n+7) {
+    height: 55.64705882vw;
+  }
+  @media screen and (min-width: 767px) {
+    html {
+      font-size: 24.7px;
+    }
+    .content {
+      font-size: 0rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      max-width: 750px;
+      position: relative;
+    }
+    .content img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .content .wrap .top {
+      position: relative;
+    }
+    .content .wrap .top .luv-wrap.fade-out {
+      animation: fadeOut 1s linear forwards;
+    }
+    .content .wrap .top .luv-wrap #love {
+      width: 26.60714286rem;
+      height: 4rem;
+      position: absolute;
+      left: 1.85714286rem;
+      top: 8.71428571rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .top .luv-wrap .heart {
+      width: 1.85714286rem;
+      height: 1.57142857rem;
+      position: absolute;
+      right: 1.96428571rem;
+      top: 9.85714286rem;
+      left: auto;
+      bottom: auto;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240201/mo/heart.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+      opacity: 0;
+    }
+    .content .wrap .top .luv-wrap .heart.on {
+      animation: twinkle 2s alternate forwards;
+    }
+    @keyframes twinkle {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      40% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeOut {
+      100% {
+        opacity: 0;
+      }
+    }
+    .content .wrap .mid {
+      position: relative;
+    }
+    .content .wrap .mid .obj-wrap {
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+      width: 100%;
+      height: 100%;
+    }
+    .content .wrap .mid .obj-wrap .obj {
+      width: 9.32142857rem;
+      height: 8.39285714rem;
+      position: absolute;
+      z-index: -1;
+    }
+    .content .wrap .mid .obj-wrap .obj.obj1 {
+      left: 10.35714286rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .mid .obj-wrap .obj.obj2 {
+      left: 0.89285714rem;
+      top: 10.35714286rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .mid .obj-wrap .obj.obj3 {
+      left: 10.35714286rem;
+      top: 10.35714286rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .mid .obj-wrap .obj.obj4 {
+      left: 20.14285714rem;
+      top: 20.71428571rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .mid .obj-wrap[data-num="1"] .obj1,
+    .content .wrap .mid .obj-wrap[data-num="1"] .obj4,
+    .content .wrap .mid .obj-wrap[data-num="2"] .obj2,
+    .content .wrap .mid .obj-wrap[data-num="2"] .obj3,
+    .content .wrap .mid .obj-wrap[data-num="3"] .obj3,
+    .content .wrap .mid .obj-wrap[data-num="3"] .obj1,
+    .content .wrap .mid .obj-wrap[data-num="4"] .obj4,
+    .content .wrap .mid .obj-wrap[data-num="4"] .obj1,
+    .content .wrap .mid .obj-wrap[data-num="5"] .obj3,
+    .content .wrap .mid .obj-wrap[data-num="6"] .obj2,
+    .content .wrap .mid .obj-wrap[data-num="6"] .obj4,
+    .content .wrap .mid .obj-wrap[data-num="7"] .obj2,
+    .content .wrap .mid .obj-wrap[data-num="8"] .obj3,
+    .content .wrap .mid .obj-wrap[data-num="8"] .obj2,
+    .content .wrap .mid .obj-wrap[data-num="9"] .obj4,
+    .content .wrap .mid .obj-wrap[data-num="10"] .obj2,
+    .content .wrap .mid .obj-wrap[data-num="10"] .obj1 {
+      z-index: 1;
+    }
+    .content .wrap .bott {
+      position: relative;
+    }
+    .content .wrap .bott .product {
+      position: absolute;
+      left: 0.10714286rem;
+      top: 2.42857143rem;
+      right: auto;
+      bottom: auto;
+      justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .content .wrap .bott .product .btn {
+      width: 10.03571429rem;
+      height: 16.03571429rem;
+    }
+    .content .wrap .bott .product .btn:nth-child(n+7) {
+      height: 16.89285714rem;
+    }
+  }
+  /*# sourceMappingURL=style-t.css.map */
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="https://woorimstg.cafe24.com/product/project/240201/mo/top.png" alt="">
+      <div class="luv-wrap">
+        <span class="heart"></span>
+        <svg id="love" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 4698.1 708.2">
+          <g fill="none" stroke="#FDBFBE" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+            <path class="st0" d="M154.6,645.6c-11.1,21.7-17.4,43.7-39.7,51.8c-24.5,5.2-44.9-15.3-60.3-32.9c-67.8-80.5-62.1-195.9,43.8-233.1
+          c37.1-13,79.9-13.7,118.4-6.4c209.8,51.6,437.1,128.7,658.5,144.8c79.1,5.7,156.7,5.1,233.1-15.1
+          c183.4-50.6,348.2-175.3,454.8-332.9c30.7-47.5,82-143.6,59-198.6c-27.3-50.3-132.1,53.7-172.4,124.9
+          c-71.4,115-106.2,255.4-108.6,390.5c0.1,10.2,0.5,20.3,1.4,30.1c30.9,301.5,490-5.2,600.8-189c0.2-0.5,0.1-0.7-0.5-0.1
+          c-0.4,0.4-0.7,0.8-1.2,1.4c-6.5,8.4-10.3,16.2-18.3,30.5c-25.5,50.1-48.6,114.7-14.1,164.4c20.6,28.3,59.8,46.8,94.8,39.8
+          c90.6-17,106.5-238.6,13.7-248.1c-38.6,0-66.5,43.6-57.4,79.8c8,37.6,42,64.7,75.7,81.9c69.2,34.9,149.6,39.1,225.1,29.5
+          c72.6-9.1,155.7-44.1,181.4-117.6c5.4-12.9,7.9-30.4,7.7-7.9c0.3,30.2,2.9,60.8,9.9,90.3c6.1,26.5,31,111.6,64.9,88.1
+          c29.9-27.2,42-141,54.9-184.2c5.3-19.2,16.5-63.8,30.9-75.3c8.1-2.7,7.2,28.8,8.8,35.1c16.4,139.1,128.5,136.8,237.8,106.5
+          c92.3-26.8,184.1-53.9,269.5-97.2c17.6-10,41.1-22.6,43-41.6c-2.7-27.2-49.9-36.8-73.1-36.3c-146.1,9.4-213.2,308.8-34,313.9
+          c60.5,2.8,124.7-18.5,179.9-42.9c74.8-32.3,176.7-99.9,257.2-156.2c247.5-177.4,568.9-56.2,855.2,19.4
+          c71.4,17.1,146.5,34.4,214.4,3.3c69.1-29.1,126.9-104.2,117.7-181.7c-3.7-32.3-24-62.8-56.8-68.3c-34-6.2-65.4,17.1-81.4,45.5
+          c-6.5,10.1-13.4,28.3-21.6,33.1c-5,1.8-7.4-1.3-11.4-5.1c-6.6-7.9-14.7-19.2-22.3-28.1c-15.4-18.5-38.1-31.8-62.6-31.6
+          c-23.2,0.2-44.4,10.2-55.8,29.1c-35.3,79.3,99,171.6,143.6,250.3c29.6,49.8,13.9,111.1-5.6,162"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="mid">
+      <img src="https://woorimstg.cafe24.com/product/project/240201/mo/mid.png" alt="">
+      <div class="obj-wrap" data-num="0">
+        <span class="obj obj1"><img src="https://woorimstg.cafe24.com/product/project/240201/mo/hrt1.png" alt=""></span>
+        <span class="obj obj2"><img src="https://woorimstg.cafe24.com/product/project/240201/mo/hrt4.png" alt=""></span>
+        <span class="obj obj3"><img src="https://woorimstg.cafe24.com/product/project/240201/mo/hrt5.png" alt=""></span>
+        <span class="obj obj4"><img src="https://woorimstg.cafe24.com/product/project/240201/mo/hrt9.png" alt=""></span>
+      </div>
+    </div>
+    <img src="https://woorimstg.cafe24.com/product/project/240201/mo/gift.png" alt="">
+    <div class="bott">
+      <img src="https://woorimstg.cafe24.com/product/project/240201/mo/bott.png" alt="">
+      <div class="product">
+        <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-luv-it-%EC%8B%A4%EB%B2%84-%ED%95%98%ED%8A%B8-%EB%AA%A9%EA%B1%B8%EC%9D%B4-k1806/4406/category/27/display/1/" class="btn">K1806</a>
+        <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%ED%95%98%ED%8A%B8-%EB%AA%A9%EA%B1%B8%EC%9D%B4-u0167/5556/category/28/display/1/" class="btn">U0167</a>
+        <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-love-knot-%EC%8B%A4%EB%B2%84-%EB%AA%A9%EA%B1%B8%EC%9D%B4-f0284/5674/category/27/display/1/" class="btn">F0284</a>
+        <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-luv-it-%EC%8B%A4%EB%B2%84-%ED%95%98%ED%8A%B8-%EA%B7%80%EA%B1%B8%EC%9D%B4-k1807/4407/category/27/display/1/" class="btn">K1807</a>
+        <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%ED%95%98%ED%8A%B8-%EA%B7%80%EA%B1%B8%EC%9D%B4-u0168/5569/category/34/display/1/" class="btn">U0168</a>
+        <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-love-knot-%EC%8B%A4%EB%B2%84-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0283/5665/category/27/display/1/" class="btn">F0283</a>
+        <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-luv-it-%EC%8B%A4%EB%B2%84-%ED%95%98%ED%8A%B8-%EB%AA%A9%EA%B1%B8%EC%9D%B4-f0463/4401/category/27/display/1/" class="btn">F0463</a>
+        <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%ED%95%98%ED%8A%B8-%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C-%EB%AA%A9%EA%B1%B8%EC%9D%B4-m0826d/5797/category/27/display/1/" class="btn">M0826D</a>
+        <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%ED%95%98%ED%8A%B8-%EB%AA%A9%EA%B1%B8%EC%9D%B4-f0449/5642/category/27/display/1/" class="btn">F0449</a>
+        <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-luv-it-%EC%8B%A4%EB%B2%84-%ED%95%98%ED%8A%B8-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0464/4402/category/27/display/1/" class="btn">F0464</a>
+        <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%ED%95%98%ED%8A%B8-%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C-%EA%B7%80%EA%B1%B8%EC%9D%B4-m0827d/5801/category/27/display/1/" class="btn">M0827D</a>
+        <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%ED%95%98%ED%8A%B8-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0450/5734/category/27/display/1/" class="btn">F0450</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.0/vivus.js" integrity="sha512-Tz113urJePvCMdko0ky9901mnHMcWLUKv7/QhbGGdWIkgv/wGPMz7gM7hr5jzS8mtv0dS/u6cYyqAO5hPlJ6ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  let loveObj = document.querySelector('#love');
+  let heartObj = document.querySelector('.heart');
+  let loveWrap = document.querySelector('.luv-wrap');
+  function love() {
+    heartObj.classList.remove('on');
+    loveWrap.classList.remove('fade-out');
+    new Vivus(loveObj, {duration:200}, heart);
+  }
+  love();
+  function heart() {
+    heartObj.classList.add('on');
+    setTimeout(function() {
+      luvFadeOut();
+    },3000);
+  }
+  function luvFadeOut() {
+    loveWrap.classList.add('fade-out');
+    setTimeout(function() {
+      love()
+    }, 3000)
+  }
+
+  let objWrap = document.querySelector('.obj-wrap');
+  function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    num = Math.floor(Math.random() * (max - min + 1)) + min;
+    objWrap.setAttribute('data-num', num)
+  }
+  setInterval(function() {
+    getRandomIntInclusive(1,10)
+  },800)
+</script>

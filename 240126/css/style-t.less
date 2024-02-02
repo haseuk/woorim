@@ -1,0 +1,34 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 28;
+
+@media screen and (min-width: 767px) {
+
+  html { font-size: 24.7px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 750px; .rel;
+    img { .wf; .vat; }
+    .btn { .ib; .rel; .z(1); .pointer; }
+    .wrap {
+      .top { .wh(850,1535); .contain('../images/mo/top.png'); .rel;
+        .tit { .wh(850,627); .abs; .lt; .contain('../images/mo/tit.png'); .z(2); }
+        .swiper .swiper-slide { .bgc(#fff); }
+      }
+
+      .product { .wh(850,4865); .-box;  .contain('../images/mo/bg.png');
+        .prd1 { .h(848); .rel; .p(200,0,98); .-box;
+          .swiper-pagination { .lb(50,0); .wh(754,8); .bgc(#fff); .br(2);
+            .swiper-pagination-progressbar-fill { .bgc(#b4b4b4); .br(2); }
+          }
+          .swiper { .p(0,50); .-box; }
+        }
+        .link { .rel;
+          .btn { .wh(676,293); .mb(42);
+            &:last-child { .mb(0); }
+          }
+        }
+        .prd2 { .mt(1170); }
+        .prd3 { .mt(1029); }
+      }
+    }
+  }
+}

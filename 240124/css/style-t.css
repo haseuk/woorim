@@ -1,0 +1,101 @@
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 24.7px;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 750px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap .top {
+    width: 30.35714286rem;
+    height: 49.89285714rem;
+    background-image: url('../images/mo/t-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  .content .wrap .top:after {
+    content: '';
+    display: block;
+    width: 4.89285714rem;
+    height: 3.60714286rem;
+    background-image: url('../images/mo/ribbon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 12.78571429rem;
+    top: 16.32142857rem;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+  }
+  .content .wrap .top .tit {
+    overflow: hidden;
+  }
+  .content .wrap .top .tit img {
+    transform: translateY(100%);
+    animation: up 2s forwards ease-out;
+  }
+  @keyframes up {
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .content .wrap .top .top-swiper {
+    position: absolute;
+    left: 3.60714286rem;
+    top: 17.03571429rem;
+    right: auto;
+    bottom: auto;
+    width: 23.14285714rem;
+    height: 28rem;
+    overflow: hidden;
+    border-radius: 11.57142857rem 11.57142857rem 0 0;
+  }
+  .content .wrap .product {
+    width: 30.35714286rem;
+    height: 103.67857143rem;
+    background-image: url('../images/mo/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 28.92857143rem;
+    box-sizing: border-box;
+  }
+  .content .wrap .product .prd {
+    height: 17.39285714rem;
+    position: relative;
+    padding-bottom: 1.57142857rem;
+    box-sizing: border-box;
+  }
+  .content .wrap .product .prd .swiper-pagination {
+    left: 1.78571429rem;
+    bottom: 0rem;
+    right: auto;
+    top: auto;
+    width: 26.78571429rem;
+    height: 0.17857143rem;
+    background-color: #fff;
+  }
+  .content .wrap .product .prd .swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: #5e7e85;
+  }
+  .content .wrap .product .prd .swiper {
+    padding-top: 0rem;
+    padding-right: 1.78571429rem;
+    padding-bottom: 0rem;
+    padding-left: 1.78571429rem;
+    box-sizing: border-box;
+  }
+  .content .wrap .product .prd2 {
+    margin-top: 34.42857143rem;
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

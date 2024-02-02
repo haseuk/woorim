@@ -1,0 +1,60 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    .top { .rel;
+      .luv-wrap {
+        &.fade-out { animation: fadeOut 1s linear forwards; }
+        #love { .wh(1042,155); .abs; .lt(111,214); }
+        .heart { .wh(72,61); .abs; .rt(112,258); .contain('../images/pc/heart.png'); .ib; .o(0);
+          &.on { animation: twinkle 2s alternate forwards; }
+        }
+        @keyframes twinkle {
+          0% { opacity: 0; }
+          20% { opacity: 1; }
+          40% { opacity: 0; }
+          60% { opacity: 1; }
+          80% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+      }
+      @keyframes fadeOut {
+        100% { opacity: 0; }
+      }
+    }
+    .mid { .rel;
+      .obj-wrap { .abs; .lt; .f;
+        .obj { .wh(325,293); .abs; .z(-1);
+          &.obj1 { .lt(470,0); }
+          &.obj2 { .lt(99,363); }
+          &.obj3 { .lt(469,363); }
+          &.obj4 { .lt(843,726); }
+        }
+        &[data-num="1"] .obj1,
+        &[data-num="1"] .obj4,
+        &[data-num="2"] .obj2,
+        &[data-num="2"] .obj3,
+        &[data-num="3"] .obj3,
+        &[data-num="3"] .obj1,
+        &[data-num="4"] .obj4,
+        &[data-num="4"] .obj1,
+        &[data-num="5"] .obj3,
+        &[data-num="6"] .obj2,
+        &[data-num="6"] .obj4,
+        &[data-num="7"] .obj2,
+        &[data-num="8"] .obj3,
+        &[data-num="8"] .obj2,
+        &[data-num="9"] .obj4,
+        &[data-num="10"] .obj2,
+        &[data-num="10"] .obj1 { .z(1); }
+      }
+    }
+    .bott { .rel;
+      .product { .w(1053); .abs; .lt(106,325); .flex; .space-between; .flex-wrap;
+        .btn { .wh(351,380); }
+      }
+    }
+  }
+}

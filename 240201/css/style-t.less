@@ -1,0 +1,68 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 28;
+
+
+@media screen and (min-width: 767px) {
+
+  html { font-size: 24.7px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 750px; .rel;
+    img { .wf; .vat; }
+    .wrap {
+      .top { .rel;
+        .luv-wrap {
+          &.fade-out { animation: fadeOut 1s linear forwards; }
+          #love { .wh(745,112); .abs; .lt(52,244); }
+          .heart { .wh(52,44); .abs; .rt(55,276); .contain('../images/mo/heart.png'); .ib; .o(0);
+            &.on { animation: twinkle 2s alternate forwards; }
+          }
+          @keyframes twinkle {
+            0% { opacity: 0; }
+            20% { opacity: 1; }
+            40% { opacity: 0; }
+            60% { opacity: 1; }
+            80% { opacity: 0; }
+            100% { opacity: 1; }
+          }
+        }
+        @keyframes fadeOut {
+          100% { opacity: 0; }
+        }
+      }
+      .mid { .rel;
+        .obj-wrap { .abs; .lt; .f;
+          .obj { .wh(261,235); .abs; .z(-1);
+            &.obj1 { .lt(290,0); }
+            &.obj2 { .lt(25,290); }
+            &.obj3 { .lt(290,290); }
+            &.obj4 { .lt(564,580); }
+          }
+          &[data-num="1"] .obj1,
+          &[data-num="1"] .obj4,
+          &[data-num="2"] .obj2,
+          &[data-num="2"] .obj3,
+          &[data-num="3"] .obj3,
+          &[data-num="3"] .obj1,
+          &[data-num="4"] .obj4,
+          &[data-num="4"] .obj1,
+          &[data-num="5"] .obj3,
+          &[data-num="6"] .obj2,
+          &[data-num="6"] .obj4,
+          &[data-num="7"] .obj2,
+          &[data-num="8"] .obj3,
+          &[data-num="8"] .obj2,
+          &[data-num="9"] .obj4,
+          &[data-num="10"] .obj2,
+          &[data-num="10"] .obj1 { .z(1); }
+        }
+      }
+      .bott { .rel;
+        .product { .abs; .lt(3,68); .flex; .space-between; .flex-wrap;
+          .btn { .wh(281,449);
+            &:nth-child(n+7) { .h(473); }
+          }
+        }
+      }
+    }
+  }
+}

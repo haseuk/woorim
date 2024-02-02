@@ -1,0 +1,33 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 28;
+
+@media screen and (min-width: 767px) {
+  html { font-size: 24.7px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 750px; .rel;
+    img { .wf; .vat; }
+    .wrap {
+      .top { .wh(850,1397); .contain('../images/mo/t-bg.png'); .rel;
+        &:after { .cnt; .wh(137,101); .contain('../images/mo/ribbon.png'); .abs; .lt(358,457); .z(1); }
+        .tit { .crop;
+          img { transform: translateY(100%); animation: up 2s forwards ease-out; }
+          @keyframes up {
+            100% { transform: translateY(0); }
+          }
+        }
+        .top-swiper { .abs; .lt(101,477); .wh(648,784); .crop; .br-t(324); }
+      }
+
+      .product { .wh(850,2903); .contain('../images/mo/bg.png'); .pt(810); .-box;
+        .prd { .h(487); .rel; .pb(44); .-box;
+          .swiper-pagination { .lb(50,0); .wh(750,5); .bgc(#fff);
+            .swiper-pagination-progressbar-fill { .bgc(#5e7e85); }
+          }
+          .swiper { .p(0,50); .-box;
+          }
+        }
+        .prd2 { .mt(964); }
+      }
+    }
+}
+}
