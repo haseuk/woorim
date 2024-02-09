@@ -1,0 +1,22 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 28;
+
+
+@media screen and (min-width: 767px) {
+
+  html { font-size: 24.7px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 750px; .rel;
+    img { .wf; .vat; }
+    .wrap {
+      .top { .wh(850,787); .rel;
+        iframe { .wh(850,787); .abs; .lt; }
+      }
+      .product { .rel;
+        .prds { .w(730); .abs; .lt(60,1243); .flex; .space-between; .flex-wrap;
+          .btn { .wh(348,538); .mb(80); }
+        }
+      }
+    }
+  }
+}

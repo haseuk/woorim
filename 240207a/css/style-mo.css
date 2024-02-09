@@ -1,0 +1,118 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .wrap .top {
+  width: 100vw;
+  height: 129.88235294vw;
+  position: relative;
+  background-image: url('../images/mo/top-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+.content .wrap .top .obj {
+  width: 100vw;
+  height: 129.88235294vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .top .st1 {
+  width: 6.47058824vw;
+  height: 8vw;
+  right: 4.94117647vw;
+  top: 2.70588235vw;
+  left: auto;
+  bottom: auto;
+}
+.content .wrap .top .st2 {
+  width: 7.29411765vw;
+  height: 8.94117647vw;
+  left: 2vw;
+  top: 51.05882353vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .top .st3 {
+  width: 6.47058824vw;
+  height: 8vw;
+  left: 29.76470588vw;
+  top: 116.70588235vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .top .ht {
+  animation: dungdung1 1s alternate infinite;
+}
+.content .wrap .top .ht1 {
+  animation-delay: 1.2s;
+}
+.content .wrap .top .ht3 {
+  animation-delay: 0.8s;
+  animation: dungdung2 2s alternate infinite;
+}
+.content .wrap .top .ht4 {
+  animation-delay: 0.4s;
+}
+@keyframes dungdung1 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 2%;
+  }
+}
+@keyframes dungdung2 {
+  0% {
+    margin-top: 3%;
+  }
+  100% {
+    margin-top: -3%;
+  }
+}
+.content .wrap .product .prd-wr {
+  position: relative;
+}
+.content .wrap .product .prd-wr .tw {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 0.8s infinite;
+}
+@keyframes twinkle {
+  50% {
+    opacity: 0;
+  }
+}
+.content .wrap .product .prd-wr .prds {
+  width: 88.70588235vw;
+  height: 57.64705882vw;
+  position: absolute;
+  left: 5.64705882vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+}
+.content .wrap .product .prd-wr .prds .btn {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+.content .wrap .product .prd-wr.prd3 .prds {
+  bottom: 20.35294118vw;
+}
+/*# sourceMappingURL=style-mo.css.map */

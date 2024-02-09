@@ -1,0 +1,40 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .wrap {
+    .top { .wh(850,1104); .rel; .contain('../images/mo/top-bg.png'); .crop;
+      .obj { .wh(850,1104); .abs; .lt; }
+      .st1 { .wh(55,68); .rt(42,23); }
+      .st2 { .wh(62,76); .lt(17,434); }
+      .st3 { .wh(55,68); .lt(253,992); }
+      //.ht { transform: translateY(100%); }
+      .ht { animation: dungdung1 1s alternate infinite; }
+      .ht1 { animation-delay: 1.2s; }
+      .ht3 { animation-delay: 0.8s; animation: dungdung2 2s alternate infinite; }
+      .ht4 { animation-delay: 0.4s; }
+      @keyframes dungdung1 {
+        0% { margin-top: 0; }
+        100% { margin-top: 2%; }
+      }
+      @keyframes dungdung2 {
+        0% { margin-top: 3%; }
+        100% { margin-top: -3%; }
+      }
+    }
+    .product {
+      .prd-wr { .rel;
+        .tw { .abs; .lt; animation: twinkle 0.8s infinite; }
+        @keyframes twinkle {
+          50% { opacity: 0; }
+        }
+        .prds { .wh(754,490); .abs; .lb(48,0);
+          .btn { .wh(50%,100%); .ib; .vat; }
+        }
+        &.prd3 .prds { .b(173); }
+      }
+    }
+  }
+}

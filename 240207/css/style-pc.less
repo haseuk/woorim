@@ -1,0 +1,19 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    .top { .wh(1264,1000); .rel;
+      iframe { .wh(1264,1000); .abs; .lt; }
+    }
+    .product { .rel;
+      .prds { .w(1040); .abs; .lt(112,1256); .flex; .space-between; .flex-wrap;
+        .btn { .wh(339,338); .mb(30);
+          &:nth-child(2), &:nth-child(6), &:nth-child(10) { .mr(350); }
+          &:nth-child(3), &:nth-child(7) { .ml(350); }
+        }
+      }
+    }
+  }
+}
