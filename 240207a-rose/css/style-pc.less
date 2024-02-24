@@ -1,0 +1,49 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    .top { .wh(1264,1302); .rel; .contain('../images/pc/top-bg.png'); .crop;
+      .obj { .wh(1264,1302); .abs; .lt; }
+      .st { .wh(108,132); }
+      .st1 { .rt(78,51); }
+      .st2 { .lt(59,602); }
+      .st3 { .lb(422,40); }
+      .ht { animation: dungdung1 1s alternate infinite; }
+      .ht1 { animation-delay: 1.2s; }
+      .ht3 { animation-delay: 0.8s; animation: dungdung2 2s alternate infinite; }
+      .ht4 { animation-delay: 0.4s; }
+      @keyframes dungdung1 {
+        0% { margin-top: 0; }
+        100% { margin-top: 2%; }
+      }
+      @keyframes dungdung2 {
+        0% { margin-top: 3%; }
+        100% { margin-top: -3%; }
+      }
+    }
+    .product {
+      .prd-wr { .rel;
+        .tw { .abs; animation: twinkle 0.7s infinite; }
+        @keyframes twinkle {
+          50% { opacity: 0; }
+        }
+        .prds { .wh(327,760); .abs; .lb(824,0);
+          .btn { .wh(328,368);
+            &:first-child { .mb(24); }
+          }
+        }
+        &.prd1 .tw { .wh(392,96); .lt(252,169); }
+        &.prd2 {
+          .prds { .l(114); }
+          .tw { .wh(197,84); .lt(737,142); }
+        }
+        &.prd3 {
+          .prds { .b(178); }
+          .tw { .wh(303,232); .lt(281,199); }
+        }
+      }
+    }
+  }
+}

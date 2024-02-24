@@ -1,0 +1,45 @@
+.content {
+  font-size: 0px;
+  max-width: 1264px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap .product .prd {
+  position: relative;
+}
+.content .wrap .product .prd .link {
+  width: 382px;
+  height: 620px;
+  position: absolute;
+  left: 707px;
+  bottom: 152px;
+  right: auto;
+  top: auto;
+}
+.content .wrap .product .prd .link .btn {
+  width: 100%;
+  height: 100%;
+}
+.content .wrap .product .prd.prd2 .link {
+  bottom: 139px;
+}
+.content .wrap .product .prd.prd2 .link,
+.content .wrap .product .prd.prd4 .link {
+  left: 176px;
+}
+.content .wrap .product .prd.prd4 .link {
+  bottom: 147px;
+}
+/*# sourceMappingURL=style-pc.css.map */

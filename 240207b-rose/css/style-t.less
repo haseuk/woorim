@@ -1,0 +1,24 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 28;
+
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+    img { .wf; .vat; }
+    .wrap { .contain('../images/mo/bg.jpg'); .wh(850,4000);
+      .top { .rel; .wh(850,1421);
+        iframe { .wh(850,788); .abs; .lt(0,311); }
+      }
+      .product {
+        .prd {
+          .btn { .wh(364,690); .ib; .vat;
+            &:first-child { .mr(26); }
+          }
+          &.prd2 { .mt(993); }
+        }
+      }
+    }
+  }
+}

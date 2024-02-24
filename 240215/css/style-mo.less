@@ -1,0 +1,39 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .wrap {
+    .vid { .wh(850,1062); .contain('../images/mo/poster.png');
+      iframe { .f; }
+    }
+    .product { .contain('../images/mo/bg.png'); .wh(850,3438); .crop;
+      .tit { .wh(850,720); }
+      .prd { .wh(850,894);
+        .prd-inner { .f; .rel; .pt(42); .-box;
+          .swiper { .wh(568,698); }
+          .swiper-btn { .wh(141,146); .t(318); .mt(0);
+            &:after { .hide; }
+            &.swiper-button-next { .r(0); }
+            &.swiper-button-prev { .l(0); }
+          }
+        }
+        &.prd1 .prd-inner {
+          &:after { .cnt; .f; .abs; .lt; .contain('../images/mo/frm1.png'); .z(1); pointer-events: none; }
+        }
+        &.prd2 .prd-inner {
+          &:after { .cnt; .f; .abs; .lt; .contain('../images/mo/frm2.png'); .z(1); pointer-events: none; }
+        }
+        &.prd3 { .wh(850,930);
+          .prd-inner {
+            &:after { .cnt; .f; .abs; .lt; .contain('../images/mo/frm3.png'); .z(1); pointer-events: none; }
+          }
+        }
+      }
+      .mv-obj { transform: translateY(30%); .o(0); transition: transform 0.9s, opacity 0.9s; .ease-out;
+        &.mv-on { transform: translateY(0); .o(1); }
+      }
+    }
+  }
+}

@@ -1,0 +1,290 @@
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 28px;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .leaf {
+    width: 30.35714286rem;
+    height: 60.71428571rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    overflow: hidden;
+    z-index: 1;
+    transform: rotate(180deg);
+  }
+  .content .wrap {
+    overflow: hidden;
+  }
+  .content .wrap .top {
+    width: 30.35714286rem;
+    height: 66.39285714rem;
+    background-image: url('../images/mo/top.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  .content .wrap .top:after {
+    content: '';
+    display: block;
+    width: 23.67857143rem;
+    height: 10.10714286rem;
+    background-image: url('../images/mo/main-tit.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 3.35714286rem;
+    bottom: 3.21428571rem;
+    right: auto;
+    top: auto;
+    z-index: 1;
+  }
+  .content .wrap .top .tit {
+    width: 30.35714286rem;
+    height: 28.57142857rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .content .wrap .top .tit img {
+    transform: translateY(10%);
+    opacity: 0;
+    animation: upSld 1s ease-out forwards;
+  }
+  @keyframes upSld {
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .content .wrap .top .necklace {
+    width: 29.03571429rem;
+    height: 32.07142857rem;
+    position: absolute;
+    right: -12.5rem;
+    top: -22.14285714rem;
+    left: auto;
+    bottom: auto;
+    z-index: 1;
+    animation: swing 1.5s alternate ease-in-out infinite;
+    transform-origin: 50% 10%;
+  }
+  .content .wrap .top .watch {
+    position: absolute;
+    z-index: 1;
+    animation: doongdoong 2.5s ease-out infinite;
+  }
+  .content .wrap .top .watch.w1 {
+    width: 12.89285714rem;
+    height: 23.82142857rem;
+    left: 1.96428571rem;
+    top: 28.21428571rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .top .watch.w2 {
+    width: 13.17857143rem;
+    height: 24.10714286rem;
+    left: 16.35714286rem;
+    top: 24.42857143rem;
+    right: auto;
+    bottom: auto;
+    animation: doongdoong 2.9s ease-out infinite;
+  }
+  @keyframes doongdoong {
+    50% {
+      margin-top: 20px;
+    }
+  }
+  @keyframes swing {
+    0% {
+      transform: rotate(2deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+  }
+  .content .wrap .top .light {
+    z-index: 1;
+    animation: twinkle 2s alternate ease-in-out infinite;
+  }
+  .content .wrap .top .light.type1 {
+    width: 3.96428571rem;
+    height: 3.96428571rem;
+    background-image: url('../images/mo/light.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+  }
+  .content .wrap .top .light.type1.light1 {
+    left: 3.39285714rem;
+    top: 5.35714286rem;
+    right: auto;
+    bottom: auto;
+    animation-delay: 0.5s;
+  }
+  .content .wrap .top .light.type1.light2 {
+    width: 2.60714286rem;
+    height: 2.60714286rem;
+    left: 6.07142857rem;
+    top: 11.07142857rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 1.5s alternate ease-in-out infinite;
+  }
+  .content .wrap .top .light.type1.light3 {
+    width: 2.60714286rem;
+    height: 2.60714286rem;
+    left: 1.78571429rem;
+    top: 18.57142857rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 2.2s alternate ease-in-out infinite;
+  }
+  .content .wrap .top .light.type1.light4 {
+    left: 6.07142857rem;
+    top: 5.53571429rem;
+    right: auto;
+    bottom: auto;
+    animation-delay: 0.5s;
+  }
+  .content .wrap .top .light.type1.light5 {
+    width: 2.42857143rem;
+    height: 2.42857143rem;
+    left: 5.71428571rem;
+    top: 12.5rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 1.8s alternate ease-in-out infinite;
+  }
+  .content .wrap .top .light.type2 {
+    width: 2.89285714rem;
+    height: 2.89285714rem;
+    background-image: url('../images/mo/sh-light.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+  }
+  .content .wrap .top .light.type2.light1 {
+    left: 9.10714286rem;
+    top: 2.89285714rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 2.1s alternate ease-in-out infinite;
+  }
+  .content .wrap .top .light.type2.light2 {
+    left: 22.5rem;
+    top: 19.28571429rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 1.9s alternate ease-in-out infinite;
+  }
+  .content .wrap .top .light.type2.light3 {
+    left: 19.28571429rem;
+    top: 28.57142857rem;
+    right: auto;
+    bottom: auto;
+    animation-delay: 0.5s;
+  }
+  .content .wrap .top .light.type2.light4 {
+    left: -0.35714286rem;
+    top: 37.64285714rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 2.3s alternate ease-in-out infinite;
+  }
+  .content .wrap .top .light.type2.light5 {
+    left: 25.53571429rem;
+    top: 46.78571429rem;
+    right: auto;
+    bottom: auto;
+  }
+  @keyframes twinkle {
+    50% {
+      opacity: 0.2;
+      transform: scale(0.5);
+    }
+  }
+  .content .wrap .product .prd-wrap {
+    position: relative;
+  }
+  .content .wrap .product .prd-wrap .view {
+    width: 30.35714286rem;
+    height: 18.89285714rem;
+    display: block;
+    margin-bottom: 6.32142857rem;
+  }
+  .content .wrap .product .prd-wrap .view:last-child {
+    margin-bottom: 5.57142857rem;
+  }
+  .content .wrap .product .prd-wrap .swiper {
+    padding-top: 0rem;
+    padding-right: 1.71428571rem;
+    padding-bottom: 3.10714286rem;
+    padding-left: 1.71428571rem;
+    box-sizing: border-box;
+    height: 23.60714286rem;
+    position: relative;
+  }
+  .content .wrap .product .prd-wrap .swiper .swiper-slide {
+    width: 13.07142857rem !important;
+    height: 20.5rem !important;
+  }
+  .content .wrap .product .prd-wrap .swiper .swiper-pagination {
+    left: 1.71428571rem;
+    bottom: 0rem;
+    right: auto;
+    width: 26.92857143rem;
+    height: 0.25rem;
+    top: auto;
+    background-color: #e4d6d7;
+    border-radius: 0.07142857rem;
+  }
+  .content .wrap .product .prd-wrap .swiper .swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: #9e8b8d;
+    border-radius: 0.14285714rem;
+  }
+  .content .wrap .product .prd-wrap.prd1 {
+    width: 30.35714286rem;
+    height: 106.42857143rem;
+    background-image: url('../images/mo/bg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap .product .prd-wrap.prd2 {
+    width: 30.35714286rem;
+    height: 95.03571429rem;
+    background-image: url('../images/mo/bg2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 8.78571429rem;
+    box-sizing: border-box;
+  }
+  .content .wrap .product .prd-wrap.prd2 .view {
+    margin-bottom: 7.92857143rem;
+  }
+  .content .wrap .product .prd-wrap.prd2 .view:last-of-type {
+    margin-bottom: 7.21428571rem;
+  }
+  .content .wrap .product .prd-wrap.prd2 .swiper {
+    height: 25.39285714rem;
+  }
+  .content .wrap .product .prd-wrap.prd2 .swiper .swiper-slide {
+    width: 13.09371429rem !important;
+    height: 13.09371429rem !important;
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

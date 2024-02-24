@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/style-t.css">
+</head>
+<body>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="images/mo/top.jpg" alt="">
+    </div>
+    <div class="product">
+      <div class="prd prd1">
+        <img src="images/mo/art1.jpg" alt="">
+        <div class="link">
+          <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-sa24a16u/5813/category/27/display/1/" class="btn">SA24A16U</a>
+          <a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-sa24a17u/5816/category/27/display/1/" class="btn">SA24A17U</a>
+        </div>
+      </div>
+      <div class="prd prd2">
+        <img src="images/mo/art2.jpg" alt="">
+        <div class="link">
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-dal-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-t2037/4262/category/27/display/1/" class="btn">T2037</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-dal-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-t2026/4260/category/27/display/1/" class="btn">T2026</a>
+        </div>
+      </div>
+      <div class="prd prd3">
+        <img src="images/mo/art3.jpg" alt="">
+        <div class="link">
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EB%9F%AD%ED%82%A4%EC%9C%A0-%EB%AA%A9%EA%B1%B8%EC%9D%B4-p1406/3960/category/27/display/1/" class="btn">P1406</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-14k-%EB%9F%AD%ED%82%A4%EC%9C%A0-%EA%B7%80%EA%B1%B8%EC%9D%B4-p1405/3959/category/27/display/1/" class="btn">P1405</a>
+        </div>
+      </div>
+      <div class="prd prd4">
+        <img src="images/mo/art4.jpg" alt="">
+        <div class="link">
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EB%8C%84%EC%8B%B1%EC%8A%A4%ED%86%A4-%EB%AA%A9%EA%B1%B8%EC%9D%B4-n0148/5060/category/27/display/1/" class="btn">N0148</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%BB%A4%EB%84%A5%EC%85%98-14k-%EC%9B%90%ED%84%B0%EC%B9%98-%EA%B7%80%EA%B1%B8%EC%9D%B4-f0490/5087/category/27/display/1/" class="btn">F0490</a>
+        </div>
+      </div>
+      <div class="prd prd5">
+        <img src="images/mo/art5.jpg" alt="">
+        <div class="link">
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%97%A3%EC%A7%80-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-sa24a01f/5744/category/27/display/1/" class="btn">SA24A01F</a>
+          <a href="https://woorimstg.cafe24.com/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%EC%97%A3%EC%A7%80-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-sa24a02f/5741/category/27/display/1/" class="btn">SA24A02F</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  let scrollY;
+  window.addEventListener("scroll", handleScroll);
+  function handleScroll() {
+    scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    initIntersectionObserver();
+  }
+
+  function initIntersectionObserver() {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio > 0.5) {
+          entry.target.classList.add('move-on');
+        }
+      })
+    });
+    const move = document.querySelectorAll('.prd');
+    move.forEach((el) => {
+      io.observe(el);
+    });
+  }
+  window.onload = function() {
+    initIntersectionObserver();
+  }
+</script>
+</body>
+</html>

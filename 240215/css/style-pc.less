@@ -1,0 +1,27 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap { .wh(1264,876); .contain('../images/pc/bg.png');
+    .w-inner {
+      .title { .wh(712,876); .ib; .vat; transform: translateY(200px); opacity: 0; animation: upSld 1.5s forwards; .ease-out; }
+      .vid-wrap { .wh(552,876); .ib; .vat; .rel; .p(160,0,0,8); .-box;
+        .frm { .wh(460,572); .abs; .lt(0,152); .contain('../images/pc/frm.png'); .z(1); }
+        .vid { .wh(444,556); .rel; .crop; .contain('../images/pc/poster.png');
+          iframe { .f; }
+          .corner { .wh(25,25); .abs; .ib; transform: rotate(45deg);
+            &.c1 { .bgc(#eae7d4); .lt(-12,-12); }
+            &.c2 { .bgc(#e0dbc9); .rt(-12,-12); }
+            &.c3 { .bgc(#e5e3d7); .lb(-12,-12); }
+            &.c4 { .bgc(#bbb29a); .rb(-12,-12); }
+          }
+        }
+        &.mv-obj { animation-delay: 0.5s; }
+      }
+      @keyframes upSld {
+        100% { transform: translateY(0); opacity: 1; }
+      }
+    }
+  }
+}

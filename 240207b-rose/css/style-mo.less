@@ -1,0 +1,20 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .wrap { .contain('../images/mo/bg.jpg'); .wh(850,4000);
+    .top { .rel; .wh(850,1421);
+      iframe { .wh(850,788); .abs; .lt(0,311); }
+    }
+    .product {
+      .prd {
+        .btn { .wh(364,690); .ib; .vat;
+          &:first-child { .mr(26); }
+        }
+        &.prd2 { .mt(993); }
+      }
+    }
+  }
+}

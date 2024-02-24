@@ -1,0 +1,23 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 28;
+
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+    img { .wf; .vat; }
+    .wrap {
+      .product {
+        .prd { .rel;
+          .link { .abs; .lb(84,114);
+            .btn { .wh(306,580); .ib; .vat;
+              &:first-child { .mr(69); }
+            }
+          }
+          &.prd3 .link { .b(150); }
+        }
+      }
+    }
+  }
+}

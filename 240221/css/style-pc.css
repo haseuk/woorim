@@ -1,0 +1,317 @@
+.content {
+  font-size: 0px;
+  max-width: 1264px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .leaf {
+  width: 1264px;
+  height: 1630px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  overflow: hidden;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+.content .wrap {
+  overflow: hidden;
+}
+.content .wrap .top {
+  width: 1264px;
+  height: 1850px;
+  background-image: url('../images/pc/top.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .wrap .top:after {
+  content: '';
+  display: block;
+  width: 829px;
+  height: 342px;
+  background-image: url('../images/pc/main-tit.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 219px;
+  bottom: 135px;
+  right: auto;
+  top: auto;
+  z-index: 1;
+}
+.content .wrap .top .tit {
+  width: 1264px;
+  height: 620px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.content .wrap .top .tit img {
+  transform: translateY(10%);
+  opacity: 0;
+  animation: upSld 1s ease-out forwards;
+}
+@keyframes upSld {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.content .wrap .top .necklace {
+  width: 813px;
+  height: 898px;
+  position: absolute;
+  right: -350px;
+  top: -620px;
+  left: auto;
+  bottom: auto;
+  z-index: 1;
+  animation: swing 1.5s alternate ease-in-out infinite;
+  transform-origin: 50% 10%;
+}
+.content .wrap .top .watch {
+  position: absolute;
+  z-index: 1;
+  animation: doongdoong 2.5s ease-out infinite;
+}
+.content .wrap .top .watch.w1 {
+  width: 375px;
+  height: 695px;
+  left: 230px;
+  top: 683px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .top .watch.w2 {
+  width: 383px;
+  height: 702px;
+  left: 738px;
+  top: 504px;
+  right: auto;
+  bottom: auto;
+  animation: doongdoong 2.9s ease-out infinite;
+}
+@keyframes doongdoong {
+  50% {
+    margin-top: 20px;
+  }
+}
+@keyframes swing {
+  0% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+.content .wrap .top .light {
+  z-index: 1;
+  animation: twinkle 2s alternate ease-in-out infinite;
+}
+.content .wrap .top .light.type1 {
+  width: 111px;
+  height: 111px;
+  background-image: url('../images/mo/light.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.content .wrap .top .light.type1.light1 {
+  left: 200px;
+  top: 210px;
+  right: auto;
+  bottom: auto;
+  animation-delay: 0.5s;
+}
+.content .wrap .top .light.type1.light2 {
+  width: 73px;
+  height: 73px;
+  left: 50px;
+  top: 320px;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 1.5s alternate ease-in-out infinite;
+}
+.content .wrap .top .light.type1.light3 {
+  width: 73px;
+  height: 73px;
+  left: 40px;
+  top: 570px;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 2.2s alternate ease-in-out infinite;
+}
+.content .wrap .top .light.type1.light4 {
+  left: 180px;
+  top: 150px;
+  right: auto;
+  bottom: auto;
+  animation-delay: 0.5s;
+}
+.content .wrap .top .light.type1.light5 {
+  width: 68px;
+  height: 68px;
+  left: 160px;
+  top: 360px;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 1.8s alternate ease-in-out infinite;
+}
+.content .wrap .top .light.type2 {
+  width: 81px;
+  height: 81px;
+  background-image: url('../images/mo/sh-light.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.content .wrap .top .light.type2.light1 {
+  left: 350px;
+  top: 140px;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 2.1s alternate ease-in-out infinite;
+}
+.content .wrap .top .light.type2.light2 {
+  left: 1055px;
+  top: 490px;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 1.9s alternate ease-in-out infinite;
+}
+.content .wrap .top .light.type2.light3 {
+  left: 670px;
+  top: 780px;
+  right: auto;
+  bottom: auto;
+  animation-delay: 0.5s;
+}
+.content .wrap .top .light.type2.light4 {
+  left: 130px;
+  top: 1040px;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 2.3s alternate ease-in-out infinite;
+}
+.content .wrap .top .light.type2.light5 {
+  left: 840px;
+  top: 1300px;
+  right: auto;
+  bottom: auto;
+}
+@keyframes twinkle {
+  50% {
+    opacity: 0.2;
+    transform: scale(0.5);
+  }
+}
+.content .wrap .product {
+  width: 1264px;
+  height: 4287px;
+  background-image: url('../images/pc/prd.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap .product .prd-wrap {
+  position: relative;
+}
+.content .wrap .product .prd-wrap .btn {
+  width: 125px;
+  height: 34px;
+}
+.content .wrap .product .prd-wrap .btn:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #2b1e1d;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  border-radius: 17px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  transition-timing-function: ease-out;
+}
+.content .wrap .product .prd-wrap .btn:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/pc/btn.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd-wrap .btn:hover:before {
+  transform: scale(1.05);
+}
+.content .wrap .product .prd-wrap .view {
+  position: absolute;
+}
+.content .wrap .product .prd-wrap .view.view1 {
+  left: 366px;
+  top: 276px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd-wrap .view.view2 {
+  left: 773px;
+  top: 837px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd-wrap .view.view3 {
+  left: 366px;
+  top: 1355px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd-wrap .view.view4 {
+  left: 366px;
+  top: 2836px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd-wrap .view.view5 {
+  left: 773px;
+  top: 3377px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd-wrap .prds {
+  width: 948px;
+  height: 34px;
+  position: absolute;
+  left: 159px;
+  top: 1935px;
+  right: auto;
+  bottom: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.content .wrap .product .prd-wrap .prds2 {
+  top: 4061px;
+}
+/*# sourceMappingURL=style-pc.css.map */

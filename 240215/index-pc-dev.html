@@ -1,0 +1,140 @@
+<style>
+  .content {
+    font-size: 0px;
+    max-width: 1264px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap {
+    width: 1264px;
+    height: 876px;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240215a/pc/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap .w-inner .title {
+    width: 712px;
+    height: 876px;
+    display: inline-block;
+    vertical-align: top;
+    transform: translateY(200px);
+    opacity: 0;
+    animation: upSld 1.5s forwards;
+    transition-timing-function: ease-out;
+  }
+  .content .wrap .w-inner .vid-wrap {
+    width: 552px;
+    height: 876px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-top: 160px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 8px;
+    box-sizing: border-box;
+  }
+  .content .wrap .w-inner .vid-wrap .frm {
+    width: 460px;
+    height: 572px;
+    position: absolute;
+    left: 0px;
+    top: 152px;
+    right: auto;
+    bottom: auto;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240215a/pc/frm.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+  }
+  .content .wrap .w-inner .vid-wrap .vid {
+    width: 444px;
+    height: 556px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240215a/pc/poster.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap .w-inner .vid-wrap .vid iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .content .wrap .w-inner .vid-wrap .vid .corner {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    display: inline-block;
+    transform: rotate(45deg);
+  }
+  .content .wrap .w-inner .vid-wrap .vid .corner.c1 {
+    background-color: #eae7d4;
+    left: -12px;
+    top: -12px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .w-inner .vid-wrap .vid .corner.c2 {
+    background-color: #e0dbc9;
+    right: -12px;
+    top: -12px;
+    left: auto;
+    bottom: auto;
+  }
+  .content .wrap .w-inner .vid-wrap .vid .corner.c3 {
+    background-color: #e5e3d7;
+    left: -12px;
+    bottom: -12px;
+    right: auto;
+    top: auto;
+  }
+  .content .wrap .w-inner .vid-wrap .vid .corner.c4 {
+    background-color: #bbb29a;
+    right: -12px;
+    bottom: -12px;
+    left: auto;
+    top: auto;
+  }
+  .content .wrap .w-inner .vid-wrap.mv-obj {
+    animation-delay: 0.5s;
+  }
+  @keyframes upSld {
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="w-inner">
+      <div class="title">
+        <img src="https://woorimstg.cafe24.com/product/project/240215a/pc/tit.png" class="" alt="">
+      </div>
+      <div class="vid-wrap">
+        <div class="vid-inner ">
+          <div class="frm"></div>
+          <div class="vid">
+            <span class="corner c1"></span>
+            <span class="corner c2"></span>
+            <span class="corner c3"></span>
+            <span class="corner c4"></span>
+            <iframe src='https://player.vimeo.com/video/913899604?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

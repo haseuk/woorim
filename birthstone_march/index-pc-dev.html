@@ -1,0 +1,245 @@
+<style>
+  .dot { width:25px; height:25px; border-radius: 50%; position:absolute; background-color: #ffffff; background-size: 100% 100%; }
+  .dot:nth-child(2n) { background: #ccdae3; }
+  .dot:nth-child(3n) { background: #d0ddea; }
+  .dot:nth-child(4n) { background: #e4ecf3; }
+  .dot:nth-child(5n) { background: #d8dfee; }
+  .content {
+    font-size: 0px;
+    width: 1264px;
+    height: 5540px;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+    margin: 0px;
+  }
+  .content .leaf {
+    width: 1264px;
+    height: 1095px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .content .top {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240215b/pc/top-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1264px;
+    height: 2064px;
+    position: relative;
+  }
+  .content .top .vis {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240215b/pc/top.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1264px;
+    height: 2064px;
+    position: relative;
+    z-index: 1;
+  }
+  .content .top .necklace-wrap {
+    width: 366px;
+    height: 563px;
+    position: absolute;
+    left: 450px;
+    top: 475px;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .content .top .necklace-wrap .necklace {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240215b/pc/necklace.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    animation: swing 1s alternate infinite ease-in-out;
+    transform-origin: center top;
+  }
+  @keyframes swing {
+    0% {
+      transform: rotate(2deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+  }
+  .content .top .letter-wrap {
+    width: 724px;
+    height: 717px;
+    position: absolute;
+    left: 265px;
+    top: 1347px;
+    right: auto;
+    bottom: auto;
+    overflow: hidden;
+  }
+  .content .top .letter-wrap .letter {
+    width: 627px;
+    height: 527px;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240215b/pc/letter.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 48px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    margin-top: 248px;
+    z-index: 2;
+  }
+  .content .top .letter-wrap .letter-cov-fr {
+    width: 708px;
+    height: 211px;
+    position: absolute;
+    left: 8px;
+    top: 248px;
+    right: auto;
+    bottom: auto;
+    z-index: 3;
+  }
+  .content .top .letter-wrap .letter-cov-fr .fr {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240215b/pc/letter-cov-fr.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+  }
+  .content .top .letter-wrap .letter-cov-fr .bk {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240215b/mo/letter-cov-bk.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .top .letter-wrap .letter-cover {
+    width: 724px;
+    height: 470px;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240215b/pc/letter-fr.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    top: 247px;
+    right: auto;
+    bottom: auto;
+    z-index: 2;
+  }
+  .content .top .letter-wrap.on .letter {
+    animation: letter 1s ease-out forwards;
+    animation-delay: 1s;
+  }
+  .content .top .letter-wrap.on .letter-cov-fr {
+    transform: rotateX(0);
+    transform-origin: center top;
+    animation: letterCov 1s ease-out forwards;
+  }
+  .content .top .letter-wrap.on .letter-cov-fr .bk {
+    animation: zUp 1s ease-out forwards;
+  }
+  @keyframes letterCov {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(180deg);
+      z-index: 1;
+    }
+  }
+  @keyframes zUp {
+    100% {
+      z-index: 2;
+    }
+  }
+  @keyframes letter {
+    0% {
+      margin-top: 246px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+</style>
+<body>
+  <div class="content">
+    <div class="leaf">낙엽</div>
+    <div class="top">
+      <div class="vis"></div>
+      <div class="necklace-wrap">
+        <div class="necklace"></div>
+      </div>
+      <div class="letter-wrap on">
+        <div class="letter"></div>
+        <div class="letter-cov-fr">
+          <span class="fr"></span>
+          <span class="bk"></span>
+        </div>
+        <div class="letter-cover"></div>
+      </div>
+    </div>
+    <img src="https://woorimstg.cafe24.com/product/project/240215b/pc/gift.png" alt="">
+    <img src="https://woorimstg.cafe24.com/product/project/240215b/pc/stone.png" alt="">
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    var falling = true;
+    TweenLite.set(".leaf",{perspective:600})
+    TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
+    var total = 15;
+    var leaf = document.querySelector(".leaf"),	w = window.parent.innerWidth , h = window.parent.innerHeight/2;
+    for (i=0; i<total; i++){
+      var Div = document.createElement('div');
+      TweenLite.set(Div,{attr:{class:'dot'},x:R(0,w),y:R(-10,-0),z:R(-200,200)});
+      leaf.appendChild(Div);
+      animm(Div);
+    }
+    function animm(elm){
+      TweenMax.to(elm,R(6,20),{y:h+50,ease:Linear.easeNone,repeat:-1,delay:-15});
+      TweenMax.to(elm,R(4,15),{x:'+=80',rotationZ:R(0,20),repeat:-1,yoyo:true,ease:Sine.easeInOut});
+      TweenMax.to(elm,R(2,18),{rotationX:R(0,360),rotationY:R(0,360),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-5});
+    }
+    function R(min,max) {return min+Math.random()*(max-min)}
+
+    let letWrap = document.querySelector('.letter-wrap');
+    for (let i = 0; i < 1; i++) {
+      setTimeout(() => {
+        letter();
+      },(i + 1) * 5000)
+    }
+    function letter() {
+      letWrap.classList.remove('on');
+      setTimeout(() => {
+        letWrap.classList.add('on');
+      },1000)
+    }
+    $(window).on("load resize", function(){
+      iframeRisize();
+    });
+
+
+  </script>

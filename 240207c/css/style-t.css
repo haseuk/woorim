@@ -1,0 +1,40 @@
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 28px;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap .product .prd {
+    position: relative;
+  }
+  .content .wrap .product .prd .link {
+    position: absolute;
+    left: 3rem;
+    bottom: 4.07142857rem;
+    right: auto;
+    top: auto;
+  }
+  .content .wrap .product .prd .link .btn {
+    width: 10.92857143rem;
+    height: 20.71428571rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .content .wrap .product .prd .link .btn:first-child {
+    margin-right: 2.46428571rem;
+  }
+  .content .wrap .product .prd.prd3 .link {
+    bottom: 5.35714286rem;
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

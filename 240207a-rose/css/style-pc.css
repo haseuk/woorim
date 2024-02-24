@@ -1,0 +1,146 @@
+.content {
+  font-size: 0px;
+  max-width: 1264px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap .top {
+  width: 1264px;
+  height: 1302px;
+  position: relative;
+  background-image: url('../images/pc/top-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+.content .wrap .top .obj {
+  width: 1264px;
+  height: 1302px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .top .st {
+  width: 108px;
+  height: 132px;
+}
+.content .wrap .top .st1 {
+  right: 78px;
+  top: 51px;
+  left: auto;
+  bottom: auto;
+}
+.content .wrap .top .st2 {
+  left: 59px;
+  top: 602px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .top .st3 {
+  left: 422px;
+  bottom: 40px;
+  right: auto;
+  top: auto;
+}
+.content .wrap .top .ht {
+  animation: dungdung1 1s alternate infinite;
+}
+.content .wrap .top .ht1 {
+  animation-delay: 1.2s;
+}
+.content .wrap .top .ht3 {
+  animation-delay: 0.8s;
+  animation: dungdung2 2s alternate infinite;
+}
+.content .wrap .top .ht4 {
+  animation-delay: 0.4s;
+}
+@keyframes dungdung1 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 2%;
+  }
+}
+@keyframes dungdung2 {
+  0% {
+    margin-top: 3%;
+  }
+  100% {
+    margin-top: -3%;
+  }
+}
+.content .wrap .product .prd-wr {
+  position: relative;
+}
+.content .wrap .product .prd-wr .tw {
+  position: absolute;
+  animation: twinkle 0.7s infinite;
+}
+@keyframes twinkle {
+  50% {
+    opacity: 0;
+  }
+}
+.content .wrap .product .prd-wr .prds {
+  width: 327px;
+  height: 760px;
+  position: absolute;
+  left: 824px;
+  bottom: 0px;
+  right: auto;
+  top: auto;
+}
+.content .wrap .product .prd-wr .prds .btn {
+  width: 328px;
+  height: 368px;
+}
+.content .wrap .product .prd-wr .prds .btn:first-child {
+  margin-bottom: 24px;
+}
+.content .wrap .product .prd-wr.prd1 .tw {
+  width: 392px;
+  height: 96px;
+  left: 252px;
+  top: 169px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd-wr.prd2 .prds {
+  left: 114px;
+}
+.content .wrap .product .prd-wr.prd2 .tw {
+  width: 197px;
+  height: 84px;
+  left: 737px;
+  top: 142px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd-wr.prd3 .prds {
+  bottom: 178px;
+}
+.content .wrap .product .prd-wr.prd3 .tw {
+  width: 303px;
+  height: 232px;
+  left: 281px;
+  top: 199px;
+  right: auto;
+  bottom: auto;
+}
+/*# sourceMappingURL=style-pc.css.map */
