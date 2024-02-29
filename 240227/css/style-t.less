@@ -1,0 +1,33 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 28;
+
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+    img { .wf; .vat; }
+    .wrap { .crop;
+      .top { .wh(850,1551);
+        .swiper { .f; .rel;
+          &:after { .cnt; .f; .contain('../images/mo/top-tit.png'); .abs; .lt; .z(1); }
+        }
+      }
+      .product {
+        .prd { .pt(1052); .-box;
+          .swiper { .p(0,86,77); .-box; .h(564); .rel;
+            .swiper-slide { .wh(294,503)!important; }
+            .swiper-pagination { .lb(86,0); .wh(679,8); top:auto; .bgc(#dbdbdb); .br(2);
+              .swiper-pagination-progressbar-fill { .bgc(#9f9f9f); .br(4); }
+            }
+          }
+          &.prd1 { .wh(850,1784); .contain('../images/mo/bg1.png'); }
+          &.prd2 { .wh(850,1785); .contain('../images/mo/bg2.png'); }
+          &.prd3 { .wh(850,1785); .contain('../images/mo/bg3.png'); }
+          &.prd4 { .wh(850,1785); .contain('../images/mo/bg4.png'); }
+          &.prd5 { .wh(850,1793); .contain('../images/mo/bg5.png'); }
+        }
+      }
+    }
+  }
+}

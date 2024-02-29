@@ -1,0 +1,50 @@
+@import "../../css/asset";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .wrap { .crop; font-family: 'Pretendard', sans-serif;
+    .top { .wh(850,1600); .contain('../images/mo/top.png'); .rel;
+      .star { .wh(106,108); .contain('../images/mo/star.png'); .abs; .lt(304,251); animation: spin 7s forwards infinite; }
+      .light { .wh(87,86); .contain('../images/mo/light.png'); .abs; animation: twinkle 2s infinite; .o(0.2);
+        &.light1 { .lt(321,232); }
+        &.light2 { .wh(57,57); .lt(321,308); animation: twinkle 1.8s infinite; .o(0.2); }
+        &.light3 { .lt(178,500); animation: twinkle2 4s infinite; }
+      }
+    }
+    @keyframes spin {
+      20% { transform: rotateY(180deg); }
+      40% { transform: rotateY(0deg); }
+    }
+    @keyframes twinkle {
+      50% { transform: scale(1.2); .o(1); }
+    }
+    @keyframes twinkle2 {
+      50% { transform: scale(1.3) rotate(180deg); .o(1); }
+    }
+    .product {
+      .prd { .pt(246); .-box;
+        .swiper { .h(531); .p(0,50); .-box;
+          .swiper-slide { .wh(375,531)!important; }
+        }
+        &.prd1 { .wh(850,914); .contain('../images/mo/bg1.png'); }
+        &.prd2 { .wh(850,934); .contain('../images/mo/bg2.png'); }
+      }
+    }
+    .notice { .bgc(#afaaa0); .p(0,85); .-box; .tc; .rel;
+      .toggle { .wh(680,71); .abs; .lt(85,0); .z(1); }
+      .n-t { .tc;
+        .noti-tit { .wh(109,71); .mr(29); }
+        .noti-arr { .wh(20,71); transform: rotate(180deg); }
+      }
+      &.open {
+        .n-t .noti-arr { transform: rotate(0); }
+        .noti-inner { .p(50,0); .-box; .tl; .-t(#fff);
+          p { .fs(25,57); .c(#fff); .ls(-0.02em); }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,502 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .mo {
+    display: inline-block;
+  }
+  .content .web {
+    display: none;
+  }
+  .content .wrap {
+    overflow: hidden;
+  }
+  .content .wrap .top {
+    width: 100vw;
+    height: 131.05882353vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240227/mo/top-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap .top .t-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .content .wrap .top .t-inner > div {
+    width: 100vw;
+    height: 131.05882353vw;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    opacity: 0;
+  }
+  .content .wrap .top .t-inner .necklace {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240227/mo/top.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(200px);
+    animation: upSld 1s forwards;
+    transition-timing-function: ease-out;
+  }
+  .content .wrap .top .t-inner .new {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240227/mo/new.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-200px);
+    animation: sld 1.2s forwards;
+    transition-timing-function: ease-out;
+    animation-delay: 1.2s;
+  }
+  @keyframes upSld {
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes sld {
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .content .wrap .rolling {
+    font-size: 0vw;
+    margin-top: 0.58823529vw;
+    width: 100%;
+    height: 6.58823529vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .content .wrap .rolling .r-inner {
+    width: 490.58823529vw;
+    height: 6.58823529vw;
+    display: flex;
+    align-items: start;
+    background-color: #ff7e6f;
+  }
+  .content .wrap .rolling .r-inner .banner {
+    width: 245.29411765vw;
+    height: 6.58823529vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240227/mo/banner.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap .rolling .r-inner .banner.banner1 {
+    animation: bannerRolling 15s linear infinite;
+  }
+  .content .wrap .rolling .r-inner .banner.banner2 {
+    animation: bannerRolling2 15s linear infinite;
+  }
+  @keyframes bannerRolling {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes bannerRolling2 {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .content .wrap .product {
+    padding-bottom: 21.88235294vw;
+    box-sizing: border-box;
+    background-color: #fef8f8;
+  }
+  .content .wrap .product .mot-wrap {
+    width: 100%;
+    height: 171.52941176vw;
+    margin-top: 8.35294118vw;
+    position: relative;
+  }
+  .content .wrap .product .mot-wrap .mot {
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .mot-wrap .mot img {
+    transition: transform 1s;
+    transition-timing-function: ease-out;
+  }
+  .content .wrap .product .mot-wrap .mot.mot1 {
+    width: 98.47058824vw;
+    height: 88.70588235vw;
+    left: -5.88235294vw;
+  }
+  .content .wrap .product .mot-wrap .mot.mot1 img {
+    width: 98.47058824vw;
+    height: 88.70588235vw;
+    transform: translateX(-100%);
+  }
+  .content .wrap .product .mot-wrap .mot.mot2 {
+    width: 63.17647059vw;
+    height: 77.41176471vw;
+    right: -7.41176471vw;
+    top: 90.35294118vw;
+    left: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .mot-wrap .mot.mot2 img {
+    width: 63.17647059vw;
+    height: 77.41176471vw;
+    transform: translateX(100%);
+  }
+  .content .wrap .product .mot-wrap .mot.mot3 {
+    width: 50vw;
+    height: 70vw;
+    left: -5.88235294vw;
+    top: 88.70588235vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .mot-wrap .mot.mot3 img {
+    width: 50vw;
+    height: 70vw;
+    transform: translateX(-100%);
+    transition-delay: 0.8s;
+  }
+  .content .wrap .product .mot-wrap .mot.mv-on img {
+    transform: translateX(0);
+  }
+  .content .wrap .product .prds .swiper {
+    padding-top: 0vw;
+    padding-right: 5.64705882vw;
+    padding-bottom: 10.11764706vw;
+    padding-left: 5.64705882vw;
+    box-sizing: border-box;
+    height: 66.35294118vw;
+    position: relative;
+  }
+  .content .wrap .product .prds .swiper .swiper-slide {
+    width: 44.70588235vw !important;
+    height: 59.05882353vw !important;
+  }
+  .content .wrap .product .prds .swiper .swiper-pagination {
+    left: 10.11764706vw;
+    bottom: 0vw;
+    right: auto;
+    width: 82.11764706vw;
+    height: 0.94117647vw;
+    top: auto;
+    background-color: #d8c9c9;
+    border-radius: 0.23529412vw;
+  }
+  .content .wrap .product .prds .swiper .swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: #907c7c;
+    border-radius: 0.47058824vw;
+  }
+
+  @media screen and (min-width: 767px) {
+    html {
+      font-size: 28px;
+    }
+    .content {
+      font-size: 0rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      max-width: 850px;
+      position: relative;
+    }
+    .content img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .content .mo {
+      display: inline-block;
+    }
+    .content .web {
+      display: none;
+    }
+    .content .wrap {
+      overflow: hidden;
+    }
+    .content .wrap .top {
+      width: 30.35714286rem;
+      height: 39.78571429rem;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240227/mo/top-bg.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap .top .t-inner {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .content .wrap .top .t-inner > div {
+      width: 30.35714286rem;
+      height: 39.78571429rem;
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+      opacity: 0;
+    }
+    .content .wrap .top .t-inner .necklace {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240227/mo/top.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: translateY(200px);
+      animation: upSld 1s forwards;
+      transition-timing-function: ease-out;
+    }
+    .content .wrap .top .t-inner .new {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240227/mo/new.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: translateX(-200px);
+      animation: sld 1.2s forwards;
+      transition-timing-function: ease-out;
+      animation-delay: 1.2s;
+    }
+    @keyframes upSld {
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes sld {
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    .content .wrap .rolling {
+      font-size: 0rem;
+      margin-top: 0.17857143rem;
+      width: 100%;
+      height: 2rem;
+      overflow: hidden;
+      position: relative;
+    }
+    .content .wrap .rolling .r-inner {
+      width: 148.92857143rem;
+      height: 2rem;
+      display: flex;
+      align-items: start;
+      background-color: #ff7e6f;
+    }
+    .content .wrap .rolling .r-inner .banner {
+      width: 74.46428571rem;
+      height: 2rem;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240227/mo/banner.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap .rolling .r-inner .banner.banner1 {
+      animation: bannerRolling 15s linear infinite;
+    }
+    .content .wrap .rolling .r-inner .banner.banner2 {
+      animation: bannerRolling2 15s linear infinite;
+    }
+    @keyframes bannerRolling {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    @keyframes bannerRolling2 {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .content .wrap .product {
+      padding-bottom: 6.64285714rem;
+      box-sizing: border-box;
+      background-color: #fef8f8;
+    }
+    .content .wrap .product .mot-wrap {
+      width: 100%;
+      height: 52.07142857rem;
+      margin-top: 2.53571429rem;
+      position: relative;
+    }
+    .content .wrap .product .mot-wrap .mot {
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .product .mot-wrap .mot img {
+      transition: transform 1s;
+      transition-timing-function: ease-out;
+    }
+    .content .wrap .product .mot-wrap .mot.mot1 {
+      width: 29.89285714rem;
+      height: 26.92857143rem;
+      left: -1.78571429rem;
+    }
+    .content .wrap .product .mot-wrap .mot.mot1 img {
+      width: 29.89285714rem;
+      height: 26.92857143rem;
+      transform: translateX(-100%);
+    }
+    .content .wrap .product .mot-wrap .mot.mot2 {
+      width: 19.17857143rem;
+      height: 23.5rem;
+      right: -2.25rem;
+      top: 27.42857143rem;
+      left: auto;
+      bottom: auto;
+    }
+    .content .wrap .product .mot-wrap .mot.mot2 img {
+      width: 19.17857143rem;
+      height: 23.5rem;
+      transform: translateX(100%);
+    }
+    .content .wrap .product .mot-wrap .mot.mot3 {
+      width: 15.17857143rem;
+      height: 21.25rem;
+      left: -1.78571429rem;
+      top: 26.92857143rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .product .mot-wrap .mot.mot3 img {
+      width: 15.17857143rem;
+      height: 21.25rem;
+      transform: translateX(-100%);
+      transition-delay: 0.8s;
+    }
+    .content .wrap .product .mot-wrap .mot.mv-on img {
+      transform: translateX(0);
+    }
+    .content .wrap .product .prds .swiper {
+      padding-top: 0rem;
+      padding-right: 1.71428571rem;
+      padding-bottom: 3.07142857rem;
+      padding-left: 1.71428571rem;
+      box-sizing: border-box;
+      height: 20.14285714rem;
+      position: relative;
+    }
+    .content .wrap .product .prds .swiper .swiper-slide {
+      width: 13.57142857rem !important;
+      height: 17.92857143rem !important;
+    }
+    .content .wrap .product .prds .swiper .swiper-pagination {
+      left: 3.07142857rem;
+      bottom: 0rem;
+      right: auto;
+      width: 24.92857143rem;
+      height: 0.28571429rem;
+      top: auto;
+      background-color: #d8c9c9;
+      border-radius: 0.07142857rem;
+    }
+    .content .wrap .product .prds .swiper .swiper-pagination .swiper-pagination-progressbar-fill {
+      background-color: #907c7c;
+      border-radius: 0.14285714rem;
+    }
+  }
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <div class="t-inner">
+        <div class="necklace"></div>
+        <div class="new"></div>
+      </div>
+    </div>
+    <div class="rolling">
+      <div class="r-inner">
+        <div class="banner banner1"></div>
+        <div class="banner banner2"></div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://woorimstg.cafe24.com/product/project/240227/mo/cont-tit.png" alt="">
+      <div class="mot-wrap">
+        <div class="mot mot1">
+          <img src="https://woorimstg.cafe24.com/product/project/240227/mo/vis1.png" alt="">
+        </div>
+        <div class="mot mot2">
+          <img src="https://woorimstg.cafe24.com/product/project/240227/mo/vis2.png" alt="">
+        </div>
+        <div class="mot mot3">
+          <img src="https://woorimstg.cafe24.com/product/project/240227/mo/vis3.png" alt="">
+        </div>
+      </div>
+
+      <div class="prds">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-sa24a16u/5813/category/27/display/1/" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240227/mo/prd1.png" alt="">SA24A16U</a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4-14k-%EB%AA%A9%EA%B1%B8%EC%9D%B4-sa24a18u/5818/category/27/display/1/" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240227/mo/prd2.png" alt="">SA24A18U</a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-sa24a17u/5816/category/27/display/1/" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240227/mo/prd3.png" alt="">SA24A17U</a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4-14k-%EB%B0%98%EC%A7%80-sa24a31b/5835/category/27/display/1/" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240227/mo/prd4.png" alt="">SA24A31B</a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80-%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4-14k-%EA%B7%80%EA%B1%B8%EC%9D%B4-sa24a19x/5814/category/27/display/1/" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240227/mo/prd5.png" alt="">SA24A19X</a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  let scrollY;
+  window.addEventListener("scroll", handleScroll);
+  function handleScroll() {
+    scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    initIntersectionObserver();
+  }
+
+  function initIntersectionObserver() {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio > 0.5) {
+          entry.target.classList.add('mv-on');
+        }
+      })
+    });
+    const move = document.querySelectorAll('.mot');
+    move.forEach((el) => {
+      io.observe(el);
+    });
+  }
+  window.onload = function() {
+    initIntersectionObserver();
+  }
+
+  new Swiper(".prds .swiper", {
+    speed: 2000,
+    slidesPerView: 'auto',
+    spaceBetween: -10,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+  });
+
+</script>

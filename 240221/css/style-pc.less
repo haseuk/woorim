@@ -47,10 +47,12 @@
     }
     .product { .wh(1264,4287); .contain('../images/pc/prd.png');
       .prd-wrap { .rel;
-        .btn { .wh(125,34);
-          &:before { .cnt; .f; .bgc(#2b1e1d); .abs; .lt; .br(17); .crop; transition: transform 0.2s; .ease-out; }
-          &:after { .cnt; .f; .contain('../images/pc/btn.png'); .abs; .lt; }
-          &:hover:before { transform: scale(1.05); }
+        .btn { .fs(20,34); font-family: 'Poppins', sans-serif; .tc; .c(#fff); .wh(125,34); .p(0,0,0,30); .-box; .bgc(#2b1e1d); .br(17); transition: transform 0.2s; .ease-out; .flex; .items-center; text-decoration: none;
+          i { .wh(92,34); font-style: normal; text-decoration: none; }
+          span { .fs(30); .wh(33,34); }
+          //&:before { .cnt; .f; .bgc(#2b1e1d); .abs; .lt; .br(17); .crop; transition: transform 0.2s; .ease-out; }
+          //&:after { .cnt; .f; .contain('../images/pc/btn.png'); .abs; .lt; }
+          &:hover { transform: scale(1.05); }
         }
         .view { .abs;
           &.view1 { .lt(366,276); }

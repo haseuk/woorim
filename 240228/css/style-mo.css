@@ -1,0 +1,173 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .wrap {
+  overflow: hidden;
+  font-family: 'Pretendard', sans-serif;
+}
+.content .wrap .top {
+  width: 100vw;
+  height: 188.23529412vw;
+  background-image: url('../images/mo/top.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .wrap .top .star {
+  width: 12.47058824vw;
+  height: 12.70588235vw;
+  background-image: url('../images/mo/star.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 35.76470588vw;
+  top: 29.52941176vw;
+  right: auto;
+  bottom: auto;
+  animation: spin 7s forwards infinite;
+}
+.content .wrap .top .light {
+  width: 10.23529412vw;
+  height: 10.11764706vw;
+  background-image: url('../images/mo/light.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  animation: twinkle 2s infinite;
+  opacity: 0.2;
+}
+.content .wrap .top .light.light1 {
+  left: 37.76470588vw;
+  top: 27.29411765vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .top .light.light2 {
+  width: 6.70588235vw;
+  height: 6.70588235vw;
+  left: 37.76470588vw;
+  top: 36.23529412vw;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 1.8s infinite;
+  opacity: 0.2;
+}
+.content .wrap .top .light.light3 {
+  left: 20.94117647vw;
+  top: 58.82352941vw;
+  right: auto;
+  bottom: auto;
+  animation: twinkle2 4s infinite;
+}
+@keyframes spin {
+  20% {
+    transform: rotateY(180deg);
+  }
+  40% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes twinkle {
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+@keyframes twinkle2 {
+  50% {
+    transform: scale(1.3) rotate(180deg);
+    opacity: 1;
+  }
+}
+.content .wrap .product .prd {
+  padding-top: 28.94117647vw;
+  box-sizing: border-box;
+}
+.content .wrap .product .prd .swiper {
+  height: 62.47058824vw;
+  padding-top: 0vw;
+  padding-right: 5.88235294vw;
+  padding-bottom: 0vw;
+  padding-left: 5.88235294vw;
+  box-sizing: border-box;
+}
+.content .wrap .product .prd .swiper .swiper-slide {
+  width: 44.11764706vw !important;
+  height: 62.47058824vw !important;
+}
+.content .wrap .product .prd.prd1 {
+  width: 100vw;
+  height: 107.52941176vw;
+  background-image: url('../images/mo/bg1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap .product .prd.prd2 {
+  width: 100vw;
+  height: 109.88235294vw;
+  background-image: url('../images/mo/bg2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap .notice {
+  background-color: #afaaa0;
+  padding-top: 0vw;
+  padding-right: 10vw;
+  padding-bottom: 0vw;
+  padding-left: 10vw;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+.content .wrap .notice .toggle {
+  width: 80vw;
+  height: 8.35294118vw;
+  position: absolute;
+  left: 10vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+}
+.content .wrap .notice .n-t {
+  text-align: center;
+}
+.content .wrap .notice .n-t .noti-tit {
+  width: 12.82352941vw;
+  height: 8.35294118vw;
+  margin-right: 3.41176471vw;
+}
+.content .wrap .notice .n-t .noti-arr {
+  width: 2.35294118vw;
+  height: 8.35294118vw;
+  transform: rotate(180deg);
+}
+.content .wrap .notice.open .n-t .noti-arr {
+  transform: rotate(0);
+}
+.content .wrap .notice.open .noti-inner {
+  padding-top: 5.88235294vw;
+  padding-right: 0vw;
+  padding-bottom: 5.88235294vw;
+  padding-left: 0vw;
+  box-sizing: border-box;
+  text-align: left;
+  border-top: 1px solid #fff;
+}
+.content .wrap .notice.open .noti-inner p {
+  font-size: 2.94117647vw;
+  line-height: 6.70588235vw;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+/*# sourceMappingURL=style-mo.css.map */

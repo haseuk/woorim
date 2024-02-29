@@ -1,0 +1,20 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap { .crop;
+    .top { .wh(1264,1226);
+      .swiper { .f; .rel;
+        &:after { .cnt; .f; .contain('../images/pc/top-tit.png'); .abs; .lt; .z(1); }
+      }
+    }
+    .product { .wh(1264,3608); .contain('../images/pc/product.png'); .pl(650); .-box;
+      .prd { .h(722); .pt(198); .-box;
+        .swiper { .p(0,20,77); .-box; .h(419); .rel;
+          .swiper-slide { .wh(245,419)!important; }
+        }
+      }
+    }
+  }
+}

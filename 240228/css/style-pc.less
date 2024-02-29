@@ -1,0 +1,46 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap { .crop; font-family: 'Pretendard', sans-serif;
+    .top { .wh(1264,1974); .contain('../images/pc/top.png'); .rel;
+      .star { .wh(159,162); .contain('../images/pc/star.png'); .abs; .lt(452,270); animation: spin 7s forwards infinite; }
+      .light { .wh(130,129); .contain('../images/pc/light.png'); .abs; animation: twinkle 2s infinite; .o(0.2);
+        &.light1 { .lt(468,241); }
+        &.light2 { .wh(85,85); .lt(476,356); animation: twinkle 1.8s infinite; .o(0.2); }
+        &.light3 { .lt(263,645); animation: twinkle2 4s infinite; }
+      }
+    }
+    @keyframes spin {
+      20% { transform: rotateY(180deg); }
+      40% { transform: rotateY(0deg); }
+    }
+    @keyframes twinkle {
+      50% { transform: scale(1.2); .o(1); }
+    }
+    @keyframes twinkle2 {
+      50% { transform: scale(1.3) rotate(180deg); .o(1); }
+    }
+    .product {
+      .prd { .p(240,92,0); .-box; .flex; .space-between;
+        .btn { .wh(337,503); }
+        &.prd1 { .wh(1264,888); .contain('../images/pc/prd1.png'); }
+        &.prd2 { .wh(1264,917); .contain('../images/pc/prd2.png'); }
+      }
+    }
+    .notice { .bgc(#afaaa0); .p(0,92); .-box; .tc; .rel;
+      .toggle { .wh(1076,71); .abs; .lt(92,0); .z(1); }
+      .n-t { .tc;
+        .noti-tit { .wh(109,71); .mr(29); }
+        .noti-arr { .wh(20,71); transform: rotate(180deg); }
+      }
+      &.open {
+        .n-t .noti-arr { transform: rotate(0); }
+        .noti-inner { .p(59,0,59,214); .-box; .tl; .-t(#fff);
+          p { .fs(25,52); .c(#fff); .ls(-0.02em); }
+        }
+      }
+    }
+  }
+}

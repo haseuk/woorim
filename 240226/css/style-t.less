@@ -1,0 +1,70 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 28;
+
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+    img { .wf; .vat; }
+    .mo { .ib; }
+    .web { .hide; }
+    .wrap { .crop;
+      .top { .wh(850,1114); .contain('../images/mo/top-bg.png');
+        .t-inner { .f; .crop; .rel;
+          > div { .wh(850,1114); .abs; .lt; .o(0); }
+          .necklace { .contain('../images/mo/top.png'); transform: translateY(200px); animation: upSld 1s forwards; .ease-out; }
+          .new { .contain('../images/mo/new.png'); transform: translateX(-200px); animation: sld 1.2s forwards; .ease-out; animation-delay: 1.2s; }
+        }
+      }
+      @keyframes upSld {
+        100% { transform: translateY(0); .o(1); }
+      }
+      @keyframes sld {
+        100% { transform: translateX(0); .o(1); }
+      }
+      .rolling { .fs(0); .mt(5); .wh(100%,56); .crop; .rel;
+        .r-inner { .wh(4170,56); .flex; align-items: start; .bgc(#ff7e6f);
+          .banner { .wh(2085,56); .contain('../images/mo/banner.png');
+            &.banner1 {  animation: bannerRolling 15s linear infinite; }
+            &.banner2 {  animation: bannerRolling2 15s linear infinite; }
+          }
+        }
+      }
+      @keyframes bannerRolling {
+        0% { transform: translateX(0%) }
+        100% { transform: translateX(-100%) }
+      }
+      @keyframes bannerRolling2 {
+        0% { transform: translateX(0%) }
+        100% { transform: translateX(-100%) }
+      }
+
+      .product { .pb(186); .-box; .bgc(#fef8f8);
+        .mot-wrap { .wh(100%,1458); .mt(71); .rel;
+          .mot { .abs; .lt;
+            img { transition: transform 1s; .ease-out; }
+            &.mot1 { .wh(837,754); .l(-50);
+              img { .wh(837,754); transform: translateX(-100%); }
+            }
+            &.mot2 { .wh(537,658); .rt(-63,768);
+              img { .wh(537,658); transform: translateX(100%); }
+            }
+            &.mot3 { .wh(425,595); .lt(-50,754);
+              img { .wh(425,595); transform: translateX(-100%); transition-delay: 0.8s; }
+            }
+            &.mv-on img { transform: translateX(0); }
+          }
+        }
+        .prds {
+          .swiper { .p(0,48,86); .-box; .h(564); .rel;
+            .swiper-slide { .wh(380,502)!important; }
+            .swiper-pagination { .lb(86,0); .wh(698,8); top:auto; .bgc(#d8c9c9); .br(2);
+              .swiper-pagination-progressbar-fill { .bgc(#907c7c); .br(4); }
+            }
+          }
+        }
+      }
+    }
+  }
+}
