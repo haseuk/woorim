@@ -1,0 +1,35 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap { .crop; font-family: 'Pretendard', sans-serif; .rel;
+    #romantic { .abs; .lt(411,116); .wh(447,136);
+      path {
+        stroke-dasharray: 5500;
+        stroke-dashoffset: 5500;
+        animation: drawPath 20s linear infinite;
+      }
+      @keyframes drawPath {
+        to {
+          stroke-dashoffset: -5500;
+        }
+      }
+      .ti- { animation-delay: 2.0s; }
+      .c- { animation-delay: 2.5s; }
+      .t- { animation-delay: 2.3s; }
+      .i- { animation-delay: 2.5s; }
+    }
+    .w-day { .wh(1264,1880); .contain('../images/pc/bg.png'); }
+    .light { .abs; .contain('../images/pc/light.png'); animation: twinkle 2s alternate ease-in-out infinite;
+      &.light1 { .wh(124,124); .lt(480,1071); animation: twinkle 2.1s alternate ease-in-out infinite;}
+      &.light2 { .wh(85,85); .lt(425,1174); animation: twinkle 1.9s alternate ease-in-out infinite; }
+      &.light3 { .wh(124,124); .lt(747,998); animation: twinkle 1.8s alternate ease-in-out infinite;}
+      &.light4 { .wh(175,175); .lt(982,1098); }
+      &.light5 { .wh(85,85); .lt(1195,1295); animation: twinkle 2.2s alternate ease-in-out infinite;}
+    }
+    @keyframes twinkle {
+      50% { opacity: 0.2; transform: scale(0.5); }
+    }
+  }
+}

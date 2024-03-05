@@ -1,0 +1,118 @@
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 28px;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap {
+    overflow: hidden;
+    font-family: 'Pretendard', sans-serif;
+    position: relative;
+  }
+  .content .wrap #romantic {
+    position: absolute;
+    left: 8.5rem;
+    top: 3.17857143rem;
+    right: auto;
+    bottom: auto;
+    width: 13.32142857rem;
+    height: 4.10714286rem;
+  }
+  .content .wrap #romantic path {
+    stroke-dasharray: 5500;
+    stroke-dashoffset: 5500;
+    animation: drawPath 20s linear infinite;
+  }
+  @keyframes drawPath {
+    to {
+      stroke-dashoffset: -5500;
+    }
+  }
+  .content .wrap #romantic .ti- {
+    animation-delay: 2s;
+  }
+  .content .wrap #romantic .c- {
+    animation-delay: 2.5s;
+  }
+  .content .wrap #romantic .t- {
+    animation-delay: 2.3s;
+  }
+  .content .wrap #romantic .i- {
+    animation-delay: 2.5s;
+  }
+  .content .wrap .w-day {
+    width: 30.35714286rem;
+    height: 63.21428571rem;
+    background-image: url('../images/mo/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap .light {
+    position: absolute;
+    background-image: url('../images/mo/light.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: twinkle 2s alternate ease-in-out infinite;
+  }
+  .content .wrap .light.light1 {
+    width: 4.10714286rem;
+    height: 4.10714286rem;
+    left: 10.57142857rem;
+    top: 32.57142857rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 2.1s alternate ease-in-out infinite;
+  }
+  .content .wrap .light.light2 {
+    width: 2.96428571rem;
+    height: 2.96428571rem;
+    left: 8.92857143rem;
+    top: 35.57142857rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 1.9s alternate ease-in-out infinite;
+  }
+  .content .wrap .light.light3 {
+    width: 4.10714286rem;
+    height: 4.10714286rem;
+    left: 18.39285714rem;
+    top: 30.32142857rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 1.8s alternate ease-in-out infinite;
+  }
+  .content .wrap .light.light4 {
+    width: 5.82142857rem;
+    height: 5.82142857rem;
+    left: 19.57142857rem;
+    top: 41.78571429rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .light.light5 {
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 25.92857143rem;
+    top: 47.57142857rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 2.2s alternate ease-in-out infinite;
+  }
+  @keyframes twinkle {
+    50% {
+      opacity: 0.2;
+      transform: scale(0.5);
+    }
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

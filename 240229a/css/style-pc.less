@@ -1,0 +1,16 @@
+@import "../../css/asset";
+
+@media screen and (min-width: 1000px) {
+  .content { .fs(0); .max-w(1000); .tc; .rel; .mh-c;
+    img { .wf; .vat; }
+    .wrap { .rel;
+      .top { .rel; .wh(1000,882);
+        iframe { .wh(1000,563); .abs; .lb; }
+      }
+      .notice { .wh(1000,47); .contain('../images/notice.png'); .rel;
+        .btn { .wh(1000,47); .abs; .lt; .z(1); }
+        &.open { .wh(1000,285); .contain('../images/notice-op.png'); }
+      }
+    }
+  }
+}

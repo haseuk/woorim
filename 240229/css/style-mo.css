@@ -1,0 +1,127 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .wrap {
+  overflow: hidden;
+  font-family: 'Pretendard', sans-serif;
+  position: relative;
+}
+.content .wrap #romantic {
+  position: absolute;
+  left: 28vw;
+  top: 11.05882353vw;
+  right: auto;
+  bottom: auto;
+  width: 43.88235294vw;
+  height: 13.52941176vw;
+}
+.content .wrap #romantic path {
+  stroke-dasharray: 5500;
+  stroke-dashoffset: 5500;
+  animation: drawPath 20s linear infinite;
+}
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: -5500;
+  }
+}
+.content .wrap #romantic .ti- {
+  animation-delay: 2s;
+}
+.content .wrap #romantic .c- {
+  animation-delay: 2.5s;
+}
+.content .wrap #romantic .t- {
+  animation-delay: 2.3s;
+}
+.content .wrap #romantic .i- {
+  animation-delay: 2.5s;
+}
+.content .wrap .w-day {
+  width: 100vw;
+  height: 176.47058824vw;
+  background-image: url('../images/mo/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap .sale {
+  width: 24.82352941vw;
+  height: 24.82352941vw;
+  background-image: url('../images/mo/sale.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 13.17647059vw;
+  top: 55.29411765vw;
+  right: auto;
+  bottom: auto;
+  animation: spin 7s forwards infinite;
+}
+.content .wrap .light {
+  position: absolute;
+  background-image: url('../images/mo/light.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: twinkle 2s alternate ease-in-out infinite;
+}
+.content .wrap .light.light1 {
+  width: 11.52941176vw;
+  height: 11.52941176vw;
+  left: 19.41176471vw;
+  top: 79.76470588vw;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 2.1s alternate ease-in-out infinite;
+}
+.content .wrap .light.light2 {
+  width: 5.88235294vw;
+  height: 5.88235294vw;
+  left: 84vw;
+  top: 105.41176471vw;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 1.9s alternate ease-in-out infinite;
+}
+.content .wrap .light.light3 {
+  width: 7.52941176vw;
+  height: 7.52941176vw;
+  left: 80.58823529vw;
+  top: 115.29411765vw;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 1.8s alternate ease-in-out infinite;
+}
+.content .wrap .light.light4 {
+  width: 6.70588235vw;
+  height: 6.70588235vw;
+  left: 45.64705882vw;
+  top: 125.52941176vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .light.light5 {
+  width: 5.05882353vw;
+  height: 5.05882353vw;
+  left: 55.88235294vw;
+  top: 138.82352941vw;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 2.2s alternate ease-in-out infinite;
+}
+@keyframes twinkle {
+  50% {
+    opacity: 0.2;
+    transform: scale(0.5);
+  }
+}
+/*# sourceMappingURL=style-mo.css.map */

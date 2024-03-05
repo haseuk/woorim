@@ -1,0 +1,114 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .wrap {
+  overflow: hidden;
+  font-family: 'Pretendard', sans-serif;
+  position: relative;
+}
+.content .wrap #romantic {
+  position: absolute;
+  left: 28vw;
+  top: 10.47058824vw;
+  right: auto;
+  bottom: auto;
+  width: 43.88235294vw;
+  height: 13.52941176vw;
+}
+.content .wrap #romantic path {
+  stroke-dasharray: 5500;
+  stroke-dashoffset: 5500;
+  animation: drawPath 20s linear infinite;
+}
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: -5500;
+  }
+}
+.content .wrap #romantic .ti- {
+  animation-delay: 2s;
+}
+.content .wrap #romantic .c- {
+  animation-delay: 2.5s;
+}
+.content .wrap #romantic .t- {
+  animation-delay: 2.3s;
+}
+.content .wrap #romantic .i- {
+  animation-delay: 2.5s;
+}
+.content .wrap .w-day {
+  width: 100vw;
+  height: 208.23529412vw;
+  background-image: url('../images/mo/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap .light {
+  position: absolute;
+  background-image: url('../images/mo/light.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: twinkle 2s alternate ease-in-out infinite;
+}
+.content .wrap .light.light1 {
+  width: 13.52941176vw;
+  height: 13.52941176vw;
+  left: 34.82352941vw;
+  top: 107.29411765vw;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 2.1s alternate ease-in-out infinite;
+}
+.content .wrap .light.light2 {
+  width: 9.76470588vw;
+  height: 9.76470588vw;
+  left: 29.41176471vw;
+  top: 117.17647059vw;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 1.9s alternate ease-in-out infinite;
+}
+.content .wrap .light.light3 {
+  width: 13.52941176vw;
+  height: 13.52941176vw;
+  left: 60.58823529vw;
+  top: 99.88235294vw;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 1.8s alternate ease-in-out infinite;
+}
+.content .wrap .light.light4 {
+  width: 19.17647059vw;
+  height: 19.17647059vw;
+  left: 64.47058824vw;
+  top: 137.64705882vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .light.light5 {
+  width: 8.23529412vw;
+  height: 8.23529412vw;
+  left: 85.41176471vw;
+  top: 156.70588235vw;
+  right: auto;
+  bottom: auto;
+  animation: twinkle 2.2s alternate ease-in-out infinite;
+}
+@keyframes twinkle {
+  50% {
+    opacity: 0.2;
+    transform: scale(0.5);
+  }
+}
+/*# sourceMappingURL=style-mo.css.map */

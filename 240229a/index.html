@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/style-pc.css">
+</head>
+<body>
+  <div class="content">
+    <div class="wrap">
+      <div class="top">
+        <img src="https://woorimstg.cafe24.com/product/project/240229/top.png" alt="">
+        <iframe src="https://www.youtube.com/embed/_CmxXeanZrs?playsinline=1&playlist=_CmxXeanZrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="product">
+        <div class="prd">
+          <img src="images/prd1.png" alt="" usemap="#prd1">
+          <map name="prd1">
+            <area shape="poly" coords="276,778,356,1085,503,1159,637,1068,738,768" href="https://stonehenge.co.kr/product/detail.html?product_no=5738" alt="">
+            <area shape="rect" coords="629,1077,896,1280" href="https://stonehenge.co.kr/product/detail.html?product_no=5741" alt="">
+            <area shape="rect" coords="500,2558,670,2632" href="https://stonehenge.co.kr/product/detail.html?product_no=5739" alt="">
+            <area shape="rect" coords="674,2632,853,2709" href="https://stonehenge.co.kr/product/detail.html?product_no=5736" alt="">
+            <area shape="rect" coords="100,2660,595,2833" href="https://stonehenge.co.kr/product/detail.html?product_no=5735" alt="">
+          </map>
+        </div>
+        <div class="prd">
+          <img src="images/prd2.png" alt="" usemap="#prd2">
+          <map name="prd2">
+            <area shape="rect" coords="96,1264,284,1751" href="https://stonehenge.co.kr/product/detail.html?product_no=5060" alt="">
+            <area shape="rect" coords="295,1270,553,1828" href="https://stonehenge.co.kr/product/detail.html?product_no=3935" alt="">
+            <area shape="rect" coords="604,890,917,1440" href="https://stonehenge.co.kr/product/detail.html?product_no=3910" alt="">
+            <area shape="rect" coords="442,2426,703,2934" href="https://stonehenge.co.kr/product/detail.html?product_no=3940" alt="">
+            <area shape="rect" coords="710,2423,927,2847" href="https://stonehenge.co.kr/product/detail.html?product_no=3936" alt="">
+          </map>
+        </div>
+      </div>
+      <div class="notice">
+        <a class="btn">열림/닫힘</a>
+      </div>
+    </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+  <script>
+    $(document).ready(function(e) {
+      $('img[usemap]').rwdImageMaps();
+    });
+
+    let notice = document.querySelector('.notice');
+    let noticeBtn = document.querySelector('.notice .btn');
+    noticeBtn.addEventListener('click', function() {
+      if(notice.classList.contains('open')) {
+        notice.classList.remove('open')
+      } else {
+        notice.classList.add('open')
+      }
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 28;
+
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+    img { .wf; .vat; }
+    .wrap { .crop; font-family: 'Pretendard', sans-serif; .rel;
+      #romantic { .abs; .lt(238,94); .wh(373,115);
+        path {
+          stroke-dasharray: 5500;
+          stroke-dashoffset: 5500;
+          animation: drawPath 20s linear infinite;
+        }
+        @keyframes drawPath {
+          to {
+            stroke-dashoffset: -5500;
+          }
+        }
+        .ti- { animation-delay: 2.0s; }
+        .c- { animation-delay: 2.5s; }
+        .t- { animation-delay: 2.3s; }
+        .i- { animation-delay: 2.5s; }
+      }
+      .w-day { .wh(850,1500); .contain('../images/mo/bg.png'); }
+      .sale { .wh(211,211); .contain('../images/mo/sale.png'); .abs; .lt(112,470); animation: spin 7s forwards infinite; }
+      .light { .abs; .contain('../images/mo/light.png'); animation: twinkle 2s alternate ease-in-out infinite;
+        &.light1 { .wh(98,98); .lt(165,678); animation: twinkle 2.1s alternate ease-in-out infinite;}
+        &.light2 { .wh(50,50); .lt(714,896); animation: twinkle 1.9s alternate ease-in-out infinite; }
+        &.light3 { .wh(64,64); .lt(685,980); animation: twinkle 1.8s alternate ease-in-out infinite;}
+        &.light4 { .wh(57,57); .lt(388,1067); }
+        &.light5 { .wh(43,43); .lt(475,1180); animation: twinkle 2.2s alternate ease-in-out infinite;}
+      }
+      @keyframes twinkle {
+        50% { opacity: 0.2; transform: scale(0.5); }
+      }
+    }
+  }
+}

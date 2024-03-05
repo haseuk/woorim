@@ -1,0 +1,37 @@
+@import "../../css/asset";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .wrap { .crop; font-family: 'Pretendard', sans-serif; .rel;
+    #romantic { .abs; .lt(238,89); .wh(373,115);
+      path {
+        stroke-dasharray: 5500;
+        stroke-dashoffset: 5500;
+        animation: drawPath 20s linear infinite;
+      }
+      @keyframes drawPath {
+        to {
+          stroke-dashoffset: -5500;
+        }
+      }
+      .ti- { animation-delay: 2.0s; }
+      .c- { animation-delay: 2.5s; }
+      .t- { animation-delay: 2.3s; }
+      .i- { animation-delay: 2.5s; }
+    }
+    .w-day { .wh(850,1770); .contain('../images/mo/bg.png'); }
+    .light { .abs; .contain('../images/mo/light.png'); animation: twinkle 2s alternate ease-in-out infinite;
+      &.light1 { .wh(115,115); .lt(296,912); animation: twinkle 2.1s alternate ease-in-out infinite;}
+      &.light2 { .wh(83,83); .lt(250,996); animation: twinkle 1.9s alternate ease-in-out infinite; }
+      &.light3 { .wh(115,115); .lt(515,849); animation: twinkle 1.8s alternate ease-in-out infinite;}
+      &.light4 { .wh(163,163); .lt(548,1170); }
+      &.light5 { .wh(70,70); .lt(726,1332); animation: twinkle 2.2s alternate ease-in-out infinite;}
+    }
+    @keyframes twinkle {
+      50% { opacity: 0.2; transform: scale(0.5); }
+    }
+  }
+}

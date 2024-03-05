@@ -1,0 +1,131 @@
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 28px;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap {
+    overflow: hidden;
+    font-family: 'Pretendard', sans-serif;
+    position: relative;
+  }
+  .content .wrap #romantic {
+    position: absolute;
+    left: 8.5rem;
+    top: 3.35714286rem;
+    right: auto;
+    bottom: auto;
+    width: 13.32142857rem;
+    height: 4.10714286rem;
+  }
+  .content .wrap #romantic path {
+    stroke-dasharray: 5500;
+    stroke-dashoffset: 5500;
+    animation: drawPath 20s linear infinite;
+  }
+  @keyframes drawPath {
+    to {
+      stroke-dashoffset: -5500;
+    }
+  }
+  .content .wrap #romantic .ti- {
+    animation-delay: 2s;
+  }
+  .content .wrap #romantic .c- {
+    animation-delay: 2.5s;
+  }
+  .content .wrap #romantic .t- {
+    animation-delay: 2.3s;
+  }
+  .content .wrap #romantic .i- {
+    animation-delay: 2.5s;
+  }
+  .content .wrap .w-day {
+    width: 30.35714286rem;
+    height: 53.57142857rem;
+    background-image: url('../images/mo/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap .sale {
+    width: 7.53571429rem;
+    height: 7.53571429rem;
+    background-image: url('../images/mo/sale.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 4rem;
+    top: 16.78571429rem;
+    right: auto;
+    bottom: auto;
+    animation: spin 7s forwards infinite;
+  }
+  .content .wrap .light {
+    position: absolute;
+    background-image: url('../images/mo/light.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: twinkle 2s alternate ease-in-out infinite;
+  }
+  .content .wrap .light.light1 {
+    width: 3.5rem;
+    height: 3.5rem;
+    left: 5.89285714rem;
+    top: 24.21428571rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 2.1s alternate ease-in-out infinite;
+  }
+  .content .wrap .light.light2 {
+    width: 1.78571429rem;
+    height: 1.78571429rem;
+    left: 25.5rem;
+    top: 32rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 1.9s alternate ease-in-out infinite;
+  }
+  .content .wrap .light.light3 {
+    width: 2.28571429rem;
+    height: 2.28571429rem;
+    left: 24.46428571rem;
+    top: 35rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 1.8s alternate ease-in-out infinite;
+  }
+  .content .wrap .light.light4 {
+    width: 2.03571429rem;
+    height: 2.03571429rem;
+    left: 13.85714286rem;
+    top: 38.10714286rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .light.light5 {
+    width: 1.53571429rem;
+    height: 1.53571429rem;
+    left: 16.96428571rem;
+    top: 42.14285714rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 2.2s alternate ease-in-out infinite;
+  }
+  @keyframes twinkle {
+    50% {
+      opacity: 0.2;
+      transform: scale(0.5);
+    }
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

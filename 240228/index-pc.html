@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="css/style-pc.css">
 </head>
 <body>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <div class="content">
   <div class="wrap">
     <div class="top">
@@ -31,7 +30,7 @@
       </div>
     </div>
     <div class="notice">
-      <a href="#noti-achor" class="btn toggle">열기/닫기</a>
+      <a class="btn toggle">열기/닫기</a>
       <p class="n-t"><img src="images/pc/notice.png" class="noti-tit " alt=""><img src="images/pc/ico-arrow.png" class="noti-arr" alt=""></p>
       <div class="noti-inner">
         <p>-  본 행사는 '피어싱' 상품에만 적용되는 행사입니다.</p>
@@ -45,12 +44,7 @@
 
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  new Swiper(".prd .swiper", {
-    speed: 1500,
-    slidesPerView: 'auto',
-  });
   let notice = document.querySelector('.notice');
   let toggle = document.querySelector('.toggle');
   toggle.addEventListener('click',function() {
