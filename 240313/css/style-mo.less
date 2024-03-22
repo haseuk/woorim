@@ -1,0 +1,26 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap { .wh(850,1020); .contain('../images/mo/bg.jpg'); .rel; .crop;
+    .fade { animation: fade 0.4s ease-out forwards; .o(0); }
+    .piercing { .wh(850,1020); .abs; .lt; .z(1);
+      &.piercing1 { .contain('../images/mo/piercing1.png'); animation-delay: 0.5s; }
+      &.piercing2 { .contain('../images/mo/piercing2.png'); animation-delay: 0.9s; }
+      &.piercing3 { .contain('../images/mo/piercing3.png'); animation-delay: 1.3s; }
+      &.piercing4 { .contain('../images/mo/piercing4.png'); animation-delay: 1.7s; }
+      &.piercing5 { .contain('../images/mo/piercing5.png'); animation-delay: 2.1s; }
+    }
+    .line { .wh(850,1020); .contain('../images/mo/line.png'); .abs; .lt; animation-delay: 2.4s; }
+    .tit { .wh(850,1020); .contain('../images/mo/tit.png'); .abs; .lt; }
+    .txt { .wh(850,1020); .contain('../images/mo/txt.png'); .abs; .lt; animation-delay: 2.4s; }
+    .obj { .wh(850,1020); .contain('../images/mo/obj.png'); .abs; .lt; animation-delay: 2.8s; }
+
+    @keyframes fade {
+      100% { opacity: 1; }
+    }
+  }
+}

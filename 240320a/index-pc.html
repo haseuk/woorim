@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-pc.css">
+</head>
+<body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<div class="content">
+  <div class="wrap" data-view="1">
+    <div class="top">
+      <img src="images/pc/top.png" alt="">
+    </div>
+    <div class="tab-wrap">
+      <img src="images/pc/tab1.png" class="tab1" alt="">
+      <img src="images/pc/tab2.png" class="tab2" alt="">
+      <div class="tab-btns">
+        <a class="btn tab" data-tab="1">엣지 14k 목걸이</a>
+        <a class="btn tab" data-tab="2">폴라리스 14k 목걸이</a>
+      </div>
+    </div>
+    <article class="inf1">
+      <div class="inf-sld swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/pc/inf1-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/pc/inf1-2.png" alt=""></div>
+        </div>
+        <div class="swiper-btn inf1-next swiper-button-next"></div>
+        <div class="swiper-btn inf1-prev swiper-button-prev"></div>
+      </div>
+      <div class="prd prd1">
+        <img src="images/pc/prd1-1.png" alt="">
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=5738" class="btn">SA24A06F</a>
+      </div>
+
+      <div class="prd prd2">
+        <img src="images/pc/prd1-2.png" alt="">
+        <div class="btns">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5741" class="btn">SA24A02F</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5739" class="btn">SA24A03F</a>
+        </div>
+        <div class="prd-sld swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/pc/sld1-1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pc/sld1-2.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="inf2">
+      <div class="inf-sld swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/pc/inf2-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/pc/inf2-2.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/pc/inf2-3.png" alt=""></div>
+        </div>
+        <div class="swiper-btn inf2-next swiper-button-next"></div>
+        <div class="swiper-btn inf2-prev swiper-button-prev"></div>
+      </div>
+      <div class="prd prd1">
+        <img src="images/pc/prd2-1.png" alt="">
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=5813" class="btn">SA24A16U</a>
+      </div>
+
+      <div class="prd prd2">
+        <img src="images/pc/prd2-2.png" alt="">
+        <div class="btns">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5816" class="btn">SA24A17U</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5823" class="btn">SA24A36A</a>
+        </div>
+        <div class="prd-sld swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/pc/sld2-1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pc/sld2-2.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  let dataView = document.querySelector('.wrap');
+  let tab = document.querySelectorAll('.tab');
+  Array.prototype.forEach.call(tab, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab');
+      dataView.setAttribute('data-view', idx);
+    })
+  })
+
+  new Swiper(".inf1 .inf-sld", {
+    effect:'fade',
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      autoplayDisableOnInteraction:true,
+    },
+    loop: true,
+    navigation: {
+      nextEl: ".inf1-next",
+      prevEl: ".inf1-prev",
+    },
+  });
+  new Swiper(".inf1 .prd-sld", {
+    effect:'fade',
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      autoplayDisableOnInteraction:true,
+    },
+    observer: true,
+    observeParents: true,
+    loop: true,
+  });
+
+  new Swiper(".inf2 .inf-sld", {
+    effect:'fade',
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      autoplayDisableOnInteraction:true,
+    },
+    loop: true,
+    navigation: {
+      nextEl: ".inf2-next",
+      prevEl: ".inf2-prev",
+    },
+  });
+  new Swiper(".inf2 .prd-sld", {
+    effect:'fade',
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      autoplayDisableOnInteraction:true,
+    },
+    observer: true,
+    observeParents: true,
+    loop: true,
+  });
+</script>
+</body>
+</html>

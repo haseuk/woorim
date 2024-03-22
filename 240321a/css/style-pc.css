@@ -1,0 +1,75 @@
+.content {
+  font-size: 0px;
+  max-width: 1264px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap {
+  overflow: hidden;
+}
+.content .wrap .kv-wrap {
+  width: 1264px;
+  height: 1200px;
+  background-image: url('../images/pc/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  position: relative;
+}
+.content .wrap .kv-wrap .leaf {
+  width: 1264px;
+  height: 1264px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  overflow: hidden;
+  z-index: 1;
+  transform: rotate(-90deg);
+}
+.content .wrap .kv-wrap .kv {
+  width: 1264px;
+  height: 1200px;
+  background-image: url('../images/pc/kv.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  z-index: 2;
+}
+.content .wrap .kv-wrap .emblem {
+  width: 334px;
+  height: 334px;
+  background-image: url('../images/pc/emblem.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 27px;
+  bottom: 145px;
+  left: auto;
+  top: auto;
+  z-index: 2;
+  animation: cycle 8s linear infinite;
+}
+@keyframes cycle {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+/*# sourceMappingURL=style-pc.css.map */

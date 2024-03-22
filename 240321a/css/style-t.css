@@ -1,0 +1,74 @@
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 28px;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap {
+    overflow: hidden;
+  }
+  .content .wrap .kv-wrap {
+    width: 30.35714286rem;
+    height: 36.42857143rem;
+    background-image: url('../images/mo/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    position: relative;
+  }
+  .content .wrap .kv-wrap .leaf {
+    width: 36.42857143rem;
+    height: 36.42857143rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    overflow: hidden;
+    z-index: 1;
+    transform: rotate(-90deg);
+  }
+  .content .wrap .kv-wrap .kv {
+    width: 30.35714286rem;
+    height: 36.42857143rem;
+    background-image: url('../images/mo/kv.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    z-index: 2;
+  }
+  .content .wrap .kv-wrap .emblem {
+    width: 9.78571429rem;
+    height: 9.78571429rem;
+    background-image: url('../images/mo/emblem.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0.35714286rem;
+    bottom: 1.03571429rem;
+    left: auto;
+    top: auto;
+    z-index: 2;
+    animation: cycle 8s linear infinite;
+  }
+  @keyframes cycle {
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

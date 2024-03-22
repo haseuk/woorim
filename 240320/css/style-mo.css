@@ -1,0 +1,129 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1000px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .wrap {
+  position: relative;
+}
+.content .wrap .top {
+  position: relative;
+  width: 100vw;
+  height: 63.6vw;
+}
+.content .wrap .top iframe {
+  width: 100vw;
+  height: 56.1vw;
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+}
+.content .wrap .product {
+  position: relative;
+}
+.content .wrap .product .prd {
+  position: relative;
+}
+.content .wrap .product .prd .btn {
+  width: 6.2vw;
+  height: 6.3vw;
+  position: absolute;
+  background-image: url('../images/btn.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap .product .prd .btn.btn1 {
+  left: 65.9vw;
+  top: 113.4vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn2 {
+  left: 84.7vw;
+  top: 144.2vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn3 {
+  left: 54.3vw;
+  top: 267.1vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn4 {
+  left: 85.5vw;
+  top: 281.4vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn5 {
+  left: 18.9vw;
+  top: 281.2vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn6 {
+  left: 54.3vw;
+  top: 105.7vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn7 {
+  left: 87.7vw;
+  top: 120.3vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn8 {
+  left: 33vw;
+  top: 58.7vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn9 {
+  left: 13.3vw;
+  top: 256.2vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn10 {
+  left: 50.9vw;
+  top: 260.7vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .notice {
+  width: 100vw;
+  height: 4.7vw;
+  background-image: url('../images/notice.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .wrap .notice .btn {
+  width: 100vw;
+  height: 4.7vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+}
+.content .wrap .notice.open {
+  width: 100vw;
+  height: 28.5vw;
+  background-image: url('../images/notice-op.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/*# sourceMappingURL=style-mo.css.map */

@@ -1,0 +1,43 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 750;
+
+.content { .fs(0); .mh-c; .tc; max-width: 750px; .rel;
+  img { .wf; .vat; .m(0); }
+  .leaf { .wh(750,770); .abs; .lt; .crop; .z(1); }
+  .top { .contain('../img/mo/top-bg.png'); .wh(750,1550); .rel;
+    .vis { .contain('../img/mo/top.png'); .wh(750,1550); .rel; .z(1); }
+    .necklace-wrap { .wh(258,394); .abs; .lt(250,328); .z(1); .crop;
+      .necklace { .contain('../img/mo/necklace.png'); .f; animation: swing 1s alternate infinite ease-in-out; transform-origin: center top; }
+      @keyframes swing {
+        0% { transform: rotate(2deg); }
+        100% { transform: rotate(-2deg); }
+      }
+    }
+    .letter-wrap { .wh(750,616); .abs; .lt(0,934); .crop;
+      .letter { .wh(502,422); .contain('../img/mo/letter.png'); .abs; .lt(124,10); .mt(242); .z(2); }
+      .letter-cov-fr { .wh(560,168); .abs; .lt(93,242); .z(3);
+        .fr { .ib; .f; .contain('../img/mo/letter-cov-fr.png'); .abs; .lt; .z(1); }
+        .bk { .ib; .f; .contain('../img/mo/letter-cov-bk.png'); transform: rotate(180deg); .abs; .lt; }
+      }
+      .letter-cover { .wh(579,376); .contain('../img/mo/letter-fr.png'); .abs; .lt(88,240); .z(2); }
+      &.on {
+        .letter { animation:letter 1s ease-out forwards; animation-delay: 1s; }
+        .letter-cov-fr { transform: rotateX(0); transform-origin: center top; animation:letterCov 1s ease-out forwards;
+          .bk { animation: zUp 1s ease-out forwards; }
+        }
+        @keyframes letterCov {
+          0% { transform: rotateX(0); }
+          100% { transform: rotateX(180deg); z-index: 1; }
+        }
+        @keyframes zUp {
+          100% { z-index: 2; }
+        }
+        @keyframes letter {
+          0% { margin-top: 32vw; }
+          100% { margin-top: 0; }
+        }
+      }
+    }
+  }
+}

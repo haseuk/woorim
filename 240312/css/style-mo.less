@@ -1,0 +1,44 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap { .wh(850,3300); .contain('../images/mo/bg.png'); .rel;
+    .tit { .wh(850,485); .crop;
+      img { transform: translateY(100%); animation: upSld 1.5s ease-out forwards; }
+    }
+    @keyframes upSld {
+      100% { transform: translateY(0); }
+    }
+    .product { .rel;
+      .prd {
+        .btn { .wh(52,52); .contain('../images/mo/btn.png'); .abs; animation: pointer 1.5s ease-out infinite; .z(2); }
+        &.on .info .link { pointer-events: auto;
+          img { .o(1); }
+        }
+      }
+      .info { .wh(370,239); .abs;
+        .link { .ib; .f; .pointer; .rel; .z(1); .crop; pointer-events: none;
+          img { .o(0); transition: opacity 0.5s ease-out; }
+        }
+      }
+      @keyframes pointer {
+        50% { transform: scale(1.1); }
+      }
+      .prd1 {
+        .btn { .lt(395,211); }
+        .info { .lt(66,237); }
+      }
+      .prd2 {
+        .btn { .lt(291,998); }
+        .info { .lt(317,1024); }
+      }
+      .prd3 {
+        .btn { .lt(395,1391); }
+        .info { .lt(66,1417); }
+      }
+    }
+  }
+}

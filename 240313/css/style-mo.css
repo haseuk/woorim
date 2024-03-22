@@ -1,0 +1,128 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap {
+  width: 100vw;
+  height: 120vw;
+  background-image: url('../images/mo/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  overflow: hidden;
+}
+.content .wrap .fade {
+  animation: fade 0.4s ease-out forwards;
+  opacity: 0;
+}
+.content .wrap .piercing {
+  width: 100vw;
+  height: 120vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+}
+.content .wrap .piercing.piercing1 {
+  background-image: url('../images/mo/piercing1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-delay: 0.5s;
+}
+.content .wrap .piercing.piercing2 {
+  background-image: url('../images/mo/piercing2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-delay: 0.9s;
+}
+.content .wrap .piercing.piercing3 {
+  background-image: url('../images/mo/piercing3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-delay: 1.3s;
+}
+.content .wrap .piercing.piercing4 {
+  background-image: url('../images/mo/piercing4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-delay: 1.7s;
+}
+.content .wrap .piercing.piercing5 {
+  background-image: url('../images/mo/piercing5.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-delay: 2.1s;
+}
+.content .wrap .line {
+  width: 100vw;
+  height: 120vw;
+  background-image: url('../images/mo/line.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  animation-delay: 2.4s;
+}
+.content .wrap .tit {
+  width: 100vw;
+  height: 120vw;
+  background-image: url('../images/mo/tit.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .txt {
+  width: 100vw;
+  height: 120vw;
+  background-image: url('../images/mo/txt.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  animation-delay: 2.4s;
+}
+.content .wrap .obj {
+  width: 100vw;
+  height: 120vw;
+  background-image: url('../images/mo/obj.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  animation-delay: 2.8s;
+}
+@keyframes fade {
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style-mo.css.map */

@@ -1,0 +1,44 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap { .rel;
+    .top { .wh(1264,1238); .contain('../images/pc/top.png'); .rel; .crop;
+      .heart { .wh(1264,1238); .contain('../images/pc/heart.png'); .abs; .lt; animation: heart 0.5s ease-in infinite; }
+      @keyframes heart {
+        50% { .contain('../images/pc/heart2.png'); }
+      }
+      .new { .abs;
+        img { transform: translateY(80px); .o(0); animation: upSld 0.8s ease-out forwards; }
+        &.n1 { .wh(266,380); .lt(-20,675); }
+        &.n2 { .wh(283,385); .lt(229,705);
+          img { animation-delay: 0.6s; }
+        }
+        &.n3 { .wh(263,375); .lt(495,693);
+          img { animation-delay: 0.2s; }
+        }
+        &.n4 { .wh(289,388); .lt(740,708);
+          img { animation-delay: 0.4s; }
+        }
+        &.n5 { .wh(276,378); .lt(1008,701);
+          img { animation-delay: 0.8s; }
+        }
+      }
+      @keyframes upSld {
+        100% { transform: translateY(0); .o(1); }
+      }
+    }
+    .product { .rel;
+      .tab-wrap { .wh(100%,90); .flex; .abs; .lt; .flex-center;
+        .tab { .wh(216,90); .rel; .z(1); .pointer; }
+      }
+      .prd { .wh(1264,1542); .abs; .lt; .o(0); transition: opacity 0.3s; .ease-out; }
+      &[data-view="1"] .prd1,
+      &[data-view="2"] .prd2,
+      &[data-view="3"] .prd3,
+      &[data-view="4"] .prd4,
+      &[data-view="5"] .prd5 { .o(1); }
+    }
+  }
+}

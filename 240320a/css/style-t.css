@@ -1,0 +1,105 @@
+@media screen and (min-width: 850px) {
+  html {
+    font-size: 28px;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap {
+    position: relative;
+    width: 30.35714286rem;
+    height: 157.85714286rem;
+  }
+  .content .wrap .tab-wrap {
+    position: relative;
+  }
+  .content .wrap .tab-wrap img {
+    display: none;
+  }
+  .content .wrap .tab-wrap .tab-btns {
+    width: 25.71428571rem;
+    height: 5.14285714rem;
+    position: absolute;
+    left: 2.32142857rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .tab-wrap .tab-btns .tab {
+    width: 12.85714286rem;
+    height: 5.14285714rem;
+    display: inline-block;
+  }
+  .content .wrap article {
+    opacity: 0;
+    width: 30.35714286rem;
+    height: 127.75rem;
+    position: absolute;
+    left: 0rem;
+    top: 30.10714286rem;
+    right: auto;
+    bottom: auto;
+    pointer-events: none;
+  }
+  .content .wrap article .inf-sld {
+    height: 38.46428571rem;
+  }
+  .content .wrap article .prd-sld {
+    height: 32rem;
+  }
+  .content .wrap article .prd1 {
+    position: relative;
+  }
+  .content .wrap article .prd1 .btn {
+    width: 13.03571429rem;
+    height: 18.92857143rem;
+    position: absolute;
+    right: 2.32142857rem;
+    top: 0rem;
+    left: auto;
+    bottom: auto;
+  }
+  .content .wrap article .prd2 {
+    position: relative;
+  }
+  .content .wrap article .prd2 .btns {
+    width: 22rem;
+    height: 18.57142857rem;
+    position: absolute;
+    left: 4.17857143rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .wrap article .prd2 .btns .btn {
+    width: 10.35714286rem;
+    height: 18.57142857rem;
+  }
+  .content .wrap[data-view="1"] .tab-wrap .tab1,
+  .content .wrap[data-view="2"] .tab-wrap .tab2 {
+    display: block;
+  }
+  .content .wrap[data-view="1"] .inf1,
+  .content .wrap[data-view="2"] .inf2 {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

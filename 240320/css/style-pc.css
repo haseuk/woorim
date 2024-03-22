@@ -1,0 +1,136 @@
+@media screen and (min-width: 1000px) {
+  .content {
+    font-size: 0px;
+    max-width: 1000px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap {
+    position: relative;
+  }
+  .content .wrap .top {
+    position: relative;
+    width: 1000px;
+    height: 636px;
+  }
+  .content .wrap .top iframe {
+    width: 1000px;
+    height: 561px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: auto;
+    top: auto;
+  }
+  .content .wrap .product {
+    position: relative;
+  }
+  .content .wrap .product .prd {
+    position: relative;
+  }
+  .content .wrap .product .prd .btn {
+    width: 62px;
+    height: 63px;
+    position: absolute;
+    background-image: url('../images/btn.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.2s;
+    transition-timing-function: ease-out;
+  }
+  .content .wrap .product .prd .btn:hover {
+    transform: scale(1.04);
+  }
+  .content .wrap .product .prd .btn.btn1 {
+    left: 659px;
+    top: 1134px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prd .btn.btn2 {
+    left: 847px;
+    top: 1442px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prd .btn.btn3 {
+    left: 543px;
+    top: 2671px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prd .btn.btn4 {
+    left: 855px;
+    top: 2814px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prd .btn.btn5 {
+    left: 189px;
+    top: 2812px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prd .btn.btn6 {
+    left: 543px;
+    top: 1057px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prd .btn.btn7 {
+    left: 877px;
+    top: 1203px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prd .btn.btn8 {
+    left: 330px;
+    top: 587px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prd .btn.btn9 {
+    left: 133px;
+    top: 2562px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prd .btn.btn10 {
+    left: 509px;
+    top: 2607px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .notice {
+    width: 1000px;
+    height: 47px;
+    background-image: url('../images/notice.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  .content .wrap .notice .btn {
+    width: 1000px;
+    height: 47px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+  }
+  .content .wrap .notice.open {
+    width: 1000px;
+    height: 285px;
+    background-image: url('../images/notice-op.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+/*# sourceMappingURL=style-pc.css.map */

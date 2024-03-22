@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+</head>
+<body>
+<style>
+  body { margin: 0; padding:0; }
+  .container-evt { font-size: 0; position: relative; }
+  .container-evt img { width: 100%; vertical-align: top; }
+  .container-evt img.pc { display: none; }
+  .container-evt .btn { width:calc(777/850*100%); padding-top: calc(141/850*100%); position: absolute; left:50%; bottom:calc(163/6100*100%); transform: translateX(-50%); cursor: pointer; z-index: 1; }
+  @media screen and (min-width: 1024px) {
+    .container-evt { max-width: 1264px; margin: 0 auto; }
+    .container-evt img.mo { display: none; }
+    .container-evt img.pc { display: block; }
+    .container-evt .btn { width: 610px; height:139px; padding-top: 0; position: absolute; left:50%; bottom:193px; transform: translateX(-50%); cursor: pointer; z-index: 1; }
+  }
+</style>
+<div class="container-evt">
+  <img src="https://woorimstg.cafe24.com/product/project/240305/240305a/mo/bg.png" class="mo" alt="">
+  <img src="https://woorimstg.cafe24.com/product/project/240305/240305a/pc/bg.png" class="pc" alt="">
+  <a href="https://www.instagram.com/reel/C4IHPazuhP5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="btn"></a>
+</div>
+</body>
+</html>

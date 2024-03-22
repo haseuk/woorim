@@ -1,0 +1,31 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .wrap { .rel; .wh(850,4420);
+    .tab-wrap { .rel;
+      img { .hide; }
+      .tab-btns { .wh(720,144); .abs; .lt(65,0);
+        .tab { .wh(360,144); .ib; }
+      }
+    }
+    article { .o(0); .wh(850,3577); .abs; .lt(0,843); pointer-events: none;
+      .inf-sld { .h(1077); }
+      .prd-sld { .h(896); }
+      .prd1 { .rel;
+        .btn { .wh(365,530); .abs; .rt(65,0); }
+      }
+      .prd2 { .rel;
+        .btns { .wh(616,520); .abs; .lt(117,0); .flex; .space-between;
+          .btn { .wh(290,520); }
+        }
+      }
+    }
+    &[data-view="1"] .tab-wrap .tab1,
+    &[data-view="2"] .tab-wrap .tab2 { .block; }
+    &[data-view="1"] .inf1,
+    &[data-view="2"] .inf2 { .o(1); pointer-events: auto; }
+  }
+}

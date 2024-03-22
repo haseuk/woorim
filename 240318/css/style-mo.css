@@ -1,0 +1,106 @@
+@font-face {
+  font-family: against;
+  font-style: normal;
+  font-weight: 400;
+  src: local('against'), url(https://fonts.cdnfonts.com/s/72739/AgainstRegular-Wy5pv.woff) format('woff');
+}
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap .top {
+  width: 100vw;
+  height: 167.76470588vw;
+  background-image: url('../images/mo/top.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 29.41176471vw;
+  box-sizing: border-box;
+}
+.content .wrap .top .tit {
+  font-family: 'against', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.content .wrap .top .tit span {
+  font-size: clamp(14.11764706vw, 14.11764706vw, 14.11764706vw);
+  letter-spacing: -0.02em;
+  background: linear-gradient(60deg, #ffbe7d 33%, #ff976f 66%, #ff976f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 2s ease-out infinite alternate;
+}
+@keyframes textShine {
+  0% {
+    background-position: 20% 50%;
+  }
+  100% {
+    background-position: 80% 30%;
+  }
+}
+.content .wrap .product {
+  width: 100vw;
+  height: 330.82352941vw;
+  background-image: url('../images/mo/prd.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap .product ul li {
+  width: 100vw;
+  height: 66.11764706vw;
+  position: relative;
+}
+.content .wrap .product ul li .dancing {
+  width: 35.52941176vw;
+  height: 34.94117647vw;
+  position: absolute;
+  right: 7.29411765vw;
+  top: 6.47058824vw;
+  left: auto;
+  bottom: auto;
+  overflow: hidden;
+}
+.content .wrap .product ul li .dancing img {
+  width: 80.70588235vw;
+  height: 80.70588235vw;
+  position: absolute;
+  left: -22.58823529vw;
+  top: -38.58823529vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product ul li .btn {
+  width: 50vw;
+  height: 66.11764706vw;
+  position: absolute;
+}
+.content .wrap .product ul li:nth-child(odd) .btn {
+  right: 0vw;
+  top: 0vw;
+  left: auto;
+  bottom: auto;
+}
+.content .wrap .product ul li:nth-child(even) .btn {
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+}
+/*# sourceMappingURL=style-mo.css.map */

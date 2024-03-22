@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-pc-dev.css">
+</head>
+<body>
+  <div class="content">
+    <div class="wrap">
+      <div class="top">
+        <img src="https://woorimstg.cafe24.com/product/project/240229/top.png" alt="">
+        <iframe src="https://www.youtube.com/embed/_CmxXeanZrs?playsinline=1&playlist=_CmxXeanZrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="product">
+        <div class="prd prd1">
+          <img src="images/prd1.png" alt="">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5738" class="btn btn1"></a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5741" class="btn btn2"></a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5739" class="btn btn3"></a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5736" class="btn btn4"></a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5735" class="btn btn5"></a>
+        </div>
+        <div class="prd prd2">
+          <img src="images/prd2.png" alt="">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5060" class="btn btn6"></a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=3935" class="btn btn7"></a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=3910" class="btn btn8"></a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=3940" class="btn btn9"></a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=3936" class="btn btn10"></a>
+        </div>
+      </div>
+      <div class="notice">
+        <a class="btn">열림/닫힘</a>
+      </div>
+    </div>
+  </div>
+  <script>
+
+    let notice = document.querySelector('.notice');
+    let noticeBtn = document.querySelector('.notice .btn');
+    noticeBtn.addEventListener('click', function() {
+      if(notice.classList.contains('open')) {
+        notice.classList.remove('open')
+      } else {
+        notice.classList.add('open')
+      }
+    })
+  </script>
+</body>
+</html>

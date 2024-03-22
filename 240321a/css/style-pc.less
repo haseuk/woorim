@@ -1,0 +1,16 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap { .crop;
+    .kv-wrap { .wh(1264,1200); .contain('../images/pc/bg.png'); .crop; .rel;
+      .leaf { .wh(1264,1264); .abs; .lt; .crop; .z(1); transform: rotate(-90deg); }
+      .kv { .wh(1264,1200); .contain('../images/pc/kv.png'); .abs; .lt; .z(2); }
+      .emblem { .wh(334,334); .contain('../images/pc/emblem.png'); .abs; .rb(27,145); .z(2); animation: cycle 8s linear infinite; }
+      @keyframes cycle {
+        100% { transform: rotateZ(360deg); }
+      }
+    }
+  }
+}

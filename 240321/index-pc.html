@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-pc.css">
+</head>
+<body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<div class="content">
+  <div class="wrap" data-view="1">
+    <div class="top">
+      <div class="heart"></div>
+      <div class="new n1"><img src="images/pc/new1.png" alt=""></div>
+      <div class="new n2"><img src="images/pc/new2.png" alt=""></div>
+      <div class="new n3"><img src="images/pc/new3.png" alt=""></div>
+      <div class="new n4"><img src="images/pc/new4.png" alt=""></div>
+      <div class="new n5"><img src="images/pc/new5.png" alt=""></div>
+    </div>
+    <div class="product" data-view="1">
+      <div class="tab-wrap">
+        <a class="tab tab1" data-tab="1">다니엘</a>
+        <a class="tab tab2" data-tab="2">혜인</a>
+        <a class="tab tab3" data-tab="3">하니</a>
+        <a class="tab tab4" data-tab="4">해린</a>
+        <a class="tab tab5" data-tab="5">민지</a>
+      </div>
+      <img src="images/pc/bott1.png" class="prd prd1" alt="">
+      <img src="images/pc/bott2.png" class="prd prd2" alt="">
+      <img src="images/pc/bott3.png" class="prd prd3" alt="">
+      <img src="images/pc/bott4.png" class="prd prd4" alt="">
+      <img src="images/pc/bott5.png" class="prd prd5" alt="">
+    </div>
+  </div>
+</div>
+<script>
+  let dataView = document.querySelector('.product');
+  let tab = document.querySelectorAll('.tab');
+  Array.prototype.forEach.call(tab, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab');
+      dataView.setAttribute('data-view', idx);
+    })
+  })
+</script>
+</body>
+</html>

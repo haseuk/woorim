@@ -1,0 +1,21 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 28;
+
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+    img { .wf; .vat; }
+    .wrap { .crop;
+      .kv-wrap { .wh(850,1020); .contain('../images/mo/bg.png'); .crop; .rel;
+        .leaf { .wh(1020,1020); .abs; .lt; .crop; .z(1); transform: rotate(-90deg); }
+        .kv { .wh(850,1020); .contain('../images/mo/kv.png'); .abs; .lt; .z(2); }
+        .emblem { .wh(274,274); .contain('../images/mo/emblem.png'); .abs; .rb(10,29); .z(2); animation: cycle 8s linear infinite; }
+        @keyframes cycle {
+          100% { transform: rotateZ(360deg); }
+        }
+      }
+    }
+  }
+}

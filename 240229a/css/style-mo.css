@@ -27,6 +27,80 @@
   right: auto;
   top: auto;
 }
+.content .wrap .product {
+  position: relative;
+}
+.content .wrap .product .prd {
+  position: relative;
+}
+.content .wrap .product .prd .btn {
+  width: 9.4vw;
+  height: 9.4vw;
+  position: absolute;
+  background-image: url('../images/btn.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap .product .prd .btn.btn1 {
+  left: 32.8vw;
+  top: 95vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn2 {
+  left: 61.3vw;
+  top: 105.4vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn3 {
+  left: 47vw;
+  top: 251.3vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn4 {
+  left: 79vw;
+  top: 265.6vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn5 {
+  left: 10.5vw;
+  top: 265.2vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn6 {
+  left: 10vw;
+  top: 152.8vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn7 {
+  left: 43.8vw;
+  top: 162.2vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn8 {
+  left: 65vw;
+  top: 117.8vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn9 {
+  left: 47.8vw;
+  top: 271.2vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .btn.btn10 {
+  left: 83.2vw;
+  top: 255.8vw;
+  right: auto;
+  bottom: auto;
+}
 .content .wrap .notice {
   width: 100vw;
   height: 4.7vw;

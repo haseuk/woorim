@@ -1,0 +1,36 @@
+@import "../../css/asset";
+@import url('https://fonts.cdnfonts.com/css/against-2');
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    .top { .wh(850,1426); .contain('../images/mo/top.png'); .pt(250); .-box;
+      .tit { font-family: 'against', sans-serif; .flex; .justify-center;
+        span { font-size: clamp(14.11764706vw, 14.11764706vw, 14.11764706vw); .ls(-0.02em); background: linear-gradient(60deg, #ffbe7d 33%, #ff976f 66%, #ff976f 100%,); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-fill-color: transparent; background-size: 500% auto; animation: textShine 2s ease-out infinite alternate; }
+      }
+      @keyframes textShine {
+        0% {
+          background-position: 20% 50%;
+        }
+        100% {
+          background-position: 80% 30%;
+        }
+      }
+    }
+    .product { .wh(850,2812); .contain('../images/mo/prd.png');
+      ul {
+        li { .wh(850,562); .rel;
+          .dancing { .wh(302,297); .abs; .rt(62,55); .crop;
+            img { .wh(686,686); .abs; .lt(-192,-328); }
+          }
+          .btn { .wh(425,562); .abs; }
+          &:nth-child(odd) .btn { .rt; }
+          &:nth-child(even) .btn { .lt; }
+        }
+      }
+    }
+  }
+}

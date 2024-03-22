@@ -1,0 +1,50 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 28;
+
+
+@media screen and (min-width: 850px) {
+  html { font-size: 28px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+    img { .wf; .vat; }
+    .btn { .ib; .rel; .z(1); .pointer; }
+    .wrap { .rel;
+      .top { .wh(850,1516); .contain('../images/mo/top.png'); .rel;
+        .heart { .wh(850,1516); .contain('../images/mo/heart.png'); .abs; .lt; animation: heart 0.5s infinite; }
+        @keyframes heart {
+          50% { .contain('../images/mo/heart2.png'); }
+        }
+        .new { .abs;
+          img { transform: translateY(15%); .o(0); animation: upSld 0.8s ease-out forwards; }
+          &.n1 { .wh(266,380); .lt(39,557); }
+          &.n2 { .wh(283,385); .lt(288,591);
+            img { animation-delay: 0.6s; }
+          }
+          &.n3 { .wh(263,375); .lt(554,578);
+            img { animation-delay: 0.2s; }
+          }
+          &.n4 { .wh(289,388); .lt(156,1019);
+            img { animation-delay: 0.4s; }
+          }
+          &.n5 { .wh(276,378); .lt(424,1014);
+            img { animation-delay: 0.8s; }
+          }
+        }
+        @keyframes upSld {
+          100% { transform: translateY(0); .o(1); }
+        }
+      }
+      .product { .rel;
+        .tab-wrap { .wh(100%,90); .flex; .abs; .lt; .flex-center;
+          .tab { .wh(151,90); .rel; .z(1); .pointer; }
+        }
+        .prd { .wh(850,1214); .abs; .lt; .o(0); transition: opacity 0.3s; .ease-out; }
+        &[data-view="1"] .prd1,
+        &[data-view="2"] .prd2,
+        &[data-view="3"] .prd3,
+        &[data-view="4"] .prd4,
+        &[data-view="5"] .prd5 { .o(1); }
+      }
+    }
+  }
+}

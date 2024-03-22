@@ -1,0 +1,32 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .wrap {
+  width: 100vw;
+  height: 717.64705882vw;
+  background-image: url('../images/mo/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .wrap .btn {
+  width: 91.41176471vw;
+  height: 16.58823529vw;
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  left: 4.35294118vw;
+  bottom: 19.17647059vw;
+  right: auto;
+  top: auto;
+}
+/*# sourceMappingURL=style-mo.css.map */

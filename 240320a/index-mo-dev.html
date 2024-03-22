@@ -1,0 +1,320 @@
+<style>
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap {
+    position: relative;
+    width: 100vw;
+    height: 520vw;
+  }
+  .content .wrap .tab-wrap {
+    position: relative;
+  }
+  .content .wrap .tab-wrap img {
+    display: none;
+  }
+  .content .wrap .tab-wrap .tab-btns {
+    width: 84.70588235vw;
+    height: 16.94117647vw;
+    position: absolute;
+    left: 7.64705882vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .tab-wrap .tab-btns .tab {
+    width: 42.35294118vw;
+    height: 16.94117647vw;
+    display: inline-block;
+  }
+  .content .wrap article {
+    opacity: 0;
+    width: 100vw;
+    height: 420.82352941vw;
+    position: absolute;
+    left: 0vw;
+    top: 99.17647059vw;
+    right: auto;
+    bottom: auto;
+    pointer-events: none;
+  }
+  .content .wrap article .inf-sld {
+    height: 126.70588235vw;
+  }
+  .content .wrap article .prd-sld {
+    height: 105.41176471vw;
+  }
+  .content .wrap article .prd1 {
+    position: relative;
+  }
+  .content .wrap article .prd1 .btn {
+    width: 42.94117647vw;
+    height: 62.35294118vw;
+    position: absolute;
+    right: 7.64705882vw;
+    top: 0vw;
+    left: auto;
+    bottom: auto;
+  }
+  .content .wrap article .prd2 {
+    position: relative;
+  }
+  .content .wrap article .prd2 .btns {
+    width: 72.47058824vw;
+    height: 61.17647059vw;
+    position: absolute;
+    left: 13.76470588vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .wrap article .prd2 .btns .btn {
+    width: 34.11764706vw;
+    height: 61.17647059vw;
+  }
+  .content .wrap[data-view="1"] .tab-wrap .tab1,
+  .content .wrap[data-view="2"] .tab-wrap .tab2 {
+    display: block;
+  }
+  .content .wrap[data-view="1"] .inf1,
+  .content .wrap[data-view="2"] .inf2 {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  @media screen and (min-width: 850px) {
+    html {
+      font-size: 28px;
+    }
+    .content {
+      font-size: 0rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      max-width: 850px;
+      position: relative;
+    }
+    .content img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .content .btn {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+    }
+    .content .wrap {
+      position: relative;
+      width: 100vw;
+      height: 520vw;
+    }
+    .content .wrap .tab-wrap {
+      position: relative;
+    }
+    .content .wrap .tab-wrap img {
+      display: none;
+    }
+    .content .wrap .tab-wrap .tab-btns {
+      width: 25.71428571rem;
+      height: 5.14285714rem;
+      position: absolute;
+      left: 2.32142857rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .tab-wrap .tab-btns .tab {
+      width: 12.85714286rem;
+      height: 5.14285714rem;
+      display: inline-block;
+    }
+    .content .wrap article {
+      opacity: 0;
+      width: 30.35714286rem;
+      height: 127.75rem;
+      position: absolute;
+      left: 0rem;
+      top: 30.10714286rem;
+      right: auto;
+      bottom: auto;
+      pointer-events: none;
+    }
+    .content .wrap article .inf-sld {
+      height: 38.46428571rem;
+    }
+    .content .wrap article .prd-sld {
+      height: 32rem;
+    }
+    .content .wrap article .prd1 {
+      position: relative;
+    }
+    .content .wrap article .prd1 .btn {
+      width: 13.03571429rem;
+      height: 18.92857143rem;
+      position: absolute;
+      right: 2.32142857rem;
+      top: 0rem;
+      left: auto;
+      bottom: auto;
+    }
+    .content .wrap article .prd2 {
+      position: relative;
+    }
+    .content .wrap article .prd2 .btns {
+      width: 22rem;
+      height: 18.57142857rem;
+      position: absolute;
+      left: 4.17857143rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .content .wrap article .prd2 .btns .btn {
+      width: 10.35714286rem;
+      height: 18.57142857rem;
+    }
+    .content .wrap[data-view="1"] .tab-wrap .tab1,
+    .content .wrap[data-view="2"] .tab-wrap .tab2 {
+      display: block;
+    }
+    .content .wrap[data-view="1"] .inf1,
+    .content .wrap[data-view="2"] .inf2 {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<div class="content">
+  <div class="wrap" data-view="1">
+    <div class="top">
+      <img src="https://woorimstg.cafe24.com/product/project/240321/mo/top.png" alt="">
+    </div>
+    <div class="tab-wrap">
+      <img src="https://woorimstg.cafe24.com/product/project/240321/mo/tab1.png" class="tab1" alt="">
+      <img src="https://woorimstg.cafe24.com/product/project/240321/mo/tab2.png" class="tab2" alt="">
+      <div class="tab-btns">
+        <a class="btn tab" data-tab="1">엣지 14k 목걸이</a>
+        <a class="btn tab" data-tab="2">폴라리스 14k 목걸이</a>
+      </div>
+    </div>
+    <article class="inf1">
+      <div class="inf-sld swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240321/mo/inf1-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240321/mo/inf1-2.png" alt=""></div>
+        </div>
+      </div>
+      <div class="prd prd1">
+        <img src="https://woorimstg.cafe24.com/product/project/240321/mo/prd1-1.png" alt="">
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=5738" class="btn">SA24A06F</a>
+      </div>
+      <div class="prd-sld swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240321/mo/sld1-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240321/mo/sld1-2.png" alt=""></div>
+        </div>
+      </div>
+      <div class="prd prd2">
+        <img src="https://woorimstg.cafe24.com/product/project/240321/mo/prd1-2.png" alt="">
+        <div class="btns">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5741" class="btn">SA24A02F</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5739" class="btn">SA24A03F</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="inf2">
+      <div class="inf-sld swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240321/mo/inf2-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240321/mo/inf2-2.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240321/mo/inf2-3.png" alt=""></div>
+        </div>
+      </div>
+      <div class="prd prd1">
+        <img src="https://woorimstg.cafe24.com/product/project/240321/mo/prd2-1.png" alt="">
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=5813" class="btn">SA24A16U</a>
+      </div>
+      <div class="prd-sld swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240321/mo/sld2-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240321/mo/sld2-2.png" alt=""></div>
+        </div>
+      </div>
+      <div class="prd prd2">
+        <img src="https://woorimstg.cafe24.com/product/project/240321/mo/prd2-2.png" alt="">
+        <div class="btns">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5816" class="btn">SA24A17U</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5823" class="btn">SA24A36A</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  let dataView = document.querySelector('.wrap');
+  let tab = document.querySelectorAll('.tab');
+  Array.prototype.forEach.call(tab, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab');
+      dataView.setAttribute('data-view', idx);
+    })
+  })
+
+  new Swiper(".inf1 .inf-sld", {
+    effect:'fade',
+    speed: 1200,
+    autoplay: {
+      delay: 2000,
+      autoplayDisableOnInteraction:true,
+    },
+    loop: true,
+  });
+  let prdSld1 = new Swiper(".inf1 .prd-sld", {
+    effect:'fade',
+    speed: 1200,
+    autoplay: {
+      delay: 2000,
+      autoplayDisableOnInteraction:true,
+    },
+    observer: true,
+    observeParents: true,
+    loop: true,
+  });
+
+  new Swiper(".inf2 .inf-sld", {
+    effect:'fade',
+    speed: 1200,
+    autoplay: {
+      delay: 2000,
+      autoplayDisableOnInteraction:true,
+    },
+    loop: true,
+  });
+  let prdSld2 = new Swiper(".inf2 .prd-sld", {
+    effect:'fade',
+    speed: 1200,
+    autoplay: {
+      delay: 2000,
+      autoplayDisableOnInteraction:true,
+    },
+    observer: true,
+    observeParents: true,
+    loop: true,
+  });
+</script>

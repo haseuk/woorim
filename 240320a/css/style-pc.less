@@ -1,0 +1,36 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap { .rel; .wh(1264,3680);
+    .tab-wrap { .rel;
+      img { .hide; }
+      .tab-btns { .wh(1150,143); .abs; .lt(57,0);
+        .tab { .wh(575,143); .ib; }
+      }
+    }
+    article { .o(0); .wh(1264,2753); .abs; .lt(0,927); pointer-events: none;
+      .inf-sld { .rel; .h(943);
+        .swiper-btn { .wh(68,130); .m(59,0,0,0);
+          &:after { .hide; }
+          &.swiper-button-prev { .l(257); }
+          &.swiper-button-next { .r(257); }
+        }
+      }
+      .prd1 { .rel;
+        .btn { .wh(520,575); .abs; .rt(112,156); }
+      }
+      .prd2 { .rel;
+        .btns { .wh(520,430); .abs; .lt(112,347); .flex; .space-between;
+          .btn { .wh(250,430); }
+        }
+        .prd-sld { .wh(533,665); .abs; .lt(641,135); }
+      }
+    }
+    &[data-view="1"] .tab-wrap .tab1,
+    &[data-view="2"] .tab-wrap .tab2 { .block; }
+    &[data-view="1"] .inf1,
+    &[data-view="2"] .inf2 { .o(1); pointer-events: auto; }
+  }
+}

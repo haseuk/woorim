@@ -1,0 +1,124 @@
+.content {
+  font-size: 0px;
+  max-width: 1264px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap {
+  position: relative;
+  width: 1264px;
+  height: 3680px;
+}
+.content .wrap .tab-wrap {
+  position: relative;
+}
+.content .wrap .tab-wrap img {
+  display: none;
+}
+.content .wrap .tab-wrap .tab-btns {
+  width: 1150px;
+  height: 143px;
+  position: absolute;
+  left: 57px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .tab-wrap .tab-btns .tab {
+  width: 575px;
+  height: 143px;
+  display: inline-block;
+}
+.content .wrap article {
+  opacity: 0;
+  width: 1264px;
+  height: 2753px;
+  position: absolute;
+  left: 0px;
+  top: 927px;
+  right: auto;
+  bottom: auto;
+  pointer-events: none;
+}
+.content .wrap article .inf-sld {
+  position: relative;
+  height: 943px;
+}
+.content .wrap article .inf-sld .swiper-btn {
+  width: 68px;
+  height: 130px;
+  margin-top: 59px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+.content .wrap article .inf-sld .swiper-btn:after {
+  display: none;
+}
+.content .wrap article .inf-sld .swiper-btn.swiper-button-prev {
+  left: 257px;
+}
+.content .wrap article .inf-sld .swiper-btn.swiper-button-next {
+  right: 257px;
+}
+.content .wrap article .prd1 {
+  position: relative;
+}
+.content .wrap article .prd1 .btn {
+  width: 520px;
+  height: 575px;
+  position: absolute;
+  right: 112px;
+  top: 156px;
+  left: auto;
+  bottom: auto;
+}
+.content .wrap article .prd2 {
+  position: relative;
+}
+.content .wrap article .prd2 .btns {
+  width: 520px;
+  height: 430px;
+  position: absolute;
+  left: 112px;
+  top: 347px;
+  right: auto;
+  bottom: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.content .wrap article .prd2 .btns .btn {
+  width: 250px;
+  height: 430px;
+}
+.content .wrap article .prd2 .prd-sld {
+  width: 533px;
+  height: 665px;
+  position: absolute;
+  left: 641px;
+  top: 135px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap[data-view="1"] .tab-wrap .tab1,
+.content .wrap[data-view="2"] .tab-wrap .tab2 {
+  display: block;
+}
+.content .wrap[data-view="1"] .inf1,
+.content .wrap[data-view="2"] .inf2 {
+  opacity: 1;
+  pointer-events: auto;
+}
+/*# sourceMappingURL=style-pc.css.map */

@@ -1,0 +1,37 @@
+@media screen and (min-width: 850px) {
+  html {
+    font-size: 28px;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap {
+    width: 30.35714286rem;
+    height: 217.85714286rem;
+    background-image: url('../images/mo/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  .content .wrap .btn {
+    width: 27.75rem;
+    height: 5.03571429rem;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    left: 1.32142857rem;
+    bottom: 5.82142857rem;
+    right: auto;
+    top: auto;
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

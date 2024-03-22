@@ -1,0 +1,120 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap {
+  width: 100vw;
+  height: 388.23529412vw;
+  background-image: url('../images/mo/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .wrap .tit {
+  width: 100vw;
+  height: 57.05882353vw;
+  overflow: hidden;
+}
+.content .wrap .tit img {
+  transform: translateY(100%);
+  animation: upSld 1.5s ease-out forwards;
+}
+@keyframes upSld {
+  100% {
+    transform: translateY(0);
+  }
+}
+.content .wrap .product {
+  position: relative;
+}
+.content .wrap .product .prd .btn {
+  width: 6.11764706vw;
+  height: 6.11764706vw;
+  background-image: url('../images/mo/btn.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  animation: pointer 1.5s ease-out infinite;
+  z-index: 2;
+}
+.content .wrap .product .prd.on .info .link {
+  pointer-events: auto;
+}
+.content .wrap .product .prd.on .info .link img {
+  opacity: 1;
+}
+.content .wrap .product .info {
+  width: 43.52941176vw;
+  height: 28.11764706vw;
+  position: absolute;
+}
+.content .wrap .product .info .link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.content .wrap .product .info .link img {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+@keyframes pointer {
+  50% {
+    transform: scale(1.1);
+  }
+}
+.content .wrap .product .prd1 .btn {
+  left: 46.47058824vw;
+  top: 24.82352941vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd1 .info {
+  left: 7.76470588vw;
+  top: 27.88235294vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd2 .btn {
+  left: 34.23529412vw;
+  top: 117.41176471vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd2 .info {
+  left: 37.29411765vw;
+  top: 120.47058824vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd3 .btn {
+  left: 46.47058824vw;
+  top: 163.64705882vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd3 .info {
+  left: 7.76470588vw;
+  top: 166.70588235vw;
+  right: auto;
+  bottom: auto;
+}
+/*# sourceMappingURL=style-mo.css.map */
