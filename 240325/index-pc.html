@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-pc.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="images/pc/top-tit.png" class="tit" alt="">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/pc/top-bg1.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/pc/top-bg2.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="images/pc/prd.png" alt="">
+      <div class="prds">
+        <a href="https://rosemont.co.kr/product/detail.html?product_no=2830" class="btn">RL0209</a>
+        <a href="https://rosemont.co.kr/product/detail.html?product_no=2311" class="btn">RA0121</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  new Swiper(".swiper", {
+    effect:'fade',
+    speed: 1000,
+    touchRatio: 0,
+    autoplay: {
+      delay: 2000,
+      autoplayDisableOnInteraction:true,
+    },
+    loop: true,
+  });
+</script>
+</body>
+</html>

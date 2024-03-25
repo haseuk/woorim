@@ -1,0 +1,59 @@
+@media screen and (min-width: 850px) {
+  html {
+    font-size: 28px;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap {
+    overflow: hidden;
+  }
+  .content .wrap .top {
+    width: 30.35714286rem;
+    height: 45.96428571rem;
+  }
+  .content .wrap .top .tit {
+    position: relative;
+    z-index: 2;
+  }
+  .content .wrap .top .swiper {
+    width: 30.35714286rem;
+    height: 45.96428571rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    pointer-events: none;
+  }
+  .content .wrap .product {
+    position: relative;
+  }
+  .content .wrap .product .prds {
+    width: 30.35714286rem;
+    height: 21.78571429rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prds .btn {
+    width: 15.17857143rem;
+    height: 21.78571429rem;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 1;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=style-t.css.map */
