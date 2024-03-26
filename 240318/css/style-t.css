@@ -1,8 +1,8 @@
 @font-face {
-  font-family: against;
+  font-family: 'against';
   font-style: normal;
   font-weight: 400;
-  src: local('against'), url(https://fonts.cdnfonts.com/s/72739/AgainstRegular-Wy5pv.woff) format('woff');
+  src: local('against'), url('https://fonts.cdnfonts.com/s/72739/AgainstRegular-Wy5pv.woff') format('woff');
 }
 @media screen and (min-width: 850px) {
   html {

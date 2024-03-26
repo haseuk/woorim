@@ -1,0 +1,147 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap {
+    overflow: hidden;
+  }
+  .content .wrap .top {
+    width: 100vw;
+    height: 151.41176471vw;
+  }
+  .content .wrap .top .tit {
+    position: relative;
+    z-index: 2;
+  }
+  .content .wrap .top .swiper {
+    width: 100vw;
+    height: 151.41176471vw;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    pointer-events: none;
+  }
+  .content .wrap .product {
+    position: relative;
+  }
+  .content .wrap .product .prds {
+    width: 100vw;
+    height: 71.76470588vw;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prds .btn {
+    width: 50vw;
+    height: 71.76470588vw;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 850px) {
+    html {
+      font-size: 28px;
+    }
+    .content {
+      font-size: 0rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      max-width: 850px;
+      position: relative;
+    }
+    .content img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .content .wrap {
+      overflow: hidden;
+    }
+    .content .wrap .top {
+      width: 30.35714286rem;
+      height: 45.96428571rem;
+    }
+    .content .wrap .top .tit {
+      position: relative;
+      z-index: 2;
+    }
+    .content .wrap .top .swiper {
+      width: 30.35714286rem;
+      height: 45.96428571rem;
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+      pointer-events: none;
+    }
+    .content .wrap .product {
+      position: relative;
+    }
+    .content .wrap .product .prds {
+      width: 30.35714286rem;
+      height: 21.78571429rem;
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .product .prds .btn {
+      width: 15.17857143rem;
+      height: 21.78571429rem;
+      display: inline-block;
+      vertical-align: top;
+      z-index: 1;
+      cursor: pointer;
+    }
+  }
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="https://woorimrsm.cafe24.com/product/special/240325/mo/top-tit.png" class="tit" alt="">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240325/mo/top-bg1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240325/mo/top-bg2.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://woorimrsm.cafe24.com/product/special/240325/mo/prd.png" alt="">
+      <div class="prds">
+        <a href="https://rosemont.co.kr/product/detail.html?product_no=2830" class="btn">RL0209</a>
+        <a href="https://rosemont.co.kr/product/detail.html?product_no=2311" class="btn">RA0121</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  new Swiper(".swiper", {
+    effect:'fade',
+    speed: 1000,
+    touchRatio: 0,
+    autoplay: {
+      delay: 2000,
+      autoplayDisableOnInteraction:true,
+    },
+    loop: true,
+  });
+</script>
