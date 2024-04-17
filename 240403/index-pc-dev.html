@@ -1,0 +1,227 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+  .content {
+    font-size: 0px;
+    max-width: 1264px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap .product {
+    width: 1264px;
+    height: 1896px;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240404/pc/prd.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 650px;
+    box-sizing: border-box;
+  }
+  .content .wrap .product .time-wrap {
+    width: 958px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content .wrap .product .time-wrap p {
+    font-size: 100px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: #0b0b0b;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    width: 248px;
+  }
+  .content .wrap .product .time-wrap p.days {
+    width: 212px;
+  }
+  .content .wrap .product .swiper {
+    margin-top: 60px;
+    padding-top: 150px;
+    padding-right: 0px;
+    padding-bottom: 150px;
+    padding-left: 0px;
+    box-sizing: border-box;
+  }
+  .content .wrap .product .swiper .swiper-slide {
+    filter: blur(5px);
+    transform: scale(0.8);
+    transition: transform 0.5s;
+    transition-timing-function: ease-out;
+    position: relative;
+  }
+  .content .wrap .product .swiper .swiper-slide .txt {
+    opacity: 0;
+  }
+  .content .wrap .product .swiper .swiper-slide.swiper-slide-active {
+    transform: scale(1);
+    filter: blur(0);
+  }
+  .content .wrap .product .swiper .swiper-slide.swiper-slide-active a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .swiper .swiper-slide.swiper-slide-active .txt {
+    opacity: 1;
+  }
+  .content .wrap .product .swiper .swiper-btn {
+    width: 83px;
+    height: 83px;
+    margin: 0px;
+    opacity: 1;
+  }
+  .content .wrap .product .swiper .swiper-btn:after {
+    display: none;
+  }
+  .content .wrap .product .swiper .swiper-btn.swiper-button-prev {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240404/pc/ico-prev.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap .product .swiper .swiper-btn.swiper-button-next {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240404/pc/ico-next.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap .notice .noti-tab {
+    width: 1264px;
+    height: 90px;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240404/pc/noti-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+  }
+  .content .wrap .notice .noti-txt {
+    display: none;
+  }
+  .content .wrap .notice.open .noti-tab {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240404/pc/noti-off.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap .notice.open .noti-txt {
+    display: block;
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<div class="content">
+  <div class="wrap">
+    <div class="top"><img src="https://woorimstg.cafe24.com/product/project/240404/pc/top.png" alt=""></div>
+    <div class="product">
+      <div class="time-wrap">
+        <p class="days"></p>
+        <p class="hours"></p>
+        <p class="minutes"></p>
+        <p class="seconds"></p>
+      </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="https://stonehenge.co.kr/product/detail.html?product_no=3972">P1539</a>
+            <div class="txt"><img src="https://woorimstg.cafe24.com/product/project/240404/pc/txt1.png" alt=""></div>
+            <div class="prd"><img src="https://woorimstg.cafe24.com/product/project/240404/pc/prd1.png" alt=""></div>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://stonehenge.co.kr/product/detail.html?product_no=5482">H0185</a>
+            <div class="txt"><img src="https://woorimstg.cafe24.com/product/project/240404/pc/txt2.png" alt=""></div>
+            <div class="prd"><img src="https://woorimstg.cafe24.com/product/project/240404/pc/prd2.png" alt=""></div>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://stonehenge.co.kr/product/detail.html?product_no=5651">P1340</a>
+            <div class="txt"><img src="https://woorimstg.cafe24.com/product/project/240404/pc/txt3.png" alt=""></div>
+            <div class="prd"><img src="https://woorimstg.cafe24.com/product/project/240404/pc/prd3.png" alt=""></div>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://stonehenge.co.kr/product/detail.html?product_no=5085">U0152</a>
+            <div class="txt"><img src="https://woorimstg.cafe24.com/product/project/240404/pc/txt4.png" alt=""></div>
+            <div class="prd"><img src="https://woorimstg.cafe24.com/product/project/240404/pc/prd4.png" alt=""></div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-btn"></div>
+        <div class="swiper-button-prev swiper-btn"></div>
+      </div>
+    </div>
+
+    <div class="notice">
+      <a class="noti-tab"></a>
+      <div class="noti-txt"><img src="https://woorimstg.cafe24.com/product/project/240404/pc/noti-txt.png" alt=""></div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  let countDownDate = new Date("April 14, 2024 23:59:59").getTime();
+  let d = document.querySelector('.days');
+  let h = document.querySelector('.hours');
+  let m = document.querySelector('.minutes');
+  let s = document.querySelector('.seconds');
+
+  let x = setInterval(function() {
+    let now = new Date().getTime();
+    let distance = countDownDate - now;
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    d.innerHTML = String(days).padStart(2,'0');
+    h.innerHTML = String(hours).padStart(2,'0');
+    m.innerHTML = String(minutes).padStart(2,'0');
+    s.innerHTML = String(seconds).padStart(2,'0');
+    if (distance < 0) {
+      clearInterval(x);
+      d.innerHTML = '00';
+      h.innerHTML = '00';
+      m.innerHTML = '00';
+      s.innerHTML = '00';
+    }
+  }, 1000);
+
+
+  new Swiper(".swiper", {
+    speed: 1000,
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: -10,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  let notice = document.querySelector('.notice');
+  let noticeTab = document.querySelector('.noti-tab');
+  noticeTab.addEventListener('click', function() {
+    if(notice.classList.contains('open')) {
+      notice.classList.remove('open')
+    } else {
+      notice.classList.add('open')
+    }
+  });
+
+</script>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-pc.css">
+</head>
+<body>
+
+<div class="content">
+  <div class="wrap pick-my" data-view="0">
+    <img src="images/pc/top.png" alt="">
+    <div class="tab-wrap" id="sticker">
+      <a class="tab" data-tab="0">하니</a>
+      <a class="tab" data-tab="1">다니엘</a>
+      <a class="tab" data-tab="2">해린</a>
+      <a class="tab" data-tab="3">민지</a>
+      <a class="tab" data-tab="4">혜인</a>
+    </div>
+
+    <section>
+      <article class="art1 active">
+        <div class="unit"><img src="images/pc/unit1.png" alt=""></div>
+        <div class="emo"><img src="images/pc/emo1.png" alt=""></div>
+        <div class="txt txt1"><img src="images/pc/txt1-1.png" alt=""></div>
+        <div class="txt txt2"><img src="images/pc/txt1-2.png" alt=""></div>
+      </article>
+      <article class="art2">
+        <div class="unit"><img src="images/pc/unit2.png" alt=""></div>
+        <div class="emo"><img src="images/pc/emo2.png" alt=""></div>
+        <div class="txt txt1"><img src="images/pc/txt2-1.png" alt=""></div>
+        <div class="txt txt2"><img src="images/pc/txt2-2.png" alt=""></div>
+      </article>
+      <article class="art3">
+        <div class="unit"><img src="images/pc/unit3.png" alt=""></div>
+        <div class="emo"><img src="images/pc/emo3.png" alt=""></div>
+        <div class="txt txt1"><img src="images/pc/txt3-1.png" alt=""></div>
+        <div class="txt txt2"><img src="images/pc/txt3-2.png" alt=""></div>
+      </article>
+      <article class="art4">
+        <div class="unit"><img src="images/pc/unit4.png" alt=""></div>
+        <div class="emo"><img src="images/pc/emo4.png" alt=""></div>
+        <div class="txt txt1"><img src="images/pc/txt4-1.png" alt=""></div>
+        <div class="txt txt2"><img src="images/pc/txt4-2.png" alt=""></div>
+      </article>
+      <article class="art5">
+        <div class="unit"><img src="images/pc/unit5.png" alt=""></div>
+        <div class="emo"><img src="images/pc/emo5.png" alt=""></div>
+        <div class="txt txt1"><img src="images/pc/txt5-1.png" alt=""></div>
+        <div class="txt txt2"><img src="images/pc/txt5-2.png" alt=""></div>
+      </article>
+    </section>
+  </div>
+</div>
+<footer style="height: 3500px"></footer>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  let tab = document.querySelectorAll('.tab');
+  let pickMy = document.querySelector('.pick-my');
+  let art = document.querySelectorAll('article');
+  Array.prototype.forEach.call(tab, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab')
+      pickMy.setAttribute('data-view', idx);
+      for (let i = 0; i < art.length; i++) {
+        art[i].classList.remove('active')
+      }
+      art[idx].classList.add('active');
+    })
+  });
+  $(document).ready(function(){
+    $("#sticker").sticky({topSpacing:150,bottomSpacing:7390});
+  });
+
+  let scrollY;
+  window.addEventListener("scroll", handleScroll);
+  function handleScroll() {
+    scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    initIntersectionObserver();
+    pickBottCalc()
+  }
+
+  function initIntersectionObserver() {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio > 0.3) {
+          setTimeout(() =>{
+            entry.target.classList.add('move-on');
+          },100);
+        }
+      })
+    });
+    const move = document.querySelectorAll('.txt2');
+    move.forEach((el) => {
+      io.observe(el);
+    });
+  }
+
+  window.onload = function() {
+    initIntersectionObserver();
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .leaf { .wh(850,1250); .abs; .lt; .crop; .z(1); }
+  .wrap { .crop;
+    .visual { .wh(850,1250); .bgc(#e1efe8);
+      .bg { .wh(850,1250); .contain('../images/mo/vis.png'); .rel; .z(1); }
+      .light { .wh(88,88); .contain('../images/mo/light.png'); .abs; .lt(375,427); .z(1);.o(0.3); animation: twinkle 2s ease-out infinite; }
+      @keyframes twinkle {
+        30% { transform: scale(1.1); .o(1); }
+      }
+    }
+  }
+}

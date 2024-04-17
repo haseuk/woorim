@@ -1,0 +1,505 @@
+<style>
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap .tab-wrap {
+    width: 100vw;
+    height: 13.41176471vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 61px;
+    z-index: 3!important;
+  }
+  .content .wrap .tab-wrap .tab {
+    height: 13.41176471vw;
+  }
+  .content .wrap .tab-wrap .tab[data-tab="0"] {
+    width: 15.52941176vw;
+  }
+  .content .wrap .tab-wrap .tab[data-tab="1"] {
+    width: 19.29411765vw;
+  }
+  .content .wrap .tab-wrap .tab[data-tab="2"] {
+    width: 16.23529412vw;
+  }
+  .content .wrap .tab-wrap .tab[data-tab="3"] {
+    width: 18.11764706vw;
+  }
+  .content .wrap .tab-wrap .tab[data-tab="4"] {
+    width: 16.70588235vw;
+  }
+  .content .wrap article {
+    position: relative;
+    display: none;
+  }
+  .content .wrap article .unit {
+    position: relative;
+    z-index: 2;
+  }
+  .content .wrap article .emo {
+    width: 100vw;
+    height: 273.29411765vw;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    z-index: 2;
+    animation: twinkle 1s ease-out infinite;
+    opacity: 0;
+  }
+  @keyframes twinkle {
+    50% {
+      opacity: 1;
+    }
+  }
+  .content .wrap article .txt {
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: transform 0.6s;
+  }
+  .content .wrap article .txt.txt1 {
+    z-index: 1;
+  }
+  .content .wrap article .txt.txt2.move-on {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  @keyframes upSld {
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .content .wrap article.active .txt1 {
+    animation: upSld 0.6s ease-out forwards;
+  }
+  @keyframes upSld {
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .content .wrap article.art1 {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/bg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art1 .txt1 {
+    width: 100vw;
+    height: 162.11764706vw;
+  }
+  .content .wrap article.art1 .txt2 {
+    width: 100vw;
+    height: 106.70588235vw;
+    top: 146.70588235vw;
+  }
+  .content .wrap article.art2 {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/bg2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art2 .txt1 {
+    width: 100vw;
+    height: 147.64705882vw;
+  }
+  .content .wrap article.art2 .txt2 {
+    width: 100vw;
+    height: 106.70588235vw;
+    top: 146.58823529vw;
+  }
+  .content .wrap article.art3 {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/bg3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art3 .txt1 {
+    width: 100vw;
+    height: 160.94117647vw;
+  }
+  .content .wrap article.art3 .txt2 {
+    width: 100vw;
+    height: 106.82352941vw;
+    top: 146.58823529vw;
+  }
+  .content .wrap article.art4 {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/bg4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art4 .txt1 {
+    width: 100vw;
+    height: 148.11764706vw;
+  }
+  .content .wrap article.art4 .txt2 {
+    width: 100vw;
+    height: 106.70588235vw;
+    top: 146.47058824vw;
+  }
+  .content .wrap article.art5 {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/bg5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art5 .txt1 {
+    width: 100vw;
+    height: 147.64705882vw;
+  }
+  .content .wrap article.art5 .txt2 {
+    width: 100vw;
+    height: 106.70588235vw;
+    top: 146.35294118vw;
+  }
+  .content .wrap[data-view="0"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/tab1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="1"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/tab2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="2"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/tab3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="3"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/tab4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="4"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/tab5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="0"] .art1,
+  .content .wrap[data-view="1"] .art2,
+  .content .wrap[data-view="2"] .art3,
+  .content .wrap[data-view="3"] .art4,
+  .content .wrap[data-view="4"] .art5 {
+    display: block;
+  }
+
+  @media screen and (min-width: 767px) {
+    html {
+      font-size: 28px;
+    }
+    .content {
+      font-size: 0rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      max-width: 767px;
+      position: relative;
+    }
+    .content img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .content .wrap .tab-wrap {
+      width: 27.39328703rem;
+      height: 3.6739232rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+      top: 61px;
+      z-index: 3;
+    }
+    .content .wrap .tab-wrap .tab {
+      height: 3.6739232rem;
+    }
+    .content .wrap .tab-wrap .tab[data-tab="0"] {
+      width: 4.25401634rem;
+    }
+    .content .wrap .tab-wrap .tab[data-tab="1"] {
+      width: 5.28529303rem;
+    }
+    .content .wrap .tab-wrap .tab[data-tab="2"] {
+      width: 4.44738072rem;
+    }
+    .content .wrap .tab-wrap .tab[data-tab="3"] {
+      width: 4.96301906rem;
+    }
+    .content .wrap .tab-wrap .tab[data-tab="4"] {
+      width: 4.5762903rem;
+    }
+    .content .wrap article {
+      position: relative;
+      display: none;
+    }
+    .content .wrap article .unit {
+      position: relative;
+      z-index: 2;
+    }
+    .content .wrap article .emo {
+      width: 27.39328703rem;
+      height: 74.86424209rem;
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+      z-index: 2;
+      animation: twinkle 1s ease-out infinite;
+      opacity: 0;
+    }
+    @keyframes twinkle {
+      50% {
+        opacity: 1;
+      }
+    }
+    .content .wrap article .txt {
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+      transform: translateY(200px);
+      opacity: 0;
+      transition: transform 0.6s;
+    }
+    .content .wrap article .txt.txt1 {
+      z-index: 1;
+    }
+    .content .wrap article .txt.txt2.move-on {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    @keyframes upSld {
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .content .wrap article.active .txt1 {
+      animation: upSld 0.6s ease-out forwards;
+    }
+    @keyframes upSld {
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .content .wrap article.art1 {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/bg1.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap article.art1 .txt1 {
+      width: 27.39328703rem;
+      height: 44.40935239rem;
+    }
+    .content .wrap article.art1 .txt2 {
+      width: 27.39328703rem;
+      height: 29.23024863rem;
+      top: 40.18756345rem;
+    }
+    .content .wrap article.art2 {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/bg2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap article.art2 .txt1 {
+      width: 27.39328703rem;
+      height: 40.44538262rem;
+    }
+    .content .wrap article.art2 .txt2 {
+      width: 27.39328703rem;
+      height: 29.23024863rem;
+      top: 40.15533605rem;
+    }
+    .content .wrap article.art3 {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/bg3.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap article.art3 .txt1 {
+      width: 27.39328703rem;
+      height: 44.08707843rem;
+    }
+    .content .wrap article.art3 .txt2 {
+      width: 27.39328703rem;
+      height: 29.26247603rem;
+      top: 40.15533605rem;
+    }
+    .content .wrap article.art4 {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/bg4.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap article.art4 .txt1 {
+      width: 27.39328703rem;
+      height: 40.57429221rem;
+    }
+    .content .wrap article.art4 .txt2 {
+      width: 27.39328703rem;
+      height: 29.23024863rem;
+      top: 40.12310865rem;
+    }
+    .content .wrap article.art5 {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/bg5.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap article.art5 .txt1 {
+      width: 27.39328703rem;
+      height: 40.44538262rem;
+    }
+    .content .wrap article.art5 .txt2 {
+      width: 27.39328703rem;
+      height: 29.23024863rem;
+      top: 40.09088126rem;
+    }
+    .content .wrap[data-view="0"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/tab1.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap[data-view="1"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/tab2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap[data-view="2"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/tab3.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap[data-view="3"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/tab4.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap[data-view="4"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240403/mo/tab5.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap[data-view="0"] .art1,
+    .content .wrap[data-view="1"] .art2,
+    .content .wrap[data-view="2"] .art3,
+    .content .wrap[data-view="3"] .art4,
+    .content .wrap[data-view="4"] .art5 {
+      display: block;
+    }
+  }
+</style>
+<div class="content">
+  <div class="wrap pick-my" data-view="0">
+    <img src="https://woorimstg.cafe24.com/product/project/240403/mo/top.png" alt="">
+    <div class="tab-wrap" id="sticker">
+      <a class="tab" data-tab="0">하니</a>
+      <a class="tab" data-tab="1">다니엘</a>
+      <a class="tab" data-tab="2">해린</a>
+      <a class="tab" data-tab="3">민지</a>
+      <a class="tab" data-tab="4">혜인</a>
+    </div>
+
+    <section>
+      <article class="art1 active">
+        <div class="unit"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/unit1.png" alt=""></div>
+        <div class="emo"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/emo1.png" alt=""></div>
+        <div class="txt txt1"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/txt1-1.png" alt=""></div>
+        <div class="txt txt2"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/txt1-2.png" alt=""></div>
+      </article>
+      <article class="art2">
+        <div class="unit"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/unit2.png" alt=""></div>
+        <div class="emo"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/emo2.png" alt=""></div>
+        <div class="txt txt1"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/txt2-1.png" alt=""></div>
+        <div class="txt txt2"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/txt2-2.png" alt=""></div>
+      </article>
+      <article class="art3">
+        <div class="unit"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/unit3.png" alt=""></div>
+        <div class="emo"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/emo3.png" alt=""></div>
+        <div class="txt txt1"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/txt3-1.png" alt=""></div>
+        <div class="txt txt2"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/txt3-2.png" alt=""></div>
+      </article>
+      <article class="art4">
+        <div class="unit"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/unit4.png" alt=""></div>
+        <div class="emo"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/emo4.png" alt=""></div>
+        <div class="txt txt1"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/txt4-1.png" alt=""></div>
+        <div class="txt txt2"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/txt4-2.png" alt=""></div>
+      </article>
+      <article class="art5">
+        <div class="unit"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/unit5.png" alt=""></div>
+        <div class="emo"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/emo5.png" alt=""></div>
+        <div class="txt txt1"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/txt5-1.png" alt=""></div>
+        <div class="txt txt2"><img src="https://woorimstg.cafe24.com/product/project/240403/mo/txt5-2.png" alt=""></div>
+      </article>
+    </section>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  let tab = document.querySelectorAll('.tab');
+  let pickMy = document.querySelector('.pick-my');
+  let art = document.querySelectorAll('article');
+  Array.prototype.forEach.call(tab, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab');
+      pickMy.setAttribute('data-view', idx);
+      for (let i = 0; i < art.length; i++) {
+        art[i].classList.remove('active');
+      }
+      art[idx].classList.add('active');
+    })
+  });
+
+ let sticker = $("#sticker");
+  let bottomSpacingValue = 0;
+  $(document).ready(function(){
+    let bodyH = document.querySelector('body').getBoundingClientRect().height;
+    let pickMyH = pickMy.getBoundingClientRect().height;
+    let headerH = document.querySelector('header').getBoundingClientRect().height;
+    bottomSpacingValue = bodyH - pickMyH - headerH;
+    sticker.sticky({topSpacing:61,bottomSpacing:bottomSpacingValue});
+  });
+
+  let scrollY;
+  window.addEventListener("scroll", handleScroll);
+  function handleScroll() {
+    scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    initIntersectionObserver();
+  };
+
+  function initIntersectionObserver() {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio > 0.1) {
+          setTimeout(() =>{
+            entry.target.classList.add('move-on');
+          },100);
+        }
+      });
+    });
+    const move = document.querySelectorAll('.txt2');
+    move.forEach((el) => {
+      io.observe(el);
+    });
+  };
+
+  window.onload = function() {
+    initIntersectionObserver();
+  };
+</script>

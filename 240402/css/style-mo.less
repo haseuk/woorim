@@ -1,0 +1,68 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .wrap {
+    .tab-wrap { .wh(850,114); .flex; .flex-center; .sticky; .t(61px); .z(3)!important;
+      .tab { .h(114);
+        &[data-tab="0"] { .w(132); }
+        &[data-tab="1"] { .w(164); }
+        &[data-tab="2"] { .w(138); }
+        &[data-tab="3"] { .w(154); }
+        &[data-tab="4"] { .w(142); }
+      }
+    }
+
+    article { .rel; .hide;
+      .unit { .rel; .z(2); }
+      .emo { .wh(850,2323); .abs; .lt; .z(2); animation: twinkle 1s ease-out infinite; .o(0); }
+      @keyframes twinkle {
+        50% { .o(1); }
+      }
+      .txt { .abs; .lt; transform: translateY(200px); .o(0); transition: transform 0.6s;
+        &.txt1 { .z(1); }
+        &.txt2.move-on { transform: translateY(0); .o(1); }
+      }
+      @keyframes upSld {
+        100% { transform: translateY(0); .o(1); }
+      }
+      &.active .txt1 { animation: upSld 0.6s ease-out forwards; }
+      @keyframes upSld {
+        100% { transform: translateY(0); .o(1); }
+      }
+      &.art1 { .contain('../images/mo/bg1.png');
+        .txt1 { .wh(850,1378); }
+        .txt2 { .wh(850,907); .t(1247); }
+      }
+      &.art2 { .contain('../images/mo/bg2.png');
+        .txt1 { .wh(850,1255); }
+        .txt2 { .wh(850,907); .t(1246); }
+      }
+      &.art3 { .contain('../images/mo/bg3.png');
+        .txt1 { .wh(850,1368); }
+        .txt2 { .wh(850,908); .t(1246); }
+      }
+      &.art4 { .contain('../images/mo/bg4.png');
+        .txt1 { .wh(850,1259); }
+        .txt2 { .wh(850,907); .t(1245); }
+      }
+      &.art5 { .contain('../images/mo/bg5.png');
+        .txt1 { .wh(850,1255); }
+        .txt2 { .wh(850,907); .t(1244); }
+      }
+    }
+
+    &[data-view="0"] .tab-wrap { .contain('../images/mo/tab1.png'); }
+    &[data-view="1"] .tab-wrap { .contain('../images/mo/tab2.png'); }
+    &[data-view="2"] .tab-wrap { .contain('../images/mo/tab3.png'); }
+    &[data-view="3"] .tab-wrap { .contain('../images/mo/tab4.png'); }
+    &[data-view="4"] .tab-wrap { .contain('../images/mo/tab5.png'); }
+    &[data-view="0"] .art1,
+    &[data-view="1"] .art2,
+    &[data-view="2"] .art3,
+    &[data-view="3"] .art4,
+    &[data-view="4"] .art5 { .block; }
+  }
+}

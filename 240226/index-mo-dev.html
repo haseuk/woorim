@@ -469,7 +469,7 @@
   function handleScroll() {
     scrollY = window.pageYOffset || document.documentElement.scrollTop;
     initIntersectionObserver();
-  }
+  };
 
   function initIntersectionObserver() {
     const io = new IntersectionObserver(entries => {
@@ -483,10 +483,10 @@
     move.forEach((el) => {
       io.observe(el);
     });
-  }
+  };
   window.onload = function() {
     initIntersectionObserver();
-  }
+  };
 
   new Swiper(".prds .swiper", {
     speed: 2000,

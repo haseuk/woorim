@@ -1,0 +1,62 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .leaf {
+  width: 100vw;
+  height: 147.05882353vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  overflow: hidden;
+  z-index: 1;
+}
+.content .wrap {
+  overflow: hidden;
+}
+.content .wrap .visual {
+  width: 100vw;
+  height: 147.05882353vw;
+  background-color: #e1efe8;
+}
+.content .wrap .visual .bg {
+  width: 100vw;
+  height: 147.05882353vw;
+  background-image: url('../images/mo/vis.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+.content .wrap .visual .light {
+  width: 10.35294118vw;
+  height: 10.35294118vw;
+  background-image: url('../images/mo/light.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 44.11764706vw;
+  top: 50.23529412vw;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+  opacity: 0.3;
+  animation: twinkle 2s ease-out infinite;
+}
+@keyframes twinkle {
+  30% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style-mo.css.map */

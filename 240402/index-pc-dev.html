@@ -1,0 +1,278 @@
+<style>
+  .content {
+    font-size: 0px;
+    max-width: 1264px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap .tab-wrap {
+    width: 1264px;
+    height: 114px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+  .content .wrap .tab-wrap .tab {
+    width: 210px;
+    height: 114px;
+  }
+  .content .wrap .sticky-wrapper {
+    z-index: 3;
+    position: relative;
+  }
+  .content .wrap article {
+    position: relative;
+    display: none;
+  }
+  .content .wrap article .unit {
+    position: relative;
+    z-index: 2;
+  }
+  .content .wrap article .emo {
+    width: 1264px;
+    height: 2364px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    z-index: 2;
+    animation: twinkle 1s ease-out infinite;
+    opacity: 0;
+  }
+  @keyframes twinkle {
+    50% {
+      opacity: 1;
+    }
+  }
+  .content .wrap article .txt {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: transform 0.6s;
+  }
+  .content .wrap article .txt.txt1 {
+    z-index: 1;
+  }
+  .content .wrap article .txt.txt2.move-on {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .content .wrap article.active .txt1 {
+    animation: upSld 0.6s ease-out forwards;
+  }
+  @keyframes upSld {
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .content .wrap article.art1 {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403//pc/bg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art1 .txt1 {
+    width: 1264px;
+    height: 1370px;
+  }
+  .content .wrap article.art1 .txt2 {
+    width: 1264px;
+    height: 994px;
+    top: 1166px;
+  }
+  .content .wrap article.art2 {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403//pc/bg2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art2 .txt1 {
+    width: 1264px;
+    height: 1261px;
+  }
+  .content .wrap article.art2 .txt2 {
+    width: 1264px;
+    height: 994px;
+    top: 1166px;
+  }
+  .content .wrap article.art3 {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403//pc/bg3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art3 .txt1 {
+    width: 1264px;
+    height: 1371px;
+  }
+  .content .wrap article.art3 .txt2 {
+    width: 1264px;
+    height: 994px;
+    top: 1166px;
+  }
+  .content .wrap article.art4 {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403//pc/bg4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art4 .txt1 {
+    width: 1264px;
+    height: 1260px;
+  }
+  .content .wrap article.art4 .txt2 {
+    width: 1264px;
+    height: 993px;
+    top: 1165px;
+  }
+  .content .wrap article.art5 {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403//pc/bg5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art5 .txt1 {
+    width: 1264px;
+    height: 1260px;
+  }
+  .content .wrap article.art5 .txt2 {
+    width: 1264px;
+    height: 993px;
+    top: 1165px;
+  }
+  .content .wrap[data-view="0"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403//pc/tab1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="1"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403//pc/tab2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="2"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403//pc/tab3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="3"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403//pc/tab4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="4"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240403//pc/tab5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="0"] .art1,
+  .content .wrap[data-view="1"] .art2,
+  .content .wrap[data-view="2"] .art3,
+  .content .wrap[data-view="3"] .art4,
+  .content .wrap[data-view="4"] .art5 {
+    display: block;
+  }
+</style>
+<div class="content">
+  <div class="wrap pick-my" data-view="0">
+    <img src="https://woorimstg.cafe24.com/product/project/240403/pc/top.png" alt="">
+    <div class="tab-wrap" id="sticker">
+      <a class="tab" data-tab="0">하니</a>
+      <a class="tab" data-tab="1">다니엘</a>
+      <a class="tab" data-tab="2">해린</a>
+      <a class="tab" data-tab="3">민지</a>
+      <a class="tab" data-tab="4">혜인</a>
+    </div>
+
+    <section>
+      <article class="art1 active">
+        <div class="unit"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/unit1.png" alt=""></div>
+        <div class="emo"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/emo1.png" alt=""></div>
+        <div class="txt txt1"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/txt1-1.png" alt=""></div>
+        <div class="txt txt2"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/txt1-2.png" alt=""></div>
+      </article>
+      <article class="art2">
+        <div class="unit"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/unit2.png" alt=""></div>
+        <div class="emo"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/emo2.png" alt=""></div>
+        <div class="txt txt1"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/txt2-1.png" alt=""></div>
+        <div class="txt txt2"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/txt2-2.png" alt=""></div>
+      </article>
+      <article class="art3">
+        <div class="unit"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/unit3.png" alt=""></div>
+        <div class="emo"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/emo3.png" alt=""></div>
+        <div class="txt txt1"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/txt3-1.png" alt=""></div>
+        <div class="txt txt2"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/txt3-2.png" alt=""></div>
+      </article>
+      <article class="art4">
+        <div class="unit"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/unit4.png" alt=""></div>
+        <div class="emo"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/emo4.png" alt=""></div>
+        <div class="txt txt1"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/txt4-1.png" alt=""></div>
+        <div class="txt txt2"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/txt4-2.png" alt=""></div>
+      </article>
+      <article class="art5">
+        <div class="unit"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/unit5.png" alt=""></div>
+        <div class="emo"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/emo5.png" alt=""></div>
+        <div class="txt txt1"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/txt5-1.png" alt=""></div>
+        <div class="txt txt2"><img src="https://woorimstg.cafe24.com/product/project/240403/pc/txt5-2.png" alt=""></div>
+      </article>
+    </section>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  let tab = document.querySelectorAll('.tab');
+  let pickMy = document.querySelector('.pick-my');
+  let art = document.querySelectorAll('article');
+  Array.prototype.forEach.call(tab, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab')
+      pickMy.setAttribute('data-view', idx);
+      for (let i = 0; i < art.length; i++) {
+        art[i].classList.remove('active')
+      }
+      art[idx].classList.add('active');
+    })
+  });
+  $("#sticker").sticky({topSpacing:150});
+
+  let scrollY;
+  window.addEventListener("scroll", handleScroll);
+  function handleScroll() {
+    scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    initIntersectionObserver();
+  };
+
+  function initIntersectionObserver() {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio > 0.3) {
+          setTimeout(() =>{
+            entry.target.classList.add('move-on');
+          },100);
+        }
+      })
+    });
+    const move = document.querySelectorAll('.txt2');
+    move.forEach((el) => {
+      io.observe(el);
+    });
+  };
+
+  window.onload = function() {
+    initIntersectionObserver();
+  };
+</script>

@@ -1,0 +1,126 @@
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 28px;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 767px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap .top {
+    position: relative;
+  }
+  .content .wrap .top .light {
+    width: 27.39328703rem;
+    height: 40.21979084rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    animation: twinkle 1s alternate-reverse infinite linear;
+  }
+  .content .wrap .top .light.light2 {
+    animation: twinkle 1.2s alternate-reverse infinite linear;
+  }
+  .content .wrap .top .light.light3 {
+    animation: twinkle 1.3s alternate-reverse infinite linear;
+  }
+  @keyframes twinkle {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .content .wrap .product .prd {
+    position: relative;
+  }
+  .content .wrap .product .prd.prd1 {
+    background-image: url('../images/mo/bg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 27.39328703rem;
+    height: 44.86053594rem;
+  }
+  .content .wrap .product .prd.prd1 .swiper {
+    top: 23.68713643rem;
+  }
+  .content .wrap .product .prd.prd2 {
+    background-image: url('../images/mo/bg2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 27.39328703rem;
+    height: 40.21979084rem;
+  }
+  .content .wrap .product .prd.prd3 {
+    background-image: url('../images/mo/bg3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 27.39328703rem;
+    height: 40.86433877rem;
+  }
+  .content .wrap .product .prd .swiper {
+    width: 23.20372549rem;
+    height: 16.33929003rem;
+    position: absolute;
+    left: 2.09478077rem;
+    top: 19.04639134rem;
+    right: auto;
+    bottom: auto;
+    border: 1px solid #76abcd;
+    background-color: #fff;
+  }
+  .content .wrap .product .prd .swiper .swiper-slide img {
+    width: 23.20372549rem;
+    height: 16.37151743rem;
+  }
+  .content .wrap .product .prd .swiper .swiper-pagination {
+    width: 2.51373693rem;
+    height: 0.64454793rem;
+    left: 12.34309286rem;
+    top: 1.19241367rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prd .swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 0.64454793rem;
+    height: 0.64454793rem;
+    background-color: #c9c9c9;
+    border: 0.12890959rem solid #fff;
+    box-sizing: border-box;
+    margin-top: 0rem;
+    margin-right: 0.09668219rem;
+    margin-bottom: 0rem;
+    margin-left: 0.09668219rem;
+    opacity: 1;
+    position: relative;
+  }
+  .content .wrap .product .prd .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border: 1px solid #76abcd;
+    background-color: #fff;
+  }
+  .content .wrap .product .prd .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:after {
+    content: '';
+    display: block;
+    width: 0.38672876rem;
+    height: 0.38672876rem;
+    position: absolute;
+    background-color: #76abcd;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

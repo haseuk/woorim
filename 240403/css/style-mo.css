@@ -1,0 +1,95 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .wrap .product {
+  width: 100vw;
+  height: 242.11764706vw;
+  background-image: url('../images/mo/prd.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 75.88235294vw;
+  box-sizing: border-box;
+}
+.content .wrap .product .time-wrap {
+  width: 90.58823529vw;
+  height: 9.41176471vw;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content .wrap .product .time-wrap p {
+  font-size: 9.41176471vw;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: #0b0b0b;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 23.29411765vw;
+}
+.content .wrap .product .time-wrap p.days {
+  width: 20.23529412vw;
+}
+.content .wrap .product .swiper {
+  margin-top: 8.23529412vw;
+  padding-top: 17.64705882vw;
+  padding-right: 0vw;
+  padding-bottom: 17.64705882vw;
+  padding-left: 0vw;
+  box-sizing: border-box;
+}
+.content .wrap .product .swiper .swiper-slide {
+  filter: blur(5px);
+  transform: scale(0.8);
+  transition: transform 0.5s;
+  transition-timing-function: ease-out;
+  position: relative;
+}
+.content .wrap .product .swiper .swiper-slide .txt {
+  opacity: 0;
+}
+.content .wrap .product .swiper .swiper-slide.swiper-slide-active {
+  transform: scale(1);
+  filter: blur(0);
+}
+.content .wrap .product .swiper .swiper-slide.swiper-slide-active a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .swiper .swiper-slide.swiper-slide-active .txt {
+  opacity: 1;
+}
+.content .wrap .notice .noti-tab {
+  width: 100vw;
+  height: 10.47058824vw;
+  background-image: url('../images/mo/noti-on.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+.content .wrap .notice .noti-txt {
+  display: none;
+}
+.content .wrap .notice.open .noti-tab {
+  background-image: url('../images/mo/noti-off.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap .notice.open .noti-txt {
+  display: block;
+}
+/*# sourceMappingURL=style-mo.css.map */

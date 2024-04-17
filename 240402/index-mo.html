@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/style-t.css">
+</head>
+<body>
+<div class="content">
+  <div class="wrap pick-my" data-view="0">
+    <img src="images/mo/top.png" alt="">
+    <div class="tab-wrap" id="sticker">
+      <a class="tab" data-tab="0">하니</a>
+      <a class="tab" data-tab="1">다니엘</a>
+      <a class="tab" data-tab="2">해린</a>
+      <a class="tab" data-tab="3">민지</a>
+      <a class="tab" data-tab="4">혜인</a>
+    </div>
+
+    <section>
+      <article class="art1 active">
+        <div class="unit"><img src="images/mo/unit1.png" alt=""></div>
+        <div class="emo"><img src="images/mo/emo1.png" alt=""></div>
+        <div class="txt txt1"><img src="images/mo/txt1-1.png" alt=""></div>
+        <div class="txt txt2"><img src="images/mo/txt1-2.png" alt=""></div>
+      </article>
+      <article class="art2">
+        <div class="unit"><img src="images/mo/unit2.png" alt=""></div>
+        <div class="emo"><img src="images/mo/emo2.png" alt=""></div>
+        <div class="txt txt1"><img src="images/mo/txt2-1.png" alt=""></div>
+        <div class="txt txt2"><img src="images/mo/txt2-2.png" alt=""></div>
+      </article>
+      <article class="art3">
+        <div class="unit"><img src="images/mo/unit3.png" alt=""></div>
+        <div class="emo"><img src="images/mo/emo3.png" alt=""></div>
+        <div class="txt txt1"><img src="images/mo/txt3-1.png" alt=""></div>
+        <div class="txt txt2"><img src="images/mo/txt3-2.png" alt=""></div>
+      </article>
+      <article class="art4">
+        <div class="unit"><img src="images/mo/unit4.png" alt=""></div>
+        <div class="emo"><img src="images/mo/emo4.png" alt=""></div>
+        <div class="txt txt1"><img src="images/mo/txt4-1.png" alt=""></div>
+        <div class="txt txt2"><img src="images/mo/txt4-2.png" alt=""></div>
+      </article>
+      <article class="art5">
+        <div class="unit"><img src="images/mo/unit5.png" alt=""></div>
+        <div class="emo"><img src="images/mo/emo5.png" alt=""></div>
+        <div class="txt txt1"><img src="images/mo/txt5-1.png" alt=""></div>
+        <div class="txt txt2"><img src="images/mo/txt5-2.png" alt=""></div>
+      </article>
+    </section>
+  </div>
+</div>
+<footer style="height: 1500px;"></footer>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  let tab = document.querySelectorAll('.tab');
+  let pickMy = document.querySelector('.pick-my');
+  let art = document.querySelectorAll('article');
+  Array.prototype.forEach.call(tab, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab')
+      pickMy.setAttribute('data-view', idx);
+      for (let i = 0; i < art.length; i++) {
+        art[i].classList.remove('active')
+      }
+      art[idx].classList.add('active');
+    })
+  });
+
+  let sticker = $("#sticker");
+  let bottomSpacingValue = 0;
+  $(document).ready(function(){
+    let bodyH = document.querySelector('body').getBoundingClientRect().height;
+    let pickMyH = pickMy.getBoundingClientRect().height;
+    let headerH = document.querySelector('header').getBoundingClientRect().height;
+    bottomSpacingValue = bodyH - pickMyH - headerH;
+    sticker.sticky({topSpacing:61,bottomSpacing:bottomSpacingValue});
+  });
+
+  let scrollY;
+  window.addEventListener("scroll", handleScroll);
+  function handleScroll() {
+    scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    initIntersectionObserver();
+  }
+
+  function initIntersectionObserver() {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio > 0.1) {
+          setTimeout(() =>{
+            entry.target.classList.add('move-on');
+          },100);
+        }
+      })
+    });
+    const move = document.querySelectorAll('.txt2');
+    move.forEach((el) => {
+      io.observe(el);
+    });
+  }
+
+  window.onload = function() {
+    initIntersectionObserver();
+  }
+
+</script>
+</body>
+</html>

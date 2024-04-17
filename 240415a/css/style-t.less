@@ -1,0 +1,29 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 31.0295;
+
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 767px; .rel;
+    img { .wf; .vat; }
+    .wrap {
+      [data-aos="fade-up"] { transition-duration: 1000ms; }
+      article { .w(850);
+        &.art1 { .h(1547); .contain('../images/mo/bg1.png');
+          .prd-wrap .prd .btn { .h(271); }
+        }
+        &.art2 { .h(1417); .contain('../images/mo/bg2.png'); }
+        &.art3 { .h(1962); .contain('../images/mo/bg3.png'); }
+        &.art4 { .h(1668); .contain('../images/mo/bg4.png');
+          .prd-wrap .prd .btn { .wh(334,587);
+            &.btn2 { .l(469); }
+          }
+        }
+        .prd-wrap .prd { .rel;
+          .btn { .wh(754,373); .abs; .lt(48,0); .ib; .z(1); .pointer; }
+        }
+      }
+    }
+  }
+}

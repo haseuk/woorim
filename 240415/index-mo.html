@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/style-t.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="images/mo/top.png" alt="">
+      <div class="light light1"><img src="images/mo/light1.png" alt=""></div>
+      <div class="light light2"><img src="images/mo/light2.png" alt=""></div>
+      <div class="light light3"><img src="images/mo/light3.png" alt=""></div>
+    </div>
+    <div class="product">
+      <div class="prd prd1">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=4332"><img src="images/mo/slide1-1.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=4333"><img src="images/mo/slide1-2.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=4309"><img src="images/mo/slide1-3.png" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="prd prd2">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=3792"><img src="images/mo/slide2-1.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=3793"><img src="images/mo/slide2-2.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5666"><img src="images/mo/slide2-3.png" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="prd prd3">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5061"><img src="images/mo/slide3-1.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5875"><img src="images/mo/slide3-2.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5884"><img src="images/mo/slide3-3.png" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper1 = new Swiper(".prd1 .swiper", {
+    speed: 1500,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  var swiper2 = new Swiper(".prd2 .swiper", {
+    speed: 1500,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  var swiper3 = new Swiper(".prd3 .swiper", {
+    speed: 1500,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+</body>
+</html>

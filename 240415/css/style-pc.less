@@ -1,0 +1,49 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1920); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    .top { .rel;
+      .light { width:calc(1920/1920*100%); height:calc(1041/1041*100%); .abs; .lt; animation: twinkle 1s alternate-reverse infinite linear;
+        &.light2 { animation: twinkle 1.2s alternate-reverse infinite linear; }
+        &.light3 { animation: twinkle 1.3s alternate-reverse infinite linear; }
+      }
+      @keyframes twinkle {
+        0% { .o(0); }
+        100% { .o(1); }
+      }
+    }
+    .product {
+      .prd { .rel; .bgc(#fff);
+        &.prd1 { .contain('../images/pc/bg1.png'); width:calc(1920/1920*100%); padding-top:calc(1103/1920*100%);
+          .swiper { height:calc(507/1103*100%); top:calc(446/1103*100%); }
+          .swiper-btn { height:calc(80/1103*100%); top:calc(660/1103*100%); }
+        }
+        &.prd2 { .contain('../images/pc/bg2.png'); width:calc(1920/1920*100%); padding-top:calc(1234/1920*100%);
+          .swiper { height:calc(507/1234*100%); top:calc(577/1234*100%); }
+          .swiper-btn { height:calc(80/1234*100%); top:calc(794/1234*100%); }
+        }
+        &.prd3 { .contain('../images/pc/bg3.png'); width:calc(1920/1920*100%); padding-top:calc(1242/1920*100%);
+          .swiper { height:calc(507/1242*100%); top:calc(568/1242*100%);}
+          .swiper-btn { height:calc(80/1242*100%); top:calc(780/1242*100%); }
+        }
+        .swiper { width:calc(1080/1920*100%); .abs; left:calc(420/1920*100%); .-a(#76abcd); .bgc(#fff);
+          .swiper-slide img { .f; }
+          .swiper-pagination { width:calc(78/1080*100%); height:calc(20/507*100%); left:calc(590/1080*100%); top:calc(36/507*100%);
+            .swiper-pagination-bullet { width:calc(20/78*100%); .hf; .bgc(#c9c9c9); .-a(#fff,4); .-box; .m(0); .o(1); .rel;
+              &.swiper-pagination-bullet-active { .-a(#76abcd); .bgc(#fff);
+                &:after { .cnt; width:calc(12/20*100%); height:calc(12/20*100%); .abs; .bgc(#76abcd); .br(50%); .lt(50%,50%); margin-left:calc(-6/20*100%); margin-top:calc(-6/20*100%); }
+              }
+            }
+          }
+        }
+        .swiper-btn { width:calc(44/1920*100%); .abs; .l(50%); .m(0);
+          &:after { .hide; }
+          &.swiper-button-prev { margin-left:calc(-642/1920*100%); }
+          &.swiper-button-next { margin-left:calc(599/1920*100%); }
+        }
+      }
+    }
+  }
+}

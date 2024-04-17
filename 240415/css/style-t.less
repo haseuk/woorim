@@ -1,0 +1,42 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 31.0295;
+
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 767px; .rel;
+    img { .wf; .vat; }
+    .wrap {
+      .top { .rel;
+        .light { .wh(850,1248); .abs; .lt; animation: twinkle 1s alternate-reverse infinite linear;
+          &.light2 { animation: twinkle 1.2s alternate-reverse infinite linear; }
+          &.light3 { animation: twinkle 1.3s alternate-reverse infinite linear; }
+        }
+        @keyframes twinkle {
+          0% { .o(0); }
+          100% { .o(1); }
+        }
+      }
+      .product {
+        .prd { .rel;
+          &.prd1 { .contain('../images/mo/bg1.png'); .wh(850,1392);
+            .swiper { .t(735); }
+          }
+          &.prd2 { .contain('../images/mo/bg2.png'); .wh(850,1248); }
+          &.prd3 { .contain('../images/mo/bg3.png'); .wh(850,1268); }
+          .swiper { .wh(720,507); .abs; .lt(65,591); .-a(#76abcd); .bgc(#fff);
+            .swiper-slide img { .wh(720,508); }
+            .swiper-pagination { .wh(78,20); .lt(383,37);
+              .swiper-pagination-bullet { .wh(20,20); .bgc(#c9c9c9); .-a(#fff,4); .-box; .m(0,3); .o(1); .rel;
+                &.swiper-pagination-bullet-active { .-a(#76abcd); .bgc(#fff);
+                  &:after { .cnt; .wh(12,12); .abs; .bgc(#76abcd); .br(50%); .lt(50%,50%); transform: translate(-50%,-50%); }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

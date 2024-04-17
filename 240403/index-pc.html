@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style-pc.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+<div class="content">
+  <div class="wrap">
+    <div class="top"><img src="images/pc/top.png" alt=""></div>
+    <div class="product">
+      <div class="time-wrap">
+        <p class="days"></p>
+        <p class="hours"></p>
+        <p class="minutes"></p>
+        <p class="seconds"></p>
+      </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="https://stonehenge.co.kr/product/detail.html?product_no=3972">P1539</a>
+            <div class="txt"><img src="images/pc/txt1.png" alt=""></div>
+            <div class="prd"><img src="images/pc/prd1.png" alt=""></div>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://stonehenge.co.kr/product/detail.html?product_no=5482">H0185</a>
+            <div class="txt"><img src="images/pc/txt2.png" alt=""></div>
+            <div class="prd"><img src="images/pc/prd2.png" alt=""></div>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://stonehenge.co.kr/product/detail.html?product_no=5651">P1340</a>
+            <div class="txt"><img src="images/pc/txt3.png" alt=""></div>
+            <div class="prd"><img src="images/pc/prd3.png" alt=""></div>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://stonehenge.co.kr/product/detail.html?product_no=5085">U0152</a>
+            <div class="txt"><img src="images/pc/txt4.png" alt=""></div>
+            <div class="prd"><img src="images/pc/prd4.png" alt=""></div>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://stonehenge.co.kr/product/detail.html?product_no=5829">SA24A14U</a>
+            <div class="txt"><img src="images/pc/txt5.png" alt=""></div>
+            <div class="prd"><img src="images/pc/prd5.png" alt=""></div>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://stonehenge.co.kr/product/detail.html?product_no=5735">SA24A05T</a>
+            <div class="txt"><img src="images/pc/txt6.png" alt=""></div>
+            <div class="prd"><img src="images/pc/prd6.png" alt=""></div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-btn"></div>
+        <div class="swiper-button-prev swiper-btn"></div>
+      </div>
+    </div>
+
+    <div class="notice">
+      <a class="noti-tab"></a>
+      <div class="noti-txt"><img src="images/pc/noti-txt.png" alt=""></div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  let countDownDate = new Date("April 7, 2024 23:59:59").getTime();
+  let d = document.querySelector('.days');
+  let h = document.querySelector('.hours');
+  let m = document.querySelector('.minutes');
+  let s = document.querySelector('.seconds');
+
+  let x = setInterval(function() {
+    let now = new Date().getTime();
+    let distance = countDownDate - now;
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    d.innerHTML = String(days).padStart(2,'0');
+    h.innerHTML = String(hours).padStart(2,'0');
+    m.innerHTML = String(minutes).padStart(2,'0');
+    s.innerHTML = String(seconds).padStart(2,'0');
+    if (distance < 0) {
+      clearInterval(x);
+      d.innerHTML = '00';
+      h.innerHTML = '00';
+      m.innerHTML = '00';
+      s.innerHTML = '00';
+    }
+  }, 1000);
+
+
+  new Swiper(".swiper", {
+    speed: 1000,
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: -10,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  let notice = document.querySelector('.notice');
+  let noticeTab = document.querySelector('.noti-tab');
+  noticeTab.addEventListener('click', function() {
+    if(notice.classList.contains('open')) {
+      notice.classList.remove('open')
+    } else {
+      notice.classList.add('open')
+    }
+  });
+
+</script>
+</body>
+</html>

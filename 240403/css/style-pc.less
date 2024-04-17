@@ -1,0 +1,38 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    .product { .wh(1264,1896); .contain('../images/pc/prd.png'); .pt(650); .-box;
+      .time-wrap { .wh(958,100); .flex; .space-between; .mh-c;
+        p { .fs(100); .semi-bold; .ls(-0.025em ); .c(#0b0b0b); font-family: "Montserrat", sans-serif; .tc; .w(248);
+          &.days { .w(212);}
+        }
+      }
+
+      .swiper { .mt(60); .p(150,0); .-box;
+        .swiper-slide { filter: blur(5px); transform: scale(0.8); transition: transform 0.5s; .ease-out; .rel;
+          .txt { .o(0); }
+          &.swiper-slide-active { transform: scale(1); filter:blur(0);
+            a { .f; .abs; .lt; }
+            .txt { .o(1); }
+          }
+        }
+        .swiper-btn { .wh(83,83); .m(0); .o(1);
+          &:after { .hide; }
+          &.swiper-button-prev { .contain('../images/pc/ico-prev.png'); }
+          &.swiper-button-next { .contain('../images/pc/ico-next.png'); }
+        }
+      }
+    }
+    .notice {
+      .noti-tab { .wh(1264,90); .contain('../images/pc/noti-on.png'); .ib; }
+      .noti-txt { .hide; }
+      &.open {
+        .noti-tab { .contain('../images/pc/noti-off.png'); }
+        .noti-txt { .block; }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .wrap {
+    .product { .wh(850,2058); .contain('../images/mo/prd.png'); .pt(645); .-box;
+      .time-wrap { .wh(770,80); .flex; .space-between; .mh-c;
+        p { .fs(80); .semi-bold; .ls(-0.025em); .c(#0b0b0b); font-family: "Montserrat", sans-serif; .tc; .w(198);
+          &.days { .w(172);}
+        }
+      }
+
+      .swiper { .mt(70); .p(150,0); .-box;
+        .swiper-slide { filter: blur(5px); transform: scale(0.8); transition: transform 0.5s; .ease-out; .rel;
+          .txt { .o(0); }
+          &.swiper-slide-active { transform: scale(1); filter:blur(0);
+            a { .f; .abs; .lt; }
+            .txt { .o(1); }
+          }
+        }
+      }
+    }
+    .notice {
+      .noti-tab { .wh(850,89); .contain('../images/mo/noti-on.png'); .ib; }
+      .noti-txt { .hide; }
+      &.open {
+        .noti-tab { .contain('../images/mo/noti-off.png'); }
+        .noti-txt { .block; }
+      }
+    }
+  }
+}

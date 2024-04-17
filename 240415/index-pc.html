@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-pc.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="images/pc/top.png" alt="">
+      <div class="light light1"><img src="images/pc/light1.png" alt=""></div>
+      <div class="light light2"><img src="images/pc/light2.png" alt=""></div>
+      <div class="light light3"><img src="images/pc/light3.png" alt=""></div>
+    </div>
+    <div class="product">
+      <div class="prd prd1">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=4332"><img src="images/pc/slide1-1.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=4333"><img src="images/pc/slide1-2.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=4309"><img src="images/pc/slide1-3.png" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-btn swiper-btn1 swiper-button-next"></div>
+        <div class="swiper-btn swiper-btn1 swiper-button-prev"></div>
+      </div>
+      <div class="prd prd2">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=3792"><img src="images/pc/slide2-1.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=3793"><img src="images/pc/slide2-2.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5666"><img src="images/pc/slide2-3.png" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-btn swiper-btn2 swiper-button-next"></div>
+        <div class="swiper-btn swiper-btn2 swiper-button-prev"></div>
+      </div>
+      <div class="prd prd3">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5061"><img src="images/pc/slide3-1.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5875"><img src="images/pc/slide3-2.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5884"><img src="images/pc/slide3-3.png" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-btn swiper-btn3 swiper-button-next"></div>
+        <div class="swiper-btn swiper-btn3 swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper1 = new Swiper(".prd1 .swiper", {
+    speed: 1500,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-btn1.swiper-button-next",
+      prevEl: ".swiper-btn1.swiper-button-prev",
+    },
+  });
+  var swiper2 = new Swiper(".prd2 .swiper", {
+    speed: 1500,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-btn2.swiper-button-next",
+      prevEl: ".swiper-btn2.swiper-button-prev",
+    },
+  });
+  var swiper3 = new Swiper(".prd3 .swiper", {
+    speed: 1500,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-btn3.swiper-button-next",
+      prevEl: ".swiper-btn3.swiper-button-prev",
+    },
+  });
+</script>
+</body>
+</html>
