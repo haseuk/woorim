@@ -1,0 +1,34 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    [data-aos="fade-up"] { transition-duration: 1s; }
+    .top { .wh(1264,1100); .rel; .crop;
+      .vis { .f; }
+      .tit { .f; .abs; .lt; transform: translateY(200px); .o(0); animation: upSld 1s ease-out forwards; }
+    }
+    article { .rel;
+      .product { .wh(1040,433); .abs; .lb(112,0); .z(1);
+        ul { .flex; .space-between;
+          li { .wh(320,433); .crop;
+            .btn img { transform: translateY(100%); transition: transform 0.2s; .ease-out; }
+            &:hover .btn img { transform: translateY(0); }
+          }
+        }
+      }
+      &.art1 { .wh(1264,1621); .contain('../images/pc/bg1.png');
+        > img { .f; .abs; .lt; }
+        .product { .contain('../images/pc/prd1.png'); }
+      }
+      &.art2 { .wh(1264,2042); .contain('../images/pc/bg2.png');
+        > img { .wh(1264,1451); .abs; .lt; }
+        .product { .contain('../images/pc/prd2.png'); .b(158); }
+      }
+    }
+    @keyframes upSld {
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  }
+}

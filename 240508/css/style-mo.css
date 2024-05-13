@@ -1,0 +1,126 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .mo {
+  display: inline-block;
+}
+.content .web {
+  display: none;
+}
+.content .btn {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.content .wrap.pc-evt {
+  display: none;
+}
+.content .wrap.mo-evt {
+  position: relative;
+  overflow: hidden;
+}
+.content .wrap.mo-evt section [data-aos="fade-up"] {
+  transition-duration: 1.2s;
+}
+.content .wrap.mo-evt section article {
+  position: relative;
+  overflow: hidden;
+}
+.content .wrap.mo-evt section article.top {
+  width: 100vw;
+  height: 105.88235294vw;
+  background-image: url('../images/mo/top.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap.mo-evt section article.rolling {
+  font-size: 0vw;
+  width: 100%;
+  height: 6.47058824vw;
+  overflow: hidden;
+  position: relative;
+}
+.content .wrap.mo-evt section article.rolling .r-inner {
+  width: 308vw;
+  height: 6.47058824vw;
+  display: flex;
+  align-items: start;
+  background-color: #95afd9;
+}
+.content .wrap.mo-evt section article.rolling .r-inner .banner {
+  width: 154vw;
+  height: 6.47058824vw;
+  background-image: url('../images/mo/roll-txt.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap.mo-evt section article.rolling .r-inner .banner.banner1 {
+  animation: bannerRolling 15s linear infinite;
+}
+.content .wrap.mo-evt section article.rolling .r-inner .banner.banner2 {
+  animation: bannerRolling2 15s linear infinite;
+}
+@keyframes bannerRolling {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes bannerRolling2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.content .wrap.mo-evt section article.art1 {
+  width: 100vw;
+  height: 304.58823529vw;
+  background-image: url('../images/mo/c1-t-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap.mo-evt section article.art1 .btn:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  background-image: url('../images/mo/ico-arrow.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: arrow 1.5s infinite forwards ease-out;
+  pointer-events: none;
+}
+@keyframes arrow {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 2%;
+  }
+}
+.content .wrap.mo-evt section article.art2 {
+  width: 100vw;
+  height: 277.17647059vw;
+  background-image: url('../images/mo/c2-t-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/*# sourceMappingURL=style-mo.css.map */

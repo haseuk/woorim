@@ -1,0 +1,67 @@
+.content-evt {
+  font-size: 0vw;
+  position: relative;
+}
+.content-evt img {
+  width: 100%;
+  vertical-align: top;
+}
+.content-evt .mo {
+  display: inline-block !important;
+}
+.content-evt .pc {
+  display: none !important;
+}
+.content-evt .btn {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.content-evt .wrap {
+  position: relative;
+  overflow: hidden;
+}
+.content-evt .wrap .rolling {
+  font-size: 0vw;
+  width: 100%;
+  height: 6.47058824vw;
+  overflow: hidden;
+  position: relative;
+}
+.content-evt .wrap .rolling .r-inner {
+  width: 308vw;
+  height: 6.47058824vw;
+  display: flex;
+  align-items: start;
+  background-color: #95afd9;
+}
+.content-evt .wrap .rolling .r-inner .banner {
+  width: 154vw;
+  height: 6.47058824vw;
+  background-image: url('../images/mo/roll-txt.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content-evt .wrap .rolling .r-inner .banner.banner1 {
+  animation: bannerRolling 15s linear infinite;
+}
+.content-evt .wrap .rolling .r-inner .banner.banner2 {
+  animation: bannerRolling2 15s linear infinite;
+}
+@keyframes bannerRolling {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes bannerRolling2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/*# sourceMappingURL=style-mo.css.map */

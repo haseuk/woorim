@@ -1,0 +1,38 @@
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 28px;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 767px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap .cont {
+    position: relative;
+  }
+  .content .wrap .cont .btns {
+    width: 18.26086957rem;
+    height: 4.56521739rem;
+    position: absolute;
+    left: 4.67391304rem;
+    bottom: 5.80434783rem;
+    right: auto;
+    top: auto;
+  }
+  .content .wrap .cont .btns .btn {
+    width: 18.26086957rem;
+    height: 1.52173913rem;
+    display: block;
+  }
+  .content .wrap .cont.cont6 .btns {
+    bottom: 4.19565217rem;
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

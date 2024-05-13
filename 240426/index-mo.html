@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/style-t.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="images/mo/top.png" class="t-vis" alt="">
+      <img src="images/mo/tit.png" class="tit" alt="">
+    </div>
+    <article class="art1">
+      <div class="vis">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/mo/vis1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/mo/vis2.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/mo/vis1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/mo/vis2.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <img src="images/mo/txt.png" class="txt" alt="">
+    </article>
+    <article class="art2">
+      <div class="prd">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5118"><img src="images/mo/prd1.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5119"><img src="images/mo/prd2.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=2721"><img src="images/mo/prd3.png" alt=""></a></div>
+          </div>
+          <div class="swiper-btn swiper-button-next"></div>
+          <div class="swiper-btn swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </article>
+    <article class="art3">
+      <img src="images/mo/vis3.png" class="vis" data-aos="fade-up" alt="">
+      <img src="images/mo/unit1.png" class="unit1" data-aos="fade-up" data-aos-delay="400" alt="">
+      <img src="images/mo/unit2.png" class="unit2" data-aos="fade-up" data-aos-delay="800" alt="">
+    </article>
+    <article class="art4">
+      <img src="images/mo/vis4.png" class="vis" data-aos="fade-up" alt="">
+    </article>
+    <article class="art5">
+      <div class="prd">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5129"><img src="images/mo/prd4.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5130"><img src="images/mo/prd5.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=2502"><img src="images/mo/prd6.png" alt=""></a></div>
+          </div>
+          <div class="swiper-btn swiper-button-next"></div>
+          <div class="swiper-btn swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  var swiper1 = new Swiper(".art1 .vis .swiper", {
+    effect: 'fade',
+    speed: 1500,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+  var swiper2 = new Swiper(".art2 .prd .swiper", {
+    speed: 1500,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+  var swiper3 = new Swiper(".art5 .prd .swiper", {
+    speed: 1500,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
+  AOS.init({
+    once: true,
+  });
+</script>
+</body>
+</html>

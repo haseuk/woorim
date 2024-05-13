@@ -1,0 +1,43 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    [data-aos="fade-up"] { transition-duration: 1.2s; }
+    .top { .wh(850,1509); .rel; .contain('../images/mo/top.png');
+      .tit { .wh(850,1509); .abs; .lt; filter:blur(1rem); animation: show 0.8s linear forwards; }
+      .tit2 { animation-delay:0.2s; }
+      .tit3 { animation-delay:0.7s; animation-duration: 0.5s; }
+      .tit4 { animation-delay:0.3s; }
+      .tit5 { animation-delay:0.6s; animation-duration: 0.4s; }
+      .tit6 { animation-delay:0.8s; }
+      .tit7 { animation-delay:0.4s; }
+      .tit8 { animation-delay:0.2s; animation-duration: 0.7s; }
+      .tit9 { animation-delay:0.1s; animation-duration: 0.4s; }
+      .tit10 { animation-delay:0.2s; }
+      .tit11 { animation-delay:0.6s; }
+      .tit12 { animation-delay:0.7s; animation-duration: 0.4s; }
+      @keyframes show {
+        100% { filter:blur(0); }
+      }
+    }
+    .btt { .wh(850,1441); .bgc(#86becb); .rel; .crop;
+      .tit { .rel; .z(2); }
+      .txt { .abs; .lt; .z(3); }
+      .sm-h, .prd { .wh(850,1441); .abs; .lt; .z(1); }
+      .heart { .wh(850,1441); .abs; .lt;
+        .hs { .abs; .lt; animation: doong 2.5s ease-in-out infinite; }
+        .h1 { .wh(255,310); .lt(595,305); animation-duration: 2.8s; }
+        .h2 { .wh(180,253); .lt(0,969); animation-duration: 2.3s; }
+        .h3 { .wh(357,333); .abs; .rt(0,1108); }
+        @keyframes doong {
+          50% { margin-top: 30px }
+        }
+      }
+    }
+  }
+}

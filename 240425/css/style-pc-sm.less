@@ -1,0 +1,42 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 1920;
+
+@media screen and (min-width: 768px) {
+  .content { .fs(0); .max-w(1920); .tc; .rel; .mh-c;
+    img { .wf; .vat; }
+    .btn { .ib; .rel; .z(1); .pointer; }
+    .wrap {
+      .tab-wrap { .wh(1920,107); .flex; .flex-center; .z(3);
+        .tab { .wh(264,107); }
+      }
+      .sticky-wrapper { .z(3); .rel; }
+
+      section { .wh(1920,3453); .contain('../images/pc/bg.png'); }
+      article { .rel; .hide;
+        .prds { .abs; .f; .lt;
+          .btn { .wh(363,644); .abs; .lt;
+            &.btn1 { .lt(902,914); }
+            &.btn2 { .lt(1265,914); }
+            &.btn3 { .lt(292,1778); }
+            &.btn4 { .lt(655,1778); }
+          }
+        }
+      }
+      .bott-slide .swiper .swiper-wrapper {
+        transition-timing-function: linear!important;
+      }
+
+      &[data-view="0"] .tab-wrap { .contain('../images/pc/tab1.png'); }
+      &[data-view="1"] .tab-wrap { .contain('../images/pc/tab2.png'); }
+      &[data-view="2"] .tab-wrap { .contain('../images/pc/tab3.png'); }
+      &[data-view="3"] .tab-wrap { .contain('../images/pc/tab4.png'); }
+      &[data-view="4"] .tab-wrap { .contain('../images/pc/tab5.png'); }
+      &[data-view="0"] .art1,
+      &[data-view="1"] .art2,
+      &[data-view="2"] .art3,
+      &[data-view="3"] .art4,
+      &[data-view="4"] .art5 { .block; }
+    }
+  }
+}

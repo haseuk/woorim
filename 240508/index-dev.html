@@ -1,0 +1,450 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .mo {
+    display: inline-block;
+  }
+  .content .web {
+    display: none;
+  }
+  .content .btn {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  .content .wrap.pc-evt {
+    display: none;
+  }
+  .content .wrap.mo-evt {
+    position: relative;
+    overflow: hidden;
+  }
+  .content .wrap.mo-evt section [data-aos="fade-up"] {
+    transition-duration: 1.2s;
+  }
+  .content .wrap.mo-evt section article {
+    position: relative;
+    overflow: hidden;
+  }
+  .content .wrap.mo-evt section article.top {
+    width: 100vw;
+    height: 105.88235294vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240508/mo/top.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap.mo-evt section article.rolling {
+    font-size: 0vw;
+    width: 100%;
+    height: 6.47058824vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .content .wrap.mo-evt section article.rolling .r-inner {
+    width: 308vw;
+    height: 6.47058824vw;
+    display: flex;
+    align-items: start;
+    background-color: #95afd9;
+  }
+  .content .wrap.mo-evt section article.rolling .r-inner .banner {
+    width: 154vw;
+    height: 6.47058824vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240508/mo/roll-txt.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap.mo-evt section article.rolling .r-inner .banner.banner1 {
+    animation: bannerRolling 15s linear infinite;
+  }
+  .content .wrap.mo-evt section article.rolling .r-inner .banner.banner2 {
+    animation: bannerRolling2 15s linear infinite;
+  }
+  @keyframes bannerRolling {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes bannerRolling2 {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .content .wrap.mo-evt section article.art1 {
+    width: 100vw;
+    height: 304.58823529vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240508/mo/c1-t-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap.mo-evt section article.art1 .btn:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240508/mo/ico-arrow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: arrow 1.5s infinite forwards ease-out;
+    pointer-events: none;
+  }
+  @keyframes arrow {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: 2%;
+    }
+  }
+  .content .wrap.mo-evt section article.art2 {
+    width: 100vw;
+    height: 277.17647059vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240508/mo/c2-t-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /*# sourceMappingURL=style-mo.css.map */
+
+  @media screen and (min-width: 767px) {
+    html {
+      font-size: 28px;
+    }
+    .content {
+      font-size: 0rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      max-width: 767px;
+      position: relative;
+    }
+    .content img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .content .btn {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+    }
+    .content .wrap.mo-evt {
+      position: relative;
+    }
+    .content .wrap.mo-evt section [data-aos="fade-up"] {
+      transition-duration: 1.2s;
+    }
+    .content .wrap.mo-evt section article {
+      position: relative;
+      overflow: hidden;
+    }
+    .content .wrap.mo-evt section article.top {
+      width: 27.39328703rem;
+      height: 29.00465686rem;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240508/mo/top.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap.mo-evt section article.rolling {
+      font-size: 0rem;
+      width: 100%;
+      height: 1.77250681rem;
+      overflow: hidden;
+      position: relative;
+    }
+    .content .wrap.mo-evt section article.rolling .r-inner {
+      width: 84.37132406rem;
+      height: 1.77250681rem;
+      display: flex;
+      align-items: start;
+      background-color: #95afd9;
+    }
+    .content .wrap.mo-evt section article.rolling .r-inner .banner {
+      width: 42.18566203rem;
+      height: 1.77250681rem;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240508/mo/roll-txt.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap.mo-evt section article.rolling .r-inner .banner.banner1 {
+      animation: bannerRolling 15s linear infinite;
+    }
+    .content .wrap.mo-evt section article.rolling .r-inner .banner.banner2 {
+      animation: bannerRolling2 15s linear infinite;
+    }
+    @keyframes bannerRolling {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    @keyframes bannerRolling2 {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .content .wrap.mo-evt section article.art1 {
+      width: 27.39328703rem;
+      height: 83.43672956rem;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240508/mo/c1-t-bg.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap.mo-evt section article.art1 .btn:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240508/mo/ico-arrow.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      animation: arrow 1.5s infinite forwards ease-out;
+      pointer-events: none;
+    }
+    @keyframes arrow {
+      0% {
+        margin-left: 0;
+      }
+      100% {
+        margin-left: 2%;
+      }
+    }
+    .content .wrap.mo-evt section article.art2 {
+      width: 27.39328703rem;
+      height: 75.92774618rem;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240508/mo/c2-t-bg.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  /*# sourceMappingURL=style-t.css.map */
+
+  @media screen and (min-width: 1265px) {
+    .content {
+      font-size: 0px;
+      max-width: 1264px;
+      text-align: center;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .content img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .content .btn {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+    }
+    .content .wrap.mo-evt {
+      display: none;
+    }
+    .content .wrap.pc-evt {
+      position: relative;
+      display: block;
+    }
+    .content .wrap.pc-evt section [data-aos="fade-up"] {
+      transition-duration: 1.2s;
+    }
+    .content .wrap.pc-evt section article {
+      position: relative;
+      overflow: hidden;
+    }
+    .content .wrap.pc-evt section article.top {
+      width: 1264px;
+      height: 820px;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240508/pc/top.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap.pc-evt section article.rolling {
+      font-size: 0px;
+      width: 100%;
+      height: 55px;
+      overflow: hidden;
+      position: relative;
+    }
+    .content .wrap.pc-evt section article.rolling .r-inner {
+      width: 3490px;
+      height: 55px;
+      display: flex;
+      align-items: start;
+      background-color: #95afd9;
+    }
+    .content .wrap.pc-evt section article.rolling .r-inner .banner {
+      width: 1745px;
+      height: 55px;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240508/pc/roll-txt.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap.pc-evt section article.rolling .r-inner .banner.banner1 {
+      animation: bannerRolling 15s linear infinite;
+    }
+    .content .wrap.pc-evt section article.rolling .r-inner .banner.banner2 {
+      animation: bannerRolling2 15s linear infinite;
+    }
+    @keyframes bannerRolling {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    @keyframes bannerRolling2 {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .content .wrap.pc-evt section article.art1 {
+      width: 1264px;
+      height: 1661px;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240508/pc/c1-t-bg.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap.pc-evt section article.art1 .btn:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: auto;
+      bottom: auto;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240508/pc/ico-arrow.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      animation: arrow 1.5s infinite forwards ease-out;
+      pointer-events: none;
+    }
+    @keyframes arrow {
+      0% {
+        margin-left: 0;
+      }
+      100% {
+        margin-left: 2%;
+      }
+    }
+    .content .wrap.pc-evt section article.art2 {
+      width: 1264px;
+      height: 1564px;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240508/pc/c2-t-bg.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  /*# sourceMappingURL=style-pc.css.map */
+</style>
+<div class="content">
+  <div class="wrap mo-evt">
+    <section>
+      <article class="top">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/mo/t1.png" data-aos="fade-up" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/mo/t2.png" data-aos="fade-up" data-aos-delay="300" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/mo/t3.png" data-aos="fade-up" data-aos-delay="600" alt="">
+      </article>
+      <article class="rolling">
+        <div class="r-inner">
+          <div class="banner banner1"></div>
+          <div class="banner banner2"></div>
+        </div>
+      </article>
+      <article class="art1">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/mo/c1-t1.png" data-aos="fade-up" data-aos-offset="400" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/mo/c1-t2.png" data-aos="fade-up" data-aos-offset="400" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/mo/c1-t3.png" data-aos="fade-up" data-aos-offset="400" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/mo/c1-t4.png" data-aos="fade-up" data-aos-offset="400" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/mo/c1-t5.png" data-aos="fade-up" data-aos-offset="400" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/mo/c1-t6.png" data-aos="fade-up" data-aos-offset="400" alt="">
+        <a href="https://m.stonehenge.co.kr/member/join.html" class="btn" data-aos="fade-up" >
+          <img src="https://woorimstg.cafe24.com/product/project/240508/mo/c1-t7.png" alt="">
+        </a>
+      </article>
+      <article class="art2">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/mo/c2-t1.png" data-aos="fade-up" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/mo/c2-t2.png" data-aos="fade-up" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/mo/c2-t3.png" data-aos="fade-up" alt="">
+        <a href="https://m.stonehenge.co.kr/community/membership.html" class="btn">
+          <img src="https://woorimstg.cafe24.com/product/project/240508/mo/c2-t4.png" alt="">
+        </a>
+      </article>
+    </section>
+  </div>
+
+  <div class="wrap pc-evt">
+    <section>
+      <article class="top">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/pc/t1.png" data-aos="fade-up" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/pc/t2.png" data-aos="fade-up" data-aos-delay="300" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/pc/t3.png" data-aos="fade-up" data-aos-delay="600" alt="">
+      </article>
+      <article class="rolling">
+        <div class="r-inner">
+          <div class="banner banner1"></div>
+          <div class="banner banner2"></div>
+        </div>
+      </article>
+      <article class="art1">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/pc/c1-t1.png" data-aos="fade-up" data-aos-offset="400" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/pc/c1-t2.png" data-aos="fade-up" data-aos-offset="400" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/pc/c1-t3.png" data-aos="fade-up" data-aos-offset="400" alt="">
+        <a href="https://stonehenge.co.kr/member/join.html" class="btn" data-aos="fade-up" >
+          <img src="https://woorimstg.cafe24.com/product/project/240508/pc/c1-t4.png" alt="">
+        </a>
+      </article>
+      <article class="art2">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/pc/c2-t1.png" data-aos="fade-up" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/pc/c2-t2.png" data-aos="fade-up" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240508/pc/c2-t3.png" data-aos="fade-up" alt="">
+        <a href="https://stonehenge.co.kr/community/membership.html" class="btn">
+          <img src="https://woorimstg.cafe24.com/product/project/240508/pc/c2-t4.png" alt="">
+        </a>
+      </article>
+    </section>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+</script>

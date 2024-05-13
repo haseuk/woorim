@@ -1,0 +1,33 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .wrap .cont {
+  position: relative;
+}
+.content .wrap .cont .btns {
+  width: 66.4556962vw;
+  height: 16.61392405vw;
+  position: absolute;
+  left: 17.00949367vw;
+  bottom: 21.12341772vw;
+  right: auto;
+  top: auto;
+}
+.content .wrap .cont .btns .btn {
+  width: 66.4556962vw;
+  height: 5.53797468vw;
+  display: block;
+}
+.content .wrap .cont.cont6 .btns {
+  bottom: 15.26898734vw;
+}
+/*# sourceMappingURL=style-mo.css.map */

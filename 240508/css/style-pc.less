@@ -1,0 +1,43 @@
+@import "../../css/asset";
+
+@media screen and (min-width: 1265px) {
+  .content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+    img { .wf; .vat; }
+    .btn { .ib; .rel; .z(1); .pointer; }
+    .wrap.mo-evt { .hide; }
+    .wrap.pc-evt { .rel; .block;
+      section {
+        [data-aos="fade-up"] { transition-duration: 1.2s; }
+        article { .rel; .crop;
+          &.top { .wh(1264,820); .contain('../images/pc/top.png'); }
+          &.rolling { .fs(0); .wh(100%,55); .crop; .rel;
+            .r-inner { .wh(3490,55); .flex; align-items: start; .bgc(#95afd9);
+              .banner { .wh(1745,55); .contain('../images/pc/roll-txt.png');
+                &.banner1 { animation: bannerRolling 15s linear infinite; }
+                &.banner2 { animation: bannerRolling2 15s linear infinite; }
+              }
+            }
+          }
+          @keyframes bannerRolling {
+            0% { transform: translateX(0%) }
+            100% { transform: translateX(-100%) }
+          }
+          @keyframes bannerRolling2 {
+            0% { transform: translateX(0%) }
+            100% { transform: translateX(-100%) }
+          }
+          &.art1 { .wh(1264,1661); .contain('../images/pc/c1-t-bg.png');
+            .btn {
+              &:after { .cnt; .f; .abs; .lt; .contain('../images/pc/ico-arrow.png'); animation: arrow 1.5s infinite forwards ease-out; pointer-events: none; }
+            }
+          }
+          @keyframes arrow {
+            0% { margin-left: 0; }
+            100% { margin-left: 2%; }
+          }
+          &.art2 { .wh(1264,1564); .contain('../images/pc/c2-t-bg.png'); }
+        }
+      }
+    }
+  }
+}

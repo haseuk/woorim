@@ -1,0 +1,169 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+  .content {
+    font-size: 0px;
+    max-width: 1264px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap [data-aos="fade-up"] {
+    transition-duration: 1s;
+  }
+  .content .wrap .top {
+    width: 1264px;
+    height: 1100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .content .wrap .top .vis {
+    width: 100%;
+    height: 100%;
+  }
+  .content .wrap .top .tit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    transform: translateY(200px);
+    opacity: 0;
+    animation: upSld 1s ease-out forwards;
+  }
+  .content .wrap article {
+    position: relative;
+  }
+  .content .wrap article .product {
+    width: 1040px;
+    height: 433px;
+    position: absolute;
+    left: 112px;
+    bottom: 0px;
+    right: auto;
+    top: auto;
+    z-index: 1;
+  }
+  .content .wrap article .product ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .wrap article .product ul li {
+    width: 320px;
+    height: 433px;
+    overflow: hidden;
+  }
+  .content .wrap article .product ul li .btn img {
+    transform: translateY(100%);
+    transition: transform 0.2s;
+    transition-timing-function: ease-out;
+  }
+  .content .wrap article .product ul li:hover .btn img {
+    transform: translateY(0);
+  }
+  .content .wrap article.art1 {
+    width: 1264px;
+    height: 1621px;
+    background-image: url('https://woorimrsm.cafe24.com/product/special/240430/pc/bg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art1 > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap article.art1 .product {
+    background-image: url('https://woorimrsm.cafe24.com/product/special/240430/pc/prd1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art2 {
+    width: 1264px;
+    height: 2042px;
+    background-image: url('https://woorimrsm.cafe24.com/product/special/240430/pc/bg2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article.art2 > img {
+    width: 1264px;
+    height: 1451px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap article.art2 .product {
+    background-image: url('https://woorimrsm.cafe24.com/product/special/240430/pc/prd2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 158px;
+  }
+  @keyframes upSld {
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="https://woorimrsm.cafe24.com/product/special/240430/pc/vis1.png" class="vis" alt="">
+      <img src="https://woorimrsm.cafe24.com/product/special/240430/pc/tit.png" class="tit" alt="">
+    </div>
+
+    <article class="art1">
+      <img src="https://woorimrsm.cafe24.com/product/special/240430/pc/vis2.png" data-aos="fade-up" class="vis" alt="">
+      <img src="https://woorimrsm.cafe24.com/product/special/240430/pc/vis3.png" data-aos="fade-up" data-aos-delay="300" class="vis" alt="">
+      <img src="https://woorimrsm.cafe24.com/product/special/240430/pc/unit1.png" data-aos="fade-up" data-aos-delay="600" class="unit unit1" alt="">
+      <img src="https://woorimrsm.cafe24.com/product/special/240430/pc/unit2.png" data-aos="fade-up" data-aos-delay="900" class="unit unit2" alt="">
+
+      <div class="product" data-aos="fade-up">
+        <ul>
+          <li><a href="https://rosemont.co.kr/product/detail.html?product_no=5118" class="btn prd1"><img src="https://woorimrsm.cafe24.com/product/special/240430/pc/prd-info1.png" alt=""></a></li>
+          <li><a href="https://rosemont.co.kr/product/detail.html?product_no=5119" class="btn prd2"><img src="https://woorimrsm.cafe24.com/product/special/240430/pc/prd-info2.png" alt=""></a></li>
+          <li><a href="https://rosemont.co.kr/product/detail.html?product_no=2721" class="btn prd3"><img src="https://woorimrsm.cafe24.com/product/special/240430/pc/prd-info3.png" alt=""></a></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="art2">
+      <img src="https://woorimrsm.cafe24.com/product/special/240430/pc/vis4.png" data-aos="fade-up" class="vis" alt="">
+      <img src="https://woorimrsm.cafe24.com/product/special/240430/pc/vis5.png" data-aos="fade-up" data-aos-delay="300" class="vis" alt="">
+      <img src="https://woorimrsm.cafe24.com/product/special/240430/pc/unit3.png" data-aos="fade-up" data-aos-delay="600" class="unit unit1" alt="">
+      <img src="https://woorimrsm.cafe24.com/product/special/240430/pc/unit4.png" data-aos="fade-up" data-aos-delay="900" class="unit unit2" alt="">
+
+      <div class="product" data-aos="fade-up">
+        <ul>
+          <li><a href="https://rosemont.co.kr/product/detail.html?product_no=5129" class="btn prd1"><img src="https://woorimrsm.cafe24.com/product/special/240430/pc/prd-info4.png" alt=""></a></li>
+          <li><a href="https://rosemont.co.kr/product/detail.html?product_no=5130" class="btn prd2"><img src="https://woorimrsm.cafe24.com/product/special/240430/pc/prd-info5.png" alt=""></a></li>
+          <li><a href="https://rosemont.co.kr/product/detail.html?product_no=2502" class="btn prd3"><img src="https://woorimrsm.cafe24.com/product/special/240430/pc/prd-info6.png" alt=""></a></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+</script>

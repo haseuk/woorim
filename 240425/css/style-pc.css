@@ -1,0 +1,125 @@
+@media screen and (min-width: 1920px) {
+  .content {
+    font-size: 0px;
+    max-width: 1920px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap .tab-wrap {
+    width: 1920px;
+    height: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+  .content .wrap .tab-wrap .tab {
+    width: 264px;
+    height: 107px;
+  }
+  .content .wrap .sticky-wrapper {
+    z-index: 3;
+    position: relative;
+  }
+  .content .wrap section {
+    width: 1920px;
+    height: 3453px;
+    background-image: url('../images/pc/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap article {
+    position: relative;
+    display: none;
+  }
+  .content .wrap article .prds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap article .prds .btn {
+    width: 363px;
+    height: 644px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap article .prds .btn.btn1 {
+    left: 902px;
+    top: 914px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap article .prds .btn.btn2 {
+    left: 1265px;
+    top: 914px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap article .prds .btn.btn3 {
+    left: 292px;
+    top: 1778px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap article .prds .btn.btn4 {
+    left: 655px;
+    top: 1778px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .bott-slide .swiper .swiper-wrapper {
+    transition-timing-function: linear!important;
+  }
+  .content .wrap[data-view="0"] .tab-wrap {
+    background-image: url('../images/pc/tab1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="1"] .tab-wrap {
+    background-image: url('../images/pc/tab2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="2"] .tab-wrap {
+    background-image: url('../images/pc/tab3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="3"] .tab-wrap {
+    background-image: url('../images/pc/tab4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="4"] .tab-wrap {
+    background-image: url('../images/pc/tab5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="0"] .art1,
+  .content .wrap[data-view="1"] .art2,
+  .content .wrap[data-view="2"] .art3,
+  .content .wrap[data-view="3"] .art4,
+  .content .wrap[data-view="4"] .art5 {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style-pc.css.map */

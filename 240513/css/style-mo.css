@@ -1,0 +1,19 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content .mo {
+  display: inline-block;
+}
+.content .web {
+  display: none;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+/*# sourceMappingURL=style-mo.css.map */

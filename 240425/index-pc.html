@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-pc-sm.css">
+  <link rel="stylesheet" href="css/style-pc.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+<div class="content">
+  <div class="wrap enjoy" data-view="0">
+
+    <img src="images/pc/top.png" class="kv" alt="">
+    <div class="tab-wrap" id="sticker">
+      <a class="tab" data-tab="0">민지</a>
+      <a class="tab" data-tab="1">다니엘</a>
+      <a class="tab" data-tab="2">하니</a>
+      <a class="tab" data-tab="3">혜인</a>
+      <a class="tab" data-tab="4">혜린</a>
+    </div>
+
+    <section>
+      <article class="art1">
+        <img src="images/pc/vis1.png" alt="">
+        <div class="prds">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5899" class="btn btn1">SA24B43T</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5900" class="btn btn2">SA24B44F</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5917" class="btn btn3">SA24B53K</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5902" class="btn btn4">SA24B50T</a>
+        </div>
+      </article>
+      <article class="art2">
+        <img src="images/pc/vis2.png" alt="">
+        <div class="prds">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5738" class="btn btn1">SA24A06F</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5741" class="btn btn2">SA24A02F</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5735" class="btn btn3">SA24A05T</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5739" class="btn btn4">SA24A03F</a>
+        </div>
+      </article>
+      <article class="art3">
+        <img src="images/pc/vis3.png" alt="">
+        <div class="prds">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=3960" class="btn btn1">P1405</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=3959" class="btn btn2">P1406</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=4045" class="btn btn3">T1994</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=3702" class="btn btn4">F0392</a>
+        </div>
+      </article>
+      <article class="art4">
+        <img src="images/pc/vis4.png" alt="">
+        <div class="prds">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=4262" class="btn btn1">T2037</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=4260" class="btn btn2">T2026</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=4256" class="btn btn3">B0042</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=4342" class="btn btn4">T2052</a>
+        </div>
+      </article>
+      <article class="art5">
+        <img src="images/pc/vis5.png" alt="">
+        <div class="prds">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5245" class="btn btn1">U0162</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=4262" class="btn btn2">U0170</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5087" class="btn btn3">F0490</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5082" class="btn btn4">B0052</a>
+        </div>
+      </article>
+      <div class="bott-slide">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/pc/bott1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pc/bott2.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pc/bott3.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pc/bott1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pc/bott2.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pc/bott3.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  let tab = document.querySelectorAll('.tab');
+  let enjoy = document.querySelector('.enjoy');
+  let art = document.querySelectorAll('article');
+  Array.prototype.forEach.call(tab, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab')
+      enjoy.setAttribute('data-view', idx);
+      for (let i = 0; i < art.length; i++) {
+        art[i].classList.remove('active')
+      }
+      art[idx].classList.add('active');
+      scrollVis();
+    })
+  });
+  $(document).ready(function(){
+    $("#sticker").sticky({topSpacing:150});
+  });
+
+  function scrollVis() {
+    if(window.pageYOffset > 150) {
+      let kvH = document.querySelector('.enjoy .kv').getBoundingClientRect().height;
+      let navH = document.querySelector('.tab-wrap').getBoundingClientRect().height;
+      let scT = kvH - navH - 61;
+      console.log(scT)
+      window.scrollTo({top:scT, behavior: 'smooth'});
+    }
+  }
+
+  var swiperBott = new Swiper(".bott-slide .swiper", {
+    speed: 6000,
+    slidesPerView: 2.35,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+</body>
+</html>

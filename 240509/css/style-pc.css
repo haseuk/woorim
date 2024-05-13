@@ -1,0 +1,144 @@
+.content {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.content .wrap {
+  overflow: hidden;
+}
+.content .wrap .inner {
+  min-width: 1920px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.content .wrap [data-aos="fade-up"] {
+  transition-duration: 1.2s;
+}
+.content .wrap .top {
+  width: 1920px;
+  height: 1218px;
+  position: relative;
+  background-image: url('../images/pc/top.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .wrap .top .tit {
+  width: 1920px;
+  height: 1218px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  filter: blur(1rem);
+  animation: show 0.5s linear forwards;
+}
+.content .wrap .top .tit2 {
+  animation-delay: 0.2s;
+}
+.content .wrap .top .tit3 {
+  animation-delay: 0.7s;
+}
+.content .wrap .top .tit4 {
+  animation-delay: 0.3s;
+}
+.content .wrap .top .tit5 {
+  animation-delay: 0.1s;
+}
+.content .wrap .top .tit6 {
+  animation-delay: 0.8s;
+}
+.content .wrap .top .tit7 {
+  animation-delay: 0.4s;
+}
+.content .wrap .top .tit8 {
+  animation-delay: 0.7s;
+}
+.content .wrap .top .tit9 {
+  animation-delay: 0.1s;
+}
+.content .wrap .top .tit10 {
+  animation-delay: 0.2s;
+}
+.content .wrap .top .tit11 {
+  animation-delay: 0.6s;
+}
+.content .wrap .top .tit12 {
+  animation-delay: 0.3s;
+}
+@keyframes show {
+  100% {
+    filter: blur(0);
+  }
+}
+.content .wrap .btt {
+  width: 1920px;
+  height: 1382px;
+  position: relative;
+  background-color: #86becb;
+}
+.content .wrap .btt .tit {
+  position: relative;
+  z-index: 2;
+}
+.content .wrap .btt .txt {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  z-index: 3;
+}
+.content .wrap .btt .sm-h,
+.content .wrap .btt .prd {
+  width: 1920px;
+  height: 1382px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+}
+.content .wrap .btt .heart {
+  width: 1920px;
+  height: 1382px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .btt .heart .hs {
+  animation: doong 2.5s ease-in-out infinite;
+}
+.content .wrap .btt .heart .h1 {
+  position: absolute;
+  right: 95px;
+  top: 125px;
+  left: auto;
+  bottom: auto;
+  animation-duration: 2.8s;
+}
+.content .wrap .btt .heart .h2 {
+  position: absolute;
+  left: 43px;
+  top: 657px;
+  right: auto;
+  bottom: auto;
+  animation-duration: 2.3s;
+}
+.content .wrap .btt .heart .h3 {
+  position: absolute;
+  right: 95px;
+  top: 1152px;
+  left: auto;
+  bottom: auto;
+}
+@keyframes doong {
+  50% {
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=style-pc.css.map */

@@ -1,0 +1,28 @@
+@import "../../css/asset";
+
+@media screen and (min-width: 1024px) {
+  .content-evt { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+    img { .wf; .vat; }
+    .mo { .hide!important; }
+    .pc { .ib!important; }
+    .btn { .ib; .rel; .z(1); .pointer; }
+    .wrap { .rel;
+      .rolling { .fs(0); .wh(100%,55); .crop; .rel;
+        .r-inner { .wh(3490,55); .flex; align-items: start; .bgc(#95afd9);
+          .banner { .wh(1745,55); .contain('../images/pc/roll-txt.png');
+            &.banner1 { animation: bannerRolling 15s linear infinite; }
+            &.banner2 { animation: bannerRolling2 15s linear infinite; }
+          }
+        }
+      }
+      @keyframes bannerRolling {
+        0% { transform: translateX(0%) }
+        100% { transform: translateX(-100%) }
+      }
+      @keyframes bannerRolling2 {
+        0% { transform: translateX(0%) }
+        100% { transform: translateX(-100%) }
+      }
+    }
+  }
+}
