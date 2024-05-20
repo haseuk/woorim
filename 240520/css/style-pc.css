@@ -1,0 +1,64 @@
+.content {
+  font-size: 0px;
+  max-width: 1264px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap .product .prd {
+  position: relative;
+}
+.content .wrap .product .prd.prd1 {
+  background-image: url('../images/pc/prd1-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1264px;
+  height: 1169px;
+}
+.content .wrap .product .prd.prd2 {
+  background-image: url('../images/pc/prd2-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1264px;
+  height: 1197px;
+}
+.content .wrap .product .prd .swiper {
+  width: 1080px;
+  height: 682px;
+  position: absolute;
+  left: 92px;
+  top: 349px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .prd .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.content .wrap .product .prd .swiper-btn {
+  width: 90px;
+  height: 682px;
+  margin: 0px;
+  top: 349px;
+}
+.content .wrap .product .prd .swiper-btn:after {
+  display: none;
+}
+.content .wrap .product .prd .swiper-btn.swiper-button-prev {
+  left: 0px;
+}
+.content .wrap .product .prd .swiper-btn.swiper-button-next {
+  right: 0px;
+}
+/*# sourceMappingURL=style-pc.css.map */

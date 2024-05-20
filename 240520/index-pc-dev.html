@@ -1,0 +1,131 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  .content {
+    font-size: 0px;
+    max-width: 1264px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap .product .prd {
+    position: relative;
+  }
+  .content .wrap .product .prd.prd1 {
+    background-image: url('https://woorimrsm.cafe24.com/product/special/240520/pc/prd1-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1264px;
+    height: 1169px;
+  }
+  .content .wrap .product .prd.prd2 {
+    background-image: url('https://woorimrsm.cafe24.com/product/special/240520/pc/prd2-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1264px;
+    height: 1197px;
+  }
+  .content .wrap .product .prd .swiper {
+    width: 1080px;
+    height: 682px;
+    position: absolute;
+    left: 92px;
+    top: 349px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .prd .swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+  }
+  .content .wrap .product .prd .swiper-btn {
+    width: 90px;
+    height: 682px;
+    margin: 0px;
+    top: 349px;
+  }
+  .content .wrap .product .prd .swiper-btn:after {
+    display: none;
+  }
+  .content .wrap .product .prd .swiper-btn.swiper-button-prev {
+    left: 0px;
+  }
+  .content .wrap .product .prd .swiper-btn.swiper-button-next {
+    right: 0px;
+  }
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="https://woorimrsm.cafe24.com/product/special/240520/pc/top.png" alt="">
+      <img src="https://woorimrsm.cafe24.com/product/special/240520/pc/gift.png" alt="">
+    </div>
+    <div class="product">
+      <div class="prd prd1">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5151"><img src="https://woorimrsm.cafe24.com/product/special/240520/pc/prd1-1.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5144"><img src="https://woorimrsm.cafe24.com/product/special/240520/pc/prd1-2.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5145"><img src="https://woorimrsm.cafe24.com/product/special/240520/pc/prd1-3.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5148"><img src="https://woorimrsm.cafe24.com/product/special/240520/pc/prd1-4.png" alt=""></a></div>
+          </div>
+        </div>
+        <div class="swiper-btn swiper-prd1 swiper-button-next"></div>
+        <div class="swiper-btn swiper-prd1 swiper-button-prev"></div>
+      </div>
+      <div class="prd prd2">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5152"><img src="https://woorimrsm.cafe24.com/product/special/240520/pc/prd2-1.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5150"><img src="https://woorimrsm.cafe24.com/product/special/240520/pc/prd2-2.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5139"><img src="https://woorimrsm.cafe24.com/product/special/240520/pc/prd2-3.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5140"><img src="https://woorimrsm.cafe24.com/product/special/240520/pc/prd2-4.png" alt=""></a></div>
+          </div>
+        </div>
+        <div class="swiper-btn swiper-prd2 swiper-button-next"></div>
+        <div class="swiper-btn swiper-prd2 swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper1 = new Swiper(".prd1 .swiper", {
+    effect: 'fade',
+    speed: 1500,
+    autoplay: {
+      delay: 2500,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-prd1.swiper-button-next",
+      prevEl: ".swiper-prd1.swiper-button-prev",
+    },
+  });
+  var swiper2 = new Swiper(".prd2 .swiper", {
+    effect: 'fade',
+    speed: 1500,
+    autoplay: {
+      delay: 2500,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-prd2.swiper-button-next",
+      prevEl: ".swiper-prd2.swiper-button-prev",
+    },
+  });
+</script>

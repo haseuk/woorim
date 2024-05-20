@@ -1,0 +1,32 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .wrap {
+    .product {
+      .prd { .rel;
+        &.prd1 { .contain('../images/mo/prd1-bg.png'); .wh(850,1804); }
+        &.prd2 { .contain('../images/mo/prd2-bg.png'); .wh(850,1822);
+          .swiper .swiper-pagination { .b(156); }
+        }
+        .swiper { .f; .rel;
+          .swiper-slide img { .f; }
+          .swiper-pagination { .lb(50%,130); transform: translateX(-50%);
+            .swiper-pagination-bullet { .wh(16,16); .bgc(#fff); .br(50%); .m(0,7); .o(1); .rel;
+              &.swiper-pagination-bullet-active { .bgc(#c69cd0); }
+            }
+          }
+          .swiper-btn { .wh(82,358); .m(0); top:auto;
+            &:after { .hide; }
+            &.swiper-button-prev { .l(0); }
+            &.swiper-button-next { .r(0); }
+            &.swiper-prd1 { .b(180); }
+            &.swiper-prd2 { .b(206); }
+          }
+        }
+      }
+    }
+  }
+}

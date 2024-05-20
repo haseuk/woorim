@@ -1,0 +1,22 @@
+@import "../../css/asset";
+
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    .product {
+      .prd { .rel;
+        &.prd1 { .contain('../images/pc/prd1-bg.png'); .wh(1264,1169); }
+        &.prd2 { .contain('../images/pc/prd2-bg.png'); .wh(1264,1197); }
+        .swiper { .wh(1080,682); .abs; .lt(92,349);
+          .swiper-slide img { .f; }
+        }
+        .swiper-btn { .wh(90,682); .m(0); .t(349);
+          &:after { .hide; }
+          &.swiper-button-prev { .l(0); }
+          &.swiper-button-next { .r(0); }
+        }
+      }
+    }
+  }
+}

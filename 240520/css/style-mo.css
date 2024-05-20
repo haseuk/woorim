@@ -1,0 +1,85 @@
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .wrap .product .prd {
+  position: relative;
+}
+.content .wrap .product .prd.prd1 {
+  background-image: url('../images/mo/prd1-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 212.23529412vw;
+}
+.content .wrap .product .prd.prd2 {
+  background-image: url('../images/mo/prd2-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 214.35294118vw;
+}
+.content .wrap .product .prd.prd2 .swiper .swiper-pagination {
+  bottom: 18.35294118vw;
+}
+.content .wrap .product .prd .swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.content .wrap .product .prd .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.content .wrap .product .prd .swiper .swiper-pagination {
+  left: 50%;
+  bottom: 15.29411765vw;
+  right: auto;
+  top: auto;
+  transform: translateX(-50%);
+}
+.content .wrap .product .prd .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 1.88235294vw;
+  height: 1.88235294vw;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: 0vw;
+  margin-right: 0.82352941vw;
+  margin-bottom: 0vw;
+  margin-left: 0.82352941vw;
+  opacity: 1;
+  position: relative;
+}
+.content .wrap .product .prd .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #c69cd0;
+}
+.content .wrap .product .prd .swiper .swiper-btn {
+  width: 9.64705882vw;
+  height: 42.11764706vw;
+  margin: 0vw;
+  top: auto;
+}
+.content .wrap .product .prd .swiper .swiper-btn:after {
+  display: none;
+}
+.content .wrap .product .prd .swiper .swiper-btn.swiper-button-prev {
+  left: 0vw;
+}
+.content .wrap .product .prd .swiper .swiper-btn.swiper-button-next {
+  right: 0vw;
+}
+.content .wrap .product .prd .swiper .swiper-btn.swiper-prd1 {
+  bottom: 21.17647059vw;
+}
+.content .wrap .product .prd .swiper .swiper-btn.swiper-prd2 {
+  bottom: 24.23529412vw;
+}
+/*# sourceMappingURL=style-mo.css.map */

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/style-t.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="images/mo/top.png" alt="">
+      <img src="images/mo/gift.png" alt="">
+    </div>
+    <div class="product">
+      <div class="prd prd1">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5151"><img src="images/mo/prd1-1.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5144"><img src="images/mo/prd1-2.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5145"><img src="images/mo/prd1-3.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5148"><img src="images/mo/prd1-4.png" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-btn swiper-prd1 swiper-button-next"></div>
+          <div class="swiper-btn swiper-prd1 swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="prd prd2">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5152"><img src="images/mo/prd2-1.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5150"><img src="images/mo/prd2-2.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5139"><img src="images/mo/prd2-3.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://rosemont.co.kr/product/detail.html?product_no=5140"><img src="images/mo/prd2-4.png" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-btn swiper-prd2 swiper-button-next"></div>
+          <div class="swiper-btn swiper-prd2 swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper1 = new Swiper(".prd1 .swiper", {
+    effect: 'fade',
+    speed: 1500,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-prd1.swiper-button-next",
+      prevEl: ".swiper-prd1.swiper-button-prev",
+    },
+  });
+  var swiper2 = new Swiper(".prd2 .swiper", {
+    effect: 'fade',
+    speed: 1500,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-prd2.swiper-button-next",
+      prevEl: ".swiper-prd2.swiper-button-prev",
+    },
+  });
+</script>
+</body>
+</html>
