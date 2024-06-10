@@ -1,0 +1,97 @@
+html {
+  scroll-behavior: smooth;
+}
+.content {
+  font-size: 0px;
+  max-width: 1264px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap [data-aos="fade-up"] {
+  transition-duration: 1000ms;
+}
+.content .wrap .top {
+  width: 1264px;
+  height: 991px;
+  overflow: hidden;
+  position: relative;
+}
+.content .wrap .top img {
+  width: 1264px;
+  height: 991px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product {
+  width: 1264px;
+  height: 2039px;
+  position: relative;
+}
+.content .wrap .product img {
+  width: 1264px;
+  height: 2039px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .btn {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+.content .wrap .product .btn i {
+  width: 72px;
+  height: 72px;
+  background-image: url('../images/pc/btn.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 39px;
+  top: 39px;
+  right: auto;
+  bottom: auto;
+  display: inline-block;
+  pointer-events: none;
+  animation: jamjam 1.5s infinite;
+}
+.content .wrap .product .btn.btn1 {
+  left: 624px;
+  top: 387px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .btn.btn2 {
+  left: 725px;
+  top: 986px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .btn.btn3 {
+  left: 533px;
+  top: 1654px;
+  right: auto;
+  bottom: auto;
+}
+@keyframes jamjam {
+  50% {
+    transform: scale(1.15);
+  }
+}
+/*# sourceMappingURL=style-pc.css.map */

@@ -17,6 +17,17 @@
     z-index: 1;
     cursor: pointer;
   }
+  .content .wrap .vid {
+    width: 100vw;
+    height: 56.25vw;
+  }
+  .content .wrap .vid iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .content .wrap .kv {
+    width: 100vw;
+  }
   .content .wrap .tab-wrap {
     width: 100vw;
     height: 5.57291667vw;

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-pc.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="images/pc/top.png" alt="">
+    </div>
+
+    <div class="vis vis1">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/pc/mo1-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/pc/mo1-2.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/pc/mo1-3.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/pc/mo1-4.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/pc/mo1-5.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="vis vis2">
+      <img src="images/pc/mo2-1.png" class="vis2-1" data-aos="fade-up" data-aos-offset="600" alt="">
+      <img src="images/pc/mo2-2.png" class="vis2-2" data-aos="fade-up" data-aos-offset="600" alt="">
+      <img src="images/pc/mo2-3.png" class="vis2-3" data-aos="fade-up" data-aos-offset="600" alt="">
+      <img src="images/pc/mo2-4.png" class="vis2-4" data-aos="fade-up" data-aos-offset="600" alt="">
+    </div>
+    <div class="vis vis3">
+      <img src="images/pc/prd.png" alt="">
+      <div class="link">
+        <a href="https://rosemont.co.kr/product/detail.html?product_no=5180" class="btn">RC24B20K</a>
+        <a href="https://rosemont.co.kr/product/detail.html?product_no=5181" class="btn">RC24B21K</a>
+        <a href="https://rosemont.co.kr/product/detail.html?product_no=5182" class="btn">RC24B23K</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+
+  var swiper1 = new Swiper(".vis1 .swiper", {
+    speed: 1500,
+    slidesPerView: 1.9,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+
+</script>
+</body>
+</html>

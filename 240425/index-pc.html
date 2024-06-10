@@ -13,8 +13,10 @@
 <body>
 
 <div class="content">
-  <div class="wrap enjoy" data-view="0">
-
+  <div class="wrap enjoy" data-view="2">
+    <div class="vid">
+      <iframe src='https://player.vimeo.com/video/949737256?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>
+    </div>
     <img src="images/pc/top.png" class="kv" alt="">
     <div class="tab-wrap" id="sticker">
       <a class="tab" data-tab="0">민지</a>
@@ -85,6 +87,7 @@
     </section>
   </div>
 </div>
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -110,9 +113,8 @@
   function scrollVis() {
     if(window.pageYOffset > 150) {
       let kvH = document.querySelector('.enjoy .kv').getBoundingClientRect().height;
-      let navH = document.querySelector('.tab-wrap').getBoundingClientRect().height;
-      let scT = kvH - navH - 61;
-      console.log(scT)
+      let vidH = document.querySelector('.vid').getBoundingClientRect().height;
+      let scT = kvH + vidH - 150;
       window.scrollTo({top:scT, behavior: 'smooth'});
     }
   }

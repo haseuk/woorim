@@ -1,0 +1,94 @@
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 28px;
+    scroll-behavior: smooth;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 767px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap [data-aos="fade-up"] {
+    transition-duration: 1000ms;
+  }
+  .content .wrap .top {
+    width: 27.39328703rem;
+    height: 40.21979084rem;
+    overflow: hidden;
+    position: relative;
+  }
+  .content .wrap .top img {
+    width: 27.39328703rem;
+    height: 40.21979084rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product {
+    width: 27.39328703rem;
+    height: 82.24431589rem;
+    position: relative;
+  }
+  .content .wrap .product img {
+    width: 27.39328703rem;
+    height: 82.24431589rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .btn {
+    width: 5.15638344rem;
+    height: 5.15638344rem;
+    position: absolute;
+  }
+  .content .wrap .product .btn i {
+    width: 2.32037255rem;
+    height: 2.32037255rem;
+    background-image: url('../images/mo/btn.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 1.41800545rem;
+    top: 1.41800545rem;
+    right: auto;
+    bottom: auto;
+    display: inline-block;
+    pointer-events: none;
+    animation: jamjam 1.5s infinite;
+  }
+  .content .wrap .product .btn.btn1 {
+    left: 11.69854493rem;
+    top: 11.76299973rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .btn.btn2 {
+    left: 12.05304629rem;
+    top: 45.2794921rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .btn.btn3 {
+    left: 10.1838573rem;
+    top: 69.38558469rem;
+    right: auto;
+    bottom: auto;
+  }
+  @keyframes jamjam {
+    50% {
+      transform: scale(1.15);
+    }
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

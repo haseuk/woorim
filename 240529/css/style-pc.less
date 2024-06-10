@@ -1,0 +1,33 @@
+@import "../../css/asset";
+
+html { scroll-behavior: smooth; }
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    [data-aos="fade-up"] { transition-duration: 1000ms; }
+    .vis {
+      &.vis1 { .wh(1264,790); .contain('../images/pc/cnt1-bg.png'); .rel;
+        .swiper { .wh(908,640); .abs; .rt(0,150); .crop;
+          .swiper-slide img { object-fit: cover; .hf; }
+          .swiper-slide-next { .rel;
+            &:after { .cnt; .f; .abs; .lt; .bgc(#000); .o(0.5); }
+          }
+        }
+      }
+      &.vis2 { .wh(1264,1702); .contain('../images/pc/cnt2-bg.png'); .rel;
+        img { .abs;
+          &.vis2-1 { .wh(667,712); .lt; }
+          &.vis2-2 { .wh(445,563); .rt(0,528); }
+          &.vis2-3 { .wh(541,842); .lt(0,860); }
+          &.vis2-4 { .wh(581,408); .rb; }
+        }
+      }
+      &.vis3 { .wh(1264,756); .contain('../images/pc/cnt3-bg.png'); .rel;
+        .link { .wh(1080,474); .abs; .lt(92,126); .flex; .space-between;
+          .btn { .wh(338,474); }
+        }
+      }
+    }
+  }
+}

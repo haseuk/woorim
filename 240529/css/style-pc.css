@@ -1,0 +1,129 @@
+html {
+  scroll-behavior: smooth;
+}
+.content {
+  font-size: 0px;
+  max-width: 1264px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap [data-aos="fade-up"] {
+  transition-duration: 1000ms;
+}
+.content .wrap .vis.vis1 {
+  width: 1264px;
+  height: 790px;
+  background-image: url('../images/pc/cnt1-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .wrap .vis.vis1 .swiper {
+  width: 908px;
+  height: 640px;
+  position: absolute;
+  right: 0px;
+  top: 150px;
+  left: auto;
+  bottom: auto;
+  overflow: hidden;
+}
+.content .wrap .vis.vis1 .swiper .swiper-slide img {
+  object-fit: cover;
+  height: 100%;
+}
+.content .wrap .vis.vis1 .swiper .swiper-slide-next {
+  position: relative;
+}
+.content .wrap .vis.vis1 .swiper .swiper-slide-next:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  background-color: #000;
+  opacity: 0.5;
+}
+.content .wrap .vis.vis2 {
+  width: 1264px;
+  height: 1702px;
+  background-image: url('../images/pc/cnt2-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .wrap .vis.vis2 img {
+  position: absolute;
+}
+.content .wrap .vis.vis2 img.vis2-1 {
+  width: 667px;
+  height: 712px;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .vis.vis2 img.vis2-2 {
+  width: 445px;
+  height: 563px;
+  right: 0px;
+  top: 528px;
+  left: auto;
+  bottom: auto;
+}
+.content .wrap .vis.vis2 img.vis2-3 {
+  width: 541px;
+  height: 842px;
+  left: 0px;
+  top: 860px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .vis.vis2 img.vis2-4 {
+  width: 581px;
+  height: 408px;
+  right: 0px;
+  bottom: 0px;
+  left: auto;
+  top: auto;
+}
+.content .wrap .vis.vis3 {
+  width: 1264px;
+  height: 756px;
+  background-image: url('../images/pc/cnt3-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .wrap .vis.vis3 .link {
+  width: 1080px;
+  height: 474px;
+  position: absolute;
+  left: 92px;
+  top: 126px;
+  right: auto;
+  bottom: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.content .wrap .vis.vis3 .link .btn {
+  width: 338px;
+  height: 474px;
+}
+/*# sourceMappingURL=style-pc.css.map */

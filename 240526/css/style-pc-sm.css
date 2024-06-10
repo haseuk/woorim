@@ -1,0 +1,113 @@
+@media screen and (min-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  .content {
+    font-size: 0vw;
+    max-width: 100vw;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap {
+    overflow: hidden;
+  }
+  .content .wrap [data-aos="fade-up"] {
+    transition-duration: 1000ms;
+  }
+  .content .wrap .top {
+    width: 100vw;
+    height: 67.86458333vw;
+    position: relative;
+  }
+  .content .wrap .top img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .tab-wrap {
+    width: 100vw !important;
+    height: 4.79166667vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 61px;
+    z-index: 100 !important;
+  }
+  .content .wrap .tab-wrap .tab {
+    width: 23.95833333vw;
+    height: 4.79166667vw;
+  }
+  .content .wrap section article {
+    position: relative;
+  }
+  .content .wrap section article .anchor {
+    display: block;
+    width: 100%;
+    height: 0vw;
+    position: absolute;
+    left: 0vw;
+    top: -12.60416667vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap section article .prd {
+    width: 32.29166667vw;
+    height: 26.04166667vw;
+    position: absolute;
+    left: 50%;
+    bottom: 9.0625vw;
+    right: auto;
+    top: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .wrap section article .prd .btn {
+    width: 15.36458333vw;
+    height: 26.04166667vw;
+  }
+  .content .wrap section article.art2 .prd {
+    bottom: 11.04166667vw;
+    margin-left: -34.79166667vw;
+  }
+  .content .wrap section article.art3 .prd {
+    bottom: 17.03125vw;
+  }
+  .content .wrap[data-view="0"] .tab-wrap {
+    background-image: url('../images/pc/tab1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="1"] .tab-wrap {
+    background-image: url('../images/pc/tab2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="2"] .tab-wrap {
+    background-image: url('../images/pc/tab3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap[data-view="0"] .art1,
+  .content .wrap[data-view="1"] .art2,
+  .content .wrap[data-view="2"] .art3 {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style-pc-sm.css.map */

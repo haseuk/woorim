@@ -1,0 +1,45 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+html { scroll-behavior: smooth; }
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    [data-aos="fade-up"] { transition-duration: 1000ms; }
+    .top { .wh(850,1021); .crop; .rel;
+      .gif1 { .wh(654,654); .abs; .lt(312,222);
+        span { .wh(654,300); .crop; .block; .abs; .lb; }
+        img { .wh(654,654); .abs; .lb; }
+      }
+      .gif2 { .wh(770,770); .abs; .lt(-266,-395);
+        span { .wh(770,400); .crop; .block; .abs; .lb; }
+        img { .wh(770,770); .abs; .lb; }
+      }
+      .silver { .f; .abs; .lt; }
+    }
+    .vid { .wh(850,720);
+      iframe { .f; }
+    }
+    .cnt { .bgc(#f7f4eb); .rel;
+      .txt { .abs; }
+      .prd { .abs;
+        .btn { .wh(240,145); .abs; .lt(425,208);
+          &.btn2 { .lt(425,606); }
+        }
+      }
+    }
+    .cnt1 { .wh(850,1947);
+      .txt { .wh(850,941); .lt(0,215); }
+      .prd { .wh(850,791); .abs; .lt(0,1156); }
+    }
+    .cnt2 { .wh(850,1685);
+      .txt { .rel; .z(1); }
+      .pic { .f; .abs; .lt; }
+    }
+    .cnt3 { .wh(850,1406); .rel;
+      .txt { .wh(850,490); .abs; .lb; }
+    }
+  }
+}

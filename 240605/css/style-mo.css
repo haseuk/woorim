@@ -1,0 +1,183 @@
+html {
+  scroll-behavior: smooth;
+}
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap [data-aos="fade-up"] {
+  transition-duration: 1000ms;
+}
+.content .wrap .top {
+  width: 100vw;
+  height: 120.11764706vw;
+  overflow: hidden;
+  position: relative;
+}
+.content .wrap .top .gif1 {
+  width: 76.94117647vw;
+  height: 76.94117647vw;
+  position: absolute;
+  left: 36.70588235vw;
+  top: 26.11764706vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .top .gif1 span {
+  width: 76.94117647vw;
+  height: 35.29411765vw;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+}
+.content .wrap .top .gif1 img {
+  width: 76.94117647vw;
+  height: 76.94117647vw;
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+}
+.content .wrap .top .gif2 {
+  width: 90.58823529vw;
+  height: 90.58823529vw;
+  position: absolute;
+  left: -31.29411765vw;
+  top: -46.47058824vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .top .gif2 span {
+  width: 90.58823529vw;
+  height: 47.05882353vw;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+}
+.content .wrap .top .gif2 img {
+  width: 90.58823529vw;
+  height: 90.58823529vw;
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+}
+.content .wrap .top .silver {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .vid {
+  width: 100vw;
+  height: 84.70588235vw;
+}
+.content .wrap .vid iframe {
+  width: 100%;
+  height: 100%;
+}
+.content .wrap .cnt {
+  background-color: #f7f4eb;
+  position: relative;
+}
+.content .wrap .cnt .txt {
+  position: absolute;
+}
+.content .wrap .cnt .prd {
+  position: absolute;
+}
+.content .wrap .cnt .prd .btn {
+  width: 28.23529412vw;
+  height: 17.05882353vw;
+  position: absolute;
+  left: 50vw;
+  top: 24.47058824vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .cnt .prd .btn.btn2 {
+  left: 50vw;
+  top: 71.29411765vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .cnt1 {
+  width: 100vw;
+  height: 229.05882353vw;
+}
+.content .wrap .cnt1 .txt {
+  width: 100vw;
+  height: 110.70588235vw;
+  left: 0vw;
+  top: 25.29411765vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .cnt1 .prd {
+  width: 100vw;
+  height: 93.05882353vw;
+  position: absolute;
+  left: 0vw;
+  top: 136vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .cnt2 {
+  width: 100vw;
+  height: 198.23529412vw;
+}
+.content .wrap .cnt2 .txt {
+  position: relative;
+  z-index: 1;
+}
+.content .wrap .cnt2 .pic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .cnt3 {
+  width: 100vw;
+  height: 165.41176471vw;
+  position: relative;
+}
+.content .wrap .cnt3 .txt {
+  width: 100vw;
+  height: 57.64705882vw;
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+}
+/*# sourceMappingURL=style-mo.css.map */

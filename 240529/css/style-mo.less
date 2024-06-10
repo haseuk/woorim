@@ -1,0 +1,30 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+html { scroll-behavior: smooth; }
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    [data-aos="fade-up"] { transition-duration: 1000ms; }
+    .vis {
+      &.vis1 { .wh(850,790); .contain('../images/mo/cnt1-bg.png'); .rel;
+        .swiper { .wh(564,640); .abs; .rt(0,150);
+          .swiper-pagination { .fs(20,36); .c(#fff); .wh(70,36); .tc; .br(18); .abs; .rb(120,17); .crop;
+            &:after { .cnt; .f; .abs; .lt; .bgc(#000); .o(0.3); }
+            span { .rel; .z(1); }
+          }
+        }
+      }
+      &.vis2 { .wh(850,1626); .contain('../images/mo/cnt2-bg.png'); .rel; }
+      &.vis3 { .wh(850,1547); .contain('../images/mo/cnt3-bg.png'); .rel;
+        .swiper { .mt(150); .p(0,48,105,48); .-box;
+          .swiper-pagination { .wh(754,7); .lb(48,22); .bgc(#fff); .br(3); box-shadow: 0 2px 7px 0 rgba(0,0,0,0.1);
+            .swiper-pagination-progressbar-fill { .h(7); .br(3); .bgc(#bfdbf3); }
+          }
+        }
+      }
+    }
+  }
+}

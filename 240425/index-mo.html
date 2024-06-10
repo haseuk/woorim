@@ -12,8 +12,10 @@
 </head>
 <body>
 <div class="content">
-  <div class="wrap enjoy" data-view="0">
-
+  <div class="wrap enjoy" data-view="2">
+    <div class="vid">
+      <iframe src='https://player.vimeo.com/video/949737226?controls=0&autoplay=true&loop=true&muted=true&controls=true&quality=auto&autopause=0' frameborder='0' allowfullscreen></iframe>
+    </div>
     <img src="images/mo/top.png" class="kv" alt="">
     <div class="tab-wrap" id="sticker">
       <a class="tab" data-tab="0">민지</a>
@@ -24,7 +26,7 @@
     </div>
 
     <section>
-      <article class="art1 active">
+      <article class="art1">
         <div class="tit" ><img src="images/mo/cnt1-1.png" alt=""></div>
         <div class="vis mov" ><img src="images/mo/cnt1-2.png" alt=""></div>
         <div class="prd mov" ><img src="images/mo/cnt1-3.png" alt=""></div>
@@ -56,7 +58,7 @@
           </div>
         </div>
       </article>
-      <article class="art3">
+      <article class="art3 active">
         <div class="tit" ><img src="images/mo/cnt3-1.png" alt=""></div>
         <div class="vis mov" ><img src="images/mo/cnt3-2.png" alt=""></div>
         <div class="prd mov" ><img src="images/mo/cnt3-3.png" alt=""></div>
@@ -116,6 +118,7 @@
     </section>
   </div>
 </div>
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -146,8 +149,8 @@
   function scrollVis() {
     if(window.pageYOffset > 10) {
       let kvH = document.querySelector('.enjoy .kv').getBoundingClientRect().height;
-      let navH = document.querySelector('.tab-wrap').getBoundingClientRect().height;
-      let scT = kvH - navH - 61;
+      let vidH = document.querySelector('.vid').getBoundingClientRect().height;
+      let scT = kvH + vidH + 30;
       window.scrollTo({top:scT, behavior: 'smooth'});
     }
   }

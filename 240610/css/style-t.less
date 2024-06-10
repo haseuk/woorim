@@ -1,0 +1,28 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 31.0295;
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; scroll-behavior: smooth; }
+  .content { .fs(0); .mh-c; .tc; max-width: 767px; .rel;
+    img { .wf; .vat; }
+    .wrap {
+      [data-aos="fade-up"] { transition-duration: 1000ms; }
+      .top { .wh(850,1248); .crop; .rel;
+        img { .wh(850,1248); .abs; .lt; }
+      }
+      .product { .wh(850,2552); .rel;
+        img { .wh(850,2552); .abs; .lt; }
+        .btn { .wh(160,160); .abs;
+          i { .wh(72,72); .contain('../images/mo/btn.png'); .abs; .lt(44,44); .ib; pointer-events: none; animation:jamjam 1.5s infinite; }
+          &.btn1 { .lt(363,365); }
+          &.btn2 { .lt(374,1405); }
+          &.btn3 { .lt(316,2153); }
+        }
+        @keyframes jamjam {
+          50% { transform: scale(1.15); }
+        }
+      }
+    }
+  }
+}

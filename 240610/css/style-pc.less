@@ -1,0 +1,25 @@
+@import "../../css/asset";
+
+html { scroll-behavior: smooth; }
+.content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    [data-aos="fade-up"] { transition-duration: 1000ms; }
+    .top { .wh(1264,991); .crop; .rel;
+      img { .wh(1264,991); .abs; .lt; }
+    }
+    .product { .wh(1264,2039); .rel;
+      img { .wh(1264,2039); .abs; .lt; }
+      .btn { .wh(150,150); .abs;
+        i { .wh(72,72); .contain('../images/pc/btn.png'); .abs; .lt(39,39); .ib; pointer-events: none; animation:jamjam 1.5s infinite; }
+        &.btn1 { .lt(624,387); }
+        &.btn2 { .lt(725,986); }
+        &.btn3 { .lt(533,1654); }
+      }
+      @keyframes jamjam {
+        50% { transform: scale(1.15); }
+      }
+    }
+  }
+}

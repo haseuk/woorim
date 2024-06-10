@@ -1,0 +1,211 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  .content {
+    font-size: 0px;
+    max-width: 1920px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap {
+    overflow: hidden;
+  }
+  .content .wrap [data-aos="fade-up"] {
+    transition-duration: 1.4s;
+  }
+  .content .wrap img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .inner {
+    min-width: 1920px;
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+  .content .wrap .inner > div {
+    position: relative;
+  }
+  .content .wrap .top {
+    width: 1920px;
+    height: 1022px;
+    overflow: hidden;
+  }
+  .content .wrap .top img {
+    width: 1920px;
+    height: 1022px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .top .bg {
+    filter: blur(0.4rem);
+    animation: show 1.3s linear forwards;
+    animation-delay: 0.5s;
+  }
+  .content .wrap .top .tit {
+    filter: blur(1rem);
+    animation: show 0.6s linear forwards;
+  }
+  .content .wrap .top .tit2 {
+    animation-delay: 0.2s;
+  }
+  .content .wrap .top .tit3 {
+    animation-delay: 0.6s;
+    animation-duration: 0.6s;
+  }
+  .content .wrap .top .tit4 {
+    animation-delay: 0.3s;
+  }
+  .content .wrap .top .tit5 {
+    animation-delay: 0.6s;
+    animation-duration: 0.4s;
+  }
+  .content .wrap .top .tit6 {
+    animation-delay: 0.8s;
+  }
+  .content .wrap .top .tit7 {
+    animation-delay: 0.4s;
+  }
+  .content .wrap .top .tit8 {
+    animation-delay: 0.2s;
+    animation-duration: 0.7s;
+  }
+  .content .wrap .top .tit9 {
+    animation-delay: 0.1s;
+    animation-duration: 0.4s;
+  }
+  .content .wrap .top .tit10 {
+    animation-delay: 0.2s;
+  }
+  .content .wrap .top .tit11 {
+    animation-delay: 0.6s;
+  }
+  .content .wrap .top .tit12 {
+    animation-delay: 0.4s;
+  }
+  .content .wrap .top .tit13 {
+    animation-delay: 0.1s;
+    animation-duration: 0.5s;
+  }
+  .content .wrap .top .tit14 {
+    animation-delay: 0.6s;
+  }
+  .content .wrap .top .tit15 {
+    animation-delay: 0.8s;
+  }
+  @keyframes show {
+    100% {
+      filter: blur(0);
+    }
+  }
+  .content .wrap .banner {
+    overflow: hidden;
+  }
+  .content .wrap .banner .bg {
+    width: 1920px;
+    position: relative;
+  }
+  .content .wrap .banner1 .bg {
+    height: 1824px;
+  }
+  .content .wrap .banner2 .bg {
+    height: 1035px;
+  }
+  .content .wrap .banner3 .bg {
+    height: 1181px;
+  }
+  .content .wrap .product {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content .wrap .product .btn {
+    width: 439px;
+    height: 725px;
+    transition: transform 0.4s ease-in-out;
+  }
+  .content .wrap .product .btn:hover {
+    transform: scale(1.02);
+  }
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="inner">
+      <div class="top">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/top.png" class="bg" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit1.png" class="tit tit1" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit2.png" class="tit tit2" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit3.png" class="tit tit3" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit4.png" class="tit tit4" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit5.png" class="tit tit5" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit6.png" class="tit tit6" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit7.png" class="tit tit7" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit8.png" class="tit tit8" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit9.png" class="tit tit9" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit10.png" class="tit tit10" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit11.png" class="tit tit11" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit12.png" class="tit tit12" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit13.png" class="tit tit13" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit14.png" class="tit tit14" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/tit15.png" class="tit tit15" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/txt.png" class="txt" data-aos="fade-up" data-aos-delay="1000" alt="">
+      </div>
+      <div class="banner banner1">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/cnt1-bg.png" class="bg" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/cnt1-1.png" data-aos="fade-up" data-aos-offset="600" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/cnt1-2.png" data-aos="fade-up" data-aos-delay="600" data-aos-offset="600" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/cnt1-3.png" data-aos="fade-up" data-aos-delay="300" data-aos-offset="600" alt="">
+      </div>
+      <div class="product">
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=5899" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240523/pc/prd1.png" alt="">SA24B43T</a>
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=5900" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240523/pc/prd2.png" alt="">SA24B44F</a>
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=5919" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240523/pc/prd3.png" alt="">SA24B55K</a>
+      </div>
+      <div class="banner banner2">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/cnt2-bg.png" class="bg" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/cnt2.png" data-aos="fade-up" data-aos-offset="600" alt="">
+      </div>
+      <div class="banner banner3">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/cnt3-bg.png" class="bg" alt="">
+        <img src="https://woorimstg.cafe24.com/product/project/240523/pc/cnt3.png" data-aos="fade-up" data-aos-offset="600" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+  var swiper = new Swiper(".swiper", {
+    speed: 1500,
+    slidesPerView: 2.1,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+  });
+</script>

@@ -1,0 +1,148 @@
+.content {
+  font-size: 0px;
+  max-width: 1920px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap {
+  overflow: hidden;
+}
+.content .wrap [data-aos="fade-up"] {
+  transition-duration: 1.4s;
+}
+.content .wrap img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .inner {
+  min-width: 1920px;
+  height: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+.content .wrap .inner > div {
+  position: relative;
+}
+.content .wrap .top {
+  width: 1920px;
+  height: 1022px;
+  overflow: hidden;
+}
+.content .wrap .top img {
+  width: 1920px;
+  height: 1022px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .top .bg {
+  filter: blur(0.4rem);
+  animation: show 1.3s linear forwards;
+  animation-delay: 0.5s;
+}
+.content .wrap .top .tit {
+  filter: blur(1rem);
+  animation: show 0.6s linear forwards;
+}
+.content .wrap .top .tit2 {
+  animation-delay: 0.2s;
+}
+.content .wrap .top .tit3 {
+  animation-delay: 0.6s;
+  animation-duration: 0.6s;
+}
+.content .wrap .top .tit4 {
+  animation-delay: 0.3s;
+}
+.content .wrap .top .tit5 {
+  animation-delay: 0.6s;
+  animation-duration: 0.4s;
+}
+.content .wrap .top .tit6 {
+  animation-delay: 0.8s;
+}
+.content .wrap .top .tit7 {
+  animation-delay: 0.4s;
+}
+.content .wrap .top .tit8 {
+  animation-delay: 0.2s;
+  animation-duration: 0.7s;
+}
+.content .wrap .top .tit9 {
+  animation-delay: 0.1s;
+  animation-duration: 0.4s;
+}
+.content .wrap .top .tit10 {
+  animation-delay: 0.2s;
+}
+.content .wrap .top .tit11 {
+  animation-delay: 0.6s;
+}
+.content .wrap .top .tit12 {
+  animation-delay: 0.4s;
+}
+.content .wrap .top .tit13 {
+  animation-delay: 0.1s;
+  animation-duration: 0.5s;
+}
+.content .wrap .top .tit14 {
+  animation-delay: 0.6s;
+}
+.content .wrap .top .tit15 {
+  animation-delay: 0.8s;
+}
+@keyframes show {
+  100% {
+    filter: blur(0);
+  }
+}
+.content .wrap .banner {
+  overflow: hidden;
+}
+.content .wrap .banner .bg {
+  width: 1920px;
+  position: relative;
+}
+.content .wrap .banner1 .bg {
+  height: 1824px;
+}
+.content .wrap .banner2 .bg {
+  height: 1035px;
+}
+.content .wrap .banner3 .bg {
+  height: 1181px;
+}
+.content .wrap .product {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content .wrap .product .btn {
+  width: 439px;
+  height: 725px;
+  transition: transform 0.4s ease-in-out;
+}
+.content .wrap .product .btn:hover {
+  transform: scale(1.02);
+}
+/*# sourceMappingURL=style-pc.css.map */

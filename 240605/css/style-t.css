@@ -1,0 +1,180 @@
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 28px;
+    scroll-behavior: smooth;
+  }
+  .content {
+    font-size: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 767px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .wrap [data-aos="fade-up"] {
+    transition-duration: 1000ms;
+  }
+  .content .wrap .top {
+    width: 27.39328703rem;
+    height: 32.90417184rem;
+    overflow: hidden;
+    position: relative;
+  }
+  .content .wrap .top .gif1 {
+    width: 21.07671732rem;
+    height: 21.07671732rem;
+    position: absolute;
+    left: 10.05494771rem;
+    top: 7.15448203rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .top .gif1 span {
+    width: 21.07671732rem;
+    height: 9.66821895rem;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    right: auto;
+    top: auto;
+  }
+  .content .wrap .top .gif1 img {
+    width: 21.07671732rem;
+    height: 21.07671732rem;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    right: auto;
+    top: auto;
+  }
+  .content .wrap .top .gif2 {
+    width: 24.81509531rem;
+    height: 24.81509531rem;
+    position: absolute;
+    left: -8.57248747rem;
+    top: -12.72982162rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .top .gif2 span {
+    width: 24.81509531rem;
+    height: 12.8909586rem;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    right: auto;
+    top: auto;
+  }
+  .content .wrap .top .gif2 img {
+    width: 24.81509531rem;
+    height: 24.81509531rem;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    right: auto;
+    top: auto;
+  }
+  .content .wrap .top .silver {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .vid {
+    width: 27.39328703rem;
+    height: 23.20372549rem;
+  }
+  .content .wrap .vid iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .content .wrap .cnt {
+    background-color: #f7f4eb;
+    position: relative;
+  }
+  .content .wrap .cnt .txt {
+    position: absolute;
+  }
+  .content .wrap .cnt .prd {
+    position: absolute;
+  }
+  .content .wrap .cnt .prd .btn {
+    width: 7.73457516rem;
+    height: 4.67297249rem;
+    position: absolute;
+    left: 13.69664352rem;
+    top: 6.70329847rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .cnt .prd .btn.btn2 {
+    left: 13.69664352rem;
+    top: 19.52980228rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .cnt1 {
+    width: 27.39328703rem;
+    height: 62.746741rem;
+  }
+  .content .wrap .cnt1 .txt {
+    width: 27.39328703rem;
+    height: 30.32598012rem;
+    left: 0rem;
+    top: 6.92889025rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .cnt1 .prd {
+    width: 27.39328703rem;
+    height: 25.49187064rem;
+    position: absolute;
+    left: 0rem;
+    top: 37.25487037rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .cnt2 {
+    width: 27.39328703rem;
+    height: 54.30316312rem;
+  }
+  .content .wrap .cnt2 .txt {
+    position: relative;
+    z-index: 1;
+  }
+  .content .wrap .cnt2 .pic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .cnt3 {
+    width: 27.39328703rem;
+    height: 45.31171949rem;
+    position: relative;
+  }
+  .content .wrap .cnt3 .txt {
+    width: 27.39328703rem;
+    height: 15.79142429rem;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    right: auto;
+    top: auto;
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

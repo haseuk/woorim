@@ -1,0 +1,97 @@
+html {
+  scroll-behavior: smooth;
+}
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap [data-aos="fade-up"] {
+  transition-duration: 1000ms;
+}
+.content .wrap .top {
+  width: 100vw;
+  height: 146.82352941vw;
+  overflow: hidden;
+  position: relative;
+}
+.content .wrap .top img {
+  width: 100vw;
+  height: 146.82352941vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product {
+  width: 100vw;
+  height: 300.23529412vw;
+  position: relative;
+}
+.content .wrap .product img {
+  width: 100vw;
+  height: 300.23529412vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .btn {
+  width: 18.82352941vw;
+  height: 18.82352941vw;
+  position: absolute;
+}
+.content .wrap .product .btn i {
+  width: 8.47058824vw;
+  height: 8.47058824vw;
+  background-image: url('../images/mo/btn.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 5.17647059vw;
+  top: 5.17647059vw;
+  right: auto;
+  bottom: auto;
+  display: inline-block;
+  pointer-events: none;
+  animation: jamjam 1.5s infinite;
+}
+.content .wrap .product .btn.btn1 {
+  left: 42.70588235vw;
+  top: 42.94117647vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .btn.btn2 {
+  left: 44vw;
+  top: 165.29411765vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product .btn.btn3 {
+  left: 37.17647059vw;
+  top: 253.29411765vw;
+  right: auto;
+  bottom: auto;
+}
+@keyframes jamjam {
+  50% {
+    transform: scale(1.15);
+  }
+}
+/*# sourceMappingURL=style-mo.css.map */

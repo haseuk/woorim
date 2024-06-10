@@ -1,0 +1,54 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 31.0295;
+
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { .fs(0); .mh-c; .tc; max-width: 767px; .rel;
+    img { .wf; .vat; }
+    .wrap {
+      [data-aos="fade-up"] { transition-duration: 1.2s; }
+      img { .abs; .lt; }
+      > div { .rel; }
+      .top { .wh(850,768); .crop;
+        img { .wh(850,768); }
+        .bg { filter: blur(0.4rem); animation: show 1.3s linear forwards; animation-delay: 0.5s; }
+        .tit { filter:blur(1rem); animation: show 0.8s linear forwards; }
+        .tit2 { animation-delay:0.2s; }
+        .tit3 { animation-delay:0.7s; animation-duration: 0.5s; }
+        .tit4 { animation-delay:0.3s; }
+        .tit5 { animation-delay:0.6s; animation-duration: 0.4s; }
+        .tit6 { animation-delay:0.8s; }
+        .tit7 { animation-delay:0.4s; }
+        .tit8 { animation-delay:0.2s; animation-duration: 0.7s; }
+        .tit9 { animation-delay:0.1s; animation-duration: 0.4s; }
+        .tit10 { animation-delay:0.2s; }
+        .tit11 { animation-delay:0.6s; }
+        .tit12 { animation-delay:0.4s; }
+        .tit13 { animation-delay:0.1s; animation-duration: 0.5s; }
+        .tit14 { animation-delay:0.7s; }
+        .tit15 { animation-delay:0.9s; }
+        @keyframes show {
+          100% { filter:blur(0); }
+        }
+      }
+      .banner { .crop;
+        img { .rel; }
+        .bg { .w(850); .abs; }
+      }
+      .banner1 .bg { .h(1120); }
+      .banner2 .bg { .h(1012); }
+      .banner3 .bg { .h(978); }
+      .banner4 .bg { .h(970); }
+      .product {
+        .swiper { .p(0,65); .-box;
+          .swiper-slide img { .rel; }
+          .swiper-pagination { .wh(720,5); top:auto; .b(0); .bgc(#f0f0f2); .ml(65);
+            .swiper-pagination-progressbar-fill { .bgc(#ccccce); }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,299 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+  @media screen and (min-width: 768px) {
+    html {
+      scroll-behavior: smooth;
+    }
+    .content {
+      font-size: 0vw;
+      max-width: 100vw;
+      text-align: center;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .content img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .content .btn {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+    }
+    .content .wrap {
+      overflow: hidden;
+    }
+    .content .wrap [data-aos="fade-up"] {
+      transition-duration: 1000ms;
+    }
+    .content .wrap .top {
+      width: 100vw;
+      height: 67.86458333vw;
+      position: relative;
+    }
+    .content .wrap .top img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0vw;
+      top: 0vw;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .tab-wrap {
+      width: 100vw !important;
+      height: 4.79166667vw !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+      top: 61px;
+      z-index: 3 !important;
+    }
+    .content .wrap .tab-wrap .tab {
+      width: 23.95833333vw;
+      height: 4.79166667vw;
+    }
+    .content .wrap section article {
+      position: relative;
+    }
+    .content .wrap section article .anchor {
+      display: block;
+      width: 100%;
+      height: 0vw;
+      position: absolute;
+      left: 0vw;
+      top: -12.60416667vw;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap section article .prd {
+      width: 32.29166667vw;
+      height: 26.04166667vw;
+      position: absolute;
+      left: 50%;
+      bottom: 9.0625vw;
+      right: auto;
+      top: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .content .wrap section article .prd .btn {
+      width: 15.36458333vw;
+      height: 26.04166667vw;
+    }
+    .content .wrap section article.art2 .prd {
+      bottom: 11.04166667vw;
+      margin-left: -34.79166667vw;
+    }
+    .content .wrap section article.art3 .prd {
+      bottom: 17.03125vw;
+    }
+    .content .wrap[data-view="0"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240527/pc/tab1.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap[data-view="1"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240527/pc/tab2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap[data-view="2"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240527/pc/tab3.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap[data-view="0"] .art1,
+    .content .wrap[data-view="1"] .art2,
+    .content .wrap[data-view="2"] .art3 {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    html {
+      scroll-behavior: smooth;
+    }
+    .content {
+      font-size: 0px;
+      max-width: 1920px;
+      text-align: center;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .content img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .content .btn {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+    }
+    .content .wrap {
+      overflow: hidden;
+    }
+    .content .wrap [data-aos="fade-up"] {
+      transition-duration: 1000ms;
+    }
+    .content .wrap .top {
+      width: 1920px;
+      height: 1303px;
+      position: relative;
+    }
+    .content .wrap .top img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .tab-wrap {
+      width: 1920px !important;
+      height: 92px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+      top: 61px;
+      z-index: 3 !important;
+    }
+    .content .wrap .tab-wrap .tab {
+      width: 460px;
+      height: 92px;
+    }
+    .content .wrap section article {
+      position: relative;
+    }
+    .content .wrap section article .anchor {
+      display: block;
+      width: 100%;
+      height: 0px;
+      position: absolute;
+      left: 0px;
+      top: -242px;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap section article .prd {
+      width: 620px;
+      height: 500px;
+      position: absolute;
+      left: 50%;
+      bottom: 174px;
+      right: auto;
+      top: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .content .wrap section article .prd .btn {
+      width: 295px;
+      height: 500px;
+    }
+    .content .wrap section article.art2 .prd {
+      bottom: 212px;
+      margin-left: -668px;
+    }
+    .content .wrap section article.art3 .prd {
+      bottom: 327px;
+    }
+    .content .wrap[data-view="0"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240527/pc/tab1.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap[data-view="1"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240527/pc/tab2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap[data-view="2"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240527/pc/tab3.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap[data-view="0"] .art1,
+    .content .wrap[data-view="1"] .art2,
+    .content .wrap[data-view="2"] .art3 {
+      display: block;
+    }
+  }
+  /*# sourceMappingURL=style-pc.css.map */
+</style>
+<div class="content">
+  <div class="wrap best" data-view="0">
+    <div class="top">
+      <img src="https://woorimstg.cafe24.com/product/project/240527/pc/top.png" alt="">
+      <img src="https://woorimstg.cafe24.com/product/project/240527/pc/txt1.png" class="txt txt1" data-aos="fade-up" alt="">
+      <img src="https://woorimstg.cafe24.com/product/project/240527/pc/txt2.png" class="txt txt2" data-aos="fade-up" data-aos-delay="100" alt="">
+      <img src="https://woorimstg.cafe24.com/product/project/240527/pc/txt3.png" class="txt txt3" data-aos="fade-up" data-aos-delay="200" alt="">
+    </div>
+    <div class="tab-wrap" id="sticker">
+      <a class="tab" data-tab="0" data-art="art1">dal</a>
+      <a class="tab" data-tab="1" data-art="art2">lucky u</a>
+      <a class="tab" data-tab="2" data-art="art3">edge</a>
+    </div>
+
+    <section>
+      <article class="art1">
+        <span class="anchor" id="art1"></span>
+        <img src="https://woorimstg.cafe24.com/product/project/240527/pc/prd1.png" alt="">
+        <div class="prd">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=4262" class="btn">T2037</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=4260" class="btn">T2026</a>
+        </div>
+      </article>
+      <article class="art2">
+        <span class="anchor" id="art2"></span>
+        <img src="https://woorimstg.cafe24.com/product/project/240527/pc/prd2.png" alt="">
+        <div class="prd">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=3960" class="btn">P1406</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=3959" class="btn">P1405</a>
+        </div>
+      </article>
+      <article class="art3">
+        <span class="anchor" id="art3"></span>
+        <img src="https://woorimstg.cafe24.com/product/project/240527/pc/prd3.png" alt="">
+        <div class="prd">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5738" class="btn">SA24A06F</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5741" class="btn">SA24A02F</a>
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+
+  let tab = document.querySelectorAll('.tab');
+  let best = document.querySelector('.best');
+  Array.prototype.forEach.call(tab, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab')
+      let v = e.getAttribute('data-art')
+      best.setAttribute('data-view', idx);
+      loc(v)
+    })
+  });
+
+  function loc(v) {
+    location.href = 'index-pc.html#'+v;
+  }
+
+  let sticker = $("#sticker");
+  let winH = document.documentElement.scrollHeight;
+  let bestH = best.getBoundingClientRect().height;
+  let bottomSpacingValue = winH - bestH;
+  sticker.sticky({topSpacing:150,bottomSpacing:bottomSpacingValue});
+</script>
