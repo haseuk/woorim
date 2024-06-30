@@ -1,0 +1,35 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 31.0295;
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { max-width: 767px;
+    .wrap {
+      [data-aos="fade-up"] { transition-duration: 1000ms; }
+      .top { .rel; .wh(850,1390);
+        .swiper { .f; pointer-events: none; }
+        .top-tit { .f; .abs; .lt; .z(1); }
+      }
+      .cont { .rel;
+        .txt-motion { .abs; .lt; .f; .w(0); .crop;
+          img { .wh(850,1800); max-width: none; }
+        }
+      }
+      [data-aos="new"] { transition-duration: 1000ms; transition-property: width; width: 0; }
+      [data-aos="new"].aos-animate { width: 100%; }
+      .product { .wh(850,810); .rel;
+        .swiper { .wh(850,670); .abs; .lt;
+          .swiper-slide { .rel;
+            .btn { .wh(380,590); .abs; .lt(50%,0); }
+          }
+          .swiper-pagination {
+            .swiper-pagination-bullet { .wh(16,16); .bgc(#dad1da); .o(1);
+              &.swiper-pagination-bullet-active { .bgc(#f5f0f5); .-a(#272328); .-box; }
+            }
+          }
+        }
+      }
+    }
+  }
+}

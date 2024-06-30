@@ -1,0 +1,26 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 31.0295;
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { max-width: 767px;
+    .wrap {
+      .top { .wh(850,1084); }
+      .tab-wrap { .wh(850,92)!important; .t(61px);
+        .tab { .wh(265,92);
+          &.tab2 { .w(320); }
+        }
+      }
+      section {
+        article {
+          .anchor { .wh(100%,0); .lt(0,-200); }
+          .prd { .wh(678,580); .lb(87,90);
+            .btn { .wh(324,550);  }
+          }
+          &.art3 .prd { .b(158); }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,283 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap .vis {
+    width: 100vw;
+    height: 243.41176471vw;
+    position: relative;
+    background-color: #f5e9e9;
+    overflow: hidden;
+  }
+  .content .wrap .vis img {
+    transition-duration: 1200ms;
+    position: absolute;
+  }
+  .content .wrap .vis .tit,
+  .content .wrap .vis .vis1 {
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .vis .vis2,
+  .content .wrap .vis .vis3 {
+    left: 0vw;
+    top: 122.11764706vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product {
+    position: relative;
+  }
+  .content .wrap .product .prd-swiper {
+    position: relative;
+    z-index: 2;
+  }
+  .content .wrap .product .prd-swiper .swiper {
+    width: 68.82352941vw;
+    height: 158.23529412vw;
+  }
+  .content .wrap .product .prd-swiper .swiper .swiper-slide {
+    position: relative;
+  }
+  .content .wrap .product .prd-swiper .swiper .swiper-slide img {
+    width: 99.9%;
+  }
+  .content .wrap .product .prd-swiper .swiper .swiper-slide .btn {
+    width: 51.76470588vw;
+    height: 18.82352941vw;
+    position: absolute;
+    left: 50%;
+    top: 126.11764706vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -25.88235294vw;
+  }
+  .content .wrap .product .prd-swiper .swiper-btn {
+    width: 10vw;
+    height: 28.82352941vw;
+    opacity: 1;
+    top: 48vw;
+    margin: 0vw;
+  }
+  .content .wrap .product .prd-swiper .swiper-btn:after {
+    content: '';
+    display: block;
+    width: 4.47058824vw;
+    height: 8.35294118vw;
+    position: absolute;
+    top: 50%;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  .content .wrap .product .prd-swiper .swiper-btn.swiper-button-prev:after {
+    content: '';
+    display: block;
+    background-image: url('https://woorimrsm.cafe24.com/product/special/240628a/mo/prev.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 3.29411765vw;
+  }
+  .content .wrap .product .prd-swiper .swiper-btn.swiper-button-next:after {
+    content: '';
+    display: block;
+    background-image: url('https://woorimrsm.cafe24.com/product/special/240628a/mo/next.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 3.29411765vw;
+  }
+  .content .wrap .product .bg-swiper {
+    width: 100vw;
+    height: 158.23529412vw;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    pointer-events: none;
+  }
+  @media screen and (min-width: 767px) {
+    html {
+      font-size: 28px;
+    }
+    .content {
+      max-width: 767px;
+    }
+    .content .wrap .vis {
+      width: 27.39328703rem;
+      height: 66.67848338rem;
+      position: relative;
+      background-color: #f5e9e9;
+      overflow: hidden;
+    }
+    .content .wrap .vis img {
+      transition-duration: 1200ms;
+      position: absolute;
+    }
+    .content .wrap .vis .tit,
+    .content .wrap .vis .vis1 {
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .vis .vis2,
+    .content .wrap .vis .vis3 {
+      left: 0rem;
+      top: 33.45203758rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .product {
+      position: relative;
+    }
+    .content .wrap .product .prd-swiper {
+      position: relative;
+      z-index: 2;
+    }
+    .content .wrap .product .prd-swiper .swiper {
+      width: 18.85302696rem;
+      height: 43.34584831rem;
+    }
+    .content .wrap .product .prd-swiper .swiper .swiper-slide {
+      position: relative;
+    }
+    .content .wrap .product .prd-swiper .swiper .swiper-slide img {
+      width: 99.9%;
+    }
+    .content .wrap .product .prd-swiper .swiper .swiper-slide .btn {
+      width: 14.18005446rem;
+      height: 5.15638344rem;
+      position: absolute;
+      left: 50%;
+      top: 34.54776906rem;
+      right: auto;
+      bottom: auto;
+      margin-left: -7.09002723rem;
+    }
+    .content .wrap .product .prd-swiper .swiper-btn {
+      width: 2.7393287rem;
+      height: 7.89571214rem;
+      opacity: 1;
+      top: 13.14877778rem;
+      margin: 0rem;
+    }
+    .content .wrap .product .prd-swiper .swiper-btn:after {
+      content: '';
+      display: block;
+      width: 1.22464107rem;
+      height: 2.28814515rem;
+      position: absolute;
+      top: 50%;
+      pointer-events: none;
+      transform: translateY(-50%);
+    }
+    .content .wrap .product .prd-swiper .swiper-btn.swiper-button-prev:after {
+      content: '';
+      display: block;
+      background-image: url('https://woorimrsm.cafe24.com/product/special/240628a/mo/prev.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: 0.9023671rem;
+    }
+    .content .wrap .product .prd-swiper .swiper-btn.swiper-button-next:after {
+      content: '';
+      display: block;
+      background-image: url('https://woorimrsm.cafe24.com/product/special/240628a/mo/next.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      right: 0.9023671rem;
+    }
+    .content .wrap .product .bg-swiper {
+      width: 27.39328703rem;
+      height: 43.34584831rem;
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+      pointer-events: none;
+    }
+  }
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="https://woorimrsm.cafe24.com/product/special/240628a/mo/top.png" alt="">
+    </div>
+    <div class="vis">
+      <img src="https://woorimrsm.cafe24.com/product/special/240628a/mo/vis1.png" class="vis1" data-aos="fade-up" data-aos-offset="500" data-aos-delay="500" alt="">
+      <img src="https://woorimrsm.cafe24.com/product/special/240628a/mo/tit.png" class="tit" data-aos="fade-right" data-aos-offset="500"  alt="">
+      <img src="https://woorimrsm.cafe24.com/product/special/240628a/mo/vis2.png" class="vis2" data-aos="fade-right" data-aos-offset="500"  alt="">
+      <img src="https://woorimrsm.cafe24.com/product/special/240628a/mo/vis3.png" class="vis3" data-aos="fade-left" data-aos-offset="500"  data-aos-delay="500" alt="">
+    </div>
+    <div class="product">
+      <div class="prd-swiper">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628a/mo/prd1.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=5190" class="btn">RA24B24L</a></div>
+            <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628a/mo/prd2.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=5191" class="btn">RA24B25L</a></div>
+            <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628a/mo/prd3.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=5192" class="btn">RA24B26L</a></div>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-btn"></div>
+        <div class="swiper-button-next swiper-btn"></div>
+      </div>
+      <div class="swiper bg-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628a/mo/prd1-bg.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628a/mo/prd2-bg.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628a/mo/prd3-bg.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+  var bgSwiper = new Swiper(".bg-swiper", {
+    effect: 'fade',
+    speed: 1500,
+  });
+  var prdSwiper = new Swiper(".prd-swiper .swiper", {
+    speed: 1000,
+    spaceBetween: 10,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: bgSwiper,
+    },
+  });
+</script>

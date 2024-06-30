@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-pc-sm.css">
+  <link rel="stylesheet" href="css/style-pc.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="content">
+  <div class="wrap best" data-view="0">
+    <div class="top">
+      <img src="images/pc/top.png" alt="">
+      <img src="images/pc/txt1.png" class="txt txt1" data-aos="fade-up" alt="">
+      <img src="images/pc/txt2.png" class="txt txt2" data-aos="fade-up" data-aos-delay="100" alt="">
+      <img src="images/pc/txt3.png" class="txt txt3" data-aos="fade-up" data-aos-delay="200" alt="">
+    </div>
+    <div class="tab-wrap" id="sticker">
+      <a href="#art1" class="tab" data-tab="0">dal</a>
+      <a href="#art2" class="tab" data-tab="1">lucky u</a>
+      <a href="#art3" class="tab" data-tab="2">edge</a>
+    </div>
+
+    <section>
+      <article class="art1">
+        <span class="anchor" id="art1"></span>
+        <img src="images/pc/prd1.png" alt="">
+        <div class="prd">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5899" class="btn">SA24B43T</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5900" class="btn">SA24B44F</a>
+        </div>
+      </article>
+      <article class="art2">
+        <span class="anchor" id="art2"></span>
+        <img src="images/pc/prd2.png" alt="">
+        <div class="prd">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5245" class="btn">U0162</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5807" class="btn">U0170</a>
+        </div>
+      </article>
+      <article class="art3">
+        <span class="anchor" id="art3"></span>
+        <img src="images/pc/prd3.png" alt="">
+        <div class="prd">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5813" class="btn">SA24A16U</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5816" class="btn">SA24A17U</a>
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+
+  let tab = document.querySelectorAll('.tab');
+  let best = document.querySelector('.best');
+  Array.prototype.forEach.call(tab, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab');
+      let v = e.getAttribute('data-art');
+      best.setAttribute('data-view', idx);
+      loc(v);
+    });
+  });
+
+
+  let sticker = $("#sticker");
+  $( document ).ready(function() {
+    let winH = document.documentElement.scrollHeight;
+    let bestH = best.getBoundingClientRect().height;
+    let bottomSpacingValue = winH - bestH;
+    sticker.sticky({topSpacing:150,bottomSpacing:bottomSpacingValue});
+  });
+</script>
+</body>
+</html>

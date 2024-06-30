@@ -1,0 +1,32 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 31.0295;
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { max-width: 767px;
+    .wrap {
+      .vis { .wh(850,2069); .rel; .bgc(#f5e9e9); .crop;
+        img { transition-duration: 1200ms; .abs; }
+        .tit, .vis1 { .lt; }
+        .vis2, .vis3 { .lt(0,1038); }
+      }
+      .product { .rel;
+        .prd-swiper { .rel; .z(2);
+          .swiper { .wh(585,1345);
+            .swiper-slide { .rel;
+              img { .w(99.8%); }
+              .btn { .wh(440,160); .abs; .lt(50%,1072); .ml(-220); }
+            }
+          }
+          .swiper-btn { .wh(85,245); .o(1); .t(408); .m(0);
+            &:after { .cnt; .wh(38,71); .abs; .t(50%); pointer-events: none; transform: translateY(-50%); }
+            &.swiper-button-prev:after { .cnt; .contain('../images/mo/prev.png'); .l(28); }
+            &.swiper-button-next:after { .cnt; .contain('../images/mo/next.png'); .r(28); }
+          }
+        }
+        .bg-swiper { .wh(850,1345); .abs; .lt; pointer-events: none; }
+      }
+    }
+  }
+}

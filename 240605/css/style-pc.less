@@ -9,13 +9,17 @@ html { scroll-behavior: smooth; }
     [data-aos="fade-up"] { transition-duration: 1000ms; }
     .top { .wh(1920,850); .crop; .rel;
       .necklace { .f; .abs; .lt; }
-      .gif1 { .wh(654,654); .abs; .rt(158,154); .z(1); }
+      .gif1 { .wh(654,654); .abs; .rt(158,154); .z(1);
+        span { .wh(654,400); .abs; .lb; .crop;
+          img { .wh(654,654); .abs; .lb; }
+        }
+      }
       .gif2 { .wh(778,778); .abs; .lt(50,-328); .z(1); }
       .silver { .f; .abs; .lt; .z(1); }
     }
     .cont-wrap { .wh(1920,2857); .bgc(#f7f4eb); .rel;
-      .vid { .wh(700,593); .abs; .lt(260,143);
-        iframe { .f; }
+      .vid { .wh(700,593); .abs; .lt(260,143); .crop;
+        iframe { .wh(700,700); .abs; .lt(50%,50%); transform: translate(-50%,-50%); } 
       }
       .txt1 { .wh(700,593); .abs; .lt(960,143); }
       .prd { .wh(700,719); .abs; .lt(260,954);

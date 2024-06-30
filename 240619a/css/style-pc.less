@@ -1,0 +1,78 @@
+@import "../../css/asset";
+
+@media screen and (min-width: 1920px) {
+  html { scroll-behavior: smooth; }
+  .content { .max-w(1920);
+    .wrap { .crop;
+      .top { .wh(1920,723); .rel;
+        .bubble { .f; .abs; .lt; .z(1); }
+        .ball { .abs; animation: doongdoong 7s ease-in-out infinite; }
+        .ball1 { .wh(464,464); .lt(218,-214); }
+        .ball2 { .wh(506,511); .lb(-60,-241); animation: doongdoong2 5s infinite; }
+        .ball3 { .wh(238,238); .lb(1080,-157); animation: doongdoong3 7s infinite; }
+        .ball4 { .wh(776,779); .rb(-289,-300); animation: doongdoong2 8s infinite; }
+      }
+      @keyframes doongdoong {
+        50% { transform: translateY(8%); }
+      }
+      @keyframes doongdoong2 {
+        50% { transform: translateY(8%); }
+      }
+      @keyframes doongdoong3 {
+        50% { transform: translateY(12%); }
+      }
+
+      .rolling { .fs(0); .wh(100%,55); .crop; .rel;
+        .r-inner { .wh(5242,55); .flex; align-items: start; .bgc(#000);
+          .banner { .wh(2621,55); .contain('../images/pc/banner.png');
+            &.banner1 { animation: bannerRolling 15s linear infinite; }
+            &.banner2 { animation: bannerRolling2 15s linear infinite; }
+          }
+        }
+      }
+      @keyframes bannerRolling {
+        0% { transform: translateX(0%) }
+        100% { transform: translateX(-100%) }
+      }
+      @keyframes bannerRolling2 {
+        0% { transform: translateX(0%) }
+        100% { transform: translateX(-100%) }
+      }
+
+      .prd1 { .wh(1920,2099); .contain('../images/pc/bg1.png');
+        .btn1 { .lb(640,218); }
+        .btn2 { .lb(1112,218); }
+      }
+      .prd2 { .wh(1920,2098); .contain('../images/pc/bg2.png');
+        .vid { .t(381); }
+        .btn1 { .lb(467,217); }
+        .btn2 { .lb(885,217); }
+        .btn3 { .lb(1302,217); }
+      }
+      .prd { .rel;
+        .water-drop { .wh(130,130); .contain('../images/pc/water-drop.png'); .abs; .lt(1274,233); box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1), 5px 10px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.8); transition: border-radius 0.5s; .crop; animation: drop 1s infinite alternate ease-in-out; .z(1); }
+        .water-drop2 { .wh(130,130); .contain('../images/pc/water-drop2.png'); .abs; .lt(1265,189); box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1), 5px 10px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.8); transition: border-radius 0.5s; .crop; animation: drop2 1s infinite alternate ease-in-out; .z(1); }
+        @keyframes drop {
+          from {
+            border-radius: 48% 58% 40% 70%;
+          }
+          to {
+            border-radius: 50%;
+          }
+        }
+        @keyframes drop2 {
+          from {
+            border-radius: 39% 57% 42% 58%;
+          }
+          to {
+            border-radius: 50%;
+          }
+        }
+        .vid { .wh(454,806); .abs; .lt(733,381);
+          iframe { .f; }
+        }
+        .btn { .wh(164,51); .abs; }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/style-t.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="content">
+    <div class="wrap">
+      <div class="top">
+        <img src="images/mo/top.png" alt="">
+        <img src="images/mo/ball1.png" class="ball ball1" alt="">
+        <img src="images/mo/ball2.png" class="ball ball2" alt="">
+        <img src="images/mo/ball3.png" class="ball ball3" alt="">
+      </div>
+
+      <div class="rolling">
+        <div class="r-inner">
+          <div class="banner banner1"></div>
+          <div class="banner banner2"></div>
+        </div>
+      </div>
+
+      <div class="prd prd1">
+        <div class="water-drop"></div>
+        <div class="vid">
+          <iframe src="https://player.vimeo.com/video/962791689?badge=0&amp;controls=0&amp;autoplay=true&amp;loop=true&amp;muted=true&amp;controls=true&amp;quality=auto&amp;autopause=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"   title="silver_gold"></iframe>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide1"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5897"><img src="images/mo/prd1-1.png" alt="">SA24B41F</a></div>
+            <div class="swiper-slide slide2"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5898"><img src="images/mo/prd1-2.png" alt="">SA24B42P</a></div>
+          </div>
+
+          <div class="swiper-button-prev swiper-btn"></div>
+          <div class="swiper-button-next swiper-btn"></div>
+        </div>
+      </div>
+
+      <div class="prd prd2">
+        <div class="water-drop2"></div>
+        <div class="vid">
+          <iframe src="https://player.vimeo.com/video/962044967?badge=0&amp;controls=0&amp;autoplay=true&amp;loop=true&amp;muted=true&amp;controls=true&amp;quality=auto&amp;autopause=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"   title="silver_gold"></iframe>
+        </div>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide1"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5953"><img src="images/mo/prd2-1.png" alt="">SA24B86P</a></div>
+            <div class="swiper-slide slide2"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5954"><img src="images/mo/prd2-2.png" alt="">SA24B87P</a></div>
+            <div class="swiper-slide slide2"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5955"><img src="images/mo/prd2-3.png" alt="">SA24B89F</a></div>
+          </div>
+
+          <div class="swiper-button-prev swiper-btn"></div>
+          <div class="swiper-button-next swiper-btn"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script>
+    var swiper1 = new Swiper(".prd1 .swiper", {
+      speed: 1000,
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      centeredSlides: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    var swiper2 = new Swiper(".prd2 .swiper", {
+      speed: 1000,
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      centeredSlides: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>

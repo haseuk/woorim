@@ -1,0 +1,271 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap [data-aos="fade-up"] {
+    transition-duration: 1000ms;
+  }
+  .content .wrap .top {
+    position: relative;
+    width: 100vw;
+    height: 163.52941176vw;
+  }
+  .content .wrap .top .swiper {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .content .wrap .top .top-tit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+  }
+  .content .wrap .cont {
+    position: relative;
+  }
+  .content .wrap .cont .txt-motion {
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+    width: 0vw;
+    overflow: hidden;
+  }
+  .content .wrap .cont .txt-motion img {
+    width: 100vw;
+    height: 211.76470588vw;
+    max-width: none;
+  }
+  .content .wrap [data-aos="new"] {
+    transition-duration: 1000ms;
+    transition-property: width;
+    width: 0;
+  }
+  .content .wrap [data-aos="new"].aos-animate {
+    width: 100%;
+  }
+  .content .wrap .product {
+    width: 100vw;
+    height: 95.29411765vw;
+    position: relative;
+  }
+  .content .wrap .product .swiper {
+    width: 100vw;
+    height: 78.82352941vw;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .swiper .swiper-slide {
+    position: relative;
+  }
+  .content .wrap .product .swiper .swiper-slide .btn {
+    width: 44.70588235vw;
+    height: 69.41176471vw;
+    position: absolute;
+    left: 50%;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 1.88235294vw;
+    height: 1.88235294vw;
+    background-color: #dad1da;
+    opacity: 1;
+  }
+  .content .wrap .product .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #f5f0f5;
+    border: 1px solid #272328;
+    box-sizing: border-box;
+  }
+  @media screen and (min-width: 767px) {
+    html {
+      font-size: 28px;
+    }
+    .content {
+      max-width: 767px;
+    }
+    .content .wrap [data-aos="fade-up"] {
+      transition-duration: 1000ms;
+    }
+    .content .wrap .top {
+      position: relative;
+      width: 27.39328703rem;
+      height: 44.79608115rem;
+    }
+    .content .wrap .top .swiper {
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .content .wrap .top .top-tit {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+      z-index: 1;
+    }
+    .content .wrap .cont {
+      position: relative;
+    }
+    .content .wrap .cont .txt-motion {
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+      width: 100%;
+      height: 100%;
+      width: 0rem;
+      overflow: hidden;
+    }
+    .content .wrap .cont .txt-motion img {
+      width: 27.39328703rem;
+      height: 58.00931372rem;
+      max-width: none;
+    }
+    .content .wrap [data-aos="new"] {
+      transition-duration: 1000ms;
+      transition-property: width;
+      width: 0;
+    }
+    .content .wrap [data-aos="new"].aos-animate {
+      width: 100%;
+    }
+    .content .wrap .product {
+      width: 27.39328703rem;
+      height: 26.10419117rem;
+      position: relative;
+    }
+    .content .wrap .product .swiper {
+      width: 27.39328703rem;
+      height: 21.59235566rem;
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .product .swiper .swiper-slide {
+      position: relative;
+    }
+    .content .wrap .product .swiper .swiper-slide .btn {
+      width: 12.24641067rem;
+      height: 19.01416394rem;
+      position: absolute;
+      left: 50%;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .product .swiper .swiper-pagination .swiper-pagination-bullet {
+      width: 0.51563834rem;
+      height: 0.51563834rem;
+      background-color: #dad1da;
+      opacity: 1;
+    }
+    .content .wrap .product .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: #f5f0f5;
+      border: 1px solid #272328;
+      box-sizing: border-box;
+    }
+  }
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628/mo/kv1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628/mo/kv2.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628/mo/kv3.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628/mo/kv4.png" alt=""></div>
+        </div>
+      </div>
+      <img src="https://woorimrsm.cafe24.com/product/special/240628/mo/top-tit.png" class="top-tit" data-aos="fade-up" data-aos-delay="500" alt="">
+    </div>
+    <div class="cont">
+      <img src="https://woorimrsm.cafe24.com/product/special/240628/mo/cnt1.png" alt="">
+      <div class="txt-motion" data-aos="new" data-aos-offset="500">
+        <img src="https://woorimrsm.cafe24.com/product/special/240628/mo/txt.png" alt="">
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://woorimrsm.cafe24.com/product/special/240628/mo/cnt2-bg.png" alt="">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628/mo/prd1.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=5143" class="btn">RA24B05L</a></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628/mo/prd2.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=5152" class="btn">RA24B14L</a></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628/mo/prd3.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=2503" class="btn">RS#64-04RB-MT</a></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628/mo/prd4.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=2381" class="btn">RL0157</a></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628/mo/prd5.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=2348" class="btn">RK0191</a></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240628/mo/prd6.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=2626" class="btn">RS1296</a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+
+  var swiper1 = new Swiper(".top .swiper", {
+    effect: 'fade',
+    speed: 1200,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+
+  var swiper2 = new Swiper(".product .swiper", {
+    speed: 1500,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>

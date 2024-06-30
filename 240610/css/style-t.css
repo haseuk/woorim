@@ -48,8 +48,8 @@
     bottom: auto;
   }
   .content .wrap .product .btn {
-    width: 5.15638344rem;
-    height: 5.15638344rem;
+    width: 12.56868464rem;
+    height: 9.99049292rem;
     position: absolute;
   }
   .content .wrap .product .btn i {
@@ -59,31 +59,37 @@
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    left: 1.41800545rem;
-    top: 1.41800545rem;
+    left: 0rem;
+    bottom: 0rem;
     right: auto;
-    bottom: auto;
+    top: auto;
     display: inline-block;
     pointer-events: none;
     animation: jamjam 1.5s infinite;
   }
   .content .wrap .product .btn.btn1 {
-    left: 11.69854493rem;
-    top: 11.76299973rem;
+    left: 12.8909586rem;
+    top: 5.47865741rem;
     right: auto;
     bottom: auto;
   }
   .content .wrap .product .btn.btn2 {
-    left: 12.05304629rem;
-    top: 45.2794921rem;
+    left: 13.21323257rem;
+    top: 39.12405936rem;
     right: auto;
     bottom: auto;
   }
   .content .wrap .product .btn.btn3 {
-    left: 10.1838573rem;
-    top: 69.38558469rem;
+    left: 1.48246024rem;
+    top: 63.23015195rem;
     right: auto;
     bottom: auto;
+  }
+  .content .wrap .product .btn.btn3 i {
+    right: 0rem;
+    bottom: 0rem;
+    left: auto;
+    top: auto;
   }
   @keyframes jamjam {
     50% {

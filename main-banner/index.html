@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <style>
+    .main_banner {
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 150px;
+      z-index: 29;
+      border-bottom: 1px solid #fff;
+    }
+
+    .main_banner .link {
+      line-height: 50px;
+      font-size: 14px;
+      font-weight: 400;
+      display: block;
+    }
+
+    .main_banner .btnClose {
+      line-height: 24px;
+      font-size: 14px;
+      font-weight: 400;
+      position: absolute;
+      top: 12px;
+      right: 20px;
+      z-index: 1;
+      text-transform: uppercase;
+    }
+
+    .main_banner .btnClose:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <div class="main_banner" style="background-color:var(--main-color1); color:#fff;">
+    <div class="layout_full">
+      <div class="swiper banner-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a class="link" href="https://www.daum.net">스톤헨지 웹사이트 리뉴얼 이벤트1</a>
+          </div>
+          <div class="swiper-slide">
+            <a class="link" href="https://www.daum.net">스톤헨지 웹사이트 리뉴얼 이벤트2</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="javascript:;" class="btnClose">close</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var bannerSwipe = new Swiper(".banner-swiper", {
+      speed: 1500,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+  </script>
+</body>
+</html>

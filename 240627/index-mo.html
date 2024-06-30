@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/style-t.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="content">
+    <div class="wrap">
+      <div class="top">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/mo/kv1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/mo/kv2.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/mo/kv3.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/mo/kv4.png" alt=""></div>
+          </div>
+        </div>
+        <img src="images/mo/top-tit.png" class="top-tit" data-aos="fade-up" data-aos-delay="500" alt="">
+      </div>
+      <div class="cont">
+        <img src="images/mo/cnt1.png" alt="">
+        <div class="txt-motion" data-aos="new" data-aos-offset="500">
+          <img src="images/mo/txt.png" alt="">
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/mo/cnt2-bg.png" alt="">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/mo/prd1.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=5143" class="btn">RA24B05L</a></div>
+            <div class="swiper-slide"><img src="images/mo/prd2.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=5152" class="btn">RA24B14L</a></div>
+            <div class="swiper-slide"><img src="images/mo/prd3.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=2503" class="btn">RS#64-04RB-MT</a></div>
+            <div class="swiper-slide"><img src="images/mo/prd4.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=2381" class="btn">RL0157</a></div>
+            <div class="swiper-slide"><img src="images/mo/prd5.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=2348" class="btn">RK0191</a></div>
+            <div class="swiper-slide"><img src="images/mo/prd6.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=2626" class="btn">RS1296</a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+
+    var swiper1 = new Swiper(".top .swiper", {
+      effect: 'fade',
+      speed: 1200,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+
+    var swiper2 = new Swiper(".product .swiper", {
+      speed: 1500,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+</html>

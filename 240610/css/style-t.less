@@ -13,11 +13,13 @@
       }
       .product { .wh(850,2552); .rel;
         img { .wh(850,2552); .abs; .lt; }
-        .btn { .wh(160,160); .abs;
-          i { .wh(72,72); .contain('../images/mo/btn.png'); .abs; .lt(44,44); .ib; pointer-events: none; animation:jamjam 1.5s infinite; }
-          &.btn1 { .lt(363,365); }
-          &.btn2 { .lt(374,1405); }
-          &.btn3 { .lt(316,2153); }
+        .btn { .wh(390,310); .abs;
+          i { .wh(72,72); .contain('../images/mo/btn.png'); .abs; .lb; .ib; pointer-events: none; animation:jamjam 1.5s infinite; }
+          &.btn1 { .lt(400,170); }
+          &.btn2 { .lt(410,1214); }
+          &.btn3 { .lt(46,1962);
+            i { .rb; }
+          }
         }
         @keyframes jamjam {
           50% { transform: scale(1.15); }

@@ -1,0 +1,51 @@
+@import "../../css/asset";
+
+@media screen and (min-width: 1265px) {
+  .content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+    img { .wf; .vat; }
+    .btn { .ib; .rel; .z(1); .pointer; }
+    .wrap { .crop;
+      [data-aos="fade-up"] { transition-duration: 1000ms; }
+      .top { .wh(1264,859); .rel;
+        .top-tit { .f; .abs; .lt; .z(1); }
+      }
+      .cont { .wh(1264,1761); .rel;
+        .txt-motion { .abs; .lt; .f; .w(0); .crop;
+          img { .wh(1264,1761); max-width: none; }
+        }
+        .model { .f; .abs; .lt; .z(1); }
+        .product {
+          .prd { .wh(80,80); .abs; .pt(20); .-box; .z(2);
+            &.over {
+              span { animation: paused; }
+              .shop { .block; }
+            }
+            span { .wh(40,40); .contain('../images/pc/plus.png'); .ib; pointer-events: none; animation: bounce 1.5s infinite ease-out; .rel; .z(1); }
+            .shop { .wh(299,428); .abs; .lt(40,40); .hide;
+              .btn { .wh(130,42); .abs; .lb(86,38); }
+            }
+            &.prd1 { .lt(743,631);
+              .shop { .lt(40,-388); }
+            }
+            &.prd2 { .lt(767,759); }
+            &.prd3 { .lt(813,1297); }
+            &.prd4 { .lt(535,719);
+              .shop { .lt(-259,-388); }
+            }
+            &.prd5 { .lt(535,779);
+              .shop { .l(-259); }
+            }
+            &.prd6 { .lt(370,1302);
+              .shop { .l(-259); }
+            }
+          }
+        }
+        @keyframes bounce {
+          50% { transform: scale(1.2); }
+        }
+      }
+      [data-aos="new"] { transition-duration: 1000ms; transition-property: width; width: 0; }
+      [data-aos="new"].aos-animate { width: 100%; }
+    }
+  }
+}

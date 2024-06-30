@@ -1,0 +1,117 @@
+html {
+  scroll-behavior: smooth;
+}
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap .vis {
+  width: 100vw;
+  height: 243.41176471vw;
+  position: relative;
+  background-color: #f5e9e9;
+  overflow: hidden;
+}
+.content .wrap .vis img {
+  transition-duration: 1200ms;
+  position: absolute;
+}
+.content .wrap .vis .tit,
+.content .wrap .vis .vis1 {
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .vis .vis2,
+.content .wrap .vis .vis3 {
+  left: 0vw;
+  top: 122.11764706vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .product {
+  position: relative;
+}
+.content .wrap .product .prd-swiper {
+  position: relative;
+  z-index: 2;
+}
+.content .wrap .product .prd-swiper .swiper {
+  width: 68.82352941vw;
+  height: 158.23529412vw;
+}
+.content .wrap .product .prd-swiper .swiper .swiper-slide {
+  position: relative;
+}
+.content .wrap .product .prd-swiper .swiper .swiper-slide img {
+  width: 99.8%;
+}
+.content .wrap .product .prd-swiper .swiper .swiper-slide .btn {
+  width: 51.76470588vw;
+  height: 18.82352941vw;
+  position: absolute;
+  left: 50%;
+  top: 126.11764706vw;
+  right: auto;
+  bottom: auto;
+  margin-left: -25.88235294vw;
+}
+.content .wrap .product .prd-swiper .swiper-btn {
+  width: 10vw;
+  height: 28.82352941vw;
+  opacity: 1;
+  top: 48vw;
+  margin: 0vw;
+}
+.content .wrap .product .prd-swiper .swiper-btn:after {
+  content: '';
+  display: block;
+  width: 4.47058824vw;
+  height: 8.35294118vw;
+  position: absolute;
+  top: 50%;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.content .wrap .product .prd-swiper .swiper-btn.swiper-button-prev:after {
+  content: '';
+  display: block;
+  background-image: url('../images/mo/prev.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 3.29411765vw;
+}
+.content .wrap .product .prd-swiper .swiper-btn.swiper-button-next:after {
+  content: '';
+  display: block;
+  background-image: url('../images/mo/next.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 3.29411765vw;
+}
+.content .wrap .product .bg-swiper {
+  width: 100vw;
+  height: 158.23529412vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  pointer-events: none;
+}
+/*# sourceMappingURL=style-mo.css.map */

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-pc.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/pc/kv1.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/pc/kv2.png" alt=""></div>
+        </div>
+      </div>
+      <img src="images/pc/top-tit.png" class="top-tit" data-aos="fade-up" data-aos-delay="500" alt="">
+    </div>
+    <div class="cont">
+      <img src="images/pc/bg.png" alt="">
+      <div class="txt-motion" data-aos="new" data-aos-offset="900" data-aos-delay="500">
+        <img src="images/pc/txt.png" alt="">
+      </div>
+      <img src="images/pc/model.png" class="model" alt="">
+
+      <div class="product">
+        <div class="prd prd1" onmouseover="prdShow(this);" onmouseleave="prdHide(this);"><span></span><div class="shop"><img src="images/pc/prd1.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=5143" class="btn btn1">RA24B05L</a></div></div>
+        <div class="prd prd2" onmouseover="prdShow(this);" onmouseleave="prdHide(this);"><span></span><div class="shop"><img src="images/pc/prd2.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=5152" class="btn btn2">RA24B14L</a></div></div>
+        <div class="prd prd3" onmouseover="prdShow(this);" onmouseleave="prdHide(this);"><span></span><div class="shop"><img src="images/pc/prd3.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=2503" class="btn btn3">RS#64-04RB-MT</a></div></div>
+        <div class="prd prd4" onmouseover="prdShow(this);" onmouseleave="prdHide(this);"><span></span><div class="shop"><img src="images/pc/prd4.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=2381" class="btn btn4">RL0157</a></div></div>
+        <div class="prd prd5" onmouseover="prdShow(this);" onmouseleave="prdHide(this);"><span></span><div class="shop"><img src="images/pc/prd5.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=2348" class="btn btn5">RK0191</a></div></div>
+        <div class="prd prd6" onmouseover="prdShow(this);" onmouseleave="prdHide(this);"><span></span><div class="shop"><img src="images/pc/prd6.png" alt=""><a href="https://rosemont.co.kr/product/detail.html?product_no=2626" class="btn btn6">RS1296</a></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+
+  var swiper1 = new Swiper(".top .swiper", {
+    effect: 'fade',
+    speed: 1200,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+
+  var swiper2 = new Swiper(".product .swiper", {
+    speed: 1500,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
+  function prdShow(el) {
+    el.classList.add('over');
+  }
+  function prdHide(el) {
+    el.classList.remove('over');
+  }
+</script>
+</body>
+</html>

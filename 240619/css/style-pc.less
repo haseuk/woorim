@@ -1,0 +1,23 @@
+@import "../../css/asset";
+
+@media screen and (min-width: 1920px) {
+  html { scroll-behavior: smooth; }
+  .content { .max-w(1920);
+    .wrap {
+      .top { .wh(1920,1303); }
+      .tab-wrap { .wh(1920,92)!important; .t(61px);
+        .tab { .wh(460,92); }
+      }
+      section {
+        article {
+          .anchor { .wh(100%,0); .lt(0,-242); }
+          .prd { .wh(620,530); .lb(50%,174);
+            .btn { .wh(295,530);  }
+          }
+          &.art2 .prd { .b(182); .ml(-668); }
+          &.art3 .prd { .b(297); }
+        }
+      }
+    }
+  }
+}

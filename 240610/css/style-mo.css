@@ -52,8 +52,8 @@ html {
   bottom: auto;
 }
 .content .wrap .product .btn {
-  width: 18.82352941vw;
-  height: 18.82352941vw;
+  width: 45.88235294vw;
+  height: 36.47058824vw;
   position: absolute;
 }
 .content .wrap .product .btn i {
@@ -63,31 +63,37 @@ html {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  left: 5.17647059vw;
-  top: 5.17647059vw;
+  left: 0vw;
+  bottom: 0vw;
   right: auto;
-  bottom: auto;
+  top: auto;
   display: inline-block;
   pointer-events: none;
   animation: jamjam 1.5s infinite;
 }
 .content .wrap .product .btn.btn1 {
-  left: 42.70588235vw;
-  top: 42.94117647vw;
+  left: 47.05882353vw;
+  top: 20vw;
   right: auto;
   bottom: auto;
 }
 .content .wrap .product .btn.btn2 {
-  left: 44vw;
-  top: 165.29411765vw;
+  left: 48.23529412vw;
+  top: 142.82352941vw;
   right: auto;
   bottom: auto;
 }
 .content .wrap .product .btn.btn3 {
-  left: 37.17647059vw;
-  top: 253.29411765vw;
+  left: 5.41176471vw;
+  top: 230.82352941vw;
   right: auto;
   bottom: auto;
+}
+.content .wrap .product .btn.btn3 i {
+  right: 0vw;
+  bottom: 0vw;
+  left: auto;
+  top: auto;
 }
 @keyframes jamjam {
   50% {

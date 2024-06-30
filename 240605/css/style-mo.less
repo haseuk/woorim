@@ -19,8 +19,8 @@ html { scroll-behavior: smooth; }
       }
       .silver { .f; .abs; .lt; }
     }
-    .vid { .wh(850,720);
-      iframe { .f; }
+    .vid { .wh(850,720); .crop; .rel;
+      iframe { .wh(850,850); .abs; .lt(50%,50%); transform: translate(-50%,-50%); }
     }
     .cnt { .bgc(#f7f4eb); .rel;
       .txt { .abs; }
