@@ -1,0 +1,44 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+html { scroll-behavior: smooth; }
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    .top { .wh(850,1747); .rel;
+      .top-bg { .wh(850,1747); .abs; .lt; }
+      .swiper { .wh(718,832); .abs; .lb(67,51); .crop; }
+      .rolling { .fs(0); .wh(100%,51); .crop; .abs; .lb;
+        .r-inner { .wh(2062,51); .flex; align-items: start;
+          .banner { .wh(1031,51); .contain('../images/mo/banner.png');
+            &.banner1 { animation: bannerRolling 15s linear infinite; }
+            &.banner2 { animation: bannerRolling2 15s linear infinite; }
+          }
+        }
+      }
+      @keyframes bannerRolling {
+        0% { transform: translateX(0%) }
+        100% { transform: translateX(-100%) }
+      }
+      @keyframes bannerRolling2 {
+        0% { transform: translateX(0%) }
+        100% { transform: translateX(-100%) }
+      }
+    }
+    .product { .wh(850,1684); .rel;
+      .prd-bg { .wh(850,1684); .abs; .lt; }
+      .swiper { .wh(720,1098); .abs; .lt(66,444);
+        .swiper-slide { .wh(720,1035);
+          img { .wf; }
+        }
+        .swiper-pagination { .b(0);
+          .swiper-pagination-bullet { .wh(22,22); .br(50%); .bgc(#fff); .-a(#000); .-box; .o(1);
+            &.swiper-pagination-bullet-active { .bgc(#000); }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap .water-drop {
+    position: absolute;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1), 5px 10px 10px rgba(0, 0, 0, 0.2), 1px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.8);
+    transition: border-radius 0.5s;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .content .wrap .water-drop.w1 {
+    width: 27.05882353vw;
+    height: 27.05882353vw;
+    right: 5.29411765vw;
+    top: -7.05882353vw;
+    left: auto;
+    bottom: auto;
+    animation: drop1 1s infinite alternate ease-in-out;
+  }
+  .content .wrap .water-drop.w2 {
+    width: 24.70588235vw;
+    height: 23.52941176vw;
+    left: 3.52941176vw;
+    bottom: 13.52941176vw;
+    right: auto;
+    top: auto;
+    animation: drop2 1s infinite alternate ease-in-out;
+  }
+  .content .wrap .top {
+    width: 100vw;
+    height: 106.58823529vw;
+    position: relative;
+    overflow: hidden;
+  }
+  @keyframes drop1 {
+    from {
+      border-radius: 40% 68% 48% 60%;
+    }
+    to {
+      border-radius: 50%;
+    }
+  }
+  @keyframes drop2 {
+    from {
+      border-radius: 52% 42% 62% 42%;
+    }
+    to {
+      border-radius: 48%;
+    }
+  }
+  .content .wrap .product {
+    position: relative;
+  }
+  .content .wrap .product .prd {
+    position: relative;
+  }
+  .content .wrap .product .prd .btn {
+    width: 51.52941176vw;
+    height: 84.23529412vw;
+    position: absolute;
+    left: 40.82352941vw;
+    bottom: 0vw;
+    right: auto;
+    top: auto;
+  }
+  .content .wrap .product .prd.prd2 .btn {
+    left: 7.64705882vw;
+  }
+  .content .wrap .product .prd.prd3 .btn {
+    bottom: 14.11764706vw;
+  }
+  @media screen and (min-width: 767px) {
+    html {
+      font-size: 28px;
+    }
+    .content {
+      max-width: 720px;
+    }
+    .content .wrap .water-drop {
+      position: absolute;
+      box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1), 5px 10px 10px rgba(0, 0, 0, 0.2), 1px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.8);
+      transition: border-radius 0.5s;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .content .wrap .water-drop.w1 {
+      width: 6.9591528rem;
+      height: 6.9591528rem;
+      right: 1.36157337rem;
+      top: -1.81543116rem;
+      left: auto;
+      bottom: auto;
+      animation: drop1 1s infinite alternate ease-in-out;
+    }
+    .content .wrap .water-drop.w2 {
+      width: 6.35400908rem;
+      height: 6.05143722rem;
+      left: 0.90771558rem;
+      bottom: 3.4795764rem;
+      right: auto;
+      top: auto;
+      animation: drop2 1s infinite alternate ease-in-out;
+    }
+    .content .wrap .top {
+      width: 25.71860817rem;
+      height: 27.41301059rem;
+      position: relative;
+      overflow: hidden;
+    }
+    @keyframes drop1 {
+      from {
+        border-radius: 40% 68% 48% 60%;
+      }
+      to {
+        border-radius: 50%;
+      }
+    }
+    @keyframes drop2 {
+      from {
+        border-radius: 52% 42% 62% 42%;
+      }
+      to {
+        border-radius: 48%;
+      }
+    }
+    .content .wrap .product {
+      position: relative;
+    }
+    .content .wrap .product .prd {
+      position: relative;
+    }
+    .content .wrap .product .prd .btn {
+      width: 13.2526475rem;
+      height: 21.66414523rem;
+      position: absolute;
+      left: 10.49924357rem;
+      bottom: 0rem;
+      right: auto;
+      top: auto;
+    }
+    .content .wrap .product .prd.prd2 .btn {
+      left: 1.9667171rem;
+    }
+    .content .wrap .product .prd.prd3 .btn {
+      bottom: 3.63086233rem;
+    }
+  }
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="https://woorimstg.cafe24.com/product/project/240715/mo/top.png" alt="">
+      <div class="water-drop w1"></div>
+      <div class="water-drop w2"></div>
+    </div>
+    <div class="product">
+      <div class="prd prd1">
+        <img src="https://woorimstg.cafe24.com/product/project/240715/mo/prd1.png" alt="">
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=4262" class="btn">T2037</a>
+      </div>
+      <div class="prd prd2">
+        <img src="https://woorimstg.cafe24.com/product/project/240715/mo/prd2.png" alt="">
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=3960" class="btn">P1406</a>
+      </div>
+      <div class="prd prd3">
+        <img src="https://woorimstg.cafe24.com/product/project/240715/mo/prd3.png" alt="">
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=5738" class="btn">SA24A06F</a>
+      </div>
+    </div>
+  </div>
+</div>

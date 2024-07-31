@@ -1,0 +1,82 @@
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 28px;
+  }
+  .content {
+    max-width: 720px;
+  }
+  .content .wrap .top {
+    width: 25.71860817rem;
+    height: 48.4720121rem;
+  }
+  .content .wrap .top .title .tit-slide {
+    left: 0rem;
+    top: 8.35098336rem;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .top .title .tit-slide .tit1 {
+    width: 6.41452345rem;
+    height: 2.54160363rem;
+  }
+  .content .wrap .top .title .tit-slide .tit2 {
+    width: 9.68229955rem;
+    height: 2.54160363rem;
+  }
+  .content .wrap .top .title .tit-slide span {
+    width: 0rem;
+    height: 2.54160363rem;
+    margin-top: 0rem;
+    margin-right: 0.48411498rem;
+    margin-bottom: 0rem;
+    margin-left: 0.48411498rem;
+  }
+  .content .wrap .top .title .tit-slide span:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.18154312rem;
+    left: 0.48411498rem;
+    top: 1.18003026rem;
+    right: auto;
+    bottom: auto;
+  }
+  @keyframes lengthen {
+    80% {
+      width: 3.02571861rem;
+    }
+    100% {
+      width: 2.602118rem;
+    }
+  }
+  .content .wrap .top .vis {
+    width: 25.71860817rem;
+    height: 48.4720121rem;
+    filter: blur(0.2rem);
+  }
+  .content .wrap .product {
+    width: 25.71860817rem;
+    height: 76.27836611rem;
+  }
+  .content .wrap .product .swiper {
+    width: 25.71860817rem;
+    height: 29.47049924rem;
+    left: 0rem;
+    top: 41.33131619rem;
+    right: auto;
+    bottom: auto;
+    padding-top: 0rem;
+    padding-right: 2.602118rem;
+    padding-bottom: 0rem;
+    padding-left: 2.602118rem;
+  }
+  .content .wrap .product .swiper .swiper-pagination {
+    width: 20.51437216rem;
+    height: 0.24205749rem;
+    left: 2.63237519rem;
+    bottom: 0rem;
+    right: auto;
+    top: auto;
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

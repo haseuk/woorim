@@ -1,0 +1,271 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap [data-aos="fade-up"] {
+    transition-duration: 1000ms;
+  }
+  .content .wrap .top {
+    width: 100vw;
+    height: 127.52941176vw;
+    position: relative;
+  }
+  .content .wrap .top img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .tab-wrap {
+    width: 100vw !important;
+    height: 10.82352941vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 61px;
+    z-index: 100 !important;
+    background-position: center;
+  }
+  .content .wrap .tab-wrap .tab {
+    width: 31.17647059vw;
+    height: 10.82352941vw;
+  }
+  .content .wrap .tab-wrap .tab.tab2 {
+    width: 37.64705882vw;
+  }
+  .content .wrap section article {
+    position: relative;
+  }
+  .content .wrap section article .anchor {
+    display: block;
+    width: 100%;
+    height: 0vw;
+    position: absolute;
+    left: 0vw;
+    top: -23.52941176vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap section article .prd {
+    width: 79.76470588vw;
+    height: 76.47058824vw;
+    position: absolute;
+    left: 10.23529412vw;
+    bottom: 8.23529412vw;
+    right: auto;
+    top: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .wrap section article .prd .btn {
+    width: 38.11764706vw;
+    height: 76.47058824vw;
+  }
+  .content .wrap section article.art3 .prd {
+    bottom: 23.05882353vw;
+  }
+  .content .wrap[data-view="0"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240723/mo/tab1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content .wrap[data-view="1"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240723/mo/tab2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content .wrap[data-view="2"] .tab-wrap {
+    background-image: url('https://woorimstg.cafe24.com/product/project/240723/mo/tab3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content .wrap[data-view="0"] .art1,
+  .content .wrap[data-view="1"] .art2,
+  .content .wrap[data-view="2"] .art3 {
+    display: block;
+  }
+  @media screen and (min-width: 767px) {
+    html {
+      font-size: 28px;
+    }
+    .content {
+      max-width: 720px;
+    }
+    .content .wrap [data-aos="fade-up"] {
+      transition-duration: 1000ms;
+    }
+    .content .wrap .top {
+      width: 25.71860817rem;
+      height: 32.79878971rem;
+      position: relative;
+    }
+    .content .wrap .top img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .tab-wrap {
+      width: 25.71860817rem !important;
+      height: 2.78366112rem !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+      top: 61px;
+      z-index: 100 !important;
+      background-position: center;
+    }
+    .content .wrap .tab-wrap .tab {
+      width: 8.01815431rem;
+      height: 2.78366112rem;
+    }
+    .content .wrap .tab-wrap .tab.tab2 {
+      width: 9.68229955rem;
+    }
+    .content .wrap section article {
+      position: relative;
+    }
+    .content .wrap section article .anchor {
+      display: block;
+      width: 100%;
+      height: 0rem;
+      position: absolute;
+      left: 0rem;
+      top: -6.05143722rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap section article .prd {
+      width: 20.51437216rem;
+      height: 19.66717095rem;
+      position: absolute;
+      left: 2.63237519rem;
+      bottom: 2.11800303rem;
+      right: auto;
+      top: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .content .wrap section article .prd .btn {
+      width: 9.80332829rem;
+      height: 19.66717095rem;
+    }
+    .content .wrap section article.art3 .prd {
+      bottom: 5.93040847rem;
+    }
+    .content .wrap[data-view="0"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240723/mo/tab1.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .content .wrap[data-view="1"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240723/mo/tab2.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .content .wrap[data-view="2"] .tab-wrap {
+      background-image: url('https://woorimstg.cafe24.com/product/project/240723/mo/tab3.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .content .wrap[data-view="0"] .art1,
+    .content .wrap[data-view="1"] .art2,
+    .content .wrap[data-view="2"] .art3 {
+      display: block;
+    }
+  }
+</style>
+<div class="content">
+  <div class="wrap best" data-view="0">
+    <div class="top">
+      <img src="https://woorimstg.cafe24.com/product/project/240723/mo/top.png" alt="">
+      <img src="https://woorimstg.cafe24.com/product/project/240723/mo/txt1.png" class="txt txt1" data-aos="fade-up" alt="">
+      <img src="https://woorimstg.cafe24.com/product/project/240723/mo/txt2.png" class="txt txt2" data-aos="fade-up" data-aos-delay="100" alt="">
+      <img src="https://woorimstg.cafe24.com/product/project/240723/mo/txt3.png" class="txt txt3" data-aos="fade-up" data-aos-delay="200" alt="">
+    </div>
+    <div class="tab-wrap" id="sticker">
+      <a href="#art1" class="tab tab1" data-tab="0">dal</a>
+      <a href="#art2" class="tab tab2" data-tab="1">lucky u</a>
+      <a href="#art3" class="tab tab3" data-tab="2">edge</a>
+    </div>
+
+    <section>
+      <article class="art1">
+        <span class="anchor" id="art1"></span>
+        <img src="https://woorimstg.cafe24.com/product/project/240723/mo/prd1.png" alt="">
+        <div class="prd">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=4262" class="btn">T2037</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=4260" class="btn">T2026</a>
+        </div>
+      </article>
+      <article class="art2">
+        <span class="anchor" id="art2"></span>
+        <img src="https://woorimstg.cafe24.com/product/project/240723/mo/prd2.png" alt="">
+        <div class="prd">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5738" class="btn">SA24A06F</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5741" class="btn">SA24A02F</a>
+        </div>
+      </article>
+      <article class="art3">
+        <span class="anchor" id="art3"></span>
+        <img src="https://woorimstg.cafe24.com/product/project/240723/mo/prd3.png" alt="">
+        <div class="prd">
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5899" class="btn">SA24B43T</a>
+          <a href="https://stonehenge.co.kr/product/detail.html?product_no=5900" class="btn">SA24B44F</a>
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+
+  let tab = document.querySelectorAll('.tab');
+  let best = document.querySelector('.best');
+  Array.prototype.forEach.call(tab, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab');
+      best.setAttribute('data-view', idx);
+    })
+  });
+
+  $( document ).ready(function() {
+    let sticker = $("#sticker");
+    let winH = document.documentElement.scrollHeight;
+    let bestH = best.getBoundingClientRect().height;
+    let bottomSpacingValue = winH - bestH;
+    sticker.sticky({topSpacing:61,bottomSpacing:bottomSpacingValue});
+  });
+</script>

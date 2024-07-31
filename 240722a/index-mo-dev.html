@@ -1,0 +1,315 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap .top {
+    width: 100vw;
+    height: 205.52941176vw;
+    position: relative;
+  }
+  .content .wrap .top .top-bg {
+    width: 100vw;
+    height: 205.52941176vw;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .top .swiper {
+    width: 84.47058824vw;
+    height: 97.88235294vw;
+    position: absolute;
+    left: 7.88235294vw;
+    bottom: 6vw;
+    right: auto;
+    top: auto;
+    overflow: hidden;
+  }
+  .content .wrap .top .rolling {
+    font-size: 0vw;
+    width: 100%;
+    height: 6vw;
+    overflow: hidden;
+    position: absolute;
+    left: 0vw;
+    bottom: 0vw;
+    right: auto;
+    top: auto;
+  }
+  .content .wrap .top .rolling .r-inner {
+    width: 242.58823529vw;
+    height: 6vw;
+    display: flex;
+    align-items: start;
+  }
+  .content .wrap .top .rolling .r-inner .banner {
+    width: 121.29411765vw;
+    height: 6vw;
+    background-image: url('https://woorimstg.cafe24.com/product/project/240723a/mo/banner.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .content .wrap .top .rolling .r-inner .banner.banner1 {
+    animation: bannerRolling 15s linear infinite;
+  }
+  .content .wrap .top .rolling .r-inner .banner.banner2 {
+    animation: bannerRolling2 15s linear infinite;
+  }
+  @keyframes bannerRolling {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes bannerRolling2 {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .content .wrap .product {
+    width: 100vw;
+    height: 198.11764706vw;
+    position: relative;
+  }
+  .content .wrap .product .prd-bg {
+    width: 100vw;
+    height: 198.11764706vw;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .swiper {
+    width: 84.70588235vw;
+    height: 129.17647059vw;
+    position: absolute;
+    left: 7.76470588vw;
+    top: 52.23529412vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .product .swiper .swiper-slide {
+    width: 84.70588235vw;
+    height: 121.76470588vw;
+  }
+  .content .wrap .product .swiper .swiper-slide img {
+    width: 100%;
+  }
+  .content .wrap .product .swiper .swiper-pagination {
+    bottom: 0vw;
+  }
+  .content .wrap .product .swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 2.58823529vw;
+    height: 2.58823529vw;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    opacity: 1;
+  }
+  .content .wrap .product .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #000;
+  }
+  @media screen and (min-width: 767px) {
+    html {
+      font-size: 28px;
+    }
+    .content {
+      max-width: 720px;
+    }
+    .content .wrap .top {
+      width: 25.71860817rem;
+      height: 52.85930408rem;
+      position: relative;
+    }
+    .content .wrap .top .top-bg {
+      width: 25.71860817rem;
+      height: 52.85930408rem;
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .top .swiper {
+      width: 21.72465961rem;
+      height: 25.17397882rem;
+      position: absolute;
+      left: 2.02723147rem;
+      bottom: 1.54311649rem;
+      right: auto;
+      top: auto;
+      overflow: hidden;
+    }
+    .content .wrap .top .rolling {
+      font-size: 0rem;
+      width: 100%;
+      height: 1.54311649rem;
+      overflow: hidden;
+      position: absolute;
+      left: 0rem;
+      bottom: 0rem;
+      right: auto;
+      top: auto;
+    }
+    .content .wrap .top .rolling .r-inner {
+      width: 62.3903177rem;
+      height: 1.54311649rem;
+      display: flex;
+      align-items: start;
+    }
+    .content .wrap .top .rolling .r-inner .banner {
+      width: 31.19515885rem;
+      height: 1.54311649rem;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240723a/mo/banner.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .content .wrap .top .rolling .r-inner .banner.banner1 {
+      animation: bannerRolling 15s linear infinite;
+    }
+    .content .wrap .top .rolling .r-inner .banner.banner2 {
+      animation: bannerRolling2 15s linear infinite;
+    }
+    @keyframes bannerRolling {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    @keyframes bannerRolling2 {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .content .wrap .product {
+      width: 25.71860817rem;
+      height: 50.95310136rem;
+      position: relative;
+    }
+    .content .wrap .product .prd-bg {
+      width: 25.71860817rem;
+      height: 50.95310136rem;
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .product .swiper {
+      width: 21.78517398rem;
+      height: 33.22239032rem;
+      position: absolute;
+      left: 1.99697428rem;
+      top: 13.43419062rem;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .product .swiper .swiper-slide {
+      width: 21.78517398rem;
+      height: 31.31618759rem;
+    }
+    .content .wrap .product .swiper .swiper-slide img {
+      width: 100%;
+    }
+    .content .wrap .product .swiper .swiper-pagination {
+      bottom: 0rem;
+    }
+    .content .wrap .product .swiper .swiper-pagination .swiper-pagination-bullet {
+      width: 0.66565809rem;
+      height: 0.66565809rem;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      opacity: 1;
+    }
+    .content .wrap .product .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: #000;
+    }
+  }
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="https://woorimstg.cafe24.com/product/project/240723a/mo/top.png" class="top-bg" alt="">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240723a/mo/vis1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimstg.cafe24.com/product/project/240723a/mo/vis2.png" alt=""></div>
+        </div>
+      </div>
+      <div class="rolling">
+        <div class="r-inner">
+          <div class="banner banner1"></div>
+          <div class="banner banner2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://woorimstg.cafe24.com/product/project/240723a/mo/bott.png" class="prd-bg" alt="">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5974"><img src="https://woorimstg.cafe24.com/product/project/240723a/mo/prd1.png" alt="">SA24BC1K</a></div>
+          <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=6059"><img src="https://woorimstg.cafe24.com/product/project/240723a/mo/prd2.png" alt="">SA24C09A</a></div>
+          <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5958"><img src="https://woorimstg.cafe24.com/product/project/240723a/mo/prd3.png" alt="">SA24BA1P</a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper1 = new Swiper(".top .swiper", {
+    effect: 'fade',
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+  var swiperPrd = new Swiper(".product .swiper", {
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>

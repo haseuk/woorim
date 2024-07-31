@@ -1,0 +1,40 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+html { scroll-behavior: smooth; }
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    [data-aos="fade-right"] { transition-duration: 1000ms; }
+    .top { .wh(850,1602); .contain('../images/mo/top-bg.png'); .rel;
+      .title { .rel; .z(2);
+        .tit-slide { .abs; .lt(0,276);
+          img { .ib; .vat; }
+          .tit1 { .wh(212,84); }
+          .tit2 { .wh(320,84); }
+          span { .wh(0,84); .m(0,16); .ib; .vam; .rel; .crop; animation: lengthen 0.6s ease-out forwards; animation-delay: 0.5s;
+            &:after { .cnt; .wh(100%,6); .bgc(#0b0b0b); .abs; .lt(0,39); }
+          }
+          @keyframes lengthen {
+            80% { .w(100); }
+            100% { .w(86); }
+          }
+        }
+      }
+      .vis { .wh(850,1602); .abs; .lt; transform: scale(1.1); filter: blur(0.2rem); animation: clearer 0.8s ease-out forwards; animation-delay: 0.7s; }
+      @keyframes clearer {
+        100% { filter: blur(0); transform: scale(1); }
+      }
+      .txt { .f; .abs; .lt; .z(2); }
+    }
+    .product { .wh(850,2521); .contain('../images/mo/prd-bg.png'); .rel;
+      .swiper { .wh(850,974); .abs; .lt(0,1366); .p(0,86); .-box;
+        .swiper-pagination { .wh(678,8); top:auto; .lb(87,0); .bgc(#eeefef);
+          .swiper-pagination-progressbar-fill { .bgc(#698d90); }
+        }
+      }
+    }
+  }
+}

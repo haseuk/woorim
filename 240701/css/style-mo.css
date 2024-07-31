@@ -1,0 +1,153 @@
+html {
+  scroll-behavior: smooth;
+}
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap [data-aos="fade-right"] {
+  transition-duration: 1000ms;
+}
+.content .wrap .top {
+  width: 100vw;
+  height: 188.47058824vw;
+  background-image: url('../images/mo/top-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .wrap .top .title {
+  position: relative;
+  z-index: 2;
+}
+.content .wrap .top .title .tit-slide {
+  position: absolute;
+  left: 0vw;
+  top: 32.47058824vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .top .title .tit-slide img {
+  display: inline-block;
+  vertical-align: top;
+}
+.content .wrap .top .title .tit-slide .tit1 {
+  width: 24.94117647vw;
+  height: 9.88235294vw;
+}
+.content .wrap .top .title .tit-slide .tit2 {
+  width: 37.64705882vw;
+  height: 9.88235294vw;
+}
+.content .wrap .top .title .tit-slide span {
+  width: 0vw;
+  height: 9.88235294vw;
+  margin-top: 0vw;
+  margin-right: 1.88235294vw;
+  margin-bottom: 0vw;
+  margin-left: 1.88235294vw;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  animation: lengthen 0.6s ease-out forwards;
+  animation-delay: 0.5s;
+}
+.content .wrap .top .title .tit-slide span:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.70588235vw;
+  background-color: #0b0b0b;
+  position: absolute;
+  left: 0vw;
+  top: 4.58823529vw;
+  right: auto;
+  bottom: auto;
+}
+@keyframes lengthen {
+  80% {
+    width: 11.76470588vw;
+  }
+  100% {
+    width: 10.11764706vw;
+  }
+}
+.content .wrap .top .vis {
+  width: 100vw;
+  height: 188.47058824vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  transform: scale(1.1);
+  filter: blur(0.2rem);
+  animation: clearer 0.8s ease-out forwards;
+  animation-delay: 0.7s;
+}
+@keyframes clearer {
+  100% {
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+.content .wrap .top .txt {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  z-index: 2;
+}
+.content .wrap .product {
+  width: 100vw;
+  height: 296.58823529vw;
+  background-image: url('../images/mo/prd-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.content .wrap .product .swiper {
+  width: 100vw;
+  height: 114.58823529vw;
+  position: absolute;
+  left: 0vw;
+  top: 160.70588235vw;
+  right: auto;
+  bottom: auto;
+  padding-top: 0vw;
+  padding-right: 10.11764706vw;
+  padding-bottom: 0vw;
+  padding-left: 10.11764706vw;
+  box-sizing: border-box;
+}
+.content .wrap .product .swiper .swiper-pagination {
+  width: 79.76470588vw;
+  height: 0.94117647vw;
+  left: 10.23529412vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+  background-color: #eeefef;
+}
+.content .wrap .product .swiper .swiper-pagination .swiper-pagination-progressbar-fill {
+  background-color: #698d90;
+}
+/*# sourceMappingURL=style-mo.css.map */

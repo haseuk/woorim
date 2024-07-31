@@ -1,0 +1,108 @@
+html {
+  scroll-behavior: smooth;
+}
+.content {
+  font-size: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 850px;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  vertical-align: top;
+}
+.content .btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.content .wrap [data-aos="fade-up"] {
+  transition-duration: 1000ms;
+}
+.content .wrap .top {
+  width: 100vw;
+  height: 127.52941176vw;
+  position: relative;
+}
+.content .wrap .top img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap .tab-wrap {
+  width: 100vw !important;
+  height: 10.82352941vw !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 61px;
+  z-index: 100 !important;
+  background-position: center;
+}
+.content .wrap .tab-wrap .tab {
+  width: 31.17647059vw;
+  height: 10.82352941vw;
+}
+.content .wrap .tab-wrap .tab.tab2 {
+  width: 37.64705882vw;
+}
+.content .wrap section article {
+  position: relative;
+}
+.content .wrap section article .anchor {
+  display: block;
+  width: 100%;
+  height: 0vw;
+  position: absolute;
+  left: 0vw;
+  top: -23.52941176vw;
+  right: auto;
+  bottom: auto;
+}
+.content .wrap section article .prd {
+  width: 79.76470588vw;
+  height: 76.47058824vw;
+  position: absolute;
+  left: 10.23529412vw;
+  bottom: 8.23529412vw;
+  right: auto;
+  top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.content .wrap section article .prd .btn {
+  width: 38.11764706vw;
+  height: 76.47058824vw;
+}
+.content .wrap section article.art3 .prd {
+  bottom: 23.05882353vw;
+}
+.content .wrap[data-view="0"] .tab-wrap {
+  background-image: url('../images/mo/tab1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content .wrap[data-view="1"] .tab-wrap {
+  background-image: url('../images/mo/tab2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content .wrap[data-view="2"] .tab-wrap {
+  background-image: url('../images/mo/tab3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content .wrap[data-view="0"] .art1,
+.content .wrap[data-view="1"] .art2,
+.content .wrap[data-view="2"] .art3 {
+  display: block;
+}
+/*# sourceMappingURL=style-mo.css.map */

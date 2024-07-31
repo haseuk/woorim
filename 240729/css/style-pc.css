@@ -1,0 +1,87 @@
+@media screen and (min-width: 1265px) {
+  .content {
+    font-size: 0px;
+    max-width: 1264px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap [data-aos="fade-up"] {
+    transition-duration: 1000ms;
+  }
+  .content .wrap .top {
+    width: 1264px;
+    height: 787px;
+    background-image: url('../images/pc/top.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    pointer-events: none;
+  }
+  .content .wrap .top .tit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+  }
+  .content .wrap .top .swiper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .top .swiper .swiper-slide {
+    pointer-events: none;
+  }
+  .content .wrap .product .prd {
+    position: relative;
+    width: 1264px;
+    height: 722px;
+  }
+  .content .wrap .product .prd .swiper {
+    width: 607px;
+    height: 722px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .content .wrap .product .prd .shop {
+    width: 657px;
+    height: 722px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .content .wrap .product .prd .btn {
+    width: 143px;
+    height: 50px;
+    position: absolute;
+    left: 862px;
+    bottom: 50px;
+    right: auto;
+    top: auto;
+  }
+  .content .wrap .product .prd.prd1 .btn {
+    bottom: 70px;
+  }
+  .content .wrap .product .prd.prd2 .btn {
+    left: 257px;
+  }
+}
+/*# sourceMappingURL=style-pc.css.map */

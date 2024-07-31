@@ -1,0 +1,18 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+html { scroll-behavior: smooth; }
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    [data-aos="fade-up"] { transition-duration: 1000ms; }
+    .top { .wh(850,2300); .contain('../images/mo/top.png'); .rel; pointer-events: none;
+      .tit { .f; .abs; .lt; .z(1); }
+      .swiper { .f; .abs; .lt;
+        .swiper-slide { pointer-events: none; }
+      }
+    }
+  }
+}

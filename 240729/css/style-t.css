@@ -1,0 +1,13 @@
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 28px;
+  }
+  .content {
+    max-width: 720px;
+  }
+  .content .wrap .top {
+    width: 25.71860817rem;
+    height: 69.59152799rem;
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

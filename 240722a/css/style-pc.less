@@ -1,0 +1,35 @@
+@import "../../css/asset";
+
+html { scroll-behavior: smooth; }
+.content { .fs(0); .max-w(1920); .tc; .rel; .mh-c;
+  .wrap { .crop;
+    .inner { .min-w(1920); .ml(50%); transform: translateX(-50%); }
+    .top { .wh(1920,885); .rel;
+      .top-bg { .wh(1920,885); }
+      .swiper { .wh(700,833); .abs; .lt(960,1); .crop; }
+      .rolling { .fs(0); .wh(100%,51); .crop; .abs; .lb;
+        .r-inner { .wh(4780,51); .flex; align-items: start;
+          .banner { .wh(2390,51); .contain('../images/pc/banner.png');
+            &.banner1 { animation: bannerRolling 15s linear infinite; }
+            &.banner2 { animation: bannerRolling2 15s linear infinite; }
+          }
+        }
+      }
+      @keyframes bannerRolling {
+        0% { transform: translateX(0%) }
+        100% { transform: translateX(-100%) }
+      }
+      @keyframes bannerRolling2 {
+        0% { transform: translateX(0%) }
+        100% { transform: translateX(-100%) }
+      }
+    }
+    .product { .wh(1920,1235); .rel;
+      .link { .wh(385,62); .abs; .b(147);
+        &.link1 { .l(340); }
+        &.link2 { .l(768); }
+        &.link3 { .l(1195); }
+      }
+    }
+  }
+}

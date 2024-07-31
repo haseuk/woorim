@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/style-t.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="content">
+    <div class="wrap">
+      <div class="top">
+        <img src="images/mo/tit1.png" class="tit" data-aos="fade-up" data-aos-delay="100" alt="">
+        <img src="images/mo/tit2.png" class="tit" data-aos="fade-up" data-aos-delay="700" alt="">
+
+        <div class="swiper watch1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/mo/w1-1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/mo/w1-2.png" alt=""></div>
+          </div>
+        </div>
+        <div class="swiper watch2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/mo/w2-1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/mo/w2-2.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/mo/prd-tit.png" class="prd-tit" alt="">
+        <div class="swiper prd1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/mo/sld1-1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/mo/sld1-2.png" alt=""></div>
+          </div>
+        </div>
+        <a href="https://rosemont.co.kr/product/detail.html?product_no=4990" class="btn"><img src="images/mo/prd1.png" alt="">RS#76-05MT</a>
+
+        <div class="swiper prd1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/mo/sld2-1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/mo/sld2-2.png" alt=""></div>
+          </div>
+        </div>
+        <a href="https://rosemont.co.kr/product/detail.html?product_no=2503" class="btn"><img src="images/mo/prd2.png" alt="">RS#64-04RB-MT</a>
+
+        <div class="swiper prd1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/mo/sld3-1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/mo/sld3-2.png" alt=""></div>
+          </div>
+        </div>
+        <a href="https://rosemont.co.kr/product/detail.html?product_no=2722" class="btn"><img src="images/mo/prd3.png" alt="">RS#68-05MT</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+    var watch1 = new Swiper(".watch1", {
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      speed: 2000,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+    var watch2 = new Swiper(".watch2", {
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      speed: 2000,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+    var prd1 = new Swiper(".prd1", {
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      speed: 2000,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+    var prd2 = new Swiper(".prd2", {
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      speed: 2000,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+    var prd3 = new Swiper(".prd3", {
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      speed: 2000,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+  </script>
+</body>
+</html>

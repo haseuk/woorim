@@ -1,0 +1,26 @@
+@import "../../css/asset";
+
+@media screen and (min-width: 1265px) {
+  .content { .fs(0); .max-w(1264); .tc; .rel; .mh-c;
+    img { .wf; .vat; }
+    .btn { .ib; .rel; .z(1); .pointer; }
+    .wrap {
+      [data-aos="fade-up"] { transition-duration: 1000ms; }
+      .top { .wh(1264,787); .contain('../images/pc/top.png'); .rel; pointer-events: none;
+        .tit { .f; .abs; .lt; .z(1); }
+        .swiper { .f; .abs; .lt;
+          .swiper-slide { pointer-events: none; }
+        }
+      }
+      .product {
+        .prd { .rel; .wh(1264,722);
+          .swiper { .wh(607,722); .ib; .vat; }
+          .shop { .wh(657,722); .ib; .vat; }
+          .btn { .wh(143,50); .abs; .lb(862,50); }
+          &.prd1 .btn { .b(70); }
+          &.prd2 .btn { .l(257); }
+        }
+      }
+    }
+  }
+}

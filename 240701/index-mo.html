@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/style-t.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="content">
+    <div class="wrap">
+      <div class="top">
+        <div class="title">
+          <img src="images/mo/tit.png" alt="">
+          <div class="tit-slide">
+            <img src="images/mo/tit1.png" class="tit1" alt="">
+            <span></span>
+            <img src="images/mo/tit2.png" class="tit2" alt="">
+          </div>
+        </div>
+        <div class="vis">
+          <img src="images/mo/vis.png" alt="">
+        </div>
+        <img src="images/mo/txt.png" class="txt" alt="">
+      </div>
+      <img src="images/mo/gift.png" alt="">
+      <div class="product">
+        <img src="images/mo/prd-slid.png" class="sld" data-aos="fade-right" data-aos-offset="500" alt="">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=4332" class="btn"><img src="images/mo/prd1.png" alt="">K1743</a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5674" class="btn"><img src="images/mo/prd2.png" alt="">F0284</a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=3910" class="btn"><img src="images/mo/prd3.png" alt="">N0105</a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=3960" class="btn"><img src="images/mo/prd4.png" alt="">P1406</a></div>
+            <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5897" class="btn"><img src="images/mo/prd5.png" alt="">SA24B41F</a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+    var swiper = new Swiper(".swiper", {
+      speed: 1200,
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      breakpoints:{
+        '720': {
+          spaceBetween: 40,
+        }
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+    });
+  </script>
+</body>
+</html>

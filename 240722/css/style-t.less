@@ -1,0 +1,36 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 33.05;
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { max-width: 720px;
+    .wrap {
+      [data-aos="fade-up"] { transition-duration: 1000ms; }
+      .top { .wh(850,1084); .rel;
+        img { .f; .abs; .lt; }
+      }
+      .tab-wrap { .wh(850,92)!important; .flex; .flex-center; .sticky; .t(61px); .z(100)!important; .bg-c;
+        .tab { .wh(265,92);
+          &.tab2 { .w(320); }
+        }
+      }
+      section {
+        article { .rel;
+          .anchor { .block; .wh(100%,0); .abs; .lt(0,-200); }
+          .prd { .wh(678,650); .abs; .lb(87,70); .flex; .space-between;
+            .btn { .wh(324,650);  }
+          }
+          &.art3 .prd { .b(196); }
+        }
+      }
+
+      &[data-view="0"] .tab-wrap { .cover('../images/mo/tab1.png'); }
+      &[data-view="1"] .tab-wrap { .cover('../images/mo/tab2.png'); }
+      &[data-view="2"] .tab-wrap { .cover('../images/mo/tab3.png'); }
+      &[data-view="0"] .art1,
+      &[data-view="1"] .art2,
+      &[data-view="2"] .art3 { .block; }
+    }
+  }
+}

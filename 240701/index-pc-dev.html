@@ -1,0 +1,231 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  @media screen and (min-width: 1265px) {
+    .content {
+      font-size: 0px;
+      max-width: 1920px;
+      text-align: center;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .content img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .content .btn {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+    }
+    .content .wrap {
+      overflow: hidden;
+    }
+    .content .wrap [data-aos="fade-right"] {
+      transition-duration: 1000ms;
+    }
+    .content .wrap .top {
+      width: 1920px;
+      height: 980px;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240704/pc/top-bg.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+    }
+    .content .wrap .top .title {
+      position: relative;
+      z-index: 2;
+    }
+    .content .wrap .top .title .tit-slide {
+      position: absolute;
+      left: 0px;
+      top: 489px;
+      right: auto;
+      bottom: auto;
+    }
+    .content .wrap .top .title .tit-slide img {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .content .wrap .top .title .tit-slide .tit1 {
+      width: 437px;
+      height: 102px;
+    }
+    .content .wrap .top .title .tit-slide .tit2 {
+      width: 386px;
+      height: 102px;
+    }
+    .content .wrap .top .title .tit-slide span {
+      width: 0px;
+      height: 102px;
+      margin-top: 0px;
+      margin-right: 16px;
+      margin-bottom: 0px;
+      margin-left: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      overflow: hidden;
+      animation: lengthen 0.6s ease-out forwards;
+      animation-delay: 0.5s;
+    }
+    .content .wrap .top .title .tit-slide span:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 8px;
+      background-color: #0b0b0b;
+      position: absolute;
+      left: 0px;
+      top: 46px;
+      right: auto;
+      bottom: auto;
+    }
+    @keyframes lengthen {
+      80% {
+        width: 130px;
+      }
+      100% {
+        width: 112px;
+      }
+    }
+    .content .wrap .top .vis {
+      width: 668px;
+      height: 861px;
+      position: absolute;
+      right: 260px;
+      top: 50px;
+      left: auto;
+      bottom: auto;
+      transform: scale(1.1);
+      filter: blur(0.2rem);
+      animation: clearer 0.8s ease-out forwards;
+      animation-delay: 0.7s;
+    }
+    @keyframes clearer {
+      100% {
+        filter: blur(0);
+        transform: scale(1);
+      }
+    }
+    .content .wrap .top .txt {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: auto;
+      bottom: auto;
+      z-index: 2;
+    }
+    .content .wrap .product {
+      width: 1920px;
+      height: 1761px;
+      background-image: url('https://woorimstg.cafe24.com/product/project/240704/pc/prd-bg.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+    }
+    .content .wrap .product .swiper {
+      width: 816px;
+      height: 882px;
+      position: absolute;
+      right: 0px;
+      top: 472px;
+      left: auto;
+      bottom: auto;
+      padding-top: 101px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .content .wrap .product .swiper .swiper-pagination {
+      width: 556px;
+      height: 4px;
+      left: 0px;
+      bottom: 0px;
+      right: auto;
+      top: auto;
+      background-color: #eeefef;
+    }
+    .content .wrap .product .swiper .swiper-pagination .swiper-pagination-progressbar-fill {
+      background-color: #698d90;
+    }
+    .content .wrap .product .swiper .swiper-btn {
+      width: 71px;
+      height: 71px;
+      margin: 0px;
+      top: 0px;
+    }
+    .content .wrap .product .swiper .swiper-btn:after {
+      display: none;
+    }
+    .content .wrap .product .swiper .swiper-btn.swiper-button-prev {
+      left: 0px;
+    }
+    .content .wrap .product .swiper .swiper-btn.swiper-button-next {
+      left: 90px;
+      right: auto;
+    }
+  }
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <div class="title">
+        <img src="https://woorimstg.cafe24.com/product/project/240704/pc/tit.png" alt="">
+        <div class="tit-slide">
+          <img src="https://woorimstg.cafe24.com/product/project/240704/pc/tit1.png" class="tit1" alt="">
+          <span></span>
+          <img src="https://woorimstg.cafe24.com/product/project/240704/pc/tit2.png" class="tit2" alt="">
+        </div>
+      </div>
+      <div class="vis">
+        <img src="https://woorimstg.cafe24.com/product/project/240704/pc/vis.png" alt="">
+      </div>
+      <img src="https://woorimstg.cafe24.com/product/project/240704/pc/txt.png" class="txt" alt="">
+    </div>
+    <img src="https://woorimstg.cafe24.com/product/project/240704/pc/gift.png" alt="">
+    <div class="product">
+      <img src="https://woorimstg.cafe24.com/product/project/240704/pc/prd-slid.png" class="sld" data-aos="fade-right" data-aos-offset="600" data-aos-delay="500" alt="">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=4332" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240704/pc/prd1.png" alt="">K1743</a></div>
+          <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5674" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240704/pc/prd2.png" alt="">F0284</a></div>
+          <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=3910" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240704/pc/prd3.png" alt="">N0105</a></div>
+          <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=3960" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240704/pc/prd4.png" alt="">P1406</a></div>
+          <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5897" class="btn"><img src="https://woorimstg.cafe24.com/product/project/240704/pc/prd5.png" alt="">SA24B41F</a></div>
+        </div>
+        <div class="swiper-button-next swiper-btn"></div>
+        <div class="swiper-button-prev swiper-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+  var swiper = new Swiper(".swiper", {
+    speed: 1200,
+    slidesPerView: 1.7,
+    spaceBetween: 40,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>

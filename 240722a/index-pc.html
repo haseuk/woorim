@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-pc.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+<div class="content">
+  <div class="wrap">
+    <div class="inner">
+      <div class="top">
+        <img src="images/pc/top.png" class="top-bg" alt="">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/pc/vis1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pc/vis2.png" alt=""></div>
+          </div>
+        </div>
+        <div class="rolling">
+          <div class="r-inner">
+            <div class="banner banner1"></div>
+            <div class="banner banner2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/pc/prd.png" class="prd-bg" alt="">
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=5974" class="link link1">SA24BC1K</a>
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=6059" class="link link2">SA24C09A</a>
+        <a href="https://stonehenge.co.kr/product/detail.html?product_no=5958" class="link link3">SA24BA1P</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper1 = new Swiper(".top .swiper", {
+    effect: 'fade',
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+</script>
+</body>
+</html>

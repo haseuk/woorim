@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/style-t.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="images/mo/top.png" class="top-bg" alt="">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/mo/vis1.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/mo/vis2.png" alt=""></div>
+        </div>
+      </div>
+      <div class="rolling">
+        <div class="r-inner">
+          <div class="banner banner1"></div>
+          <div class="banner banner2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="images/mo/bott.png" class="prd-bg" alt="">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5974"><img src="images/mo/prd1.png" alt="">SA24BC1K</a></div>
+          <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=6059"><img src="images/mo/prd2.png" alt="">SA24C09A</a></div>
+          <div class="swiper-slide"><a href="https://stonehenge.co.kr/product/detail.html?product_no=5958"><img src="images/mo/prd3.png" alt="">SA24BA1P</a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper1 = new Swiper(".top .swiper", {
+    effect: 'fade',
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+  var swiperPrd = new Swiper(".product .swiper", {
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
+</body>
+</html>

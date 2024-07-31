@@ -1,0 +1,31 @@
+@import "../../css/asset";
+@use-vw: true;
+@vw: 850;
+
+html { scroll-behavior: smooth; }
+.content { .fs(0); .mh-c; .tc; max-width: 850px; .rel;
+  img { .wf; .vat; }
+  .btn { .ib; .rel; .z(1); .pointer; }
+  .wrap {
+    .water-drop { .abs; box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1), 5px 10px 10px rgba(0, 0, 0, 0.2), 1px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.8); transition: border-radius 0.5s; .crop; .z(1);
+      &.w1 { .wh(230,230); .rt(45,-60); animation: drop1 1s infinite alternate ease-in-out; }
+      &.w2 { .wh(210,200); .lb(30,115); animation: drop2 1s infinite alternate ease-in-out; }
+    }
+    .top { .wh(850,906); .rel; .crop; }
+    @keyframes drop1 {
+      from { border-radius: 40% 68% 48% 60%; }
+      to { border-radius: 50%; }
+    }
+    @keyframes drop2 {
+      from { border-radius: 52% 42% 62% 42%; }
+      to { border-radius: 48%; }
+    }
+    .product { .rel;
+      .prd { .rel;
+        .btn { .wh(438,716); .abs; .lb(347,0); }
+        &.prd2 .btn { .l(65); }
+        &.prd3 .btn { .b(120); }
+      }
+    }
+  }
+}

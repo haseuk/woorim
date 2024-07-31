@@ -1,0 +1,32 @@
+@import "../../css/asset";
+@use-rem: true;
+@rem: 33.05;
+
+@media screen and (min-width: 767px) {
+  html { font-size: 28px; }
+  .content { max-width: 720px;
+    .wrap {
+      .top { .wh(850,1602);
+        .title {
+          .tit-slide {  .lt(0,276);
+            .tit1 { .wh(212,84); }
+            .tit2 { .wh(320,84); }
+            span { .wh(0,84); .m(0,16);
+              &:after { .cnt; .wh(100%,6); .lt(16,39); }
+            }
+            @keyframes lengthen {
+              80% { .w(100); }
+              100% { .w(86); }
+            }
+          }
+        }
+        .vis { .wh(850,1602); filter: blur(0.2rem); }
+      }
+      .product { .wh(850,2521);
+        .swiper { .wh(850,974); .lt(0,1366); .p(0,86);
+          .swiper-pagination { .wh(678,8); .lb(87,0); }
+        }
+      }
+    }
+  }
+}

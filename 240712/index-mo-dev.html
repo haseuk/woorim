@@ -1,0 +1,185 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .content {
+    font-size: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 850px;
+    position: relative;
+  }
+  .content img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .content .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .content .wrap [data-aos="fade-up"] {
+    transition-duration: 1000ms;
+  }
+  .content .wrap .top {
+    width: 100vw;
+    height: 270.58823529vw;
+    background-image: url('https://woorimrsm.cafe24.com/product/special/240712/mo/top.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    pointer-events: none;
+  }
+  .content .wrap .top .tit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+  }
+  .content .wrap .top .swiper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .content .wrap .top .swiper .swiper-slide {
+    pointer-events: none;
+  }
+  @media screen and (min-width: 767px) {
+    html {
+      font-size: 28px;
+    }
+    .content {
+      max-width: 720px;
+    }
+    .content .wrap .top {
+      width: 25.71860817rem;
+      height: 69.59152799rem;
+    }
+  }
+</style>
+<div class="content">
+  <div class="wrap">
+    <div class="top">
+      <img src="https://woorimrsm.cafe24.com/product/special/240712/mo/tit1.png" class="tit" data-aos="fade-up" data-aos-delay="100" alt="">
+      <img src="https://woorimrsm.cafe24.com/product/special/240712/mo/tit2.png" class="tit" data-aos="fade-up" data-aos-delay="700" alt="">
+
+      <div class="swiper watch1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/w1-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/w1-2.png" alt=""></div>
+        </div>
+      </div>
+      <div class="swiper watch2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/w2-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/w2-2.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://woorimrsm.cafe24.com/product/special/240712/mo/prd-tit.png" class="prd-tit" alt="">
+      <div class="swiper prd1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/sld1-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/sld1-2.png" alt=""></div>
+        </div>
+      </div>
+      <a href="https://rosemont.co.kr/product/detail.html?product_no=4990" class="btn"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/prd1.png" alt="">RS#76-05MT</a>
+
+      <div class="swiper prd1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/sld2-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/sld2-2.png" alt=""></div>
+        </div>
+      </div>
+      <a href="https://rosemont.co.kr/product/detail.html?product_no=2503" class="btn"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/prd2.png" alt="">RS#64-04RB-MT</a>
+
+      <div class="swiper prd1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/sld3-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/sld3-2.png" alt=""></div>
+        </div>
+      </div>
+      <a href="https://rosemont.co.kr/product/detail.html?product_no=2722" class="btn"><img src="https://woorimrsm.cafe24.com/product/special/240712/mo/prd3.png" alt="">RS#68-05MT</a>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+  var watch1 = new Swiper(".watch1", {
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    speed: 2000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+  var watch2 = new Swiper(".watch2", {
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    speed: 2000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+  var prd1 = new Swiper(".prd1", {
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    speed: 2000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+  var prd2 = new Swiper(".prd2", {
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    speed: 2000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+  var prd3 = new Swiper(".prd3", {
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    speed: 2000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+</script>

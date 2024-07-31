@@ -1,0 +1,44 @@
+@import "../../css/asset";
+
+@media screen and (min-width: 1265px) {
+  .content { .fs(0); .max-w(1920); .tc; .rel; .mh-c;
+    img { .wf; .vat; }
+    .btn { .ib; .rel; .z(1); .pointer; }
+    .wrap { .crop;
+      [data-aos="fade-right"] { transition-duration: 1000ms; }
+      .top { .wh(1920,980); .contain('../images/pc/top-bg.png'); .rel;
+        .title { .rel; .z(2);
+          .tit-slide { .abs; .lt(0,489);
+            img { .ib; .vat; }
+            .tit1 { .wh(437,102); }
+            .tit2 { .wh(386,102); }
+            span { .wh(0,102); .m(0,16); .ib; .vam; .rel; .crop; animation: lengthen 0.6s ease-out forwards; animation-delay: 0.5s;
+              &:after { .cnt; .wh(100%,8); .bgc(#0b0b0b); .abs; .lt(0,46); }
+            }
+            @keyframes lengthen {
+              80% { .w(130); }
+              100% { .w(112); }
+            }
+          }
+        }
+        .vis { .wh(668,861); .abs; .rt(260,50); transform: scale(1.1); filter: blur(0.2rem); animation: clearer 0.8s ease-out forwards; animation-delay: 0.7s; }
+        @keyframes clearer {
+          100% { filter: blur(0); transform: scale(1); }
+        }
+        .txt { .f; .abs; .lt; .z(2); }
+      }
+      .product { .wh(1920,1761); .contain('../images/pc/prd-bg.png'); .rel;
+        .swiper { .wh(816,882); .abs; .rt(0,472); .pt(101); .-box; .crop;
+          .swiper-pagination { .wh(556,4); top:auto; .lb; .bgc(#eeefef);
+            .swiper-pagination-progressbar-fill { .bgc(#698d90); }
+          }
+          .swiper-btn { .wh(71,71); .m(0); .t(0);
+            &:after { .hide; }
+            &.swiper-button-prev { .l(0); }
+            &.swiper-button-next { .l(90); right:auto; }
+          }
+        }
+      }
+    }
+  }
+}
